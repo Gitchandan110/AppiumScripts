@@ -41,7 +41,7 @@
 
 				<configuration>
 
-					<suiteXmlFiles>C:\Users\Chandan\git\repository\ArtifactIdAppium\testng.xml</suiteXmlFiles>
+					<suiteXmlFiles>C:\Users\Chandan\Git\ArtifactIdAppium\testng.xml</suiteXmlFiles>
 				</configuration>
 
 			</plugin>
