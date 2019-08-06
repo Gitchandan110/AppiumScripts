@@ -41,7 +41,7 @@
 
 				<configuration>
 
-					<suiteXmlFiles>C:\Users\Chandan\git\repository\ArtifactIdAppium\testng.xml</suiteXmlFiles>
+					<suiteXmlFiles>C:\Users\Chandan\Git\ArtifactIdAppium\testng.xml</suiteXmlFiles>
 				</configuration>
 
 			</plugin>
@@ -106,19 +106,18 @@
 			<version>4.0.1</version>
 		</dependency>
 
-		<!-- This is the Applitools Selenium Java SDK -->
+
+
+		
 		<dependency>
 			<groupId>com.applitools</groupId>
 			<artifactId>eyes-selenium-java3</artifactId>
-			<version>RELEASE</version>
+			<version>3.157.0</version>
 		</dependency>
-<!-- 
-		https://mvnrepository.com/artifact/mysql/mysql-connector-java
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.15</version>
-		</dependency>
- -->
+
+
+
+
+	
 	</dependencies>
 </project>
