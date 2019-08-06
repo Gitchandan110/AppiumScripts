@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="1">
+
+	<listeners>
+		<listener
+			class-name="com.ExtentReportListner.ExtentReporterNG" />
+	</listeners>
+
+
+<!-- 	<test name="SKLogin">
+		<classes>
+			<class name="com.appium.ApkScripts.SK_LogInApk" />
+		</classes>
+	</test> -->
+
+
+<!-- 	<test name="SKNewAccount">
+		<classes>
+			<class name="com.appium.ApkScripts.SK_CreateAccount" />
+		</classes>
+	</test>
+ -->
+
+
+	<!-- <test name="SKSafeWalk">
+		<classes>
+			<class name="com.appium.ApkScripts.SK_SafeWalk_Incident" />
+		</classes>
+	</test>
+
+
+	<test name="SKSOS">
+		<classes>
+			<class name="com.appium.ApkScripts.SK_SOS_Incident" />
+		</classes>
+	</test>
+
+
+
+	<test name="SKTimer">
+		<classes>
+			<class name="com.appium.ApkScripts.SK_Timer_Incident" />
+		</classes>
+	</test>
+	
+
+	<test name="SKTips">
+		<classes>
+			<class name="com.appium.ApkScripts.SK_Tips_Anonymous" />
+		</classes>
+	</test>
+	
+	 -->
+	 	<test name="SK_IA_SOS">
+		<classes>
+			<class name="com.appium.AppScripts.SK_IA_SOS" />
+		</classes>
+	</test>
+	
+	<!-- <test name="SK_IA_CreateAccount">
+		<classes>
+			<class name="com.appium.AppScripts.SK_IA_CreateAccount" />
+		</classes>
+	</test> -->
+	
+	<test name="SK_IA_SafeWalk">
+		<classes>
+			<class name="com.appium.AppScripts.SK_IA_SafeWalk" />
+		</classes>
+	</test>
+	
+<!-- 
+	<test name="SK_IA_Timer">
+		<classes>
+			<class name="com.appium.AppScripts.SK_IA_Timer" />
+		</classes>
+	</test> -->
+	
+
+</suite>
