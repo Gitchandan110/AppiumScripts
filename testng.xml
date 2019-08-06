@@ -57,8 +57,8 @@
 			<class name="com.appium.AppScripts.SK_IA_SOS" />
 		</classes>
 	</test>
-	
-	<!-- <test name="SK_IA_CreateAccount">
+	<!-- 
+	<test name="SK_IA_CreateAccount">
 		<classes>
 			<class name="com.appium.AppScripts.SK_IA_CreateAccount" />
 		</classes>
@@ -70,12 +70,12 @@
 		</classes>
 	</test>
 	
-<!-- 
+
 	<test name="SK_IA_Timer">
 		<classes>
 			<class name="com.appium.AppScripts.SK_IA_Timer" />
 		</classes>
-	</test> -->
+	</test>
 	
 
 </suite>
