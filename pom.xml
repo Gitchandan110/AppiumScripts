@@ -66,6 +66,18 @@
 			<version>3.141.59</version>
 		</dependency>
 
+
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>3.141.59</version>
+		</dependency>
+
+
+
+
+
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -112,15 +124,9 @@
 			<artifactId>eyes-selenium-java3</artifactId>
 			<version>RELEASE</version>
 		</dependency>
-<!-- 
-		https://mvnrepository.com/artifact/mysql/mysql-connector-java
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.15</version>
-		</dependency>
-
- -->
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java <dependency> 
+			<groupId>mysql</groupId> <artifactId>mysql-connector-java</artifactId> <version>8.0.15</version> 
+			</dependency> -->
 	</dependencies>
 </project>
     
