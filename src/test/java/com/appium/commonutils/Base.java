@@ -86,6 +86,24 @@ public class Base {
 		return driver;
 
 	}
+	
+	
+	public static AppiumDriver launchAppIntexDevice() throws MalformedURLException {
+
+		DesiredCapabilities capability = new DesiredCapabilities();
+		capability.setCapability("deviceName", "Cloud Cube");
+		capability.setCapability("udid", "DW652SCloud66LO04335");
+		capability.setCapability("platformVersion", "5.1");
+		capability.setCapability("platformName", "Android");
+		capability.setCapability("appPackage", "com.safety.armourgrid");
+		capability.setCapability("appActivity", "com.safety.armourgrid.activity.SplashActivity");
+		capability.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 600);
+		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capability);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		return driver;
+	
+	
+	}
 
 	public static void waitFor30Seconds(MobileElement element) {
 

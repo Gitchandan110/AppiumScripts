@@ -7,7 +7,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import com.appium.bussinessLogic.SK_AddEmergencyContactBL;
 import com.appium.bussinessLogic.SK_AddOrganizationBL;
 import com.appium.bussinessLogic.SK_HomePageBL;
@@ -19,6 +18,7 @@ import com.appium.bussinessLogic.SK_QuickTipsBL;
 import com.appium.bussinessLogic.SK_SettingsBL;
 import com.appium.bussinessLogic.SK_TermsOfServicesBL;
 import com.appium.commonutils.Base;
+
 
 public class SK_IA_CreateAccount extends Base{
 	SK_LaunchBL launchbl = PageFactory.initElements(driver, SK_LaunchBL.class);
@@ -40,7 +40,7 @@ public class SK_IA_CreateAccount extends Base{
 	public void launchApp() {
 
 		try {
-			launchInstalledApp();
+			launchAppIntexDevice();
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

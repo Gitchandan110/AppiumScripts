@@ -33,19 +33,19 @@ public class SK_NewAccountBL extends SK_NewAccountPO {
 				
 			        driver.hideKeyboard();
 			   		if (txtEmail().isDisplayed()) {
-					txtEmail().sendKeys("appium1@yopmail.com");
+					txtEmail().sendKeys("appium@yopmail.com");
 					System.out.println("Email entered");
 					
 					
 					if (driver.isKeyboardShown() == true) {
 						driver.hideKeyboard();
 						txtConfirmEmail().click();
-						txtConfirmEmail().sendKeys("appium1@yopmail.com");
+						txtConfirmEmail().sendKeys("appium@yopmail.com");
 						System.out.println("Confirm Email entered");
 					} else {
 						
 						txtConfirmEmail().click();
-						txtConfirmEmail().sendKeys("appium1@yopmail.com");
+						txtConfirmEmail().sendKeys("appium@yopmail.com");
 						System.out.println("Confirm Email entered");
 						
 						

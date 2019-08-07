@@ -29,7 +29,7 @@ public class SK_IA_SOS extends Base {
 	SK_QuickTipsBL quicktipsbl = PageFactory.initElements(driver, SK_QuickTipsBL.class);
 	SK_HomePageBL homepagebl = PageFactory.initElements(driver, SK_HomePageBL.class);
 	SK_IncidentScreenBL incidentscreenbl = PageFactory.initElements(driver, SK_IncidentScreenBL.class);
-	SK_SettingsBL settingsbl=PageFactory.initElements(driver, SK_SettingsBL.class);
+	SK_SettingsBL settingsbl = PageFactory.initElements(driver, SK_SettingsBL.class);
 
 	@BeforeTest
 
@@ -69,15 +69,14 @@ public class SK_IA_SOS extends Base {
 		incidentscreenbl.SelectEndReason();
 
 	}
-	
+
 	@AfterMethod
-	
+
 	public void logOutApp() {
-		
+
 		homepagebl.clickSetting();
 		settingsbl.logOutSK();
-		
-		
+
 	}
 
 }
