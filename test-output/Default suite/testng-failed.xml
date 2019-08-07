@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.appium.scripts_App.SK_IA_SOS">
+      <class name="com.appium.AppScripts.SK_IA_CreateAccount">
         <methods>
-          <include name="SOS"/>
-          <include name="Login"/>
-          <include name="logOutApp"/>
+          <include name="pageTitle"/>
+          <include name="createAccount"/>
           <include name="launchApp"/>
+          <include name="logOutApp"/>
         </methods>
-      </class> <!-- com.appium.scripts_App.SK_IA_SOS -->
+      </class> <!-- com.appium.AppScripts.SK_IA_CreateAccount -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
