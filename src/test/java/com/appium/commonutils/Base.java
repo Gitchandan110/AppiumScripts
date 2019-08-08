@@ -54,7 +54,7 @@ public class Base {
 
 	}
 
-	public static AppiumDriver launchGooglePlayStore() throws MalformedURLException {
+	public static AppiumDriver launchGooglePlayKarbon() throws MalformedURLException {
 
 		DesiredCapabilities capability = new DesiredCapabilities();
 
@@ -70,13 +70,34 @@ public class Base {
 		return driver;
 
 	}
-
-	public static AppiumDriver launchInstalledApp() throws MalformedURLException {
+	
+	
+	public static AppiumDriver launchGooglePlayLenovo() throws MalformedURLException {
 
 		DesiredCapabilities capability = new DesiredCapabilities();
-		capability.setCapability("deviceName", "K9 VIRAAT_4G");
-		capability.setCapability("udid", "DQTKDYTGKRWOONPR");
+
+		capability.setCapability("deviceName", "Lenovo K50a40");
+		capability.setCapability("udid", "NF99FM49PRDE5TKJ");
 		capability.setCapability("platformVersion", "6.0");
+		capability.setCapability("platformName", "Android");
+		capability.setCapability("appPackage", "com.android.vending");
+		capability.setCapability("appActivity", "com.android.vending.AssetBrowserActivity");
+		capability.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 600);
+		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capability);
+		driver.manage().timeouts().implicitlyWait(180, TimeUnit.SECONDS);
+		return driver;
+
+	}
+
+	
+	
+
+	public static AppiumDriver launchInstalledAppEmulator() throws MalformedURLException {
+
+		DesiredCapabilities capability = new DesiredCapabilities();
+		capability.setCapability("deviceName", "Android Emulator");
+		capability.setCapability("udid", "emulator-5554");
+		capability.setCapability("platformVersion", "7.0");
 		capability.setCapability("platformName", "Android");
 		capability.setCapability("appPackage", "com.safety.armourgrid");
 		capability.setCapability("appActivity", "com.safety.armourgrid.activity.SplashActivity");
@@ -88,12 +109,12 @@ public class Base {
 	}
 	
 	
-	public static AppiumDriver launchAppIntexDevice() throws MalformedURLException {
+	public static AppiumDriver launchAppLenovoDevice() throws MalformedURLException {
 
 		DesiredCapabilities capability = new DesiredCapabilities();
-		capability.setCapability("deviceName", "Cloud Cube");
-		capability.setCapability("udid", "DW652SCloud66LO04335");
-		capability.setCapability("platformVersion", "5.1");
+		capability.setCapability("deviceName", "Lenovo K50a40");
+		capability.setCapability("udid", "NF99FM49PRDE5TKJ");
+		capability.setCapability("platformVersion", "6.0");
 		capability.setCapability("platformName", "Android");
 		capability.setCapability("appPackage", "com.safety.armourgrid");
 		capability.setCapability("appActivity", "com.safety.armourgrid.activity.SplashActivity");

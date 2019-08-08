@@ -36,7 +36,7 @@ public class SK_IA_SOS extends Base {
 	public void launchApp() {
 
 		try {
-			launchInstalledApp();
+			launchInstalledAppEmulator();
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

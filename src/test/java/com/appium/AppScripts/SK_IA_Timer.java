@@ -35,7 +35,7 @@ public class SK_IA_Timer extends Base {
 
 	public void launchApp() throws MalformedURLException {
 
-		launchInstalledApp();
+		launchInstalledAppEmulator();
 
 	}
 

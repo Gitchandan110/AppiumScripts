@@ -17,7 +17,7 @@ public class SK_IA_GooglePlay extends Base{
 	public void openGooglePlayStore() {
 		
 		try {
-			launchGooglePlayStore ();
+			launchGooglePlayLenovo();
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}

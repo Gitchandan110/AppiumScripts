@@ -40,7 +40,7 @@ public class SK_IA_CreateAccount extends Base{
 	public void launchApp() {
 
 		try {
-			launchAppIntexDevice();
+			launchInstalledAppEmulator();
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

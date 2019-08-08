@@ -41,6 +41,7 @@ public class SK_SignInBL extends SK_SignInPO {
 
 			if (Password().isDisplayed()) {
 				Password().sendKeys(ExcelUtils.ReadExcel(LoginDataSheet, 1, 1));
+				System.out.println("Password is :"+ ExcelUtils.ReadExcel(LoginDataSheet, 1, 1));
 				System.out.println("Password entered");
 
 			}

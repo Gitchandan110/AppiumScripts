@@ -34,7 +34,7 @@ public class SK_IA_SafeWalk extends Base {
 
 	public void launchApp() throws MalformedURLException {
 
-		launchInstalledApp();
+		launchInstalledAppEmulator();
 
 	}
 
