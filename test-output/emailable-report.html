@@ -9,17 +9,17 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">203,079</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">588,650</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.appium.AppScripts.SK_IA_SafeWalk</td><td><a href="#m0">logOutApp</a></td><td rowspan="1">1565272677397</td><td rowspan="1">30604</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.appium.AppScripts.SK_IA_SafeWalk</td><td><a href="#m1">safeWalk</a></td><td rowspan="1">1565272645982</td><td rowspan="1">31379</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.appium.AppScripts.SK_IA_Timer</td><td><a href="#m0">logOutApp</a></td><td rowspan="1">1565346857814</td><td rowspan="1">45587</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.appium.AppScripts.SK_IA_Timer</td><td><a href="#m1">TimerIncident</a></td><td rowspan="1">1565346460920</td><td rowspan="1">396891</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.appium.AppScripts.SK_IA_SafeWalk#logOutApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+<h2>Default test</h2><h3 id="m0">com.appium.AppScripts.SK_IA_Timer#logOutApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;CHANDAN&apos;, ip: &apos;192.168.0.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+System info: host: &apos;CHANDAN&apos;, ip: &apos;192.168.1.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, databaseEnabled: false, desired: {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, deviceName: Android Emulator, newCommandTimeout: 600, platformName: android, platformVersion: 7.0, udid: emulator-5554}, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenSize: 768x1280, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, platform: LINUX, platformName: Android, platformVersion: 7.0, takesScreenshot: true, udid: emulator-5554, warnings: {}, webStorageEnabled: false}
-Session ID: 55913c0a-c721-4c78-b54b-bdfb8d3e4560
+Session ID: 47c537da-e32e-43a3-8bf1-9dc24631c854
 *** Element info: {Using=id, value=com.safety.armourgrid:id/menu_settings_button}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -49,7 +49,7 @@ Session ID: 55913c0a-c721-4c78-b54b-bdfb8d3e4560
 	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
 	at com.appium.pageobject.SK_HomePagePO.btnSettings(SK_HomePagePO.java:39)
 	at com.appium.bussinessLogic.SK_HomePageBL.clickSetting(SK_HomePageBL.java:101)
-	at com.appium.AppScripts.SK_IA_SafeWalk.logOutApp(SK_IA_SafeWalk.java:71)
+	at com.appium.AppScripts.SK_IA_Timer.logOutApp(SK_IA_Timer.java:74)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -79,6 +79,6 @@ Session ID: 55913c0a-c721-4c78-b54b-bdfb8d3e4560
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.appium.AppScripts.SK_IA_SafeWalk#safeWalk</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.appium.AppScripts.SK_IA_Timer#TimerIncident</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -28,4 +28,16 @@
       </class> <!-- com.appium.AppScripts.SK_IA_SafeWalk -->
     </classes>
   </test> <!-- SK_IA_SafeWalk(failed) -->
+  <test thread-count="5" name="SK_IA_Timer(failed)">
+    <classes>
+      <class name="com.appium.AppScripts.SK_IA_Timer">
+        <methods>
+          <include name="launchApp"/>
+          <include name="logOutApp"/>
+          <include name="signInApp"/>
+          <include name="TimerIncident"/>
+        </methods>
+      </class> <!-- com.appium.AppScripts.SK_IA_Timer -->
+    </classes>
+  </test> <!-- SK_IA_Timer(failed) -->
 </suite> <!-- Failed suite [Suite] -->
