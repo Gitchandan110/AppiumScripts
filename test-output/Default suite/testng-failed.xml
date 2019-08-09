@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.appium.AppScripts.SK_IA_SafeWalk">
+      <class name="com.appium.AppScripts.SK_IA_Timer">
         <methods>
-          <include name="safeWalk"/>
           <include name="launchApp"/>
-          <include name="signInApp"/>
           <include name="logOutApp"/>
+          <include name="signInApp"/>
+          <include name="TimerIncident"/>
         </methods>
-      </class> <!-- com.appium.AppScripts.SK_IA_SafeWalk -->
+      </class> <!-- com.appium.AppScripts.SK_IA_Timer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
