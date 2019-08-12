@@ -31,10 +31,10 @@ public class Base {
 
 	public static AndroidDriver<MobileElement> driver;
 
-	public static AppiumDriver launchApk() throws MalformedURLException {
+	public static AppiumDriver launchApkKarbon() throws MalformedURLException {
 
 		File appDir = new File("C:\\Users\\Chandan\\git\\repository\\ArtifactIdAppium\\ApkFile");
-		File apk = new File(appDir, "SK_49_develop_21_June.apk");
+		File apk = new File(appDir, "SK_49_Production_21_June.apk");
 
 		DesiredCapabilities capability = new DesiredCapabilities();
 
@@ -44,15 +44,36 @@ public class Base {
 		capability.setCapability("platformName", "Android");
 		capability.setCapability("appPackage", "com.safety.armourgrid");
 		capability.setCapability("appActivity", "com.safety.armourgrid.activity.SplashActivity");
-
 		capability.setCapability(MobileCapabilityType.APP, apk.getAbsolutePath());
-
 		capability.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 600);
 		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capability);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		return driver;
 
 	}
+	
+	
+	public static AppiumDriver launchAppKarbon() throws MalformedURLException {
+
+		DesiredCapabilities capability = new DesiredCapabilities();
+		capability.setCapability("deviceName", "K9 VIRAAT_4G");
+		capability.setCapability("udid", "DQTKDYTGKRWOONPR");
+		capability.setCapability("platformVersion", "6.0");
+		capability.setCapability("platformName", "Android");
+		capability.setCapability("appPackage", "com.safety.armourgrid");
+		capability.setCapability("appActivity", "com.safety.armourgrid.activity.SplashActivity");
+		capability.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 600);
+		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capability);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		return driver;
+
+	}
+	
+	
+	
+	
+	
+	
 
 	public static AppiumDriver launchGooglePlayKarbon() throws MalformedURLException {
 
@@ -70,15 +91,15 @@ public class Base {
 		return driver;
 
 	}
+
 	
-	
-	public static AppiumDriver launchGooglePlayLenovo() throws MalformedURLException {
+	public static AppiumDriver launchGooglePlayEmulator() throws MalformedURLException {
 
 		DesiredCapabilities capability = new DesiredCapabilities();
 
-		capability.setCapability("deviceName", "Lenovo K50a40");
-		capability.setCapability("udid", "NF99FM49PRDE5TKJ");
-		capability.setCapability("platformVersion", "6.0");
+		capability.setCapability("deviceName", "Android Emulator");
+		capability.setCapability("udid", "emulator-5554");
+		capability.setCapability("platformVersion", "7.0");
 		capability.setCapability("platformName", "Android");
 		capability.setCapability("appPackage", "com.android.vending");
 		capability.setCapability("appActivity", "com.android.vending.AssetBrowserActivity");
@@ -90,8 +111,6 @@ public class Base {
 	}
 
 	
-	
-
 	public static AppiumDriver launchInstalledAppEmulator() throws MalformedURLException {
 
 		DesiredCapabilities capability = new DesiredCapabilities();
@@ -109,23 +128,6 @@ public class Base {
 	}
 	
 	
-	public static AppiumDriver launchAppLenovoDevice() throws MalformedURLException {
-
-		DesiredCapabilities capability = new DesiredCapabilities();
-		capability.setCapability("deviceName", "Lenovo K50a40");
-		capability.setCapability("udid", "NF99FM49PRDE5TKJ");
-		capability.setCapability("platformVersion", "6.0");
-		capability.setCapability("platformName", "Android");
-		capability.setCapability("appPackage", "com.safety.armourgrid");
-		capability.setCapability("appActivity", "com.safety.armourgrid.activity.SplashActivity");
-		capability.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 600);
-		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capability);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		return driver;
-	
-	
-	}
-
 	public static void waitFor30Seconds(MobileElement element) {
 
 		try {

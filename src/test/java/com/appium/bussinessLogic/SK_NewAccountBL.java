@@ -17,86 +17,89 @@ public class SK_NewAccountBL extends SK_NewAccountPO {
 					txtLastName().sendKeys("Test");
 					System.out.println("LastName entered");
 				}
+				if (driver.isKeyboardShown() == true) {
+					driver.hideKeyboard();
+					if (txtMobileNumber().isDisplayed()) {
+						txtMobileNumber().sendKeys("54789652326");
+						System.out.println("MobileNumber entered");
 
-				if (txtMobileNumber().isDisplayed()) {
-					txtMobileNumber().sendKeys("54789652326");
-					System.out.println("MobileNumber entered");
-
-				}
-
-				if (txtSafeWord().isDisplayed()) {
-					txtSafeWord().sendKeys("Safe");
-					System.out.println("SafeWord entered");
-
-				}
-				
-				
-			        driver.hideKeyboard();
-			   		if (txtEmail().isDisplayed()) {
-					txtEmail().sendKeys("appium@yopmail.com");
-					System.out.println("Email entered");
-					
-					
+					}
 					if (driver.isKeyboardShown() == true) {
 						driver.hideKeyboard();
-						txtConfirmEmail().click();
-						txtConfirmEmail().sendKeys("appium@yopmail.com");
-						System.out.println("Confirm Email entered");
-					} else {
-						
-						txtConfirmEmail().click();
-						txtConfirmEmail().sendKeys("appium@yopmail.com");
-						System.out.println("Confirm Email entered");
-						
-						
-					}
-
-					if (driver.isKeyboardShown() == true) {
-						driver.hideKeyboard();
-						System.out.println("Hide Keyboard done");
-
-					}
-					if (txtPassword().isDisplayed()) {
-						txtPassword().sendKeys("12345678");
-						System.out.println("Password entered");
-					} else {
-
-						txtPassword().sendKeys("12345678");
-						System.out.println("Password entered");
-
-					}
-
-					if (driver.isKeyboardShown() == true) {
-						driver.hideKeyboard();
-						System.out.println("Hide Keyboard done");
-						if (txtConfirmPassword().isDisplayed()) {
-							txtConfirmPassword().click();
-							txtConfirmPassword().sendKeys("12345678");
-							System.out.println("Confirm Password entered");
+						if (txtSafeWord().isDisplayed()) {
+							txtSafeWord().sendKeys("Safe");
+							System.out.println("SafeWord entered");
 
 						}
 
-						else {
-							txtConfirmPassword().click();
-							txtConfirmPassword().sendKeys("12345678");
-							System.out.println("Confirm Password entered");
+						if (driver.isKeyboardShown() == true) {
+							driver.hideKeyboard();
+							if (txtEmail().isDisplayed()) {
+								txtEmail().sendKeys("appium@yopmail.com");
+								System.out.println("Email entered");
+
+								if (driver.isKeyboardShown() == true) {
+									driver.hideKeyboard();
+									txtConfirmEmail().click();
+									txtConfirmEmail().sendKeys("appium@yopmail.com");
+									System.out.println("Confirm Email entered");
+								} else {
+
+									txtConfirmEmail().click();
+									txtConfirmEmail().sendKeys("appium@yopmail.com");
+									System.out.println("Confirm Email entered");
+
+								}
+
+								if (driver.isKeyboardShown() == true) {
+									driver.hideKeyboard();
+									System.out.println("Hide Keyboard done");
+
+								}
+								if (txtPassword().isDisplayed()) {
+									txtPassword().sendKeys("12345678");
+									System.out.println("Password entered");
+								} else {
+
+									txtPassword().sendKeys("12345678");
+									System.out.println("Password entered");
+
+								}
+
+								if (driver.isKeyboardShown() == true) {
+									driver.hideKeyboard();
+									System.out.println("Hide Keyboard done");
+									if (txtConfirmPassword().isDisplayed()) {
+										txtConfirmPassword().click();
+										txtConfirmPassword().sendKeys("12345678");
+										System.out.println("Confirm Password entered");
+
+									}
+
+									else {
+										txtConfirmPassword().click();
+										txtConfirmPassword().sendKeys("12345678");
+										System.out.println("Confirm Password entered");
+									}
+
+									if (btnSaveProfile().isDisplayed()) {
+										btnSaveProfile().click();
+										System.out.println("Profile Saved");
+
+									}
+
+									else {
+
+										System.out.println("Profile not Saved");
+									}
+								}
+							}
+
 						}
 
-						if (btnSaveProfile().isDisplayed()) {
-							btnSaveProfile().click();
-							System.out.println("Profile Saved");
-
-						}
-
-						else {
-
-							System.out.println("Profile not Saved");
-						}
 					}
 				}
-			
 			}
-
 		} catch (Exception ex) {
 
 			System.out.println("Exception in Create Profile:" + ex.getMessage());

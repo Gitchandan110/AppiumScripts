@@ -12,7 +12,7 @@ public class SK_HomePageBL extends SK_HomePagePO {
 
 				btnSOS().click();
 				System.out.println("SOS started");
-				Thread.sleep(20000);
+				Thread.sleep(40000);
 
 			} else {
 
@@ -34,7 +34,7 @@ public class SK_HomePageBL extends SK_HomePagePO {
 			if (btnSafeWalk().isDisplayed()) {
 
 				btnSafeWalk().click();
-				Thread.sleep(20000);
+				Thread.sleep(40000);
 				System.out.println("SafeWalk started");
 
 			} else {

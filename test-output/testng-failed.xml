@@ -3,14 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.appium.AppScripts.SK_IA_Timer">
+      <class name="com.appium.AppScripts.SK_IA_GooglePlay">
         <methods>
-          <include name="launchApp"/>
-          <include name="logOutApp"/>
-          <include name="signInApp"/>
-          <include name="TimerIncident"/>
+          <include name="openGooglePlayStore"/>
+          <include name="installApp"/>
         </methods>
-      </class> <!-- com.appium.AppScripts.SK_IA_Timer -->
+      </class> <!-- com.appium.AppScripts.SK_IA_GooglePlay -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
