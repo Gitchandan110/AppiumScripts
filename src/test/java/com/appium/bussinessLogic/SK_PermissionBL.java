@@ -1,5 +1,6 @@
 package com.appium.bussinessLogic;
 
+import com.appium.commonutils.Base;
 import com.appium.pageobject.SK_PermissionPO;
 
 public class SK_PermissionBL extends SK_PermissionPO{
@@ -8,8 +9,9 @@ public class SK_PermissionBL extends SK_PermissionPO{
 		
 		try { 
 			
-		
-		for(int i=0;i<4;i++) {
+		Base.waitFor300Seconds(BtnAllow());	
+			
+	 for(int i=0;i<4;i++) {
 			
 			if(BtnAllow().isDisplayed()) {
 				

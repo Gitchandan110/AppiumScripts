@@ -57,7 +57,7 @@ public class SK_SettingsPO extends Base {
 
 	}
 
-	public MobileElement groupCall() {
+	public MobileElement groupCallOption() {
 
 		By GRPCALL = By.id("com.safety.armourgrid:id/settings_group_call");
 		return driver.findElement(GRPCALL);

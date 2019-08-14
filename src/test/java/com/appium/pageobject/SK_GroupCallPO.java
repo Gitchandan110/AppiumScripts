@@ -10,14 +10,22 @@ public class SK_GroupCallPO extends Base{
 	
 	
 	
-	public MobileElement groupCall() {
+	public MobileElement btnGroupCallList() {
 		
-	By GroupCall=By.id("com.safety.armourgrid:id/list_group_active");	
+	By BtnGroupList=By.id("com.safety.armourgrid:id/list_group_name");	
 		
-	return driver.findElement(GroupCall);
+	return driver.findElement(BtnGroupList);
 	
 	}
 	
+	public MobileElement btnGroupCallActiveList() {
+		
+		By BtnActiveList=By.id("com.safety.armourgrid:id/list_group_active");	
+			
+		return driver.findElement(BtnActiveList);
+	
+	
+	}
 
 	public MobileElement btnSubscribeGroupCall() {
 		
