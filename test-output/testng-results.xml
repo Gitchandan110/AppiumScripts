@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="1172326" started-at="2019-08-12T09:05:12Z" finished-at="2019-08-12T09:24:45Z">
+  <suite name="Suite" duration-ms="1230348" started-at="2019-08-13T14:08:40Z" finished-at="2019-08-13T14:29:10Z">
     <groups>
     </groups>
-    <test name="SK_IA_SOS" duration-ms="313802" started-at="2019-08-12T09:05:12Z" finished-at="2019-08-12T09:10:26Z">
-      <class name="com.appium.AppScripts.SK_IA_SOS">
-        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.appium.AppScripts.SK_IA_SOS@4232c52b]" name="launchApp" is-config="true" duration-ms="39761" started-at="2019-08-12T09:05:12Z" finished-at="2019-08-12T09:05:52Z">
+    <test name="SK_Emulator_SOS" duration-ms="204163" started-at="2019-08-13T14:08:40Z" finished-at="2019-08-13T14:12:04Z">
+      <class name="com.appium.EmulatorScripts.SK_Emulator_SOS">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.appium.EmulatorScripts.SK_Emulator_SOS@4232c52b]" name="launchApp" is-config="true" duration-ms="23486" started-at="2019-08-13T14:08:40Z" finished-at="2019-08-13T14:09:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.appium.AppScripts.SK_IA_SOS@4232c52b]" name="Login" is-config="true" duration-ms="92445" started-at="2019-08-12T09:05:52Z" finished-at="2019-08-12T09:07:25Z">
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.appium.EmulatorScripts.SK_Emulator_SOS@4232c52b]" name="Login" is-config="true" duration-ms="96652" started-at="2019-08-13T14:09:03Z" finished-at="2019-08-13T14:10:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="SOS()[pri:0, instance:com.appium.AppScripts.SK_IA_SOS@4232c52b]" name="SOS" duration-ms="72318" started-at="2019-08-12T09:07:25Z" finished-at="2019-08-12T09:08:37Z">
+        <test-method status="PASS" signature="SOS()[pri:0, instance:com.appium.EmulatorScripts.SK_Emulator_SOS@4232c52b]" name="SOS" duration-ms="53268" started-at="2019-08-13T14:10:40Z" finished-at="2019-08-13T14:11:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SOS -->
-        <test-method status="FAIL" signature="logOutApp()[pri:0, instance:com.appium.AppScripts.SK_IA_SOS@4232c52b]" name="logOutApp" is-config="true" duration-ms="109239" started-at="2019-08-12T09:08:37Z" finished-at="2019-08-12T09:10:26Z">
+        <test-method status="FAIL" signature="logOutApp()[pri:0, instance:com.appium.EmulatorScripts.SK_Emulator_SOS@4232c52b]" name="logOutApp" is-config="true" duration-ms="30701" started-at="2019-08-13T14:11:33Z" finished-at="2019-08-13T14:12:04Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[An element could not be located on the page using the given search parameters.
@@ -28,7 +28,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'CHANDAN', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, databaseEnabled: false, desired: {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, deviceName: Android Emulator, newCommandTimeout: 600, platformName: android, platformVersion: 7.0, udid: emulator-5554}, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenSize: 768x1280, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, platform: LINUX, platformName: Android, platformVersion: 7.0, takesScreenshot: true, udid: emulator-5554, warnings: {}, webStorageEnabled: false}
-Session ID: 92dd462c-34e6-4ede-b967-1d5545ed35db
+Session ID: 3602d1da-ccf3-465e-b9aa-eb856c2b29b5
 *** Element info: {Using=id, value=com.safety.armourgrid:id/menu_settings_button}]]>
             </message>
             <full-stacktrace>
@@ -38,7 +38,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'CHANDAN', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, databaseEnabled: false, desired: {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, deviceName: Android Emulator, newCommandTimeout: 600, platformName: android, platformVersion: 7.0, udid: emulator-5554}, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenSize: 768x1280, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, platform: LINUX, platformName: Android, platformVersion: 7.0, takesScreenshot: true, udid: emulator-5554, warnings: {}, webStorageEnabled: false}
-Session ID: 92dd462c-34e6-4ede-b967-1d5545ed35db
+Session ID: 3602d1da-ccf3-465e-b9aa-eb856c2b29b5
 *** Element info: {Using=id, value=com.safety.armourgrid:id/menu_settings_button}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -68,7 +68,7 @@ at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
 at com.appium.pageobject.SK_HomePagePO.btnSettings(SK_HomePagePO.java:39)
 at com.appium.bussinessLogic.SK_HomePageBL.clickSetting(SK_HomePageBL.java:101)
-at com.appium.AppScripts.SK_IA_SOS.logOutApp(SK_IA_SOS.java:77)
+at com.appium.EmulatorScripts.SK_Emulator_SOS.logOutApp(SK_Emulator_SOS.java:77)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -103,23 +103,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutApp -->
-      </class> <!-- com.appium.AppScripts.SK_IA_SOS -->
-    </test> <!-- SK_IA_SOS -->
-    <test name="SK_IA_SafeWalk" duration-ms="251118" started-at="2019-08-12T09:10:26Z" finished-at="2019-08-12T09:14:37Z">
-      <class name="com.appium.AppScripts.SK_IA_SafeWalk">
-        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.appium.AppScripts.SK_IA_SafeWalk@631330c]" name="launchApp" is-config="true" duration-ms="34431" started-at="2019-08-12T09:10:26Z" finished-at="2019-08-12T09:11:01Z">
+      </class> <!-- com.appium.EmulatorScripts.SK_Emulator_SOS -->
+    </test> <!-- SK_Emulator_SOS -->
+    <test name="SK_Emulator_SafeWalk" duration-ms="321528" started-at="2019-08-13T14:12:04Z" finished-at="2019-08-13T14:17:25Z">
+      <class name="com.appium.EmulatorScripts.SK_Emulator_SafeWalk">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.appium.EmulatorScripts.SK_Emulator_SafeWalk@631330c]" name="launchApp" is-config="true" duration-ms="36952" started-at="2019-08-13T14:12:04Z" finished-at="2019-08-13T14:12:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method status="PASS" signature="signInApp()[pri:0, instance:com.appium.AppScripts.SK_IA_SafeWalk@631330c]" name="signInApp" is-config="true" duration-ms="102989" started-at="2019-08-12T09:11:01Z" finished-at="2019-08-12T09:12:44Z">
+        <test-method status="PASS" signature="signInApp()[pri:0, instance:com.appium.EmulatorScripts.SK_Emulator_SafeWalk@631330c]" name="signInApp" is-config="true" duration-ms="83498" started-at="2019-08-13T14:12:41Z" finished-at="2019-08-13T14:14:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInApp -->
-        <test-method status="PASS" signature="safeWalk()[pri:0, instance:com.appium.AppScripts.SK_IA_SafeWalk@631330c]" name="safeWalk" duration-ms="60839" started-at="2019-08-12T09:12:44Z" finished-at="2019-08-12T09:13:45Z">
+        <test-method status="PASS" signature="safeWalk()[pri:0, instance:com.appium.EmulatorScripts.SK_Emulator_SafeWalk@631330c]" name="safeWalk" duration-ms="170926" started-at="2019-08-13T14:14:04Z" finished-at="2019-08-13T14:16:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- safeWalk -->
-        <test-method status="FAIL" signature="logOutApp()[pri:0, instance:com.appium.AppScripts.SK_IA_SafeWalk@631330c]" name="logOutApp" is-config="true" duration-ms="52842" started-at="2019-08-12T09:13:45Z" finished-at="2019-08-12T09:14:37Z">
+        <test-method status="FAIL" signature="logOutApp()[pri:0, instance:com.appium.EmulatorScripts.SK_Emulator_SafeWalk@631330c]" name="logOutApp" is-config="true" duration-ms="30136" started-at="2019-08-13T14:16:55Z" finished-at="2019-08-13T14:17:25Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[An element could not be located on the page using the given search parameters.
@@ -128,7 +128,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'CHANDAN', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, databaseEnabled: false, desired: {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, deviceName: Android Emulator, newCommandTimeout: 600, platformName: android, platformVersion: 7.0, udid: emulator-5554}, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenSize: 768x1280, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, platform: LINUX, platformName: Android, platformVersion: 7.0, takesScreenshot: true, udid: emulator-5554, warnings: {}, webStorageEnabled: false}
-Session ID: 8caa9aef-827f-40d9-931c-82585dcac6ab
+Session ID: 0818b98c-4c39-4f23-83ab-d9c57bbf30a9
 *** Element info: {Using=id, value=com.safety.armourgrid:id/menu_settings_button}]]>
             </message>
             <full-stacktrace>
@@ -138,7 +138,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'CHANDAN', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, databaseEnabled: false, desired: {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, deviceName: Android Emulator, newCommandTimeout: 600, platformName: android, platformVersion: 7.0, udid: emulator-5554}, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenSize: 768x1280, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, platform: LINUX, platformName: Android, platformVersion: 7.0, takesScreenshot: true, udid: emulator-5554, warnings: {}, webStorageEnabled: false}
-Session ID: 8caa9aef-827f-40d9-931c-82585dcac6ab
+Session ID: 0818b98c-4c39-4f23-83ab-d9c57bbf30a9
 *** Element info: {Using=id, value=com.safety.armourgrid:id/menu_settings_button}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -168,7 +168,7 @@ at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
 at com.appium.pageobject.SK_HomePagePO.btnSettings(SK_HomePagePO.java:39)
 at com.appium.bussinessLogic.SK_HomePageBL.clickSetting(SK_HomePageBL.java:101)
-at com.appium.AppScripts.SK_IA_SafeWalk.logOutApp(SK_IA_SafeWalk.java:71)
+at com.appium.EmulatorScripts.SK_Emulator_SafeWalk.logOutApp(SK_Emulator_SafeWalk.java:71)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -203,23 +203,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutApp -->
-      </class> <!-- com.appium.AppScripts.SK_IA_SafeWalk -->
-    </test> <!-- SK_IA_SafeWalk -->
-    <test name="SK_IA_Timer" duration-ms="607192" started-at="2019-08-12T09:14:37Z" finished-at="2019-08-12T09:24:45Z">
-      <class name="com.appium.AppScripts.SK_IA_Timer">
-        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.appium.AppScripts.SK_IA_Timer@436e852b]" name="launchApp" is-config="true" duration-ms="57950" started-at="2019-08-12T09:14:37Z" finished-at="2019-08-12T09:15:35Z">
+      </class> <!-- com.appium.EmulatorScripts.SK_Emulator_SafeWalk -->
+    </test> <!-- SK_Emulator_SafeWalk -->
+    <test name="SK_Emulator_Timer" duration-ms="704523" started-at="2019-08-13T14:17:25Z" finished-at="2019-08-13T14:29:10Z">
+      <class name="com.appium.EmulatorScripts.SK_Emulator_Timer">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.appium.EmulatorScripts.SK_Emulator_Timer@436e852b]" name="launchApp" is-config="true" duration-ms="44381" started-at="2019-08-13T14:17:25Z" finished-at="2019-08-13T14:18:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method status="PASS" signature="signInApp()[pri:0, instance:com.appium.AppScripts.SK_IA_Timer@436e852b]" name="signInApp" is-config="true" duration-ms="110307" started-at="2019-08-12T09:15:35Z" finished-at="2019-08-12T09:17:26Z">
+        <test-method status="PASS" signature="signInApp()[pri:0, instance:com.appium.EmulatorScripts.SK_Emulator_Timer@436e852b]" name="signInApp" is-config="true" duration-ms="107072" started-at="2019-08-13T14:18:10Z" finished-at="2019-08-13T14:19:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInApp -->
-        <test-method status="PASS" signature="TimerIncident()[pri:0, instance:com.appium.AppScripts.SK_IA_Timer@436e852b]" name="TimerIncident" duration-ms="397169" started-at="2019-08-12T09:17:26Z" finished-at="2019-08-12T09:24:03Z">
+        <test-method status="PASS" signature="TimerIncident()[pri:0, instance:com.appium.EmulatorScripts.SK_Emulator_Timer@436e852b]" name="TimerIncident" duration-ms="522600" started-at="2019-08-13T14:19:57Z" finished-at="2019-08-13T14:28:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TimerIncident -->
-        <test-method status="FAIL" signature="logOutApp()[pri:0, instance:com.appium.AppScripts.SK_IA_Timer@436e852b]" name="logOutApp" is-config="true" duration-ms="41752" started-at="2019-08-12T09:24:03Z" finished-at="2019-08-12T09:24:45Z">
+        <test-method status="FAIL" signature="logOutApp()[pri:0, instance:com.appium.EmulatorScripts.SK_Emulator_Timer@436e852b]" name="logOutApp" is-config="true" duration-ms="30464" started-at="2019-08-13T14:28:39Z" finished-at="2019-08-13T14:29:10Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[An element could not be located on the page using the given search parameters.
@@ -228,7 +228,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'CHANDAN', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, databaseEnabled: false, desired: {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, deviceName: Android Emulator, newCommandTimeout: 600, platformName: android, platformVersion: 7.0, udid: emulator-5554}, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenSize: 768x1280, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, platform: LINUX, platformName: Android, platformVersion: 7.0, takesScreenshot: true, udid: emulator-5554, warnings: {}, webStorageEnabled: false}
-Session ID: b16216aa-321d-4853-a429-df9bb00672a2
+Session ID: 4c70f14b-9388-469f-b37b-b7b9cd06f83b
 *** Element info: {Using=id, value=com.safety.armourgrid:id/menu_settings_button}]]>
             </message>
             <full-stacktrace>
@@ -238,7 +238,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'CHANDAN', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, databaseEnabled: false, desired: {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, deviceName: Android Emulator, newCommandTimeout: 600, platformName: android, platformVersion: 7.0, udid: emulator-5554}, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenSize: 768x1280, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, platform: LINUX, platformName: Android, platformVersion: 7.0, takesScreenshot: true, udid: emulator-5554, warnings: {}, webStorageEnabled: false}
-Session ID: b16216aa-321d-4853-a429-df9bb00672a2
+Session ID: 4c70f14b-9388-469f-b37b-b7b9cd06f83b
 *** Element info: {Using=id, value=com.safety.armourgrid:id/menu_settings_button}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -268,7 +268,7 @@ at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
 at com.appium.pageobject.SK_HomePagePO.btnSettings(SK_HomePagePO.java:39)
 at com.appium.bussinessLogic.SK_HomePageBL.clickSetting(SK_HomePageBL.java:101)
-at com.appium.AppScripts.SK_IA_Timer.logOutApp(SK_IA_Timer.java:74)
+at com.appium.EmulatorScripts.SK_Emulator_Timer.logOutApp(SK_Emulator_Timer.java:74)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -303,7 +303,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutApp -->
-      </class> <!-- com.appium.AppScripts.SK_IA_Timer -->
-    </test> <!-- SK_IA_Timer -->
+      </class> <!-- com.appium.EmulatorScripts.SK_Emulator_Timer -->
+    </test> <!-- SK_Emulator_Timer -->
   </suite> <!-- Suite -->
 </testng-results>

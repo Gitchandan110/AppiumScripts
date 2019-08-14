@@ -3,12 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.appium.AppScripts.SK_IA_GooglePlay">
+      <class name="com.appium.EmulatorScripts.SK_Emulator_CreateAccount">
         <methods>
-          <include name="openGooglePlayStore"/>
-          <include name="installApp"/>
+          <include name="createAccount"/>
+          <include name="logOutApp"/>
+          <include name="launchApp"/>
+          <include name="pageTitle"/>
         </methods>
-      </class> <!-- com.appium.AppScripts.SK_IA_GooglePlay -->
+      </class> <!-- com.appium.EmulatorScripts.SK_Emulator_CreateAccount -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

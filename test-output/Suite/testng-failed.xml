@@ -4,40 +4,40 @@
   <listeners>
     <listener class-name="com.ExtentReportListner.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="SK_IA_SOS(failed)">
+  <test thread-count="5" name="SK_Emulator_SOS(failed)">
     <classes>
-      <class name="com.appium.AppScripts.SK_IA_SOS">
+      <class name="com.appium.EmulatorScripts.SK_Emulator_SOS">
         <methods>
-          <include name="Login"/>
-          <include name="logOutApp"/>
-          <include name="launchApp"/>
           <include name="SOS"/>
+          <include name="Login"/>
+          <include name="launchApp"/>
+          <include name="logOutApp"/>
         </methods>
-      </class> <!-- com.appium.AppScripts.SK_IA_SOS -->
+      </class> <!-- com.appium.EmulatorScripts.SK_Emulator_SOS -->
     </classes>
-  </test> <!-- SK_IA_SOS(failed) -->
-  <test thread-count="5" name="SK_IA_SafeWalk(failed)">
+  </test> <!-- SK_Emulator_SOS(failed) -->
+  <test thread-count="5" name="SK_Emulator_SafeWalk(failed)">
     <classes>
-      <class name="com.appium.AppScripts.SK_IA_SafeWalk">
+      <class name="com.appium.EmulatorScripts.SK_Emulator_SafeWalk">
         <methods>
           <include name="safeWalk"/>
           <include name="launchApp"/>
           <include name="signInApp"/>
           <include name="logOutApp"/>
         </methods>
-      </class> <!-- com.appium.AppScripts.SK_IA_SafeWalk -->
+      </class> <!-- com.appium.EmulatorScripts.SK_Emulator_SafeWalk -->
     </classes>
-  </test> <!-- SK_IA_SafeWalk(failed) -->
-  <test thread-count="5" name="SK_IA_Timer(failed)">
+  </test> <!-- SK_Emulator_SafeWalk(failed) -->
+  <test thread-count="5" name="SK_Emulator_Timer(failed)">
     <classes>
-      <class name="com.appium.AppScripts.SK_IA_Timer">
+      <class name="com.appium.EmulatorScripts.SK_Emulator_Timer">
         <methods>
+          <include name="signInApp"/>
           <include name="launchApp"/>
           <include name="logOutApp"/>
-          <include name="signInApp"/>
           <include name="TimerIncident"/>
         </methods>
-      </class> <!-- com.appium.AppScripts.SK_IA_Timer -->
+      </class> <!-- com.appium.EmulatorScripts.SK_Emulator_Timer -->
     </classes>
-  </test> <!-- SK_IA_Timer(failed) -->
+  </test> <!-- SK_Emulator_Timer(failed) -->
 </suite> <!-- Failed suite [Suite] -->
