@@ -8,14 +8,13 @@ public class SK_GroupCallBL extends SK_GroupCallPO {
 	public void ClickBtnGroupListName() {
 
 		try {
-			   Base.waitFor30Seconds(btnGroupCallList());
+			   Base.waitFor30Seconds(btnGroupCallActiveList());
 		
-			if (btnGroupCallList().isDisplayed()) {
+			if (btnGroupCallActiveList().isDisplayed()) {
 				
 				System.out.println("Group call button found"+btnGroupCallList().getText());
-				btnGroupCallList().click();
 				btnGroupCallActiveList().click();
-				System.out.println("Group call button clicked");
+			    System.out.println("Group call button clicked");
 			}
 
 		} catch (Exception ex) {

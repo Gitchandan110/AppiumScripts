@@ -1,43 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.ExtentReportListner.ExtentReporterNG"/>
-  </listeners>
-  <test thread-count="5" name="SK_Emulator_SOS(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.appium.EmulatorScripts.SK_Emulator_SOS">
+      <class name="com.appium.EmulatorScripts.SK_Emulator_GroupCall">
         <methods>
-          <include name="SOS"/>
           <include name="Login"/>
           <include name="launchApp"/>
           <include name="logOutApp"/>
+          <include name="GroupCall"/>
         </methods>
-      </class> <!-- com.appium.EmulatorScripts.SK_Emulator_SOS -->
+      </class> <!-- com.appium.EmulatorScripts.SK_Emulator_GroupCall -->
     </classes>
-  </test> <!-- SK_Emulator_SOS(failed) -->
-  <test thread-count="5" name="SK_Emulator_SafeWalk(failed)">
-    <classes>
-      <class name="com.appium.EmulatorScripts.SK_Emulator_SafeWalk">
-        <methods>
-          <include name="safeWalk"/>
-          <include name="launchApp"/>
-          <include name="signInApp"/>
-          <include name="logOutApp"/>
-        </methods>
-      </class> <!-- com.appium.EmulatorScripts.SK_Emulator_SafeWalk -->
-    </classes>
-  </test> <!-- SK_Emulator_SafeWalk(failed) -->
-  <test thread-count="5" name="SK_Emulator_Timer(failed)">
-    <classes>
-      <class name="com.appium.EmulatorScripts.SK_Emulator_Timer">
-        <methods>
-          <include name="signInApp"/>
-          <include name="launchApp"/>
-          <include name="logOutApp"/>
-          <include name="TimerIncident"/>
-        </methods>
-      </class> <!-- com.appium.EmulatorScripts.SK_Emulator_Timer -->
-    </classes>
-  </test> <!-- SK_Emulator_Timer(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
