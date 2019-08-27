@@ -49,7 +49,7 @@ public class SK_CreateAccount extends Base{
 		launchbl.clickBtnNewAccount();
 		termsbl.acceptTermsOfServices();
 		privacypolicybl.acceptPrivacyPolicy();
-		newaccountbl.createProfile();
+		newaccountbl.fillProfileDetails();
 		addOrgbl.fillOrgCode();
 	    addOrgbl.saveOrgCode();
 	    addEmergencyContactbl.fillFirstName();

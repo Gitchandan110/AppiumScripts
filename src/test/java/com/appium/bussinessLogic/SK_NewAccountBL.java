@@ -6,7 +6,7 @@ import io.appium.java_client.AppiumDriver;
 
 public class SK_NewAccountBL extends SK_NewAccountPO {
 
-	public void createProfile() {
+	public void fillProfileDetails() {
 
 		try {
 			if (txtFirstName().isDisplayed()) {
@@ -35,18 +35,18 @@ public class SK_NewAccountBL extends SK_NewAccountPO {
 						if (driver.isKeyboardShown() == true) {
 							driver.hideKeyboard();
 							if (txtEmail().isDisplayed()) {
-								txtEmail().sendKeys("appium@yopmail.com");
+								txtEmail().sendKeys("appium3@yopmail.com");
 								System.out.println("Email entered");
 
 								if (driver.isKeyboardShown() == true) {
 									driver.hideKeyboard();
 									txtConfirmEmail().click();
-									txtConfirmEmail().sendKeys("appium@yopmail.com");
+									txtConfirmEmail().sendKeys("appium3@yopmail.com");
 									System.out.println("Confirm Email entered");
 								} else {
 
 									txtConfirmEmail().click();
-									txtConfirmEmail().sendKeys("appium@yopmail.com");
+									txtConfirmEmail().sendKeys("appium3@yopmail.com");
 									System.out.println("Confirm Email entered");
 
 								}

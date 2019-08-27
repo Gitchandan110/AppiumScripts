@@ -34,7 +34,7 @@ public class Base {
 	public static AppiumDriver launchApkKarbon() throws MalformedURLException {
 
 		File appDir = new File("C:\\Users\\Chandan\\git\\repository\\ArtifactIdAppium\\ApkFile");
-		File apk = new File(appDir, "SK_49_Production_21_June.apk");
+		File apk = new File(appDir, "SK_51_develop_26_Aug_19.apk");
 
 		DesiredCapabilities capability = new DesiredCapabilities();
 

@@ -10,7 +10,7 @@ public class SK_AddOrganizationPO extends Base{
 	
 	public MobileElement tbAddOrganization() {
 		
-	By AddOrganization=By.id("com.safety.armourgrid:id/add_uni_name_or_code");	
+	By AddOrganization=By.id("com.safety.armourgrid:id/add_org_edit");	
 		
 	return driver.findElement(AddOrganization);
 		
