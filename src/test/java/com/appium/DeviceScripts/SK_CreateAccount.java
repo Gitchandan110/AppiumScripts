@@ -67,7 +67,7 @@ public class SK_CreateAccount extends Base{
 	    addEmergencyContactbl.fillPhoneNumber();
 	    addEmergencyContactbl.SaveEmergencyContact();
 	    permissionbl.acceptPermissions();
-	    quicktipsbl.CloseTips();
+	    quicktipsbl.closeTips();
 		
 	}
 	

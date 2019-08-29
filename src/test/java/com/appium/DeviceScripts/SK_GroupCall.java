@@ -60,7 +60,7 @@ public class SK_GroupCall extends Base{
 		signinbl.fillPassword();
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
-		quicktipsbl.CloseTips();
+		quicktipsbl.closeTips();
 		homepagebl.clickSetting();
 	}
 

@@ -4,40 +4,16 @@
   <listeners>
     <listener class-name="com.ExtentReportListner.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="SK_Emulator_SOS(failed)">
+  <test thread-count="5" name="SK_Timer_Incident(failed)">
     <classes>
-      <class name="com.appium.EmulatorScripts.SK_Emulator_SOS">
+      <class name="com.appium.DeviceScripts.SK_Timer_Incident">
         <methods>
-          <include name="SOS"/>
-          <include name="Login"/>
-          <include name="launchApp"/>
+          <include name="launchSafetyKuvrr"/>
+          <include name="loginApp"/>
           <include name="logOutApp"/>
+          <include name="testTimerIncident"/>
         </methods>
-      </class> <!-- com.appium.EmulatorScripts.SK_Emulator_SOS -->
+      </class> <!-- com.appium.DeviceScripts.SK_Timer_Incident -->
     </classes>
-  </test> <!-- SK_Emulator_SOS(failed) -->
-  <test thread-count="5" name="SK_Emulator_SafeWalk(failed)">
-    <classes>
-      <class name="com.appium.EmulatorScripts.SK_Emulator_SafeWalk">
-        <methods>
-          <include name="safeWalk"/>
-          <include name="launchApp"/>
-          <include name="signInApp"/>
-          <include name="logOutApp"/>
-        </methods>
-      </class> <!-- com.appium.EmulatorScripts.SK_Emulator_SafeWalk -->
-    </classes>
-  </test> <!-- SK_Emulator_SafeWalk(failed) -->
-  <test thread-count="5" name="SK_Emulator_Timer(failed)">
-    <classes>
-      <class name="com.appium.EmulatorScripts.SK_Emulator_Timer">
-        <methods>
-          <include name="signInApp"/>
-          <include name="launchApp"/>
-          <include name="logOutApp"/>
-          <include name="TimerIncident"/>
-        </methods>
-      </class> <!-- com.appium.EmulatorScripts.SK_Emulator_Timer -->
-    </classes>
-  </test> <!-- SK_Emulator_Timer(failed) -->
+  </test> <!-- SK_Timer_Incident(failed) -->
 </suite> <!-- Failed suite [Suite] -->

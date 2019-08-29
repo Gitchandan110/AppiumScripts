@@ -46,21 +46,13 @@
 		</classes>
 	</test> -->
 	
-	<test name="SK_GroupCall">
+	<!-- <test name="SK_GroupCall">
 		<classes>
 			<class name="com.appium.DeviceScripts.SK_GroupCall" />
 		</classes>
-	</test>
+	</test> -->
 	
-
-	<test name="SK_Timer_Incident">
-		<classes>
-			<class name="com.appium.DeviceScripts.SK_Timer_Incident" />
-		</classes>
-	</test>
-	
-	
-	<test name="SK_Tips_Anonymous">
+		<test name="SK_Tips_Anonymous">
 		<classes>
 			<class name="com.appium.DeviceScripts.SK_Tips_Anonymous" />
 		</classes>
@@ -71,6 +63,24 @@
 			<class name="com.appium.DeviceScripts.SK_Tips_GeoLocation" />
 		</classes>
 	</test>
+	
+	<test name="SK_Tips_Blank">
+		<classes>
+			<class name="com.appium.DeviceScripts.SK_Tips_Blank" />
+		</classes>
+	</test>
+	
+	
+	
+
+	<test name="SK_Timer_Incident">
+		<classes>
+			<class name="com.appium.DeviceScripts.SK_Timer_Incident" />
+		</classes>
+	</test>
+	
+	
+
 	
 	
 	

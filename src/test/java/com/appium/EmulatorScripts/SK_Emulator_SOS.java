@@ -56,7 +56,7 @@ public class SK_Emulator_SOS extends Base {
 		signinbl.fillPassword();
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
-		quicktipsbl.CloseTips();
+		quicktipsbl.closeTips();
 
 	}
 

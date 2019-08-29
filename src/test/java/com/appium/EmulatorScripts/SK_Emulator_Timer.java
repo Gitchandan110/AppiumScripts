@@ -51,7 +51,7 @@ public class SK_Emulator_Timer extends Base {
 		signinbl.fillPassword();
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
-		quicktipsbl.CloseTips();
+		quicktipsbl.closeTips();
 
 	}
 

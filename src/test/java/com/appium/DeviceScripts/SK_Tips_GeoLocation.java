@@ -48,12 +48,12 @@ public class SK_Tips_GeoLocation extends Base{
 		signinbl.fillPassword();
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
-		quicktipsbl.CloseTips();
+		quicktipsbl.closeTips();
 		homepagebl.startTips();
-		tipsubmitbl.RemainAnonymous();
-		tipsubmitbl.IncludeGeoLocation();
-		tipsubmitbl.TipsDescription();
-		tipsubmitbl.IncludeGeoLocation();
+		tipsubmitbl.uncheckRemainAnonymous();
+		tipsubmitbl.selectIncludeGeoLocation();
+		tipsubmitbl.enterTipsDescription();
+		tipsubmitbl.enterTipsName();
 		tipsubmitbl.SendTips();
 
 	}

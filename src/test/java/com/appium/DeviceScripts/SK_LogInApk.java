@@ -46,7 +46,7 @@ public class SK_LogInApk extends Base {
 		signinbl.fillPassword();
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
-		quicktipsbl.CloseTips();
+		quicktipsbl.closeTips();
 
 	}
 

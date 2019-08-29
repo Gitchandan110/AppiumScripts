@@ -52,7 +52,7 @@ public class SK_SafeWalk_Incident extends Base {
 		signinbl.fillPassword();
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
-		quicktipsbl.CloseTips();
+		quicktipsbl.closeTips();
 
 	}
 

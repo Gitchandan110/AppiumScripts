@@ -51,7 +51,7 @@ public class SK_SOS_Incident extends Base{
 		signinbl.fillPassword();
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
-		quicktipsbl.CloseTips();
+		quicktipsbl.closeTips();
 		homepagebl.startSOS();
 		incidentscreenbl.EndIncident();
 		incidentscreenbl.SelectEndReason();

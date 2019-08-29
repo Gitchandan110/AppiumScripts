@@ -13,7 +13,7 @@ public class SK_QuickTipsBL extends SK_QuickTipsPO {
 	
 	String TestCaseSheet="TestCase";
 	
-	public void CloseTips() {
+	public void closeTips() {
 		
 		try {
 

@@ -4,7 +4,7 @@ import com.appium.pageobject.SK_TipSubmitPO;
 
 public class SK_TipSubmitBL extends SK_TipSubmitPO {
 
-	public void TipsDescription() {
+	public void enterTipsDescription() {
 
 		try {
 
@@ -26,21 +26,25 @@ public class SK_TipSubmitBL extends SK_TipSubmitPO {
 		}
 	}
 
-	public void TipsName() {
+	public void enterTipsName() {
 
 		try {
 
-			if (txtTipsName().isDisplayed()) {
+			if (driver.isKeyboardShown() == true) {
+				driver.hideKeyboard();
 
-				txtTipsName().sendKeys("Tips Name");
+				if (txtTipsName().isDisplayed()) {
 
-				System.out.println("Tips Name is filled");
+					txtTipsName().sendKeys("Tips Name");
 
-			} else {
+					System.out.println("Tips Name is filled");
 
-				System.out.println("Tips Name not filled");
+				} else {
+
+					System.out.println("Tips Name not filled");
+				}
+
 			}
-
 		} catch (Exception ex) {
 
 			System.out.println("Exception in Tips Name:" + ex.getMessage());
@@ -48,7 +52,7 @@ public class SK_TipSubmitBL extends SK_TipSubmitPO {
 		}
 	}
 
-	public void RemainAnonymous() {
+	public void uncheckRemainAnonymous() {
 
 		try {
 
@@ -56,7 +60,7 @@ public class SK_TipSubmitBL extends SK_TipSubmitPO {
 
 				System.out.println("Remain Anonymous status is:" + chkboxRemainAnonymous().getAttribute("checked"));
 
-				txtTipsName().click();
+				chkboxRemainAnonymous().click();
 
 				System.out.println("Remain Anonymous uncheked");
 
@@ -73,7 +77,7 @@ public class SK_TipSubmitBL extends SK_TipSubmitPO {
 
 	}
 
-	public void IncludeGeoLocation() {
+	public void selectIncludeGeoLocation() {
 
 		try {
 
@@ -106,7 +110,7 @@ public class SK_TipSubmitBL extends SK_TipSubmitPO {
 			if (btnSendTip().isDisplayed()) {
 
 				btnSendTip().click();
-
+				Thread.sleep(5000);
 				System.out.println("Tips Send");
 
 			} else {

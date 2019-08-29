@@ -21,6 +21,7 @@ import com.appium.commonutils.Base;
 
 
 public class SK_Emulator_CreateAccount extends Base{
+	
 	SK_LaunchBL launchbl = PageFactory.initElements(driver, SK_LaunchBL.class);
 	SK_TermsOfServicesBL termsbl=PageFactory.initElements(driver, SK_TermsOfServicesBL.class);
 	SK_PrivacyPolicyBL privacypolicybl=PageFactory.initElements(driver, SK_PrivacyPolicyBL.class);
@@ -78,7 +79,7 @@ public class SK_Emulator_CreateAccount extends Base{
 	    addEmergencyContactbl.fillPhoneNumber();
 	    addEmergencyContactbl.SaveEmergencyContact();
 	    permissionbl.acceptPermissions();
-	    quicktipsbl.CloseTips();
+	    quicktipsbl.closeTips();
 		
 	}
 	

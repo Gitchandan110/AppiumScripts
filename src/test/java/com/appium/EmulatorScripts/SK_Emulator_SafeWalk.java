@@ -50,7 +50,7 @@ public class SK_Emulator_SafeWalk extends Base {
 		signinbl.fillPassword();
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
-		quicktipsbl.CloseTips();
+		quicktipsbl.closeTips();
 
 	}
 

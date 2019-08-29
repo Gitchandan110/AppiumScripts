@@ -48,10 +48,10 @@ public class SK_Tips_Anonymous extends Base {
 		signinbl.fillPassword();
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
-		quicktipsbl.CloseTips();
+		quicktipsbl.closeTips();
 		homepagebl.startTips();
-		tipsubmitbl.TipsDescription();
-		tipsubmitbl.IncludeGeoLocation();
+		tipsubmitbl.enterTipsDescription();
+		tipsubmitbl.enterTipsName();
 		tipsubmitbl.SendTips();
 
 	}
