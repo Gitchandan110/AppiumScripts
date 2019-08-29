@@ -3,6 +3,7 @@ package com.appium.DeviceScripts;
 import java.net.MalformedURLException;
 
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import com.appium.bussinessLogic.SK_HomePageBL;
@@ -10,6 +11,7 @@ import com.appium.bussinessLogic.SK_LaunchBL;
 import com.appium.bussinessLogic.SK_PermissionBL;
 import com.appium.bussinessLogic.SK_PrivacyPolicyBL;
 import com.appium.bussinessLogic.SK_QuickTipsBL;
+import com.appium.bussinessLogic.SK_SettingsBL;
 import com.appium.bussinessLogic.SK_SignInBL;
 import com.appium.bussinessLogic.SK_TermsOfServicesBL;
 import com.appium.bussinessLogic.SK_TipSubmitBL;
@@ -25,7 +27,7 @@ public class SK_Tips_Anonymous extends Base {
 	SK_QuickTipsBL quicktipsbl = PageFactory.initElements(driver, SK_QuickTipsBL.class);
 	SK_HomePageBL homepagebl = PageFactory.initElements(driver, SK_HomePageBL.class);
 	SK_TipSubmitBL tipsubmitbl = PageFactory.initElements(driver, SK_TipSubmitBL.class);
-
+	SK_SettingsBL settingsbl = PageFactory.initElements(driver, SK_SettingsBL.class);
 	@BeforeTest
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
@@ -51,6 +53,15 @@ public class SK_Tips_Anonymous extends Base {
 		tipsubmitbl.TipsDescription();
 		tipsubmitbl.IncludeGeoLocation();
 		tipsubmitbl.SendTips();
+
+	}
+	
+	@AfterMethod
+
+	public void logOutApp() {
+
+		homepagebl.clickSetting();
+		settingsbl.logOutSK();
 
 	}
 }

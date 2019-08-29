@@ -7,7 +7,7 @@
 			class-name="com.ExtentReportListner.ExtentReporterNG" />
 	</listeners>
 
-	 	<test name="SK_Emulator_SOS">
+	<!--  	<test name="SK_Emulator_SOS">
 		<classes>
 			<class name="com.appium.EmulatorScripts.SK_Emulator_SOS" />
 		</classes>
@@ -20,19 +20,57 @@
 		</classes>
 	</test>
 	
-	<!-- <test name="SK_Emulator_GroupCall">
+	<test name="SK_Emulator_GroupCall">
 		<classes>
 			<class name="com.appium.EmulatorScripts.SK_Emulator_GroupCall" />
 		</classes>
-	</test> -->
+	</test>
 	
 
 	<test name="SK_Emulator_Timer">
 		<classes>
 			<class name="com.appium.EmulatorScripts.SK_Emulator_Timer" />
 		</classes>
+	</test> -->
+	
+	<!-- <test name="SK_SOS_Incident">
+		<classes>
+			<class name="com.appium.DeviceScripts.SK_SOS_Incident" />
+		</classes>
+	</test>
+
+	
+	<test name="SK_SafeWalk_Incident">
+		<classes>
+			<class name="com.appium.DeviceScripts.SK_SafeWalk_Incident" />
+		</classes>
+	</test> -->
+	
+	<test name="SK_GroupCall">
+		<classes>
+			<class name="com.appium.DeviceScripts.SK_GroupCall" />
+		</classes>
 	</test>
 	
+
+	<test name="SK_Timer_Incident">
+		<classes>
+			<class name="com.appium.DeviceScripts.SK_Timer_Incident" />
+		</classes>
+	</test>
+	
+	
+	<test name="SK_Tips_Anonymous">
+		<classes>
+			<class name="com.appium.DeviceScripts.SK_Tips_Anonymous" />
+		</classes>
+	</test>
+	
+	<test name="SK_Tips_GeoLocation">
+		<classes>
+			<class name="com.appium.DeviceScripts.SK_Tips_GeoLocation" />
+		</classes>
+	</test>
 	
 	
 	
