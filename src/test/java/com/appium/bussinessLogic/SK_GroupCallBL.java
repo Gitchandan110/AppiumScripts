@@ -10,9 +10,14 @@ public class SK_GroupCallBL extends SK_GroupCallPO {
 		try {
 			   Base.waitFor30Seconds(btnGroupCallActiveList());
 		
+		/*	if (btnSubscribeGroupCall().isDisplayed()){
+				System.out.println("Subscribe group call button found");
+				btnSubscribeGroupCall().click();
+				System.out.println("User is Subscribed for group call");
+			}*/
+			
 			if (btnGroupCallActiveList().isDisplayed()) {
-				
-				System.out.println("Group call button found"+btnGroupCallList().getText());
+				System.out.println("Group call list button found"+btnGroupCallList().getText());
 				btnGroupCallActiveList().click();
 			    System.out.println("Group call button clicked");
 			}

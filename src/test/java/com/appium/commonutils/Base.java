@@ -33,7 +33,7 @@ public class Base {
 
 	public static AppiumDriver launchApkKarbon() throws MalformedURLException {
 
-		File appDir = new File("C:\\Users\\Chandan\\git\\repository\\ArtifactIdAppium\\ApkFile");
+		File appDir = new File("C:\\Users\\Chandan\\Git\\ArtifactIdAppium\\ApkFile");
 		File apk = new File(appDir, "SK_51_develop_26_Aug_19.apk");
 
 		DesiredCapabilities capability = new DesiredCapabilities();
@@ -116,7 +116,7 @@ public class Base {
 		DesiredCapabilities capability = new DesiredCapabilities();
 		capability.setCapability("deviceName", "Android Emulator");
 		capability.setCapability("udid", "emulator-5554");
-		capability.setCapability("platformVersion", "7.0");
+		capability.setCapability("platformVersion", "8.0");
 		capability.setCapability("platformName", "Android");
 		capability.setCapability("appPackage", "com.safety.armourgrid");
 		capability.setCapability("appActivity", "com.safety.armourgrid.activity.SplashActivity");

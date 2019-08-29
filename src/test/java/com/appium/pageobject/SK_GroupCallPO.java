@@ -20,9 +20,12 @@ public class SK_GroupCallPO extends Base{
 	
 	public MobileElement btnGroupCallActiveList() {
 		
-		By BtnActiveList=By.id("com.safety.armourgrid:id/list_group_active");	
-			
-		return driver.findElement(BtnActiveList);
+	
+	//    By BtnActiveList=By.id("com.safety.armourgrid:id/groups_recycler_view");
+	    
+	    By BtnActiveList=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout");
+		
+	    return driver.findElement(BtnActiveList);
 	
 	
 	}

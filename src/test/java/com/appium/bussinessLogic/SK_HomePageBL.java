@@ -9,7 +9,7 @@ public class SK_HomePageBL extends SK_HomePagePO {
 		try {
 
 			if (btnSOS().isDisplayed()) {
-
+				System.out.println("SOS button found");
 				btnSOS().click();
 				System.out.println("SOS started");
 				Thread.sleep(40000);
@@ -93,21 +93,25 @@ public class SK_HomePageBL extends SK_HomePagePO {
 
 		}
 	}
-	
-	
+
 	public void clickSetting() {
-		
-		
-		btnSettings().click();
-		System.out.println("Setting Button Clicked");
-		
-		
-		
+
+		try {
+			if (btnSettings().isDisplayed()) {
+				btnSettings().click();
+				System.out.println("Setting Button Clicked");
+
+			} else {
+
+				System.out.println("Setting Button not found");
+			}
+
+		} catch (Exception ex) {
+
+			System.out.println(ex.getMessage());
+			System.out.println(ex.fillInStackTrace());
+		}
+
 	}
-	
-	
-	
-	
-	
-	
+
 }

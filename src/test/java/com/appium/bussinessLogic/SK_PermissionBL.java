@@ -9,7 +9,7 @@ public class SK_PermissionBL extends SK_PermissionPO{
 		
 		try { 
 			
-		Base.waitFor300Seconds(BtnAllow());	
+	//	Base.waitFor300Seconds(BtnAllow());	
 			
 	 for(int i=0;i<4;i++) {
 			

@@ -1,9 +1,15 @@
 package com.appium.bussinessLogic;
 
+import org.openqa.selenium.support.PageFactory;
+
+import com.appium.commonutils.Base;
 import com.appium.commonutils.ExcelUtils;
 import com.appium.pageobject.SK_QuickTipsPO;
 
 public class SK_QuickTipsBL extends SK_QuickTipsPO {
+	
+	SK_HomePageBL homepagebl=PageFactory.initElements(driver, SK_HomePageBL.class);
+	
 	
 	String TestCaseSheet="TestCase";
 	
@@ -14,10 +20,12 @@ public class SK_QuickTipsBL extends SK_QuickTipsPO {
 			if (btnCloseTips().isDisplayed()) {
 				
 				ExcelUtils.WriteExcel(TestCaseSheet, 5, 2);
-
 				btnCloseTips().click();
-				Thread.sleep(5000);
 				System.out.println("Quick Tips Closed");
+				Base.GetDateTime();
+				Thread.sleep(20000);
+				Base.GetDateTime();
+				
 
 			} else {
 

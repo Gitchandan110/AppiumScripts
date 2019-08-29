@@ -13,6 +13,7 @@ public class SK_SettingsBL extends SK_SettingsPO{
 		Base.scrolltoElement("Logout");
 		logOutOption().click();
 		logOutPopUpYes().click();
+		System.out.println("Logout from the App");
 		
 }
 	

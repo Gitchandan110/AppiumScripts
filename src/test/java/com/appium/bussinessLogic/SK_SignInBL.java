@@ -1,9 +1,17 @@
 package com.appium.bussinessLogic;
 
+import org.openqa.selenium.support.PageFactory;
+
+import com.appium.commonutils.Base;
 import com.appium.commonutils.ExcelUtils;
+import com.appium.pageobject.SK_PermissionPO;
+import com.appium.pageobject.SK_QuickTipsPO;
 import com.appium.pageobject.SK_SignInPO;
 
 public class SK_SignInBL extends SK_SignInPO {
+	
+	
+	SK_PermissionPO permissionpo=PageFactory.initElements(driver, SK_PermissionPO.class);
 	
 	String LoginDataSheet = "Login";
 	String TestCaseSheet = "TestCase";
@@ -62,10 +70,11 @@ public class SK_SignInBL extends SK_SignInPO {
 		try {
 
 			if (Submit().isDisplayed()) {
-
 				Submit().click();
 				System.out.println("SignIn button Clicked");
-			
+				Base.GetDateTime();
+				Base.waitFor30Seconds(permissionpo.BtnAllow());
+		        Base.GetDateTime();
 
 			}
 

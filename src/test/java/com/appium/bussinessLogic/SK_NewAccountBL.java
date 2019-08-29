@@ -11,10 +11,10 @@ public class SK_NewAccountBL extends SK_NewAccountPO {
 		try {
 			if (txtFirstName().isDisplayed()) {
 				txtFirstName().click();
-				txtFirstName().sendKeys("Appium");
+				txtFirstName().sendKeys("Android");
 				System.out.println("FirstName entered");
 				if (txtLastName().isDisplayed()) {
-					txtLastName().sendKeys("Test");
+					txtLastName().sendKeys("SK");
 					System.out.println("LastName entered");
 				}
 				if (driver.isKeyboardShown() == true) {
@@ -27,6 +27,7 @@ public class SK_NewAccountBL extends SK_NewAccountPO {
 					if (driver.isKeyboardShown() == true) {
 						driver.hideKeyboard();
 						if (txtSafeWord().isDisplayed()) {
+							txtSafeWord().click();
 							txtSafeWord().sendKeys("Safe");
 							System.out.println("SafeWord entered");
 
@@ -35,18 +36,18 @@ public class SK_NewAccountBL extends SK_NewAccountPO {
 						if (driver.isKeyboardShown() == true) {
 							driver.hideKeyboard();
 							if (txtEmail().isDisplayed()) {
-								txtEmail().sendKeys("appium3@yopmail.com");
+								txtEmail().sendKeys("android@yopmail.com");
 								System.out.println("Email entered");
 
 								if (driver.isKeyboardShown() == true) {
 									driver.hideKeyboard();
 									txtConfirmEmail().click();
-									txtConfirmEmail().sendKeys("appium3@yopmail.com");
+									txtConfirmEmail().sendKeys("android@yopmail.com");
 									System.out.println("Confirm Email entered");
 								} else {
 
 									txtConfirmEmail().click();
-									txtConfirmEmail().sendKeys("appium3@yopmail.com");
+									txtConfirmEmail().sendKeys("android@yopmail.com");
 									System.out.println("Confirm Email entered");
 
 								}
