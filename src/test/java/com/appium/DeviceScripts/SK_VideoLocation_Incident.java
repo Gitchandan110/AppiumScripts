@@ -64,7 +64,7 @@ public class SK_VideoLocation_Incident extends Base {
 
 		homepagebl.clickSetting();
 		settingsbl.SelectIncidentOption();
-		incidentoptionbl.btnVideoLocationIncident();
+		incidentoptionbl.clickVideoLocationIncident();
 		incidentoptionbl.clickButtonBack();
 		settingsbl.clickButtonBack();
 		homepagebl.startSOS();

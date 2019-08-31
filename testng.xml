@@ -13,7 +13,6 @@
 		</classes>
 	</test>
 
-	
 	<test name="SK_Emulator_SafeWalk">
 		<classes>
 			<class name="com.appium.EmulatorScripts.SK_Emulator_SafeWalk" />
@@ -45,7 +44,6 @@
 	</test>
 	
 	 -->
-	
 	
 	<test name="SK_SOS_Incident">
 		<classes>
