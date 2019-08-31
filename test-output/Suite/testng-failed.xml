@@ -4,16 +4,15 @@
   <listeners>
     <listener class-name="com.ExtentReportListner.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="SK_Timer_Incident(failed)">
+  <test thread-count="5" name="SK_Tips_GeoLocation(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_Timer_Incident">
+      <class name="com.appium.DeviceScripts.SK_Tips_GeoLocation">
         <methods>
           <include name="launchSafetyKuvrr"/>
-          <include name="loginApp"/>
           <include name="logOutApp"/>
           <include name="testTimerIncident"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_Timer_Incident -->
+      </class> <!-- com.appium.DeviceScripts.SK_Tips_GeoLocation -->
     </classes>
-  </test> <!-- SK_Timer_Incident(failed) -->
+  </test> <!-- SK_Tips_GeoLocation(failed) -->
 </suite> <!-- Failed suite [Suite] -->
