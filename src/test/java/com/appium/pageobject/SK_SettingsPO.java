@@ -106,6 +106,11 @@ public class SK_SettingsPO extends Base {
 
 	}
 	
+	public MobileElement btnNavigateBack() {
+
+		By BtnBack = By.xpath("//android.widget.ImageButton[@content-desc=\"Navigate up\"]");
+		return driver.findElement(BtnBack);
 	
+	}
 
 }

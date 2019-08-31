@@ -37,12 +37,13 @@ public class SK_GroupCallPO extends Base{
 	return driver.findElement(SubscribeButton);
 	
 	
-	
-
-		
-		
-		
 	}
 	
+	public MobileElement btnNavigateBack() {
 
+		By BtnBack = By.xpath("//android.widget.ImageButton[@content-desc=\"Navigate up\"]");
+		
+		return driver.findElement(BtnBack);
+
+	}
 }
