@@ -1,10 +1,10 @@
 package com.appium.bussinessLogic;
 
-import com.appium.pageobject.SK_NewAccountPO;
+import com.appium.pageobject.SK_ProfilePO;
 
 import io.appium.java_client.AppiumDriver;
 
-public class SK_NewAccountBL extends SK_NewAccountPO {
+public class SK_NewAccountBL extends SK_ProfilePO {
 
 	public void fillProfileDetails() {
 
