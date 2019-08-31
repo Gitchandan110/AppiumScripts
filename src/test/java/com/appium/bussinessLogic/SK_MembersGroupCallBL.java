@@ -31,5 +31,20 @@ public class SK_MembersGroupCallBL extends SK_MembersGroupCallPO {
 			System.out.println("Group Call Ended");
 		}
 	}
+	
+	public void clickButtonBack() {
+
+		try {
+
+			if (btnNavigateBack().isDisplayed()) {
+				btnNavigateBack().click();
+				System.out.println("User Navigate Back");
+			}
+
+		} catch (Exception ex) {
+			System.out.println("Exception in Naivigation Back:" + ex.getMessage());
+		}
+	}
+	
 
 }

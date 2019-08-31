@@ -47,9 +47,6 @@
 	 -->
 	
 	
-	
-	
-	
 	<test name="SK_SOS_Incident">
 		<classes>
 			<class name="com.appium.DeviceScripts.SK_SOS_Incident" />
@@ -87,17 +84,24 @@
 		</classes>
 	</test>
 	
+	<test name="SK_AudioLocation_Incident">
+		<classes>
+			<class name="com.appium.DeviceScripts.SK_AudioLocation_Incident" />
+		</classes>
+	</test>
 	
+	<test name="SK_VideoLocation_Incident">
+		<classes>
+			<class name="com.appium.DeviceScripts.SK_VideoLocation_Incident" />
+		</classes>
+	</test>
 
+	
 	<test name="SK_Timer_Incident">
 		<classes>
 			<class name="com.appium.DeviceScripts.SK_Timer_Incident" />
 		</classes>
 	</test>
-	
-	
-
-	
 	
 	
 
