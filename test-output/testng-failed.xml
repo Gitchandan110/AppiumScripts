@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.ExtentReportListner.ExtentReporterNG"/>
-  </listeners>
-  <test thread-count="5" name="SK_Tips_GeoLocation(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_Tips_GeoLocation">
+      <class name="com.appium.DeviceScripts.SK_Photo_Incident">
         <methods>
           <include name="launchSafetyKuvrr"/>
+          <include name="Login"/>
+          <include name="verifyPhotoAudioIncident"/>
           <include name="logOutApp"/>
-          <include name="testTimerIncident"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_Tips_GeoLocation -->
+      </class> <!-- com.appium.DeviceScripts.SK_Photo_Incident -->
     </classes>
-  </test> <!-- SK_Tips_GeoLocation(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
