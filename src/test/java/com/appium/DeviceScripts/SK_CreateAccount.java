@@ -10,9 +10,9 @@ import org.testng.annotations.Test;
 
 import com.appium.bussinessLogic.SK_AddEmergencyContactBL;
 import com.appium.bussinessLogic.SK_AddOrganizationBL;
+import com.appium.bussinessLogic.SK_CreateProfileBL;
 import com.appium.bussinessLogic.SK_HomePageBL;
 import com.appium.bussinessLogic.SK_LaunchBL;
-import com.appium.bussinessLogic.SK_NewAccountBL;
 import com.appium.bussinessLogic.SK_PermissionBL;
 import com.appium.bussinessLogic.SK_PrivacyPolicyBL;
 import com.appium.bussinessLogic.SK_QuickTipsBL;
@@ -27,13 +27,15 @@ public class SK_CreateAccount extends Base{
 	SK_LaunchBL launchbl=PageFactory.initElements(driver, SK_LaunchBL.class);
 	SK_TermsOfServicesBL termsbl=PageFactory.initElements(driver, SK_TermsOfServicesBL.class);
 	SK_PrivacyPolicyBL privacypolicybl=PageFactory.initElements(driver, SK_PrivacyPolicyBL.class);
-	SK_NewAccountBL newaccountbl=PageFactory.initElements(driver, SK_NewAccountBL.class);
+	SK_CreateProfileBL createProfilebl=PageFactory.initElements(driver, SK_CreateProfileBL.class);
 	SK_AddOrganizationBL addOrgbl=PageFactory.initElements(driver, SK_AddOrganizationBL.class);
 	SK_AddEmergencyContactBL addEmergencyContactbl=PageFactory.initElements(driver, SK_AddEmergencyContactBL.class);
 	SK_PermissionBL permissionbl=PageFactory.initElements(driver, SK_PermissionBL.class);
 	SK_QuickTipsBL quicktipsbl=PageFactory.initElements(driver, SK_QuickTipsBL.class);
 	SK_HomePageBL homepagebl = PageFactory.initElements(driver, SK_HomePageBL.class);
 	SK_SettingsBL settingsbl = PageFactory.initElements(driver, SK_SettingsBL.class);
+	
+	
 	
 	 @BeforeTest
 	    
@@ -53,7 +55,8 @@ public class SK_CreateAccount extends Base{
 		launchbl.clickBtnNewAccount();
 		termsbl.acceptTermsOfServices();
 		privacypolicybl.acceptPrivacyPolicy();
-		newaccountbl.fillProfileDetails();
+		createProfilebl.fillProfileDetails();
+		createProfilebl.saveProfile();
 		addOrgbl.fillOrgCode();
 	    addOrgbl.saveOrgCode();
 	    addEmergencyContactbl.fillFirstName();

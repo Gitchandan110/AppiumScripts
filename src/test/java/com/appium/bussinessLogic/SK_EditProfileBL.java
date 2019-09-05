@@ -29,7 +29,7 @@ public class SK_EditProfileBL extends SK_EditProfilePO {
 					"new UiScrollable(new UiSelector()).scrollIntoView(" + "new UiSelector().text(\"mm/dd/YYYY\"));"));
 			if (txtDateOfBirth().isDisplayed()) {
 				txtDateOfBirth().click();
-				txtDateOfBirth().sendKeys("01/11/90");
+				txtDateOfBirth().sendKeys("01/11/2001");
 				System.out.println(" DOB entered");
 			}
 
@@ -139,7 +139,7 @@ public class SK_EditProfileBL extends SK_EditProfilePO {
 				driver.hideKeyboard();
 				if (txtAutoMake().isDisplayed()) {
 					txtAutoMake().click();
-					txtAutoMake().sendKeys("Auto Make");
+					txtAutoMake().sendKeys("BMW");
 					System.out.println("Auto Maker filled");
 
 				}
@@ -149,7 +149,7 @@ public class SK_EditProfileBL extends SK_EditProfilePO {
 				driver.hideKeyboard();
 				if (txtAutoModel().isDisplayed()) {
 					txtAutoModel().click();
-					txtAutoModel().sendKeys("Auto Model");
+					txtAutoModel().sendKeys("BMW 2019");
 					System.out.println("Auto Model filled");
 
 				}
@@ -159,7 +159,7 @@ public class SK_EditProfileBL extends SK_EditProfilePO {
 				driver.hideKeyboard();
 				if (txtAutoColor().isDisplayed()) {
 					txtAutoColor().click();
-					txtAutoColor().sendKeys("Auto Color");
+					txtAutoColor().sendKeys("Black");
 					System.out.println("Auto Color filled");
 
 				}
@@ -199,7 +199,7 @@ public class SK_EditProfileBL extends SK_EditProfilePO {
 				driver.hideKeyboard();
 				if (txtMedicAlertInfo().isDisplayed()) {
 					txtMedicAlertInfo().click();
-					txtMedicAlertInfo().sendKeys("Medic Alert");
+					txtMedicAlertInfo().sendKeys("Medic Alert Bracelet");
 					System.out.println("Medic Alert filled");
 
 				}
@@ -209,7 +209,7 @@ public class SK_EditProfileBL extends SK_EditProfilePO {
 				driver.hideKeyboard();
 				if (txtAdaConsiderations().isDisplayed()) {
 					txtAdaConsiderations().click();
-					txtAdaConsiderations().sendKeys("Ada Consideration");
+					txtAdaConsiderations().sendKeys("The Americans with Disabilities Act gives civil rights protections to individuals with disabilities similar to those provided to individuals on the basis of race, color, sex, national origin, age, and religion. It guarantees equal opportunity for individuals with disabilities in public accommodations, employment, transportation, State and local government services, and telecommunications.");
 					System.out.println("Ada Consideration filled");
 
 				}
