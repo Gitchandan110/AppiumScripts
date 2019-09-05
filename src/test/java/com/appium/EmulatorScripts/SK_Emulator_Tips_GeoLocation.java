@@ -66,7 +66,7 @@ public class SK_Emulator_Tips_GeoLocation extends Base{
 	public void logOutApp() {
 
 		homepagebl.clickSetting();
-		settingsbl.logOutSK();
+		settingsbl.selectOptionLogOut();
 
 	}
 }

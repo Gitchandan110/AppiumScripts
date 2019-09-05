@@ -69,7 +69,7 @@ public class SK_Emulator_SafeWalk extends Base {
 	public void logOutApp() {
 		
 		homepagebl.clickSetting();
-		settingsbl.logOutSK();
+		settingsbl.selectOptionLogOut();
 		
 		
 	}

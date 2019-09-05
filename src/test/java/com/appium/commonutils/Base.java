@@ -116,7 +116,7 @@ public class Base {
 		DesiredCapabilities capability = new DesiredCapabilities();
 		capability.setCapability("deviceName", "Android Emulator");
 		capability.setCapability("udid", "emulator-5554");
-		capability.setCapability("platformVersion", "8.0");
+		capability.setCapability("platformVersion", "7.0");
 		capability.setCapability("platformName", "Android");
 		capability.setCapability("appPackage", "com.safety.armourgrid");
 		capability.setCapability("appActivity", "com.safety.armourgrid.activity.SplashActivity");

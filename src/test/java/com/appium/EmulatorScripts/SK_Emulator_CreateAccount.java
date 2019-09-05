@@ -89,7 +89,7 @@ public class SK_Emulator_CreateAccount extends Base{
 	public void logOutApp() {
 		
 		homepagebl.clickSetting();
-		settingsbl.logOutSK();
+		settingsbl.selectOptionLogOut();
 		
 		
 	}

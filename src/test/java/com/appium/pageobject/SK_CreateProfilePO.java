@@ -7,7 +7,7 @@ import com.appium.commonutils.Base;
 
 import io.appium.java_client.MobileElement;
 
-public class SK_ProfilePO extends Base {
+public class SK_CreateProfilePO extends Base {
 
 	public WebElement txtFirstName() {
 
@@ -64,15 +64,23 @@ public class SK_ProfilePO extends Base {
 		return driver.findElement(AdditionalInfo);
 	}
 
+	public WebElement frameAdditionalInfo() {
+
+		By FrameAdditionalInfo = By.id("com.safety.armourgrid:id/edit_profile_extra_container");
+		return driver.findElement(FrameAdditionalInfo);
+	}
+
 	public WebElement txtDateOfBirth() {
 
 		By DOB = By.id("com.safety.armourgrid:id/register_edit_dob");
+
 		return driver.findElement(DOB);
 	}
 
 	public WebElement txtGender() {
 
 		By Gender = By.id("com.safety.armourgrid:id/register_edit_gender");
+
 		return driver.findElement(Gender);
 	}
 
@@ -177,20 +185,13 @@ public class SK_ProfilePO extends Base {
 		By AdaConsiderations = By.id("com.safety.armourgrid:id/register_edit_adaConsiderations");
 		return driver.findElement(AdaConsiderations);
 	}
-	
+
 	public WebElement btnSaveProfile() {
 
 		By SaveProfile = By.id("com.safety.armourgrid:id/confirm");
 
 		return driver.findElement(SaveProfile);
 	}
+
 	
-	public WebElement btnChangePassword() {
-
-		By ChangePassword = By.id("com.safety.armourgrid:id/edit_profile_change_password");
-
-		return driver.findElement(ChangePassword);
-	}
-	
-
 }

@@ -72,7 +72,7 @@ public class SK_Emulator_Timer extends Base {
 	public void logOutApp() {
 
 		homepagebl.clickSetting();
-		settingsbl.logOutSK();
+		settingsbl.selectOptionLogOut();
 
 	}
 

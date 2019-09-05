@@ -74,7 +74,7 @@ public class SK_Timer_Incident extends Base {
 	public void logOutApp() {
 
 		homepagebl.clickSetting();
-		settingsbl.logOutSK();
+		settingsbl.selectOptionLogOut();
 
 	}
 

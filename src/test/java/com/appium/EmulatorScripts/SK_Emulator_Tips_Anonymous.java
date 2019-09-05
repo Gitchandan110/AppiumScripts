@@ -64,7 +64,7 @@ public class SK_Emulator_Tips_Anonymous extends Base {
 	public void logOutApp() {
 
 		homepagebl.clickSetting();
-		settingsbl.logOutSK();
+		settingsbl.selectOptionLogOut();
 
 	}
 }

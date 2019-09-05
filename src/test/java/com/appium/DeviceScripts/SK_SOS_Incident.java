@@ -37,8 +37,8 @@ public class SK_SOS_Incident extends Base{
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-	//	 launchAppKarbon();
-		launchApkKarbon();
+		 launchAppKarbon();
+	//	launchApkKarbon();
 		System.out.println("App Launched Successfull");
 
 	}
@@ -67,7 +67,7 @@ public class SK_SOS_Incident extends Base{
 	public void logOutApp() {
 		
 		homepagebl.clickSetting();
-		settingsbl.logOutSK();
+		settingsbl.selectOptionLogOut();
 		
 		
 	}

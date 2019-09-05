@@ -37,8 +37,8 @@ public class SK_AudioLocation_Incident extends Base {
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-		// launchAppKarbon();
-		launchApkKarbon();
+		 launchAppKarbon();
+	//	launchApkKarbon();
 		System.out.println("App Launched Successfull");
 
 	}
@@ -64,7 +64,7 @@ public class SK_AudioLocation_Incident extends Base {
 	public void verifyPhotoAudioIncident() throws InterruptedException {
 
 		homepagebl.clickSetting();
-		settingsbl.SelectIncidentOption();
+		settingsbl.SelectOptionIncident();
 		incidentoptionbl.clickAudioIncident();
 		incidentoptionbl.clickButtonBack();
 		settingsbl.clickButtonBack();
@@ -82,7 +82,7 @@ public class SK_AudioLocation_Incident extends Base {
 	public void logOutApp() {
 
 		homepagebl.clickSetting();
-		settingsbl.logOutSK();
+		settingsbl.selectOptionLogOut();
 
 	}
 

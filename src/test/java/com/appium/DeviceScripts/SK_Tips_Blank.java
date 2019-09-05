@@ -63,7 +63,7 @@ public class SK_Tips_Blank extends Base {
 	public void logOutApp() {
 
 		homepagebl.clickSetting();
-		settingsbl.logOutSK();
+		settingsbl.selectOptionLogOut();
 
 	}
 }

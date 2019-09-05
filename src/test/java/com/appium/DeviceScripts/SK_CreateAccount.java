@@ -80,7 +80,7 @@ public class SK_CreateAccount extends Base{
 	//	((AppiumDriver) driver).removeApp("com.safety.armourgrid");
 		
 		homepagebl.clickSetting();
-		settingsbl.logOutSK();
+		settingsbl.selectOptionLogOut();
         
 
         

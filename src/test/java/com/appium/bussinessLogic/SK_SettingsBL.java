@@ -5,19 +5,19 @@ import com.appium.pageobject.SK_SettingsPO;
 
 public class SK_SettingsBL extends SK_SettingsPO {
 
-	public void logOutSK() {
+	public void selectOptionLogOut() {
 
 		Base.scrolltoElement("Logout");
-		logOutOption().click();
-		logOutPopUpYes().click();
+		optionLogOut().click();
+		popupLogOut().click();
 		System.out.println("Logout from the App");
 
 	}
 
-	public void SelectGroupCallOption() throws InterruptedException {
+	public void SelectOptionGroupCall() throws InterruptedException {
 
 		Base.scrolltoElement("Group Call");
-		groupCallOption().click();
+		optionGroupCall().click();
 		Base.GetDateTime();
 		Thread.sleep(10000);
 		System.out.println("Group Call option clicked");
@@ -25,14 +25,32 @@ public class SK_SettingsBL extends SK_SettingsPO {
 
 	}
 
-	public void SelectIncidentOption() throws InterruptedException {
+	public void SelectOptionIncident() throws InterruptedException {
 
 		Base.scrolltoElement("Incident Options");
-		incidentOptions().click();
+		optionIncident().click();
 		Thread.sleep(10000);
 		System.out.println("lncident option clicked");
 
 	}
+	
+	
+	public void SelectOptionProfile() throws InterruptedException {
+
+		Base.scrolltoElement("Profile");
+		optionProfile().click();
+		Thread.sleep(5000);
+		System.out.println("Profile option clicked");
+
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 
 	public void clickButtonBack() {
 

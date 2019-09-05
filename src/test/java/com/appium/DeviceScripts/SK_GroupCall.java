@@ -68,7 +68,7 @@ public class SK_GroupCall extends Base{
 
 	public void GroupCall() throws InterruptedException {
 		
-		settingsbl.SelectGroupCallOption();
+		settingsbl.SelectOptionGroupCall();
 		groupcallbl.ClickBtnGroupListName();
 		membersGPCall.ClickBtnVideoCall();
 		membersGPCall.ClickBtnEndGrpCall();
@@ -81,7 +81,7 @@ public class SK_GroupCall extends Base{
 	public void logOutApp() {
 		
 		homepagebl.clickSetting();
-		settingsbl.logOutSK();
+		settingsbl.selectOptionLogOut();
 		
 		
 	}

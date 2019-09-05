@@ -71,7 +71,7 @@ public class SK_SafeWalk_Incident extends Base {
 	public void logOutApp() {
 
 		homepagebl.clickSetting();
-		settingsbl.logOutSK();
+		settingsbl.selectOptionLogOut();
 
 	}
 
