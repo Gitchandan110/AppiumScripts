@@ -65,7 +65,6 @@ public class SK_LaunchBL extends SK_LaunchPO {
 		try {
 
 			if (BtnNewAccount().isDisplayed()) {
-
 				ExcelUtils.WriteExcel(TestCaseSheet, 3, 2);
 				BtnNewAccount().click();
 				System.out.println("New Account Button Clicked");

@@ -14,7 +14,7 @@ public class SK_CreateProfileBL extends SK_CreateProfilePO {
 
 			if (txtFirstName().isDisplayed()) {
 				txtFirstName().click();
-				txtFirstName().sendKeys("Android");
+				txtFirstName().sendKeys("cp");
 				System.out.println("FirstName entered");
 			}
 
@@ -51,7 +51,7 @@ public class SK_CreateProfileBL extends SK_CreateProfilePO {
 			}
 
 			if (txtEmail().isDisplayed()) {
-				txtEmail().sendKeys("android@yopmail.com");
+				txtEmail().sendKeys("cp@yopmail.com");
 				System.out.println("Email entered");
 
 			}
@@ -62,13 +62,13 @@ public class SK_CreateProfileBL extends SK_CreateProfilePO {
 			}
 			if (txtConfirmEmail().isDisplayed()) {
 				txtConfirmEmail().click();
-				txtConfirmEmail().sendKeys("android@yopmail.com");
+				txtConfirmEmail().sendKeys("cp@yopmail.com");
 				System.out.println("Confirm Email entered");
 
 			} else {
 
 				txtConfirmEmail().click();
-				txtConfirmEmail().sendKeys("android@yopmail.com");
+				txtConfirmEmail().sendKeys("cp@yopmail.com");
 				System.out.println("Confirm Email entered");
 
 			}
@@ -113,8 +113,10 @@ public class SK_CreateProfileBL extends SK_CreateProfilePO {
 	public void fillAdditionalInfo() {
 
 		try {
-
-			Base.scrolltoElement("Additional Info");
+			if (driver.isKeyboardShown() == true) {
+				driver.hideKeyboard();
+			}
+		//	Base.scrolltoElement("Additional Info");
 			if (btnAdditionalInfo().isDisplayed()) {
 				btnAdditionalInfo().click();
 				System.out.println("Additional Info selected");

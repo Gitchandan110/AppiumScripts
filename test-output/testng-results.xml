@@ -2,28 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="300516" started-at="2019-09-05T11:12:05Z" finished-at="2019-09-05T11:17:06Z">
+  <suite name="Default suite" duration-ms="761573" started-at="2019-09-05T12:11:10Z" finished-at="2019-09-05T12:23:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="300516" started-at="2019-09-05T11:12:05Z" finished-at="2019-09-05T11:17:06Z">
-      <class name="com.appium.DeviceScripts.SK_EditProfile">
-        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.appium.DeviceScripts.SK_EditProfile@458c1321]" name="launchApp" is-config="true" duration-ms="36742" started-at="2019-09-05T11:12:05Z" finished-at="2019-09-05T11:12:42Z">
+    <test name="Default test" duration-ms="761573" started-at="2019-09-05T12:11:10Z" finished-at="2019-09-05T12:23:51Z">
+      <class name="com.appium.EmulatorScripts.SK_Emulator_CreateProfile">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.EmulatorScripts.SK_Emulator_CreateProfile@57e1b0c]" name="launchSafetyKuvrr" is-config="true" duration-ms="24959" started-at="2019-09-05T12:11:10Z" finished-at="2019-09-05T12:11:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchApp -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.appium.DeviceScripts.SK_EditProfile@458c1321]" name="Login" is-config="true" duration-ms="62152" started-at="2019-09-05T11:12:42Z" finished-at="2019-09-05T11:13:44Z">
+        </test-method> <!-- launchSafetyKuvrr -->
+        <test-method status="PASS" signature="CreateAccount()[pri:1, instance:com.appium.EmulatorScripts.SK_Emulator_CreateProfile@57e1b0c]" name="CreateAccount" duration-ms="736577" started-at="2019-09-05T12:11:35Z" finished-at="2019-09-05T12:23:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="PASS" signature="Profile()[pri:0, instance:com.appium.DeviceScripts.SK_EditProfile@458c1321]" name="Profile" duration-ms="195487" started-at="2019-09-05T11:13:44Z" finished-at="2019-09-05T11:16:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Profile -->
-        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_EditProfile@458c1321]" name="logOutApp" is-config="true" duration-ms="6108" started-at="2019-09-05T11:16:59Z" finished-at="2019-09-05T11:17:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutApp -->
-      </class> <!-- com.appium.DeviceScripts.SK_EditProfile -->
+        </test-method> <!-- CreateAccount -->
+      </class> <!-- com.appium.EmulatorScripts.SK_Emulator_CreateProfile -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

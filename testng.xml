@@ -71,7 +71,7 @@
 		</classes>
 	</test>
 	
-<!-- 		<test name="SK_Tips_Anonymous">
+		<test name="SK_Tips_Anonymous">
 		<classes>
 			<class name="com.appium.DeviceScripts.SK_Tips_Anonymous" />
 		</classes>
@@ -87,7 +87,7 @@
 		<classes>
 			<class name="com.appium.DeviceScripts.SK_Tips_Blank" />
 		</classes>
-	</test> -->
+	</test>
 	
 	<test name="SK_AudioLocation_Incident">
 		<classes>
@@ -105,6 +105,12 @@
 	<test name="SK_Timer_Incident">
 		<classes>
 			<class name="com.appium.DeviceScripts.SK_Timer_Incident" />
+		</classes>
+	</test>
+	
+	<test name="SK_EditProfile">
+		<classes>
+			<class name="com.appium.DeviceScripts.SK_EditProfile" />
 		</classes>
 	</test>
 	
