@@ -3,14 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_EditProfile">
+      <class name="com.appium.DeviceScripts.SK_DataBaseConnector">
         <methods>
-          <include name="launchApp"/>
-          <include name="Login"/>
-          <include name="Profile"/>
-          <include name="logOutApp"/>
+          <include name="testPostgresDB"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_EditProfile -->
+      </class> <!-- com.appium.DeviceScripts.SK_DataBaseConnector -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

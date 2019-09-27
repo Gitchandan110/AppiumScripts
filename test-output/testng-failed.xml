@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.ExtentReportListner.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="SK_VideoLocation_Incident(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_EditProfile">
+      <class name="com.appium.DeviceScripts.SK_VideoLocation_Incident">
         <methods>
-          <include name="launchApp"/>
-          <include name="Login"/>
-          <include name="Profile"/>
           <include name="logOutApp"/>
+          <include name="verifyPhotoAudioIncident"/>
+          <include name="Login"/>
+          <include name="launchSafetyKuvrr"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_EditProfile -->
+      </class> <!-- com.appium.DeviceScripts.SK_VideoLocation_Incident -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- SK_VideoLocation_Incident(failed) -->
+</suite> <!-- Failed suite [Suite] -->
