@@ -4,6 +4,86 @@
   <listeners>
     <listener class-name="com.ExtentReportListner.ExtentReporterNG"/>
   </listeners>
+  <test thread-count="5" name="SK_SOS_Incident(failed)">
+    <classes>
+      <class name="com.appium.DeviceScripts.SK_SOS_Incident">
+        <methods>
+          <include name="launchSafetyKuvrr"/>
+          <include name="testSOSIncident"/>
+          <include name="logOutApp"/>
+        </methods>
+      </class> <!-- com.appium.DeviceScripts.SK_SOS_Incident -->
+    </classes>
+  </test> <!-- SK_SOS_Incident(failed) -->
+  <test thread-count="5" name="SK_SafeWalk_Incident(failed)">
+    <classes>
+      <class name="com.appium.DeviceScripts.SK_SafeWalk_Incident">
+        <methods>
+          <include name="logOutApp"/>
+          <include name="loginApp"/>
+          <include name="testSafewalkIncident"/>
+          <include name="launchSafetyKuvrr"/>
+        </methods>
+      </class> <!-- com.appium.DeviceScripts.SK_SafeWalk_Incident -->
+    </classes>
+  </test> <!-- SK_SafeWalk_Incident(failed) -->
+  <test thread-count="5" name="SK_GroupCall(failed)">
+    <classes>
+      <class name="com.appium.DeviceScripts.SK_GroupCall">
+        <methods>
+          <include name="Login"/>
+          <include name="GroupCall"/>
+          <include name="launchApp"/>
+          <include name="logOutApp"/>
+        </methods>
+      </class> <!-- com.appium.DeviceScripts.SK_GroupCall -->
+    </classes>
+  </test> <!-- SK_GroupCall(failed) -->
+  <test thread-count="5" name="SK_Tips_Anonymous(failed)">
+    <classes>
+      <class name="com.appium.DeviceScripts.SK_Tips_Anonymous">
+        <methods>
+          <include name="logOutApp"/>
+          <include name="testTimerIncident"/>
+          <include name="launchSafetyKuvrr"/>
+        </methods>
+      </class> <!-- com.appium.DeviceScripts.SK_Tips_Anonymous -->
+    </classes>
+  </test> <!-- SK_Tips_Anonymous(failed) -->
+  <test thread-count="5" name="SK_Tips_GeoLocation(failed)">
+    <classes>
+      <class name="com.appium.DeviceScripts.SK_Tips_GeoLocation">
+        <methods>
+          <include name="launchSafetyKuvrr"/>
+          <include name="logOutApp"/>
+          <include name="testTimerIncident"/>
+        </methods>
+      </class> <!-- com.appium.DeviceScripts.SK_Tips_GeoLocation -->
+    </classes>
+  </test> <!-- SK_Tips_GeoLocation(failed) -->
+  <test thread-count="5" name="SK_Tips_Blank(failed)">
+    <classes>
+      <class name="com.appium.DeviceScripts.SK_Tips_Blank">
+        <methods>
+          <include name="logOutApp"/>
+          <include name="testTimerIncident"/>
+          <include name="launchSafetyKuvrr"/>
+        </methods>
+      </class> <!-- com.appium.DeviceScripts.SK_Tips_Blank -->
+    </classes>
+  </test> <!-- SK_Tips_Blank(failed) -->
+  <test thread-count="5" name="SK_AudioLocation_Incident(failed)">
+    <classes>
+      <class name="com.appium.DeviceScripts.SK_AudioLocation_Incident">
+        <methods>
+          <include name="logOutApp"/>
+          <include name="verifyPhotoAudioIncident"/>
+          <include name="Login"/>
+          <include name="launchSafetyKuvrr"/>
+        </methods>
+      </class> <!-- com.appium.DeviceScripts.SK_AudioLocation_Incident -->
+    </classes>
+  </test> <!-- SK_AudioLocation_Incident(failed) -->
   <test thread-count="5" name="SK_VideoLocation_Incident(failed)">
     <classes>
       <class name="com.appium.DeviceScripts.SK_VideoLocation_Incident">
@@ -16,4 +96,28 @@
       </class> <!-- com.appium.DeviceScripts.SK_VideoLocation_Incident -->
     </classes>
   </test> <!-- SK_VideoLocation_Incident(failed) -->
+  <test thread-count="5" name="SK_Timer_Incident(failed)">
+    <classes>
+      <class name="com.appium.DeviceScripts.SK_Timer_Incident">
+        <methods>
+          <include name="launchSafetyKuvrr"/>
+          <include name="loginApp"/>
+          <include name="logOutApp"/>
+          <include name="testTimerIncident"/>
+        </methods>
+      </class> <!-- com.appium.DeviceScripts.SK_Timer_Incident -->
+    </classes>
+  </test> <!-- SK_Timer_Incident(failed) -->
+  <test thread-count="5" name="SK_EditProfile(failed)">
+    <classes>
+      <class name="com.appium.DeviceScripts.SK_EditProfile">
+        <methods>
+          <include name="launchApp"/>
+          <include name="Login"/>
+          <include name="Profile"/>
+          <include name="logOutApp"/>
+        </methods>
+      </class> <!-- com.appium.DeviceScripts.SK_EditProfile -->
+    </classes>
+  </test> <!-- SK_EditProfile(failed) -->
 </suite> <!-- Failed suite [Suite] -->

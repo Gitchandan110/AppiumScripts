@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_DataBaseConnector">
+      <class name="com.appium.DeviceScripts.SK_SOS_Incident">
         <methods>
-          <include name="testPostgresDB"/>
+          <include name="launchSafetyKuvrr"/>
+          <include name="testSOSIncident"/>
+          <include name="logOutApp"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_DataBaseConnector -->
+      </class> <!-- com.appium.DeviceScripts.SK_SOS_Incident -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
