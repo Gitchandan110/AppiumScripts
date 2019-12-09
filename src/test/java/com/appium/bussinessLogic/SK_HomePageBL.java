@@ -1,8 +1,11 @@
 package com.appium.bussinessLogic;
 
+import com.appium.commonutils.ExcelUtils;
 import com.appium.pageobject.SK_HomePagePO;
 
 public class SK_HomePageBL extends SK_HomePagePO {
+	
+	String TestCaseSheet = "TestCase";
 
 	public void startSOS() {
 
@@ -12,7 +15,9 @@ public class SK_HomePageBL extends SK_HomePagePO {
 				System.out.println("SOS button found");
 				btnSOS().click();
 				System.out.println("SOS started");
+				 ExcelUtils.WriteExcel(TestCaseSheet, 20, 1);
 				Thread.sleep(40000);
+				 ExcelUtils.WriteExcel(TestCaseSheet, 21, 1);
 
 			} else {
 
@@ -32,9 +37,9 @@ public class SK_HomePageBL extends SK_HomePagePO {
 		try {
 
 			if (btnSafeWalk().isDisplayed()) {
-
 				btnSafeWalk().click();
 				Thread.sleep(40000);
+				 ExcelUtils.WriteExcel(TestCaseSheet, 26, 1);
 				System.out.println("SafeWalk started");
 
 			} else {

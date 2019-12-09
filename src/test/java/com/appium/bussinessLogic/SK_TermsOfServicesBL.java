@@ -18,7 +18,9 @@ public class SK_TermsOfServicesBL extends SK_TermsOfServicesPO {
 
 				
 				AcceptTerms().click();
+				ExcelUtils.WriteExcel(TestCaseSheet, 8, 1);
 				System.out.println("Terms Of Services is accepted");
+				ExcelUtils.WriteExcel(TestCaseSheet, 10, 1);
 
 			} else {
 

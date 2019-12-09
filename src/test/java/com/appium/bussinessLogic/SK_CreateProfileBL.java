@@ -1,6 +1,9 @@
 package com.appium.bussinessLogic;
 
+import java.io.IOException;
+
 import com.appium.commonutils.Base;
+import com.appium.commonutils.ExcelUtils;
 import com.appium.pageobject.SK_CreateProfilePO;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
@@ -8,6 +11,8 @@ import io.appium.java_client.TouchAction;
 
 public class SK_CreateProfileBL extends SK_CreateProfilePO {
 
+	String TestCaseSheet = "TestCase";
+	
 	public void fillProfileDetails() {
 
 		try {
@@ -101,6 +106,7 @@ public class SK_CreateProfileBL extends SK_CreateProfilePO {
 				txtConfirmPassword().click();
 				txtConfirmPassword().sendKeys("12345678");
 				System.out.println("Confirm Password entered");
+				ExcelUtils.WriteExcel(TestCaseSheet, 14, 1);
 			}
 
 		} catch (Exception ex) {
@@ -320,11 +326,12 @@ public class SK_CreateProfileBL extends SK_CreateProfilePO {
 
 	}
 
-	public void saveProfile() {
+	public void saveProfile() throws IOException {
 
 		if (btnSaveProfile().isDisplayed()) {
 			btnSaveProfile().click();
 			System.out.println("Profile Saved");
+			ExcelUtils.WriteExcel(TestCaseSheet, 13, 1);
 
 		} else {
 			System.out.println("SaveProfile not working");

@@ -1,8 +1,11 @@
 package com.appium.bussinessLogic;
 
+import com.appium.commonutils.ExcelUtils;
 import com.appium.pageobject.SK_TipSubmitPO;
 
 public class SK_TipSubmitBL extends SK_TipSubmitPO {
+	
+	String TestCaseSheet = "TestCase";
 
 	public void enterTipsDescription() {
 
@@ -111,6 +114,7 @@ public class SK_TipSubmitBL extends SK_TipSubmitPO {
 
 				btnSendTip().click();
 				Thread.sleep(5000);
+				ExcelUtils.WriteExcel(TestCaseSheet, 43, 1);
 				System.out.println("Tips Send");
 
 			} else {

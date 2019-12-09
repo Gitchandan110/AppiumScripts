@@ -19,7 +19,7 @@ public class SK_LaunchBL extends SK_LaunchPO {
 
 				Assert.assertEquals(titleLaunchScreen().getText(), "Safety Kuvrr", "Title Does not match");
 				System.out.println("Assertion pass: Title Matched");
-				ExcelUtils.WriteExcel(TestCaseSheet, 1, 2);
+				ExcelUtils.WriteExcel(TestCaseSheet, 1, 1);
 
 			} else {
 
@@ -41,9 +41,10 @@ public class SK_LaunchBL extends SK_LaunchPO {
 
 			if (BtnSignIn().isDisplayed()) {
 
-				ExcelUtils.WriteExcel(TestCaseSheet, 2, 2);
+				ExcelUtils.WriteExcel(TestCaseSheet, 2, 1);
 				BtnSignIn().click();
 				System.out.println("SignIn Button Clicked");
+				ExcelUtils.WriteExcel(TestCaseSheet, 4, 1);
 
 			}
 
@@ -65,7 +66,7 @@ public class SK_LaunchBL extends SK_LaunchPO {
 		try {
 
 			if (BtnNewAccount().isDisplayed()) {
-				ExcelUtils.WriteExcel(TestCaseSheet, 3, 2);
+				ExcelUtils.WriteExcel(TestCaseSheet, 3, 1);
 				BtnNewAccount().click();
 				System.out.println("New Account Button Clicked");
 

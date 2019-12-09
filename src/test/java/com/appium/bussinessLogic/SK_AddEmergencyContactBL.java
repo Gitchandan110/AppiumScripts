@@ -1,8 +1,11 @@
 package com.appium.bussinessLogic;
 
+import com.appium.commonutils.ExcelUtils;
 import com.appium.pageobject.SK_AddEmergencyContactPO;
 
 public class SK_AddEmergencyContactBL extends SK_AddEmergencyContactPO {
+	
+	String TestCaseSheet = "TestCase";
 
 	public void fillFirstName() {
 
@@ -71,6 +74,7 @@ public class SK_AddEmergencyContactBL extends SK_AddEmergencyContactPO {
 			if (btnSaveContact().isDisplayed()) {
 				btnSaveContact().click();
 				System.out.println("Contact Saved");
+				ExcelUtils.WriteExcel(TestCaseSheet, 16, 1);
 			} else {
 				System.out.println("Contact not Saved");
 			}

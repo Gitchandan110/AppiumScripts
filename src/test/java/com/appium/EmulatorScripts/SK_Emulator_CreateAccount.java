@@ -1,5 +1,6 @@
 package com.appium.EmulatorScripts;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 
 import org.openqa.selenium.support.PageFactory;
@@ -60,7 +61,7 @@ public class SK_Emulator_CreateAccount extends Base{
 	
 	@Test(priority=1)
 	
-	public void createAccount() {
+	public void createAccount() throws IOException {
 		
 		launchbl.clickBtnNewAccount();
 		termsbl.acceptTermsOfServices();

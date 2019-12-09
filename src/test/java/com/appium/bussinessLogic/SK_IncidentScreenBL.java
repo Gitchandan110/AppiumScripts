@@ -1,9 +1,10 @@
 package com.appium.bussinessLogic;
 
+import com.appium.commonutils.ExcelUtils;
 import com.appium.pageobject.SK_IncidentScreenPO;
 
 public class SK_IncidentScreenBL extends SK_IncidentScreenPO{
-	
+	String TestCaseSheet = "TestCase";
 	
 	public void EndIncident() {
 
@@ -37,6 +38,7 @@ public class SK_IncidentScreenBL extends SK_IncidentScreenPO{
 			if (reasonEndIncident().isDisplayed()) {
 
 				reasonEndIncident().click();
+				 ExcelUtils.WriteExcel(TestCaseSheet, 25, 1);
 				System.out.println("End Reson option clicked");
 		
 			} else {

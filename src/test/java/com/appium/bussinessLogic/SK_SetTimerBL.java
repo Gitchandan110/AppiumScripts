@@ -1,10 +1,12 @@
 package com.appium.bussinessLogic;
 
 import com.appium.commonutils.Base;
+import com.appium.commonutils.ExcelUtils;
 import com.appium.pageobject.SK_SetTimerPO;
 
 public class SK_SetTimerBL extends SK_SetTimerPO{
 
+	String TestCaseSheet = "TestCase";
 	
 	public void SetTimer() {
 		
@@ -37,10 +39,12 @@ public void Set() {
 		if (btnSet().isDisplayed()) {
 			btnSet().click();
 			System.out.println("Set button clicked");
+			ExcelUtils.WriteExcel(TestCaseSheet, 31, 1);
 			System.out.println("Current Time is :"+ Base.GetDateTime());
 			Thread.sleep(360000);
 			System.out.println("Thread sleep for 5 Minute");
 			System.out.println("Current Time is :"+ Base.GetDateTime());
+			ExcelUtils.WriteExcel(TestCaseSheet, 32, 1);
 
 		} else {
 

@@ -1,5 +1,6 @@
 package com.appium.DeviceScripts;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 
 import org.openqa.selenium.support.PageFactory;
@@ -46,7 +47,7 @@ public class SK_CreateProfile extends Base{
 	  
 	@Test (priority=1) 
 	
-	public void CreateAccount() {
+	public void CreateAccount() throws IOException {
 		
 		
 		launchbl.clickBtnNewAccount();

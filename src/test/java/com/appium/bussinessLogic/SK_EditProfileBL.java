@@ -1,6 +1,7 @@
 package com.appium.bussinessLogic;
 
 import com.appium.commonutils.Base;
+import com.appium.commonutils.ExcelUtils;
 import com.appium.pageobject.SK_EditProfilePO;
 
 import io.appium.java_client.MobileBy;
@@ -8,6 +9,8 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 
 public class SK_EditProfileBL extends SK_EditProfilePO {
+	
+	String TestCaseSheet = "TestCase";
 
 	public void selectAdditionalInfo() {
 
@@ -218,7 +221,7 @@ public class SK_EditProfileBL extends SK_EditProfilePO {
 			if (btnSaveProfile().isDisplayed()) {
 				btnSaveProfile().click();
 				System.out.println("Profile Saved");
-
+				ExcelUtils.WriteExcel(TestCaseSheet, 18, 1);
 			}
 
 			else {

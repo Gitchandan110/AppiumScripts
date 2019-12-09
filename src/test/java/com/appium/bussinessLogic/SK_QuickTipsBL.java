@@ -19,9 +19,10 @@ public class SK_QuickTipsBL extends SK_QuickTipsPO {
 
 			if (btnCloseTips().isDisplayed()) {
 				
-				ExcelUtils.WriteExcel(TestCaseSheet, 5, 2);
+				
 				btnCloseTips().click();
 				System.out.println("Quick Tips Closed");
+				ExcelUtils.WriteExcel(TestCaseSheet, 19, 1);
 				Base.GetDateTime();
 				Thread.sleep(20000);
 				Base.GetDateTime();

@@ -1,8 +1,11 @@
 package com.appium.bussinessLogic;
 
+import com.appium.commonutils.ExcelUtils;
 import com.appium.pageobject.SK_IncidentOptionsPO;
 
 public class SK_IncidentOptionsBL extends SK_IncidentOptionsPO {
+	
+	String TestCaseSheet = "TestCase";
 
 	public void clickPhotoIncident() {
 
@@ -11,6 +14,7 @@ public class SK_IncidentOptionsBL extends SK_IncidentOptionsPO {
 			if (btnPhotoAudioLocationIncident().isDisplayed()) {
 				btnPhotoAudioLocationIncident().click();
 				System.out.println("Photo Incident selected");
+				 ExcelUtils.WriteExcel(TestCaseSheet, 22, 1);
 			}
 
 		} catch (Exception ex) {
@@ -25,6 +29,7 @@ public class SK_IncidentOptionsBL extends SK_IncidentOptionsPO {
 			if (btnAudioLocationIncident().isDisplayed()) {
 				btnAudioLocationIncident().click();
 				System.out.println("Audio Location Incident selected");
+				ExcelUtils.WriteExcel(TestCaseSheet, 23, 1);
 			}
 
 		} catch (Exception ex) {
@@ -39,6 +44,7 @@ public class SK_IncidentOptionsBL extends SK_IncidentOptionsPO {
 			if (btnVideoLocationIncident().isDisplayed()) {
 				btnVideoLocationIncident().click();
 				System.out.println("Video Location Incident selected");
+				ExcelUtils.WriteExcel(TestCaseSheet, 24, 1);
 			}
 
 		} catch (Exception ex) {

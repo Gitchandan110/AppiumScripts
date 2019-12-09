@@ -21,6 +21,7 @@ public class ExcelUtils {
 		XSSFSheet sheet = workbook.getSheet(sheetName);
 		Row row = sheet.getRow(rownum);
 		Cell cell = row.getCell(cellnum);
+		fis.close();
 		//System.out.println("Row data:" + sheet.getRow(rownum).getCell(cellnum));
 		return sheet.getRow(rownum).getCell(cellnum).toString();
 

@@ -75,7 +75,7 @@ public class SK_SignInBL extends SK_SignInPO {
 				Base.GetDateTime();
 				Base.waitFor30Seconds(permissionpo.BtnAllow());
 		        Base.GetDateTime();
-
+		        ExcelUtils.WriteExcel(TestCaseSheet, 6, 1);
 			}
 
 			else {
