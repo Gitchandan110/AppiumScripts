@@ -9,7 +9,16 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import javax.mail.Flags;
+import javax.mail.Folder;
+import javax.mail.Message;
+import javax.mail.Session;
+import javax.mail.Store;
 
 import org.apache.commons.collections.bag.SynchronizedSortedBag;
 import org.openqa.selenium.By;
@@ -200,6 +209,53 @@ public class Base {
 		        
    }
 	
+	
+
+	public static String MailReader() {
+		
+		String hostName = "smtp.gmail.com";
+		String username = "karbonkuvrr@gmail.com";
+		String password = "omsai11ram";
+		int messageCount;
+		int unreadMsgCount;
+		String emailSubject=null;
+		String OTP = null;
+		Message emailMessage;
+
+		
+	    Properties sysProps = System.getProperties();
+	    sysProps.setProperty("mail.store.protocol", "imaps");
+
+	    try {
+	        Session session = Session.getInstance(sysProps, null);
+	        Store store = session.getStore();
+	        store.connect(hostName, username, password);
+	        Folder emailInbox = store.getFolder("INBOX");
+	        emailInbox.open(Folder.READ_WRITE);
+	        messageCount = emailInbox.getMessageCount();
+	        System.out.println("Total Message Count: " + messageCount);
+	        unreadMsgCount = emailInbox.getNewMessageCount();
+	        System.out.println("Unread Emails count:" + unreadMsgCount);
+	        emailMessage = emailInbox.getMessage(messageCount);
+	        emailSubject = emailMessage.getSubject();
+
+	        Pattern linkPattern = Pattern.compile("\\Your Safety Kuvrr Security Code is (.*)"); // here you need to define regex as per you need
+	        Matcher pageMatcher =
+	                linkPattern.matcher(emailMessage.getContent().toString());
+
+	        while (pageMatcher.find()) {
+	            System.out.println("Found OTP " + pageMatcher.group(1));
+	        }
+	        emailMessage.setFlag(Flags.Flag.SEEN, true);
+	        emailInbox.close(true);
+	        store.close();
+	      //  return String;
+
+	    } catch (Exception mex) {
+	        mex.printStackTrace();
+	    }
+		return OTP;
+	}
 	
 
 }

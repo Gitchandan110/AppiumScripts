@@ -15,9 +15,9 @@ public class SK_HomePageBL extends SK_HomePagePO {
 				System.out.println("SOS button found");
 				btnSOS().click();
 				System.out.println("SOS started");
-				 ExcelUtils.WriteExcel(TestCaseSheet, 20, 1);
+				 ExcelUtils.WriteExcel(TestCaseSheet, 20, 1, "Pass");
 				Thread.sleep(40000);
-				 ExcelUtils.WriteExcel(TestCaseSheet, 21, 1);
+				 ExcelUtils.WriteExcel(TestCaseSheet, 21, 1, "Pass");
 
 			} else {
 
@@ -39,7 +39,7 @@ public class SK_HomePageBL extends SK_HomePagePO {
 			if (btnSafeWalk().isDisplayed()) {
 				btnSafeWalk().click();
 				Thread.sleep(40000);
-				 ExcelUtils.WriteExcel(TestCaseSheet, 26, 1);
+				 ExcelUtils.WriteExcel(TestCaseSheet, 26, 1, "Pass");
 				System.out.println("SafeWalk started");
 
 			} else {

@@ -1,31 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.ExtentReportListner.ExtentReporterNG"/>
-  </listeners>
-  <test thread-count="5" name="SK_EditProfile(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_EditProfile">
-        <methods>
-          <include name="launchApp"/>
-          <include name="Login"/>
-          <include name="Profile"/>
-          <include name="logOutApp"/>
-        </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_EditProfile -->
-    </classes>
-  </test> <!-- SK_EditProfile(failed) -->
-  <test thread-count="5" name="SK_GroupCall(failed)">
-    <classes>
-      <class name="com.appium.DeviceScripts.SK_GroupCall">
+      <class name="com.appium.DeviceScripts.SK_New_Login_Screen">
         <methods>
           <include name="Login"/>
-          <include name="GroupCall"/>
           <include name="launchApp"/>
           <include name="logOutApp"/>
+          <include name="SOS"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_GroupCall -->
+      </class> <!-- com.appium.DeviceScripts.SK_New_Login_Screen -->
     </classes>
-  </test> <!-- SK_GroupCall(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -55,6 +55,14 @@
 		</classes>
 	</test>
     -->
+    
+ <!--     <test name="SK_New_Login_Screen" >
+
+        <classes>
+
+            <class name="com.appium.DeviceScripts.SK_New_Login_Screen" />
+        </classes>
+    </test> -->
 
     <test name="SK_SOS_Incident" >
 
@@ -128,6 +136,14 @@
         </classes>
     </test>
 
+   <test name="SK_CreateProfile" >
+
+        <classes>
+
+            <class name="com.appium.DeviceScripts.SK_CreateProfile" />
+        </classes>
+    </test> 
+    
     <test name="SK_GroupCall" >
 
         <classes>

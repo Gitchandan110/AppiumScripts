@@ -27,13 +27,13 @@ public class ExcelUtils {
 
 	}
 
-	public static String WriteExcel(String sheetName, int rownum, int cellnum) throws IOException {
+	public static String WriteExcel(String sheetName, int rownum, int cellnum, String data) throws IOException {
 
 	
 		FileInputStream fis = new FileInputStream(Path);
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		XSSFSheet sheet = workbook.getSheet(sheetName);
-		sheet.getRow(rownum).createCell(cellnum).setCellValue("Pass");
+		sheet.getRow(rownum).createCell(cellnum).setCellValue(data);
 		FileOutputStream fos = new FileOutputStream(Path);
 		workbook.write(fos);
 		fos.close();
@@ -41,15 +41,6 @@ public class ExcelUtils {
 
 	}
 
-	public static void main(String args[]) {
-		try {
-			// ExcelUtils.ReadExcel("Login", 1, 0);
 
-			ExcelUtils.WriteExcel("TestCase", 1, 2);
-
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
 
 }

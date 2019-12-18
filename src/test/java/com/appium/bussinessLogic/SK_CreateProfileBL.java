@@ -100,13 +100,14 @@ public class SK_CreateProfileBL extends SK_CreateProfilePO {
 					txtConfirmPassword().click();
 					txtConfirmPassword().sendKeys("12345678");
 					System.out.println("Confirm Password entered");
+					ExcelUtils.WriteExcel(TestCaseSheet, 14, 1, "Pass");
 
 				}
 			} else {
 				txtConfirmPassword().click();
 				txtConfirmPassword().sendKeys("12345678");
 				System.out.println("Confirm Password entered");
-				ExcelUtils.WriteExcel(TestCaseSheet, 14, 1);
+				
 			}
 
 		} catch (Exception ex) {
@@ -315,6 +316,7 @@ public class SK_CreateProfileBL extends SK_CreateProfilePO {
 					txtAdaConsiderations().sendKeys(
 							"The Americans with Disabilities Act gives civil rights protections to individuals with disabilities similar to those provided to individuals on the basis of race, color, sex, national origin, age, and religion. It guarantees equal opportunity for individuals with disabilities in public accommodations, employment, transportation, State and local government services, and telecommunications. ");
 					System.out.println("Ada Consideration filled");
+					ExcelUtils.WriteExcel(TestCaseSheet, 13, 1, "Pass");
 
 				}
 			}
@@ -331,7 +333,7 @@ public class SK_CreateProfileBL extends SK_CreateProfilePO {
 		if (btnSaveProfile().isDisplayed()) {
 			btnSaveProfile().click();
 			System.out.println("Profile Saved");
-			ExcelUtils.WriteExcel(TestCaseSheet, 13, 1);
+			ExcelUtils.WriteExcel(TestCaseSheet, 7, 1, "Pass");
 
 		} else {
 			System.out.println("SaveProfile not working");

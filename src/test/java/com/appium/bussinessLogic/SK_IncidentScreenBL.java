@@ -38,7 +38,7 @@ public class SK_IncidentScreenBL extends SK_IncidentScreenPO{
 			if (reasonEndIncident().isDisplayed()) {
 
 				reasonEndIncident().click();
-				 ExcelUtils.WriteExcel(TestCaseSheet, 25, 1);
+				 ExcelUtils.WriteExcel(TestCaseSheet, 25, 1, "Pass");
 				System.out.println("End Reson option clicked");
 		
 			} else {

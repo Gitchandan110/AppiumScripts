@@ -39,12 +39,12 @@ public void Set() {
 		if (btnSet().isDisplayed()) {
 			btnSet().click();
 			System.out.println("Set button clicked");
-			ExcelUtils.WriteExcel(TestCaseSheet, 31, 1);
+			ExcelUtils.WriteExcel(TestCaseSheet, 31, 1, "Pass");
 			System.out.println("Current Time is :"+ Base.GetDateTime());
 			Thread.sleep(360000);
 			System.out.println("Thread sleep for 5 Minute");
 			System.out.println("Current Time is :"+ Base.GetDateTime());
-			ExcelUtils.WriteExcel(TestCaseSheet, 32, 1);
+			ExcelUtils.WriteExcel(TestCaseSheet, 32, 1, "Pass");
 
 		} else {
 

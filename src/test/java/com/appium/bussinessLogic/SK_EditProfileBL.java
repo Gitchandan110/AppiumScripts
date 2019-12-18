@@ -221,7 +221,7 @@ public class SK_EditProfileBL extends SK_EditProfilePO {
 			if (btnSaveProfile().isDisplayed()) {
 				btnSaveProfile().click();
 				System.out.println("Profile Saved");
-				ExcelUtils.WriteExcel(TestCaseSheet, 18, 1);
+				ExcelUtils.WriteExcel(TestCaseSheet, 18, 1, "Pass");
 			}
 
 			else {

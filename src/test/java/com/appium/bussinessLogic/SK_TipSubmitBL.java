@@ -114,7 +114,7 @@ public class SK_TipSubmitBL extends SK_TipSubmitPO {
 
 				btnSendTip().click();
 				Thread.sleep(5000);
-				ExcelUtils.WriteExcel(TestCaseSheet, 43, 1);
+				ExcelUtils.WriteExcel(TestCaseSheet, 43, 1, "Pass");
 				System.out.println("Tips Send");
 
 			} else {

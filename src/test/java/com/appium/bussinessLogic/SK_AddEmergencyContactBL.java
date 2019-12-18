@@ -74,7 +74,7 @@ public class SK_AddEmergencyContactBL extends SK_AddEmergencyContactPO {
 			if (btnSaveContact().isDisplayed()) {
 				btnSaveContact().click();
 				System.out.println("Contact Saved");
-				ExcelUtils.WriteExcel(TestCaseSheet, 16, 1);
+				ExcelUtils.WriteExcel(TestCaseSheet, 16, 1, "Pass");
 			} else {
 				System.out.println("Contact not Saved");
 			}

@@ -22,7 +22,7 @@ public class SK_QuickTipsBL extends SK_QuickTipsPO {
 				
 				btnCloseTips().click();
 				System.out.println("Quick Tips Closed");
-				ExcelUtils.WriteExcel(TestCaseSheet, 19, 1);
+				ExcelUtils.WriteExcel(TestCaseSheet, 19, 1, "Pass");
 				Base.GetDateTime();
 				Thread.sleep(20000);
 				Base.GetDateTime();

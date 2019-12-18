@@ -1,9 +1,12 @@
 package com.appium.bussinessLogic;
 
+import com.appium.commonutils.ExcelUtils;
 import com.appium.pageobject.SK_AddOrganizationPO;
 
 public class SK_AddOrganizationBL extends SK_AddOrganizationPO {
 
+	String TestCaseSheet = "TestCase";
+	
 	public void fillOrgCode() {
 
 		try {
@@ -26,6 +29,7 @@ public class SK_AddOrganizationBL extends SK_AddOrganizationPO {
 			if (btnConfirmOrganization().isDisplayed()) {
 				btnConfirmOrganization().click();
 				System.out.println("Org Code Saved");
+				ExcelUtils.WriteExcel(TestCaseSheet, 15, 1, "Pass");
 			} else {
 				System.out.println("Org Code not Saved");
 			}

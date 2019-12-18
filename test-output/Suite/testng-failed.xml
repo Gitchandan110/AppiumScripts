@@ -16,16 +16,4 @@
       </class> <!-- com.appium.DeviceScripts.SK_EditProfile -->
     </classes>
   </test> <!-- SK_EditProfile(failed) -->
-  <test thread-count="5" name="SK_GroupCall(failed)">
-    <classes>
-      <class name="com.appium.DeviceScripts.SK_GroupCall">
-        <methods>
-          <include name="Login"/>
-          <include name="GroupCall"/>
-          <include name="launchApp"/>
-          <include name="logOutApp"/>
-        </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_GroupCall -->
-    </classes>
-  </test> <!-- SK_GroupCall(failed) -->
 </suite> <!-- Failed suite [Suite] -->

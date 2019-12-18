@@ -14,7 +14,7 @@ public class SK_IncidentOptionsBL extends SK_IncidentOptionsPO {
 			if (btnPhotoAudioLocationIncident().isDisplayed()) {
 				btnPhotoAudioLocationIncident().click();
 				System.out.println("Photo Incident selected");
-				 ExcelUtils.WriteExcel(TestCaseSheet, 22, 1);
+				 ExcelUtils.WriteExcel(TestCaseSheet, 22, 1, "Pass");
 			}
 
 		} catch (Exception ex) {
@@ -29,7 +29,7 @@ public class SK_IncidentOptionsBL extends SK_IncidentOptionsPO {
 			if (btnAudioLocationIncident().isDisplayed()) {
 				btnAudioLocationIncident().click();
 				System.out.println("Audio Location Incident selected");
-				ExcelUtils.WriteExcel(TestCaseSheet, 23, 1);
+				ExcelUtils.WriteExcel(TestCaseSheet, 23, 1, "Pass");
 			}
 
 		} catch (Exception ex) {
@@ -44,7 +44,7 @@ public class SK_IncidentOptionsBL extends SK_IncidentOptionsPO {
 			if (btnVideoLocationIncident().isDisplayed()) {
 				btnVideoLocationIncident().click();
 				System.out.println("Video Location Incident selected");
-				ExcelUtils.WriteExcel(TestCaseSheet, 24, 1);
+				ExcelUtils.WriteExcel(TestCaseSheet, 24, 1, "Pass");
 			}
 
 		} catch (Exception ex) {
