@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2605" started-at="2019-12-16T12:42:15Z" finished-at="2019-12-16T12:42:18Z">
+  <suite name="Default suite" duration-ms="69926" started-at="2020-04-07T14:40:38Z" finished-at="2020-04-07T14:41:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2605" started-at="2019-12-16T12:42:15Z" finished-at="2019-12-16T12:42:18Z">
-      <class name="com.appium.DeviceScripts.JDBC_MySQL_Red5">
-        <test-method status="PASS" signature="testMySQLDB()[pri:0, instance:com.appium.DeviceScripts.JDBC_MySQL_Red5@2038ae61]" name="testMySQLDB" duration-ms="2525" started-at="2019-12-16T12:42:16Z" finished-at="2019-12-16T12:42:18Z">
+    <test name="Default test" duration-ms="69926" started-at="2020-04-07T14:40:38Z" finished-at="2020-04-07T14:41:47Z">
+      <class name="com.appium.DeviceScripts.SK_ERP">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_ERP@5faeada1]" name="launchSafetyKuvrr" is-config="true" duration-ms="16725" started-at="2020-04-07T14:40:38Z" finished-at="2020-04-07T14:40:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMySQLDB -->
-      </class> <!-- com.appium.DeviceScripts.JDBC_MySQL_Red5 -->
+        </test-method> <!-- launchSafetyKuvrr -->
+        <test-method status="PASS" signature="testERP()[pri:1, instance:com.appium.DeviceScripts.SK_ERP@5faeada1]" name="testERP" duration-ms="53180" started-at="2020-04-07T14:40:54Z" finished-at="2020-04-07T14:41:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testERP -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_ERP@5faeada1]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-04-07T14:41:47Z" finished-at="2020-04-07T14:41:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApp -->
+      </class> <!-- com.appium.DeviceScripts.SK_ERP -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

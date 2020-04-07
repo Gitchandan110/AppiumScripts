@@ -41,7 +41,8 @@ public class SK_EditProfile extends Base{
 	public void launchApp() {
 
 		try {
-			launchAppKarbon();
+			//launchAppKarbon();
+			launchAppMotoG4P();
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -49,7 +50,7 @@ public class SK_EditProfile extends Base{
 
 	}
 
-	@BeforeMethod
+	/*@BeforeMethod
 
 	public void Login() {
 
@@ -63,7 +64,7 @@ public class SK_EditProfile extends Base{
 		permissionbl.acceptPermissions();
 		quicktipsbl.closeTips();
 		
-	}
+	}*/
 
 	@Test
 

@@ -15,15 +15,30 @@ public class SK_IncidentScreenPO extends Base {
 		return driver.findElement(EndIncident);
 
 	}
+	
+	public MobileElement btnEndPicIncident() {
+
+		By EndIncident = By.id("com.safety.armourgrid:id/incident_ongoing_end");
+		return driver.findElement(EndIncident);
+
+	}
+	
 
 	public MobileElement btnChat() {
-		By Chat = By.id("com.safety.armourgrid:id/incident_ongoing_chat_text");
+		By Chat = By.id("com.safety.armourgrid:id/incident_ongoing_chat");
 		return driver.findElement(Chat);
 
 	}
 
 	public MobileElement btnHideScreen() {
 		By Hide = By.linkText("Hide");
+		return driver.findElement(Hide);
+
+	}
+	
+	
+	public MobileElement btnHide() {
+		By Hide = By.id("com.safety.armourgrid:id/incident_ongoing_hide");
 		return driver.findElement(Hide);
 
 	}

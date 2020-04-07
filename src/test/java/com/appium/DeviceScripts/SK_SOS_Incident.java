@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.appium.bussinessLogic.SK_HomePageBL;
+import com.appium.bussinessLogic.SK_IncidentOptionsBL;
 import com.appium.bussinessLogic.SK_IncidentScreenBL;
 import com.appium.bussinessLogic.SK_LaunchBL;
 import com.appium.bussinessLogic.SK_PermissionBL;
@@ -30,6 +31,7 @@ public class SK_SOS_Incident extends Base{
 	SK_HomePageBL homepagebl=PageFactory.initElements(driver, SK_HomePageBL.class);
 	SK_IncidentScreenBL incidentscreenbl=PageFactory.initElements(driver, SK_IncidentScreenBL.class);
 	SK_SettingsBL settingsbl = PageFactory.initElements(driver, SK_SettingsBL.class);
+	SK_IncidentOptionsBL incidentoptionbl = PageFactory.initElements(driver, SK_IncidentOptionsBL.class);
 	
 	
 	
@@ -37,16 +39,17 @@ public class SK_SOS_Incident extends Base{
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-		 launchAppKarbon();
+		// launchAppKarbon();
+		 launchAppMotoG4P();
 	//	launchApkKarbon();
 		System.out.println("App Launched Successfull");
 
 	}
 
 	@Test(priority=1)
-	public void testSOSIncident() {
+	public void testSOSIncident() throws InterruptedException {
 
-		launchbl.verifyTitle();
+		/*launchbl.verifyTitle();
 		launchbl.clickBtnSignIn();
 		termsbl.acceptTermsOfServices();
 		privacypolicybl.acceptPrivacyPolicy();
@@ -54,7 +57,12 @@ public class SK_SOS_Incident extends Base{
 		signinbl.fillPassword();
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
-		quicktipsbl.closeTips();
+		quicktipsbl.closeTips();*/
+		homepagebl.clickSetting();
+		settingsbl.SelectEventOption();
+		incidentoptionbl.clickVideoAudioLocationIncident();
+		incidentoptionbl.clickButtonBack();
+		settingsbl.clickButtonBack();
 		homepagebl.startSOS();
 		incidentscreenbl.EndIncident();
 		incidentscreenbl.SelectEndReason();
@@ -66,9 +74,9 @@ public class SK_SOS_Incident extends Base{
 	
 	public void logOutApp() {
 		
-		homepagebl.clickSetting();
+		/*homepagebl.clickSetting();
 		settingsbl.selectOptionLogOut();
-		
+		*/
 		
 	}
 	

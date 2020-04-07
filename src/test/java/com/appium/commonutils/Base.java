@@ -57,10 +57,31 @@ public class Base {
 		capability.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 600);
 		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capability);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		System.out.println("Device Capability is working");
 		return driver;
 
 	}
 	
+	public static AppiumDriver launchAppMotoG4P() throws MalformedURLException {
+
+		DesiredCapabilities capability = new DesiredCapabilities();
+		capability.setCapability("deviceName", "Moto G4Plus");
+		capability.setCapability("udid", "ZY223QKSQB");
+		capability.setCapability("platformVersion", "8.1.0");
+		capability.setCapability("platformName", "Android");
+		capability.setCapability("noReset", "true");
+		capability.setCapability("appPackage", "com.safety.armourgrid");
+		capability.setCapability("appActivity", "com.safety.armourgrid.activity.SplashActivity");
+		capability.setCapability("automationName", "UiAutomator2");
+		capability.setCapability ("simpleIsVisibleCheck", "true");
+		capability.setCapability ("useJSONSource", "true");
+		capability.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 600);
+		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capability);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		System.out.println("Device Capability is working");
+		return driver;
+
+	}
 	
 	public static AppiumDriver launchAppKarbon() throws MalformedURLException {
 
@@ -74,10 +95,10 @@ public class Base {
 		capability.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 600);
 		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capability);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		System.out.println("Device Capability is working");
 		return driver;
 
 	}
-	
 	
 	
 	
@@ -97,6 +118,7 @@ public class Base {
 		capability.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 600);
 		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capability);
 		driver.manage().timeouts().implicitlyWait(180, TimeUnit.SECONDS);
+		System.out.println("Device Capability is working");
 		return driver;
 
 	}

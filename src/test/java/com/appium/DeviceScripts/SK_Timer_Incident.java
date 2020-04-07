@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.appium.bussinessLogic.SK_HomePageBL;
+import com.appium.bussinessLogic.SK_IncidentOptionsBL;
 import com.appium.bussinessLogic.SK_IncidentScreenBL;
 import com.appium.bussinessLogic.SK_LaunchBL;
 import com.appium.bussinessLogic.SK_PermissionBL;
@@ -32,21 +33,24 @@ public class SK_Timer_Incident extends Base {
 	SK_SetTimerBL setTimerbl = PageFactory.initElements(driver, SK_SetTimerBL.class);
 	SK_IncidentScreenBL incidentscreenbl = PageFactory.initElements(driver, SK_IncidentScreenBL.class);
 	SK_SettingsBL settingsbl = PageFactory.initElements(driver, SK_SettingsBL.class);
+	SK_IncidentOptionsBL incidentoptionbl = PageFactory.initElements(driver, SK_IncidentOptionsBL.class);
+
 
 	@BeforeTest
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-		 launchAppKarbon();
+		// launchAppKarbon();
+		 launchAppMotoG4P();
 		System.out.println("App Launched Successfull");
 
 	}
 
 	@BeforeMethod
 
-	public void loginApp() {
+	public void loginApp() throws InterruptedException {
 
-		launchbl.verifyTitle();
+	/*	launchbl.verifyTitle();
 		launchbl.clickBtnSignIn();
 		termsbl.acceptTermsOfServices();
 		privacypolicybl.acceptPrivacyPolicy();
@@ -54,7 +58,12 @@ public class SK_Timer_Incident extends Base {
 		signinbl.fillPassword();
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
-		quicktipsbl.closeTips();
+		quicktipsbl.closeTips();*/
+		homepagebl.clickSetting();
+		settingsbl.SelectEventOption();
+		incidentoptionbl.clickVideoAudioLocationIncident();
+		incidentoptionbl.clickButtonBack();
+		settingsbl.clickButtonBack();
 
 	}
 
@@ -73,9 +82,9 @@ public class SK_Timer_Incident extends Base {
 
 	public void logOutApp() {
 
-		homepagebl.clickSetting();
+		/*homepagebl.clickSetting();
 		settingsbl.selectOptionLogOut();
-
+*/
 	}
 
 }

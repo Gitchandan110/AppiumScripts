@@ -36,7 +36,8 @@ public class SK_VideoLocation_Incident extends Base {
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-		launchAppKarbon();
+	//	launchAppKarbon();
+		 launchAppMotoG4P();
 	//	launchApkKarbon();
 		System.out.println("App Launched Successfull");
 
@@ -46,7 +47,7 @@ public class SK_VideoLocation_Incident extends Base {
 
 	public void Login() {
 
-		launchbl.verifyTitle();
+	/*	launchbl.verifyTitle();
 		launchbl.clickBtnSignIn();
 		termsbl.acceptTermsOfServices();
 		privacypolicybl.acceptPrivacyPolicy();
@@ -54,7 +55,7 @@ public class SK_VideoLocation_Incident extends Base {
 		signinbl.fillPassword();
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
-		quicktipsbl.closeTips();
+		quicktipsbl.closeTips();*/
 
 	}
 
@@ -63,7 +64,7 @@ public class SK_VideoLocation_Incident extends Base {
 	public void verifyPhotoAudioIncident() throws InterruptedException {
 
 		homepagebl.clickSetting();
-		settingsbl.SelectOptionIncident();
+		settingsbl.SelectEventOption();
 		incidentoptionbl.clickVideoLocationIncident();
 		incidentoptionbl.clickButtonBack();
 		settingsbl.clickButtonBack();
@@ -81,9 +82,9 @@ public class SK_VideoLocation_Incident extends Base {
 
 	public void logOutApp() {
 
-		homepagebl.clickSetting();
+	/*	homepagebl.clickSetting();
 		settingsbl.selectOptionLogOut();
-
+*/
 	}
 
 }

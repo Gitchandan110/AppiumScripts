@@ -4,16 +4,16 @@
   <listeners>
     <listener class-name="com.ExtentReportListner.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="SK_EditProfile(failed)">
+  <test thread-count="5" name="SK_GroupCall(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_EditProfile">
+      <class name="com.appium.DeviceScripts.SK_GroupCall">
         <methods>
-          <include name="launchApp"/>
           <include name="Login"/>
-          <include name="Profile"/>
+          <include name="GroupCall"/>
+          <include name="launchApp"/>
           <include name="logOutApp"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_EditProfile -->
+      </class> <!-- com.appium.DeviceScripts.SK_GroupCall -->
     </classes>
-  </test> <!-- SK_EditProfile(failed) -->
+  </test> <!-- SK_GroupCall(failed) -->
 </suite> <!-- Failed suite [Suite] -->

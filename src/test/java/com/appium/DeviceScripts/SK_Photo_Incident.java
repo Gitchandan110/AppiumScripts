@@ -36,13 +36,14 @@ public class SK_Photo_Incident extends Base {
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-		 launchAppKarbon();
+	//	 launchAppKarbon();
+		 launchAppMotoG4P();
 	//	launchApkKarbon();
 		System.out.println("App Launched Successfull");
 
 	}
 
-	@BeforeMethod
+	/*@BeforeMethod
 
 	public void Login() {
 
@@ -56,19 +57,23 @@ public class SK_Photo_Incident extends Base {
 		permissionbl.acceptPermissions();
 		quicktipsbl.closeTips();
 
-	}
+	}*/
 
 	@Test
 
 	public void verifyPhotoAudioIncident() throws InterruptedException {
 
 		homepagebl.clickSetting();
-		settingsbl.SelectOptionIncident();
+		settingsbl.SelectEventOption();
 		incidentoptionbl.clickPhotoIncident();
 		incidentoptionbl.clickButtonBack();
 		settingsbl.clickButtonBack();
+		homepagebl.switchCamera();
 		homepagebl.startSOS();
-		incidentscreenbl.EndIncident();
+		incidentscreenbl.EndPicIncident();
+		incidentscreenbl.SelectEndReason();
+		homepagebl.startSafeWalk();
+		incidentscreenbl.EndPicIncident();
 		incidentscreenbl.SelectEndReason();
 
 	}
@@ -77,8 +82,8 @@ public class SK_Photo_Incident extends Base {
 
 	public void logOutApp() {
 
-		homepagebl.clickSetting();
-		settingsbl.selectOptionLogOut();
+		/*homepagebl.clickSetting();
+		settingsbl.selectOptionLogOut();*/
 
 	}
 

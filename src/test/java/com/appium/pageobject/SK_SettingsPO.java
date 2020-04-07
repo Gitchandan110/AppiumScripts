@@ -8,10 +8,11 @@ import io.appium.java_client.MobileElement;
 
 public class SK_SettingsPO extends Base {
 
-	public MobileElement optionIncident() {
+	public MobileElement eventOptions() {
 
-		By IncidentOptions = By.id("com.safety.armourgrid:id/settings_incident_options");
-		return driver.findElement(IncidentOptions);
+		By EventOptions = By.id("com.safety.armourgrid:id/settings_incident_options");
+		
+		return driver.findElement(EventOptions);
 
 	}
 

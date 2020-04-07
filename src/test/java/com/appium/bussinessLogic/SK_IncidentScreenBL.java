@@ -29,6 +29,28 @@ public class SK_IncidentScreenBL extends SK_IncidentScreenPO{
 
 	}
 	
+	public void EndPicIncident() {
+
+		try {
+
+			if (btnEndPicIncident().isDisplayed()) {
+
+				btnEndPicIncident().click();
+				Thread.sleep(3000);
+				System.out.println("End Pic Incident button clicked");
+		
+			} else {
+
+				System.out.println("End Pic Incident button not clicked");
+			}
+
+		} catch (Exception ex) {
+
+			System.out.println("Exception in End Pic Incident button :" + ex.getMessage());
+
+		}
+
+	}
 	
 	
 	public void SelectEndReason() {

@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_New_Login_Screen">
+      <class name="com.appium.DeviceScripts.SK_ERP">
         <methods>
-          <include name="Login"/>
-          <include name="launchApp"/>
+          <include name="testERP"/>
+          <include name="launchSafetyKuvrr"/>
           <include name="logOutApp"/>
-          <include name="SOS"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_New_Login_Screen -->
+      </class> <!-- com.appium.DeviceScripts.SK_ERP -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

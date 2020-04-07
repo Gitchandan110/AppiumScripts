@@ -16,7 +16,7 @@ public class SK_HomePagePO extends Base {
 
 	}
 
-	public MobileElement camera() {
+	public MobileElement btnRotateCamera() {
 
 		By Camera = By.id("com.safety.armourgrid:id/waiting_switch_camera");
 
@@ -63,4 +63,23 @@ public class SK_HomePagePO extends Base {
 		return driver.findElement(BtnTips);
 
 	}
+	
+	public MobileElement btnMaps() {
+
+		By Maps = By.id("com.safety.armourgrid:id/waiting_img_button_map");
+
+		return driver.findElement(Maps);
+		
+	}
+		
+		public MobileElement btnPlans() {
+
+			By Plans = By.id("com.safety.armourgrid:id/waiting_img_button_erp");
+
+			return driver.findElement(Plans);
+
+	}
+	
+	
+	
 }

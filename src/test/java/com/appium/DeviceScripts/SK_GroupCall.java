@@ -40,7 +40,8 @@ public class SK_GroupCall extends Base{
 	public void launchApp() {
 
 		try {
-			launchAppKarbon();
+		//	launchAppKarbon();
+			 launchAppMotoG4P();
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -52,7 +53,7 @@ public class SK_GroupCall extends Base{
 
 	public void Login() {
 
-		launchbl.verifyTitle();
+		/*launchbl.verifyTitle();
 		launchbl.clickBtnSignIn();
 		termsbl.acceptTermsOfServices();
 		privacypolicybl.acceptPrivacyPolicy();
@@ -60,7 +61,7 @@ public class SK_GroupCall extends Base{
 		signinbl.fillPassword();
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
-		quicktipsbl.closeTips();
+		quicktipsbl.closeTips();*/
 		homepagebl.clickSetting();
 	}
 
@@ -80,9 +81,9 @@ public class SK_GroupCall extends Base{
 	
 	public void logOutApp() {
 		
-		homepagebl.clickSetting();
+	/*	homepagebl.clickSetting();
 		settingsbl.selectOptionLogOut();
-		
+		*/
 		
 	}
 	

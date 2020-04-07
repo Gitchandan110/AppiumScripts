@@ -32,14 +32,15 @@ public class SK_Tips_GeoLocation extends Base{
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-		 launchAppKarbon();
+	//	 launchAppKarbon();
+		 launchAppMotoG4P();
 		System.out.println("App Launched Successfull");
 
 	}
 
 	@Test
-	public void testTimerIncident() {
-
+	public void testTips() {
+/*
 		launchbl.verifyTitle();
 		launchbl.clickBtnSignIn();
 		termsbl.acceptTermsOfServices();
@@ -48,7 +49,7 @@ public class SK_Tips_GeoLocation extends Base{
 		signinbl.fillPassword();
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
-		quicktipsbl.closeTips();
+		quicktipsbl.closeTips();*/
 		homepagebl.startTips();
 		tipsubmitbl.uncheckRemainAnonymous();
 		tipsubmitbl.selectIncludeGeoLocation();
@@ -62,8 +63,8 @@ public class SK_Tips_GeoLocation extends Base{
 
 	public void logOutApp() {
 
-		homepagebl.clickSetting();
-		settingsbl.selectOptionLogOut();
+	/*	homepagebl.clickSetting();
+		settingsbl.selectOptionLogOut();*/
 
 	}
 }

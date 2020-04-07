@@ -25,12 +25,12 @@ public class SK_SettingsBL extends SK_SettingsPO {
 
 	}
 
-	public void SelectOptionIncident() throws InterruptedException {
+	public void SelectEventOption() throws InterruptedException {
 
-		Base.scrolltoElement("Incident Options");
-		optionIncident().click();
+		Base.scrolltoElement("Event Options");
+		eventOptions().click();
 		Thread.sleep(10000);
-		System.out.println("lncident option clicked");
+		System.out.println("Event options clicked");
 
 	}
 	

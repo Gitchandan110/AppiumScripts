@@ -30,7 +30,8 @@ public class SK_LogInApk extends Base {
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-		 launchAppKarbon();
+	//	 launchAppKarbon();
+		 launchAppMotoG4P();
 		System.out.println("App Launched Successfull");
 
 	}

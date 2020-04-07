@@ -6,6 +6,26 @@ import com.appium.pageobject.SK_IncidentOptionsPO;
 public class SK_IncidentOptionsBL extends SK_IncidentOptionsPO {
 	
 	String TestCaseSheet = "TestCase";
+	
+	
+	
+	
+	public void clickVideoAudioLocationIncident() {
+
+		try {
+
+			if (btnVideoAudioLocationIncident().isDisplayed()) {
+				btnVideoAudioLocationIncident().click();
+				System.out.println("Video Audio Location Incident() selected");
+				 ExcelUtils.WriteExcel(TestCaseSheet, 22, 1, "Pass");
+			}
+
+		} catch (Exception ex) {
+			System.out.println("Exception in Video Audio Location Incident():" + ex.getMessage());
+		}
+	}
+
+	
 
 	public void clickPhotoIncident() {
 

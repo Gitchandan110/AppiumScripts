@@ -99,6 +99,96 @@ public class SK_HomePageBL extends SK_HomePagePO {
 		}
 	}
 
+	public void start911() {
+
+		try {
+
+			if (btn911().isDisplayed()) {
+
+				btn911().click();
+				System.out.println("911 Started");
+				Thread.sleep(5000);
+
+			} else {
+
+				System.out.println("911 Not Started");
+			}
+
+		} catch (Exception ex) {
+
+			System.out.println("Exception in 911 :" + ex.getMessage());
+
+		}
+	}
+	
+	public void OpenMAP() {
+
+		try {
+
+			if (btnMaps().isDisplayed()) {
+
+				btnMaps().click();
+				System.out.println("Map Open");
+				Thread.sleep(5000);
+
+			} else {
+
+				System.out.println("Map Not Open");
+			}
+
+		} catch (Exception ex) {
+
+			System.out.println("Exception in Map :" + ex.getMessage());
+
+		}
+	}
+	
+	
+	public void OpenERP() {
+
+		try {
+
+			if (btnPlans().isDisplayed()) {
+				btnPlans().click();
+				System.out.println("ERP Open");
+				Thread.sleep(10000);
+
+			} else {
+
+				System.out.println("ERP Not Open");
+			}
+
+		} catch (Exception ex) {
+
+			System.out.println("Exception in ERP :" + ex.getMessage());
+
+		}
+	}
+	
+	public void switchCamera() {
+
+		try {
+
+			if (btnRotateCamera().isDisplayed()) {
+
+				btnRotateCamera().click();
+				System.out.println("Camera rotated");
+				Thread.sleep(3000);
+
+			} else {
+
+				System.out.println("Camera not rotated");
+			}
+
+		} catch (Exception ex) {
+
+			System.out.println("Exception in Camera Rotation :" + ex.getMessage());
+
+		}
+	}
+	
+	
+	
 	public void clickSetting() {
 
 		try {
