@@ -16,4 +16,15 @@
       </class> <!-- com.appium.DeviceScripts.SK_GroupCall -->
     </classes>
   </test> <!-- SK_GroupCall(failed) -->
+  <test thread-count="5" name="SK_ERP(failed)">
+    <classes>
+      <class name="com.appium.DeviceScripts.SK_ERP">
+        <methods>
+          <include name="testERP"/>
+          <include name="launchSafetyKuvrr"/>
+          <include name="logOutApp"/>
+        </methods>
+      </class> <!-- com.appium.DeviceScripts.SK_ERP -->
+    </classes>
+  </test> <!-- SK_ERP(failed) -->
 </suite> <!-- Failed suite [Suite] -->

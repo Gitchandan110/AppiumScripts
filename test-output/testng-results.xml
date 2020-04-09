@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="69926" started-at="2020-04-07T14:40:38Z" finished-at="2020-04-07T14:41:47Z">
+  <suite name="Default suite" duration-ms="94688" started-at="2020-04-09T08:42:36Z" finished-at="2020-04-09T08:44:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="69926" started-at="2020-04-07T14:40:38Z" finished-at="2020-04-07T14:41:47Z">
-      <class name="com.appium.DeviceScripts.SK_ERP">
-        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_ERP@5faeada1]" name="launchSafetyKuvrr" is-config="true" duration-ms="16725" started-at="2020-04-07T14:40:38Z" finished-at="2020-04-07T14:40:54Z">
+    <test name="Default test" duration-ms="94688" started-at="2020-04-09T08:42:36Z" finished-at="2020-04-09T08:44:10Z">
+      <class name="com.appium.DeviceScripts.SK_MAP">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_MAP@5faeada1]" name="launchSafetyKuvrr" is-config="true" duration-ms="28772" started-at="2020-04-09T08:42:36Z" finished-at="2020-04-09T08:43:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchSafetyKuvrr -->
-        <test-method status="PASS" signature="testERP()[pri:1, instance:com.appium.DeviceScripts.SK_ERP@5faeada1]" name="testERP" duration-ms="53180" started-at="2020-04-07T14:40:54Z" finished-at="2020-04-07T14:41:47Z">
+        <test-method status="PASS" signature="testSOSIncident()[pri:1, instance:com.appium.DeviceScripts.SK_MAP@5faeada1]" name="testSOSIncident" duration-ms="65851" started-at="2020-04-09T08:43:04Z" finished-at="2020-04-09T08:44:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testERP -->
-        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_ERP@5faeada1]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-04-07T14:41:47Z" finished-at="2020-04-07T14:41:47Z">
+        </test-method> <!-- testSOSIncident -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_MAP@5faeada1]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-04-09T08:44:10Z" finished-at="2020-04-09T08:44:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutApp -->
-      </class> <!-- com.appium.DeviceScripts.SK_ERP -->
+      </class> <!-- com.appium.DeviceScripts.SK_MAP -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

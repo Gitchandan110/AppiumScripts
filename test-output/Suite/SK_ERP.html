@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  SK_GroupCall</title>
+<title>TestNG:  SK_ERP</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>SK_GroupCall</h2><table border='1' align="center">
+<h2 align='center'>SK_ERP</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 09 10:38:50 IST 2020</td>
+<td>Started on:</td><td>Thu Apr 09 10:40:03 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>35 seconds (35246 ms)</td>
+<tr><td>Total time:</td><td>29 seconds (29089 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.appium.DeviceScripts.SK_GroupCall.GroupCall()'><b>GroupCall</b><br>Test class: com.appium.DeviceScripts.SK_GroupCall</td>
+<td title='com.appium.DeviceScripts.SK_ERP.testERP()'><b>testERP</b><br>Test class: com.appium.DeviceScripts.SK_ERP</td>
 <td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;CHANDAN&apos;, ip: &apos;192.168.42.241&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, deviceName: Moto G4Plus, newCommandTimeout: 600, noReset: true, platformName: android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, udid: ZY223QKSQB, useJSONSource: true}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223QKSQB, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY223QKSQB, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, statBarHeight: 72, takesScreenshot: true, udid: ZY223QKSQB, useJSONSource: true, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 1c3809c6-680e-4d6a-90b7-19f5e5002b31
-*** Element info: {Using=id, value=com.safety.armourgrid:id/menu_call_video}
+Session ID: cee6a081-2be1-43d8-bbff-e7fdb428ef61
+*** Element info: {Using=id, value=com.safety.armourgrid:id/list_item_erplan_info_state}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -92,32 +92,28 @@ Session ID: 1c3809c6-680e-4d6a-90b7-19f5e5002b31
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
-	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at com.appium.pageobject.SK_MembersGroupCallPO.btnVideoCall(SK_MembersGroupCallPO.java:14)
-	at com.appium.bussinessLogic.SK_MembersGroupCallBL.ClickBtnVideoCall(SK_MembersGroupCallBL.java:9)
-	at com.appium.DeviceScripts.SK_GroupCall.GroupCall(SK_GroupCall.java:74)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2054997292", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2054997292'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:152)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:376)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementsById(DefaultGenericMobileDriver.java:66)
+	at io.appium.java_client.AppiumDriver.findElementsById(AppiumDriver.java:156)
+	at org.openqa.selenium.By$ById.findElements(By.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:50)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:148)
+	at com.appium.pageobject.SK_ERP_PO.optionEarthquick(SK_ERP_PO.java:30)
+	at com.appium.bussinessLogic.SK_ERPBL.clickEarthquickOption(SK_ERPBL.java:41)
+	at com.appium.DeviceScripts.SK_ERP.testERP(SK_ERP.java:62)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1446301940", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1446301940'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;CHANDAN&apos;, ip: &apos;192.168.42.241&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, deviceName: Moto G4Plus, newCommandTimeout: 600, noReset: true, platformName: android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, udid: ZY223QKSQB, useJSONSource: true}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223QKSQB, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY223QKSQB, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, statBarHeight: 72, takesScreenshot: true, udid: ZY223QKSQB, useJSONSource: true, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 1c3809c6-680e-4d6a-90b7-19f5e5002b31
-*** Element info: {Using=id, value=com.safety.armourgrid:id/menu_call_video}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+Session ID: cee6a081-2be1-43d8-bbff-e7fdb428ef61
+*** Element info: {Using=id, value=com.safety.armourgrid:id/list_item_erplan_info_state}
+	at sun.reflect.GeneratedConstructorAccessor65.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
@@ -129,22 +125,19 @@ Session ID: 1c3809c6-680e-4d6a-90b7-19f5e5002b31
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
-	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at com.appium.pageobject.SK_MembersGroupCallPO.btnVideoCall(SK_MembersGroupCallPO.java:14)
-	at com.appium.bussinessLogic.SK_MembersGroupCallBL.ClickBtnVideoCall(SK_MembersGroupCallBL.java:9)
-	at com.appium.DeviceScripts.SK_GroupCall.GroupCall(SK_GroupCall.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:152)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:376)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementsById(DefaultGenericMobileDriver.java:66)
+	at io.appium.java_client.AppiumDriver.findElementsById(AppiumDriver.java:156)
+	at org.openqa.selenium.By$ById.findElements(By.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:50)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:148)
+	at com.appium.pageobject.SK_ERP_PO.optionEarthquick(SK_ERP_PO.java:30)
+	at com.appium.bussinessLogic.SK_ERPBL.clickEarthquickOption(SK_ERPBL.java:41)
+	at com.appium.DeviceScripts.SK_ERP.testERP(SK_ERP.java:62)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -171,8 +164,8 @@ Session ID: 1c3809c6-680e-4d6a-90b7-19f5e5002b31
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>13</td>
-<td>com.appium.DeviceScripts.SK_GroupCall@87f383f</td></tr>
+<td>14</td>
+<td>com.appium.DeviceScripts.SK_ERP@2db7a79b</td></tr>
 </table><p>
 </body>
 </html>

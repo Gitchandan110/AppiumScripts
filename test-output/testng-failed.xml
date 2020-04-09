@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_ERP">
+      <class name="com.appium.DeviceScripts.SK_MAP">
         <methods>
-          <include name="testERP"/>
-          <include name="launchSafetyKuvrr"/>
           <include name="logOutApp"/>
+          <include name="testSOSIncident"/>
+          <include name="launchSafetyKuvrr"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_ERP -->
+      </class> <!-- com.appium.DeviceScripts.SK_MAP -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
