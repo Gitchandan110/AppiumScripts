@@ -79,6 +79,7 @@ public class SK_IncidentOptionsBL extends SK_IncidentOptionsPO {
 			if (btnNavigateBack().isDisplayed()) {
 				btnNavigateBack().click();
 				System.out.println("User Navigate Back");
+				Thread.sleep(3000);
 			}
 
 		} catch (Exception ex) {

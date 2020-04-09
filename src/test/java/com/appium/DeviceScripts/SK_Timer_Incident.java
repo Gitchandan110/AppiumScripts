@@ -63,7 +63,7 @@ public class SK_Timer_Incident extends Base {
 		settingsbl.SelectEventOption();
 		incidentoptionbl.clickVideoAudioLocationIncident();
 		incidentoptionbl.clickButtonBack();
-		settingsbl.clickButtonBack();
+		settingsbl.clickButtonBackSettings();
 
 	}
 
@@ -73,6 +73,7 @@ public class SK_Timer_Incident extends Base {
 		homepagebl.startTimer();
 		setTimerbl.SetTimer();
 		setTimerbl.Set();
+		incidentscreenbl.clickCloseChat();
 		incidentscreenbl.EndIncident();
 		incidentscreenbl.SelectEndReason();
 

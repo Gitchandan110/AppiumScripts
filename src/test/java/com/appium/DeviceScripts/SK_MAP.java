@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import com.appium.bussinessLogic.SK_HomePageBL;
 import com.appium.bussinessLogic.SK_IncidentScreenBL;
 import com.appium.bussinessLogic.SK_LaunchBL;
+import com.appium.bussinessLogic.SK_MapBL;
 import com.appium.bussinessLogic.SK_PermissionBL;
 import com.appium.bussinessLogic.SK_PrivacyPolicyBL;
 import com.appium.bussinessLogic.SK_QuickTipsBL;
@@ -30,7 +31,7 @@ public class SK_MAP extends Base{
 	SK_HomePageBL homepagebl=PageFactory.initElements(driver, SK_HomePageBL.class);
 	SK_IncidentScreenBL incidentscreenbl=PageFactory.initElements(driver, SK_IncidentScreenBL.class);
 	SK_SettingsBL settingsbl = PageFactory.initElements(driver, SK_SettingsBL.class);
-	
+	SK_MapBL mapBl=PageFactory.initElements(driver, SK_MapBL.class);
 	
 	
 	@BeforeTest
@@ -45,7 +46,7 @@ public class SK_MAP extends Base{
 	}
 
 	@Test(priority=1)
-	public void testSOSIncident() {
+	public void testSteerPathMap() throws InterruptedException {
 
 		/*launchbl.verifyTitle();
 		launchbl.clickBtnSignIn();
@@ -57,6 +58,9 @@ public class SK_MAP extends Base{
 		permissionbl.acceptPermissions();
 		quicktipsbl.closeTips();*/
 		homepagebl.OpenMAP();
+		mapBl.selectMAP();
+		mapBl.clickPOIList();
+		mapBl.getPOIList();
 		
 		
 		

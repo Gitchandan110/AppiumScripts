@@ -60,7 +60,7 @@ public class SK_SafeWalk_Incident extends Base {
 		settingsbl.SelectEventOption();
 		incidentoptionbl.clickVideoAudioLocationIncident();
 		incidentoptionbl.clickButtonBack();
-		settingsbl.clickButtonBack();
+		settingsbl.clickButtonBackSettings();
 	}
 
 	@Test
@@ -68,6 +68,7 @@ public class SK_SafeWalk_Incident extends Base {
 	public void testSafewalkIncident() {
 
 		homepagebl.startSafeWalk();
+		incidentscreenbl.clickCloseChat();
 		incidentscreenbl.EndIncident();
 		incidentscreenbl.SelectEndReason();
 

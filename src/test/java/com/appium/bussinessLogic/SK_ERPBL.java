@@ -40,9 +40,13 @@ public class SK_ERPBL extends SK_ERP_PO {
 
 		int optionCount = optionEarthquick().size();
 		System.out.println("Earthquick Option count is : " + optionCount);
+		
 		for (int i = 0; i < optionCount; i++) {
+			
 		optionEarthquick().get(i).click();
+		
 		}
+		
 	}
 
 	public void clickBtnAcknowledge() {

@@ -67,12 +67,14 @@ public class SK_Photo_Incident extends Base {
 		settingsbl.SelectEventOption();
 		incidentoptionbl.clickPhotoIncident();
 		incidentoptionbl.clickButtonBack();
-		settingsbl.clickButtonBack();
+		settingsbl.clickButtonBackSettings();
 		homepagebl.switchCamera();
 		homepagebl.startSOS();
+		incidentscreenbl.clickCloseChat();
 		incidentscreenbl.EndPicIncident();
 		incidentscreenbl.SelectEndReason();
 		homepagebl.startSafeWalk();
+		incidentscreenbl.clickCloseChat();
 		incidentscreenbl.EndPicIncident();
 		incidentscreenbl.SelectEndReason();
 

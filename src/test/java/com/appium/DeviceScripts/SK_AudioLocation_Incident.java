@@ -68,11 +68,13 @@ public class SK_AudioLocation_Incident extends Base {
 		settingsbl.SelectEventOption();
 		incidentoptionbl.clickAudioIncident();
 		incidentoptionbl.clickButtonBack();
-		settingsbl.clickButtonBack();
+		settingsbl.clickButtonBackSettings();
 		homepagebl.startSOS();
+		incidentscreenbl.clickCloseChat();
 		incidentscreenbl.EndIncident();
 		incidentscreenbl.SelectEndReason();
 		homepagebl.startSafeWalk();
+		incidentscreenbl.clickCloseChat();
 		incidentscreenbl.EndIncident();
 		incidentscreenbl.SelectEndReason();
 

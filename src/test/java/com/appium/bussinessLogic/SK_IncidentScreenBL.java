@@ -29,6 +29,32 @@ public class SK_IncidentScreenBL extends SK_IncidentScreenPO{
 
 	}
 	
+	public void clickCloseChat() {
+		
+		try {
+			
+			if(btnCloseChat() !=null && btnCloseChat().isDisplayed()) {
+				btnCloseChat().click();
+				System.out.println("Close Chat button clicked");
+				
+			}else { System.out.println("Close Chat button not found");
+				
+				}
+		} catch (Exception ex) {
+			
+			System.out.println("Exception in clickCloseChat():" + ex);
+			
+		}
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
 	public void EndPicIncident() {
 
 		try {

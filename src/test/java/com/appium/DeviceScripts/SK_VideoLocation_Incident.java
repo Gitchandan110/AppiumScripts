@@ -67,11 +67,13 @@ public class SK_VideoLocation_Incident extends Base {
 		settingsbl.SelectEventOption();
 		incidentoptionbl.clickVideoLocationIncident();
 		incidentoptionbl.clickButtonBack();
-		settingsbl.clickButtonBack();
+		settingsbl.clickButtonBackSettings();
 		homepagebl.startSOS();
+		incidentscreenbl.clickCloseChat();
 		incidentscreenbl.EndIncident();
 		incidentscreenbl.SelectEndReason();
 		homepagebl.startSafeWalk();
+		incidentscreenbl.clickCloseChat();
 		incidentscreenbl.EndIncident();
 		incidentscreenbl.SelectEndReason();
 

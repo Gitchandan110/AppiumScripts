@@ -81,11 +81,27 @@
         </classes>
     </test>
 
-    <test name=" SK_ERP" >
+    <test name="SK_ERP" >
 
         <classes>
 
-            <class name="com.appium.DeviceScripts. SK_ERP" />
+            <class name="com.appium.DeviceScripts.SK_ERP" />
+        </classes>
+    </test>
+
+    <test name="SK_MAP" >
+
+        <classes>
+
+            <class name="com.appium.DeviceScripts.SK_MAP" />
+        </classes>
+    </test>
+    
+     <test name="SK_911_Incident" >
+
+        <classes>
+
+            <class name="com.appium.DeviceScripts.SK_911_Incident" />
         </classes>
     </test>
 
@@ -129,7 +145,7 @@
 
             <class name="com.appium.DeviceScripts.SK_CreateProfile" />
         </classes>
-    </test> 
+    </test> 
     -->
 
 
@@ -168,7 +184,7 @@
 		<classes>
 			<class name="com.appium.EmulatorScripts.SK_Emulator_Tips_Blank" />
 		</classes>
-	</test>
+	</test>
     -->
 
 </suite>

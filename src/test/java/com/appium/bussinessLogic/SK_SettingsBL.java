@@ -52,13 +52,14 @@ public class SK_SettingsBL extends SK_SettingsPO {
 	
 	
 
-	public void clickButtonBack() {
+	public void clickButtonBackSettings() {
 
 		try {
 
-			if (btnNavigateBack().isDisplayed()) {
-				btnNavigateBack().click();
+			if (btnSettingsNavigateUp().isDisplayed()) {
+				btnSettingsNavigateUp().click();
 				System.out.println("User Navigate Back");
+				Thread.sleep(5000);
 			}
 
 		} catch (Exception ex) {

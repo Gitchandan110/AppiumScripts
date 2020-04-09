@@ -29,6 +29,43 @@ public class SK_IncidentScreenPO extends Base {
 		return driver.findElement(Chat);
 
 	}
+	
+	public MobileElement txtEditChat() {
+	//	By EditChat = By.id("com.safety.armourgrid:id/chat_edit");
+		By EditChat = By.xpath("//android.widget.EditText[@text=\"Message\"]");
+		return driver.findElement(EditChat);
+	}
+	
+	public MobileElement txtYesChat() {
+		//	By Yes = By.id("com.safety.armourgrid:id/chat_yes");
+			By Yes = By.xpath("//android.widget.TextView[@text=\"Yes\"]");
+			return driver.findElement(Yes);
+		}	
+	
+	public MobileElement txtNoChat() {
+		//	By No = By.id("com.safety.armourgrid:id/chat_no");
+			By No = By.xpath("//android.widget.TextView[@text=\"No\"]");
+			return driver.findElement(No);
+		}	
+	
+	
+	public MobileElement txtMaybeChat() {
+		//	By Maybe = By.id("com.safety.armourgrid:id/chat_maybe");
+			By Maybe = By.xpath("//android.widget.TextView[@text=\"Maybe\"]");
+			return driver.findElement(Maybe);
+		}	
+	
+	
+	
+	public MobileElement btnCloseChat() {
+	//	By CloseChat = By.id("com.safety.armourgrid:id/chat_close");
+		
+		By CloseChat = By.xpath("//android.widget.Button[@text=\"CLOSE\"]");
+		return driver.findElement(CloseChat);
+
+	}
+	
+	
 
 	public MobileElement btnHideScreen() {
 		By Hide = By.linkText("Hide");
