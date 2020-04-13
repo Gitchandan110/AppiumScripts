@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="94688" started-at="2020-04-09T08:42:36Z" finished-at="2020-04-09T08:44:10Z">
+  <suite name="Default suite" duration-ms="113901" started-at="2020-04-13T09:12:43Z" finished-at="2020-04-13T09:14:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="94688" started-at="2020-04-09T08:42:36Z" finished-at="2020-04-09T08:44:10Z">
+    <test name="Default test" duration-ms="113901" started-at="2020-04-13T09:12:43Z" finished-at="2020-04-13T09:14:37Z">
       <class name="com.appium.DeviceScripts.SK_MAP">
-        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_MAP@5faeada1]" name="launchSafetyKuvrr" is-config="true" duration-ms="28772" started-at="2020-04-09T08:42:36Z" finished-at="2020-04-09T08:43:04Z">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_MAP@5faeada1]" name="launchSafetyKuvrr" is-config="true" duration-ms="15845" started-at="2020-04-13T09:12:43Z" finished-at="2020-04-13T09:12:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchSafetyKuvrr -->
-        <test-method status="PASS" signature="testSOSIncident()[pri:1, instance:com.appium.DeviceScripts.SK_MAP@5faeada1]" name="testSOSIncident" duration-ms="65851" started-at="2020-04-09T08:43:04Z" finished-at="2020-04-09T08:44:10Z">
+        <test-method status="PASS" signature="testSteerPathMap()[pri:1, instance:com.appium.DeviceScripts.SK_MAP@5faeada1]" name="testSteerPathMap" duration-ms="98000" started-at="2020-04-13T09:12:59Z" finished-at="2020-04-13T09:14:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSOSIncident -->
-        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_MAP@5faeada1]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-04-09T08:44:10Z" finished-at="2020-04-09T08:44:10Z">
+        </test-method> <!-- testSteerPathMap -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_MAP@5faeada1]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-04-13T09:14:37Z" finished-at="2020-04-13T09:14:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutApp -->

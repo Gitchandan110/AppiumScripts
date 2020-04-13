@@ -16,15 +16,26 @@
       </class> <!-- com.appium.DeviceScripts.SK_GroupCall -->
     </classes>
   </test> <!-- SK_GroupCall(failed) -->
-  <test thread-count="5" name="SK_ERP(failed)">
+  <test thread-count="5" name="SK_MAP(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_ERP">
+      <class name="com.appium.DeviceScripts.SK_MAP">
         <methods>
-          <include name="testERP"/>
+          <include name="logOutApp"/>
+          <include name="testSteerPathMap"/>
           <include name="launchSafetyKuvrr"/>
+        </methods>
+      </class> <!-- com.appium.DeviceScripts.SK_MAP -->
+    </classes>
+  </test> <!-- SK_MAP(failed) -->
+  <test thread-count="5" name="SK_Photo_Incident(failed)">
+    <classes>
+      <class name="com.appium.DeviceScripts.SK_Photo_Incident">
+        <methods>
+          <include name="launchSafetyKuvrr"/>
+          <include name="verifyPhotoAudioIncident"/>
           <include name="logOutApp"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_ERP -->
+      </class> <!-- com.appium.DeviceScripts.SK_Photo_Incident -->
     </classes>
-  </test> <!-- SK_ERP(failed) -->
+  </test> <!-- SK_Photo_Incident(failed) -->
 </suite> <!-- Failed suite [Suite] -->

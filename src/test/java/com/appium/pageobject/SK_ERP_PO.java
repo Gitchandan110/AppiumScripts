@@ -10,20 +10,20 @@ import io.appium.java_client.MobileElement;
 
 public class SK_ERP_PO extends Base {
 
-	public MobileElement erpEarthquick() {
+	public MobileElement erpEarthquake() {
 
 		try {
 
 			// By.xpath("Class[@text=\"xyz\"]")
-			By earthQuick = By.xpath("//android.widget.TextView[@text=\"Earthquick\"]");
-			return driver.findElement(earthQuick);
+			By earthQuake = By.xpath("//android.widget.TextView[@text=\"Earthquake\"]");
+			return driver.findElement(earthQuake);
 		} catch (Exception ex) {
 			System.out.println("po:" + ex);
 		}
 		return null;
 	}
 
-	public List<MobileElement> optionEarthquick() {
+	public List<MobileElement> optionEarthQuake() {
 
 		By option = By.id("com.safety.armourgrid:id/list_item_erplan_info_state");
 

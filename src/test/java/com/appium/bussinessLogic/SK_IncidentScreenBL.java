@@ -1,5 +1,6 @@
 package com.appium.bussinessLogic;
 
+import com.appium.commonutils.Base;
 import com.appium.commonutils.ExcelUtils;
 import com.appium.pageobject.SK_IncidentScreenPO;
 
@@ -11,7 +12,7 @@ public class SK_IncidentScreenBL extends SK_IncidentScreenPO{
 		try {
 
 			if (btnEndIncident().isDisplayed()) {
-
+				Base.takeScreenShot("Incident Screen");
 				btnEndIncident().click();
 				Thread.sleep(3000);
 				System.out.println("End Incident button clicked");
@@ -34,6 +35,7 @@ public class SK_IncidentScreenBL extends SK_IncidentScreenPO{
 		try {
 			
 			if(btnCloseChat() !=null && btnCloseChat().isDisplayed()) {
+				Base.takeScreenShot("Incident Screen");
 				btnCloseChat().click();
 				System.out.println("Close Chat button clicked");
 				
@@ -60,7 +62,7 @@ public class SK_IncidentScreenBL extends SK_IncidentScreenPO{
 		try {
 
 			if (btnEndPicIncident().isDisplayed()) {
-
+				Base.takeScreenShot("Incident Screen");
 				btnEndPicIncident().click();
 				Thread.sleep(3000);
 				System.out.println("End Pic Incident button clicked");
@@ -84,7 +86,7 @@ public class SK_IncidentScreenBL extends SK_IncidentScreenPO{
 		try {
 
 			if (reasonEndIncident().isDisplayed()) {
-
+				Base.takeScreenShot("Incident Screen");
 				reasonEndIncident().click();
 				 ExcelUtils.WriteExcel(TestCaseSheet, 25, 1, "Pass");
 				System.out.println("End Reson option clicked");

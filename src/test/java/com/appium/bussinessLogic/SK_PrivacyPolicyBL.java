@@ -18,6 +18,7 @@ public class SK_PrivacyPolicyBL extends SK_PrivacyPolicyPO {
 		try {
 
 			if (btnAcceptPrivacyPolicy().isDisplayed()) {
+				Base.takeScreenShot("Privacy Policy Screen");
 
 				btnAcceptPrivacyPolicy().click();
 				ExcelUtils.WriteExcel(TestCaseSheet, 9, 1, "Pass");

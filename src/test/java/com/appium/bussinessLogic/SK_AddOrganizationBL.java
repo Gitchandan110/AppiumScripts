@@ -1,5 +1,6 @@
 package com.appium.bussinessLogic;
 
+import com.appium.commonutils.Base;
 import com.appium.commonutils.ExcelUtils;
 import com.appium.pageobject.SK_AddOrganizationPO;
 
@@ -13,6 +14,7 @@ public class SK_AddOrganizationBL extends SK_AddOrganizationPO {
 
 			if (tbAddOrganization().isDisplayed()) {
 				tbAddOrganization().sendKeys("CKORG");
+				Base.takeScreenShot("OrgCode Screen");
 				System.out.println("Org Code filed");
 			} else {
 				System.out.println("Org Code not filed");

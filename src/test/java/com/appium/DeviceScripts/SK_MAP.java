@@ -1,5 +1,6 @@
 package com.appium.DeviceScripts;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 
 import org.openqa.selenium.support.PageFactory;
@@ -46,7 +47,7 @@ public class SK_MAP extends Base{
 	}
 
 	@Test(priority=1)
-	public void testSteerPathMap() throws InterruptedException {
+	public void testSteerPathMap() throws InterruptedException, IOException {
 
 		/*launchbl.verifyTitle();
 		launchbl.clickBtnSignIn();

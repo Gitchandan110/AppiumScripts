@@ -1,5 +1,6 @@
 package com.appium.bussinessLogic;
 
+import com.appium.commonutils.Base;
 import com.appium.commonutils.ExcelUtils;
 import com.appium.pageobject.SK_TipSubmitPO;
 
@@ -12,9 +13,8 @@ public class SK_TipSubmitBL extends SK_TipSubmitPO {
 		try {
 
 			if (txtTipsDescription().isDisplayed()) {
-
+				Base.takeScreenShot("Tips Screen");
 				txtTipsDescription().sendKeys("Tips Description");
-
 				System.out.println("Tips Description is filled");
 
 			} else {
@@ -37,9 +37,8 @@ public class SK_TipSubmitBL extends SK_TipSubmitPO {
 				driver.hideKeyboard();
 
 				if (txtTipsName().isDisplayed()) {
-
+					Base.takeScreenShot("Tips Screen");
 					txtTipsName().sendKeys("Tips Name");
-
 					System.out.println("Tips Name is filled");
 
 				} else {
@@ -64,7 +63,7 @@ public class SK_TipSubmitBL extends SK_TipSubmitPO {
 				System.out.println("Remain Anonymous status is:" + chkboxRemainAnonymous().getAttribute("checked"));
 
 				chkboxRemainAnonymous().click();
-
+				Base.takeScreenShot("Tips Screen");
 				System.out.println("Remain Anonymous uncheked");
 
 			} else {
@@ -90,7 +89,7 @@ public class SK_TipSubmitBL extends SK_TipSubmitPO {
 						.println("Include Geolocation status is:" + chkboxIncludeGeoLocation().getAttribute("checked"));
 
 				chkboxIncludeGeoLocation().click();
-
+				Base.takeScreenShot("Tips Screen");
 				System.out.println("Include GeoLocation checked");
 
 			} else {
@@ -111,7 +110,7 @@ public class SK_TipSubmitBL extends SK_TipSubmitPO {
 		try {
 
 			if (btnSendTip().isDisplayed()) {
-
+				Base.takeScreenShot("Tips Screen");
 				btnSendTip().click();
 				Thread.sleep(5000);
 				ExcelUtils.WriteExcel(TestCaseSheet, 43, 1, "Pass");

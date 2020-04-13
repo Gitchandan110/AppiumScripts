@@ -1,5 +1,6 @@
 package com.appium.bussinessLogic;
 
+import com.appium.commonutils.Base;
 import com.appium.commonutils.ExcelUtils;
 import com.appium.pageobject.SK_AddEmergencyContactPO;
 
@@ -59,6 +60,7 @@ public class SK_AddEmergencyContactBL extends SK_AddEmergencyContactPO {
 			if (tbPhoneNo().isDisplayed()) {
 				tbPhoneNo().sendKeys("58963245789");
 				System.out.println("Phone Number filed");
+				Base.takeScreenShot("Emergency contact Screen");
 			} else {
 				System.out.println("Phone Number not filed");
 			}

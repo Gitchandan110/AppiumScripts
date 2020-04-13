@@ -1,5 +1,6 @@
 package com.appium.EmulatorScripts;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 
 import org.openqa.selenium.support.PageFactory;
@@ -66,7 +67,7 @@ public class SK_Emulator_GroupCall extends Base{
 
 	@Test
 
-	public void GroupCall() throws InterruptedException {
+	public void GroupCall() throws InterruptedException, IOException {
 		
 		settingsbl.SelectOptionGroupCall();
 		groupcallbl.ClickBtnGroupListName();

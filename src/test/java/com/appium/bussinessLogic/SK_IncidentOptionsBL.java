@@ -17,7 +17,7 @@ public class SK_IncidentOptionsBL extends SK_IncidentOptionsPO {
 			if (btnVideoAudioLocationIncident().isDisplayed()) {
 				btnVideoAudioLocationIncident().click();
 				System.out.println("Video Audio Location Incident() selected");
-				 ExcelUtils.WriteExcel(TestCaseSheet, 22, 1, "Pass");
+				ExcelUtils.WriteExcel(TestCaseSheet, 22, 1, "Pass");
 			}
 
 		} catch (Exception ex) {

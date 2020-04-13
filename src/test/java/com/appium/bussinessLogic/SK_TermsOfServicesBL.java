@@ -3,6 +3,7 @@ package com.appium.bussinessLogic;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.appium.commonutils.Base;
 import com.appium.commonutils.ExcelUtils;
 import com.appium.pageobject.SK_TermsOfServicesPO;
 
@@ -15,8 +16,8 @@ public class SK_TermsOfServicesBL extends SK_TermsOfServicesPO {
 		try {
 
 			if (AcceptTerms().isDisplayed()) {
-
 				
+				Base.takeScreenShot("AcceptTerms Screen");
 				AcceptTerms().click();
 				ExcelUtils.WriteExcel(TestCaseSheet, 8, 1, "Pass");
 				System.out.println("Terms Of Services is accepted");

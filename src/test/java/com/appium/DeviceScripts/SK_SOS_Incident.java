@@ -1,5 +1,6 @@
 package com.appium.DeviceScripts;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 
 import org.openqa.selenium.support.PageFactory;
@@ -47,7 +48,7 @@ public class SK_SOS_Incident extends Base{
 	}
 
 	@Test(priority=1)
-	public void testSOSIncident() throws InterruptedException {
+	public void testSOSIncident() throws InterruptedException, IOException {
 
 		/*launchbl.verifyTitle();
 		launchbl.clickBtnSignIn();

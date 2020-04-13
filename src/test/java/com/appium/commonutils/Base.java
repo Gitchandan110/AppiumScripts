@@ -3,6 +3,7 @@ package com.appium.commonutils;
 import static org.testng.Assert.assertNotNull;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.DateFormat;
@@ -21,8 +22,11 @@ import javax.mail.Session;
 import javax.mail.Store;
 
 import org.apache.commons.collections.bag.SynchronizedSortedBag;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -232,6 +236,22 @@ public class Base {
    }
 	
 	
+	public static void takeScreenShot(String screenName) throws IOException {
+
+		String imageLocation = "C:\\Users\\Chandan\\Git\\ArtifactIdAppium\\Screenshots\\";
+		// String screenName= obj.getTagName();
+
+		try {
+			TakesScreenshot ts = (TakesScreenshot) driver;
+			File capturedImage = ts.getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFileToDirectory(capturedImage, new File(imageLocation + screenName));
+			System.out.println("Screenshot captured");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
 
 	public static String MailReader() {
 		

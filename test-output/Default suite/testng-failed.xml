@@ -6,7 +6,7 @@
       <class name="com.appium.DeviceScripts.SK_MAP">
         <methods>
           <include name="logOutApp"/>
-          <include name="testSOSIncident"/>
+          <include name="testSteerPathMap"/>
           <include name="launchSafetyKuvrr"/>
         </methods>
       </class> <!-- com.appium.DeviceScripts.SK_MAP -->

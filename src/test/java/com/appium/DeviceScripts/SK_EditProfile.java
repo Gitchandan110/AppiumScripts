@@ -1,5 +1,6 @@
 package com.appium.DeviceScripts;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 
 import org.openqa.selenium.support.PageFactory;
@@ -68,7 +69,7 @@ public class SK_EditProfile extends Base{
 
 	@Test
 
-	public void Profile() throws InterruptedException {
+	public void Profile() throws InterruptedException, IOException {
 		
 		homepagebl.clickSetting();
 		settingsbl.SelectOptionProfile();

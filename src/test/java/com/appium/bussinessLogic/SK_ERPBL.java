@@ -14,46 +14,51 @@ public class SK_ERPBL extends SK_ERP_PO {
 
 	String TestCaseSheet = "TestCase";
 
-	public void SelectEarthquickERP() {
+	public void SelectEarthquakeERP() {
 
 		try {
 
-			if (erpEarthquick().isDisplayed()) {
-				System.out.println("EarthQuick Plan displayed");
-				erpEarthquick().click();
+			if (erpEarthquake().isDisplayed()) {
+				System.out.println("EarthQuake Plan displayed");
+				erpEarthquake().click();
 				Thread.sleep(10000);
-				System.out.println("EarthQuick Plan clicked");
+				System.out.println("EarthQuake Plan clicked");
+				Base.takeScreenShot("ERP Screen");
 
 			} else {
 
-				System.out.println("EarthQuick Plan not clicked");
+				System.out.println("EarthQuake Plan not clicked");
 			}
 
 		} catch (Exception ex) {
 
-			System.out.println("Exception in EarthQuick Plan:" + ex.getMessage());
+			System.out.println("Exception in EarthQuake Plan:" + ex.getMessage());
 		}
 
 	}
 
-	public void clickEarthquickOption() {
+	public void clickEarthQuakeOption() {
 
-		int optionCount = optionEarthquick().size();
-		System.out.println("Earthquick Option count is : " + optionCount);
+		int optionCount = optionEarthQuake().size();
+		System.out.println("EarthQuake Option count is : " + optionCount);
 		
 		for (int i = 0; i < optionCount; i++) {
 			
-		optionEarthquick().get(i).click();
+			optionEarthQuake().get(i).click();
 		
 		}
 		
-	}
+	} 
+	
+	
+	
 
 	public void clickBtnAcknowledge() {
 
 		try {
 
 			if (btnAcknowledge().isDisplayed()) {
+				Base.takeScreenShot("ERP Screen");
 				System.out.println("Acknowledge button is displayed");
 				btnAcknowledge().click();
 				Thread.sleep(5000);

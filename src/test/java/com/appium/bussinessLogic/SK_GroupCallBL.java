@@ -19,7 +19,9 @@ public class SK_GroupCallBL extends SK_GroupCallPO {
 			if (btnGroupCallActiveList().isDisplayed()) {
 				System.out.println("Group call list button found"+btnGroupCallList().getText());
 				btnGroupCallActiveList().click();
+				Thread.sleep(3000);
 			    System.out.println("Group call button clicked");
+				Base.takeScreenShot("Group Call Screen");
 			}
 
 		} catch (Exception ex) {

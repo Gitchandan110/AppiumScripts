@@ -14,6 +14,7 @@ public class SK_SetTimerBL extends SK_SetTimerPO{
 
 			if (btnSetTimer().isDisplayed()) { 
 				System.out.println("Set Timer Button displayed");
+				Base.takeScreenShot("Timer Screen");
 				btnSetTimer().click();
 				Thread.sleep(3000);
 				System.out.println("Set Timer clicked");
@@ -41,6 +42,8 @@ public void Set() {
 			System.out.println("Set button clicked");
 			ExcelUtils.WriteExcel(TestCaseSheet, 31, 1, "Pass");
 			System.out.println("Current Time is :"+ Base.GetDateTime());
+			Thread.sleep(5000);
+			Base.takeScreenShot("Timer Screen");
 			Thread.sleep(360000);
 			System.out.println("Thread sleep for 5 Minute");
 			System.out.println("Current Time is :"+ Base.GetDateTime());

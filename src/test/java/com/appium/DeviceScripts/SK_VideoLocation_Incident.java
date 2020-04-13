@@ -1,5 +1,6 @@
 package com.appium.DeviceScripts;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 
 import org.openqa.selenium.support.PageFactory;
@@ -45,7 +46,7 @@ public class SK_VideoLocation_Incident extends Base {
 
 	@BeforeMethod
 
-	public void Login() {
+	public void Login() throws InterruptedException, IOException {
 
 	/*	launchbl.verifyTitle();
 		launchbl.clickBtnSignIn();
@@ -56,15 +57,16 @@ public class SK_VideoLocation_Incident extends Base {
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
 		quicktipsbl.closeTips();*/
+		homepagebl.clickSetting();
+		settingsbl.SelectEventOption();
 
 	}
 
 	@Test
 
-	public void verifyPhotoAudioIncident() throws InterruptedException {
+	public void verifyPhotoAudioIncident() throws InterruptedException, IOException {
 
-		homepagebl.clickSetting();
-		settingsbl.SelectEventOption();
+		
 		incidentoptionbl.clickVideoLocationIncident();
 		incidentoptionbl.clickButtonBack();
 		settingsbl.clickButtonBackSettings();

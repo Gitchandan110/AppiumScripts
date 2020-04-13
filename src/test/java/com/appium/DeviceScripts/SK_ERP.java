@@ -58,8 +58,8 @@ public class SK_ERP extends Base{
 		permissionbl.acceptPermissions();
 		quicktipsbl.closeTips();*/
 		homepagebl.OpenERP();
-		erpbl.SelectEarthquickERP();
-		erpbl.clickEarthquickOption();
+		erpbl.SelectEarthquakeERP();
+		erpbl.clickEarthQuakeOption();
 		erpbl.clickBtnAcknowledge();
 		erpbl.clickBtnNavigateUP();
 		

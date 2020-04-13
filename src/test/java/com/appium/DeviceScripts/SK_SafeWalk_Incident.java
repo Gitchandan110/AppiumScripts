@@ -1,5 +1,6 @@
 package com.appium.DeviceScripts;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 
 import org.openqa.selenium.support.PageFactory;
@@ -45,7 +46,7 @@ public class SK_SafeWalk_Incident extends Base {
 
 	@BeforeMethod
 
-	public void loginApp() throws InterruptedException {
+	public void loginApp() throws InterruptedException, IOException {
 
 	/*	launchbl.verifyTitle();
 		launchbl.clickBtnSignIn();

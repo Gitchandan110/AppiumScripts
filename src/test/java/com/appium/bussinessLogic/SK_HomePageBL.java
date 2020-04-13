@@ -1,5 +1,6 @@
 package com.appium.bussinessLogic;
 
+import com.appium.commonutils.Base;
 import com.appium.commonutils.ExcelUtils;
 import com.appium.pageobject.SK_HomePagePO;
 
@@ -13,8 +14,11 @@ public class SK_HomePageBL extends SK_HomePagePO {
 
 			if (btnSOS().isDisplayed()) {
 				System.out.println("SOS button found");
+				Base.takeScreenShot("Home Screen");
 				btnSOS().click();
 				System.out.println("SOS started");
+				Thread.sleep(3000);
+				Base.takeScreenShot("SOS Screen");
 				 ExcelUtils.WriteExcel(TestCaseSheet, 20, 1, "Pass");
 				Thread.sleep(40000);
 				 ExcelUtils.WriteExcel(TestCaseSheet, 21, 1, "Pass");
@@ -38,6 +42,8 @@ public class SK_HomePageBL extends SK_HomePagePO {
 
 			if (btnSafeWalk().isDisplayed()) {
 				btnSafeWalk().click();
+				Thread.sleep(7000);
+				Base.takeScreenShot("WalkSafe Screen");
 				Thread.sleep(40000);
 				 ExcelUtils.WriteExcel(TestCaseSheet, 26, 1, "Pass");
 				System.out.println("SafeWalk started");
@@ -59,10 +65,10 @@ public class SK_HomePageBL extends SK_HomePagePO {
 		try {
 
 			if (btnTimer().isDisplayed()) {
-
 				btnTimer().click();
 				System.out.println("Timer Button Clicked");
 				Thread.sleep(5000);
+				Base.takeScreenShot("Timer Screen");
 
 			} else {
 
@@ -82,11 +88,10 @@ public class SK_HomePageBL extends SK_HomePagePO {
 		try {
 
 			if (btnTips().isDisplayed()) {
-
 				btnTips().click();
 				System.out.println("Tips clicked");
 				Thread.sleep(5000);
-
+		
 			} else {
 
 				System.out.println("Tips Button not Clicked");
@@ -104,10 +109,10 @@ public class SK_HomePageBL extends SK_HomePagePO {
 		try {
 
 			if (btn911().isDisplayed()) {
-
 				btn911().click();
 				System.out.println("911 Started");
 				Thread.sleep(5000);
+				Base.takeScreenShot("911 Screen");
 
 			} else {
 
@@ -126,10 +131,10 @@ public class SK_HomePageBL extends SK_HomePagePO {
 		try {
 
 			if (btnMaps().isDisplayed()) {
-
 				btnMaps().click();
 				System.out.println("Map Open");
 				Thread.sleep(5000);
+				Base.takeScreenShot("Map Screen");
 
 			} else {
 
@@ -152,6 +157,7 @@ public class SK_HomePageBL extends SK_HomePagePO {
 				btnPlans().click();
 				System.out.println("ERP Open");
 				Thread.sleep(10000);
+				Base.takeScreenShot("ERP Screen");
 
 			} else {
 
@@ -195,6 +201,8 @@ public class SK_HomePageBL extends SK_HomePagePO {
 			if (btnSettings().isDisplayed()) {
 				btnSettings().click();
 				System.out.println("Setting Button Clicked");
+				Thread.sleep(3000);
+				Base.takeScreenShot("Setting Screen");
 
 			} else {
 

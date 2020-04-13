@@ -2,6 +2,7 @@ package com.appium.bussinessLogic;
 
 import org.testng.Assert;
 
+import com.appium.commonutils.Base;
 import com.appium.commonutils.ExcelUtils;
 import com.appium.pageobject.SK_LaunchPO;
 
@@ -16,7 +17,7 @@ public class SK_LaunchBL extends SK_LaunchPO {
 			if (titleLaunchScreen().isDisplayed()) {
 
 				System.out.println("Title of Launch Screen is :" + titleLaunchScreen().getText());
-
+				Base.takeScreenShot("Launch Screen");
 				Assert.assertEquals(titleLaunchScreen().getText(), "Safety Kuvrr", "Title Does not match");
 				System.out.println("Assertion pass: Title Matched");
 				ExcelUtils.WriteExcel(TestCaseSheet, 1, 1, "Pass");
@@ -40,7 +41,7 @@ public class SK_LaunchBL extends SK_LaunchPO {
 		try {
 
 			if (BtnSignIn().isDisplayed()) {
-
+				Base.takeScreenShot("Launch Screen");
 				ExcelUtils.WriteExcel(TestCaseSheet, 2, 1, "Pass");
 				BtnSignIn().click();
 				System.out.println("SignIn Button Clicked");
@@ -66,6 +67,7 @@ public class SK_LaunchBL extends SK_LaunchPO {
 		try {
 
 			if (BtnNewAccount().isDisplayed()) {
+				Base.takeScreenShot("Launch Screen");
 				ExcelUtils.WriteExcel(TestCaseSheet, 3, 1, "Pass");
 				BtnNewAccount().click();
 				System.out.println("New Account Button Clicked");
