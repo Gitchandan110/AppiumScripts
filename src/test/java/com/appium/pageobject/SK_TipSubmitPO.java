@@ -1,5 +1,7 @@
 package com.appium.pageobject;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 
 import com.appium.commonutils.Base;
@@ -7,7 +9,58 @@ import com.appium.commonutils.Base;
 import io.appium.java_client.MobileElement;
 
 public class SK_TipSubmitPO extends Base {
+	
+	
+	
+	public MobileElement screenTipCategories() {
 
+		By categories = By.id("com.safety.armourgrid:id/activity_category_recycler");
+		return driver.findElement(categories);
+
+	}
+	
+	public List<MobileElement> tipCategories() {
+
+	
+		By categories = By.id("com.safety.armourgrid:id/list_item_erplans_img");
+		
+		return driver.findElements(categories);
+
+	}
+	
+	
+	public MobileElement tipCategorie() {
+
+		
+		By categorie = By.id("com.safety.armourgrid:id/list_item_erplans_img");
+		
+		return driver.findElement(categorie);
+
+	}
+	
+	
+	public MobileElement navigateBack() {
+
+		By Back = By.xpath("//android.widget.ImageButton[@content-desc=\"Navigate up\"]");
+		return driver.findElement(Back);
+
+	}
+	
+	public MobileElement dropdownSelectCategories() {
+
+		By ddCategories = By.id("android:id/text1");
+		return driver.findElement(ddCategories);
+
+	}
+	
+	public List<MobileElement> TipcategoriesList() {
+
+		By category = By.id("android:id/text1");
+		return driver.findElements(category);
+
+	}
+	
+	
 	public MobileElement dropdownGeofence() {
 
 		By GeoFence = By.id("android:id/text1");
@@ -38,7 +91,7 @@ public class SK_TipSubmitPO extends Base {
 
 	public MobileElement txtTipsName() {
 
-		By TipsName = By.id("com.safety.armourgrid:id/tips_names");
+		By TipsName = By.xpath("//android.widget.EditText[@text=\"Description/Names of Anyone Involved\"]");
 		return driver.findElement(TipsName);
 
 	}

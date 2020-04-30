@@ -17,30 +17,6 @@
         </classes>
     </test>
 
-    <test name="SK_Tips_Anonymous" >
-
-        <classes>
-
-            <class name="com.appium.DeviceScripts.SK_Tips_Anonymous" />
-        </classes>
-    </test>
-
-    <test name="SK_Tips_GeoLocation" >
-
-        <classes>
-
-            <class name="com.appium.DeviceScripts.SK_Tips_GeoLocation" />
-        </classes>
-    </test>
-
-    <test name="SK_Tips_Blank" >
-
-        <classes>
-
-            <class name="com.appium.DeviceScripts.SK_Tips_Blank" />
-        </classes>
-    </test>
-
     <test name="SK_AudioLocation_Incident" >
 
         <classes>
@@ -65,19 +41,35 @@
         </classes>
     </test>
 
-    <test name="SK_GroupCall" >
+    <test name="SK_Tips_Anonymous" >
 
         <classes>
 
-            <class name="com.appium.DeviceScripts.SK_GroupCall" />
+            <class name="com.appium.DeviceScripts.SK_Tips_Anonymous" />
         </classes>
     </test>
 
-    <test name="SK_Timer_Incident" >
+    <test name="SK_Tips_NonAnonymous" >
 
         <classes>
 
-            <class name="com.appium.DeviceScripts.SK_Timer_Incident" />
+            <class name="com.appium.DeviceScripts.SK_Tips_NonAnonymous" />
+        </classes>
+    </test>
+
+    <test name="SK_MAP" >
+
+        <classes>
+
+            <class name="com.appium.DeviceScripts.SK_MAP" />
+        </classes>
+    </test>
+
+    <test name="SK_MyHistory" >
+
+        <classes>
+
+            <class name="com.appium.DeviceScripts.SK_MyHistory" />
         </classes>
     </test>
 
@@ -89,19 +81,11 @@
         </classes>
     </test>
 
-    <test name="SK_MAP" >
+    <test name="SK_Timer_Incident" >
 
         <classes>
 
-            <class name="com.appium.DeviceScripts.SK_MAP" />
-        </classes>
-    </test>
-    
-     <test name="SK_911_Incident" >
-
-        <classes>
-
-            <class name="com.appium.DeviceScripts.SK_911_Incident" />
+            <class name="com.appium.DeviceScripts.SK_Timer_Incident" />
         </classes>
     </test>
 
@@ -110,6 +94,22 @@
         <classes>
 
             <class name="com.appium.DeviceScripts.SK_Photo_Incident" />
+        </classes>
+    </test>
+
+    <test name="SK_GroupCall" >
+
+        <classes>
+
+            <class name="com.appium.DeviceScripts.SK_GroupCall" />
+        </classes>
+    </test>
+
+    <test name="SK_911_Incident" >
+
+        <classes>
+
+            <class name="com.appium.DeviceScripts.SK_911_Incident" />
         </classes>
     </test>
 
@@ -145,7 +145,7 @@
 
             <class name="com.appium.DeviceScripts.SK_CreateProfile" />
         </classes>
-    </test> 
+    </test> 
     -->
 
 
@@ -184,7 +184,7 @@
 		<classes>
 			<class name="com.appium.EmulatorScripts.SK_Emulator_Tips_Blank" />
 		</classes>
-	</test>
+	</test>
     -->
 
 </suite>

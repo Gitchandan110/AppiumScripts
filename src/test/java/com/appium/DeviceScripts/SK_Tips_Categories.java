@@ -17,7 +17,7 @@ import com.appium.bussinessLogic.SK_TermsOfServicesBL;
 import com.appium.bussinessLogic.SK_TipSubmitBL;
 import com.appium.commonutils.Base;
 
-public class SK_Tips_GeoLocation extends Base{
+public class SK_Tips_Categories extends Base{
 	
 	SK_LaunchBL launchbl = PageFactory.initElements(driver, SK_LaunchBL.class);
 	SK_TermsOfServicesBL termsbl = PageFactory.initElements(driver, SK_TermsOfServicesBL.class);
@@ -39,7 +39,7 @@ public class SK_Tips_GeoLocation extends Base{
 	}
 
 	@Test
-	public void testTips() {
+	public void testTips() throws InterruptedException {
 /*
 		launchbl.verifyTitle();
 		launchbl.clickBtnSignIn();
@@ -51,12 +51,8 @@ public class SK_Tips_GeoLocation extends Base{
 		permissionbl.acceptPermissions();
 		quicktipsbl.closeTips();*/
 		homepagebl.startTips();
-		tipsubmitbl.uncheckRemainAnonymous();
-		tipsubmitbl.selectIncludeGeoLocation();
-		tipsubmitbl.enterTipsDescription();
-		tipsubmitbl.enterTipsName();
-		tipsubmitbl.SendTips();
-
+		tipsubmitbl.selectTipCategoriesDropDown();
+	
 	}
 	
 	@AfterMethod

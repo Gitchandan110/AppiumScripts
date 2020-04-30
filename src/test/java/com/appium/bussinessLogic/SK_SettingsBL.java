@@ -63,4 +63,22 @@ public class SK_SettingsBL extends SK_SettingsPO {
 		}
 	}
 
+	
+	public void SelectMyHistory() throws InterruptedException, IOException {
+
+		try {
+			Base.scrolltoElement("My History");
+			optionMyHistory().click();
+			Thread.sleep(5000);
+			Base.takeScreenShot("My History");
+			System.out.println("My History clicked");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+	
+	
+	
 }

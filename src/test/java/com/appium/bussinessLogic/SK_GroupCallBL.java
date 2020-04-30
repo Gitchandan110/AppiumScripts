@@ -17,7 +17,15 @@ public class SK_GroupCallBL extends SK_GroupCallPO {
 			}*/
 			
 			if (btnGroupCallActiveList().isDisplayed()) {
-				System.out.println("Group call list button found"+btnGroupCallList().getText());
+				System.out.println("Group call list found : " + btnGroupCallList().getText());
+				
+				System.out.println("Subscribed on : " + txtSubscribedOn().getText());
+				
+				System.out.println("Device ID : " + txtDeviceId().getText());
+				
+				System.out.println("Push ID : " + txtPushId().getText());
+				
+				
 				btnGroupCallActiveList().click();
 				Thread.sleep(3000);
 			    System.out.println("Group call button clicked");

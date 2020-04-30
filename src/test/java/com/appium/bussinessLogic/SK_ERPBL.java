@@ -45,6 +45,7 @@ public class SK_ERPBL extends SK_ERP_PO {
 		for (int i = 0; i < optionCount; i++) {
 			
 			optionEarthQuake().get(i).click();
+			
 		
 		}
 		

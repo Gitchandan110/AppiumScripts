@@ -1,5 +1,6 @@
 package com.appium.DeviceScripts;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 
 import org.openqa.selenium.support.PageFactory;
@@ -7,18 +8,21 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.appium.bussinessLogic.SK_ERPBL;
 import com.appium.bussinessLogic.SK_HomePageBL;
+import com.appium.bussinessLogic.SK_IncidentScreenBL;
 import com.appium.bussinessLogic.SK_LaunchBL;
+import com.appium.bussinessLogic.SK_MyHistoryBL;
 import com.appium.bussinessLogic.SK_PermissionBL;
 import com.appium.bussinessLogic.SK_PrivacyPolicyBL;
 import com.appium.bussinessLogic.SK_QuickTipsBL;
 import com.appium.bussinessLogic.SK_SettingsBL;
 import com.appium.bussinessLogic.SK_SignInBL;
 import com.appium.bussinessLogic.SK_TermsOfServicesBL;
-import com.appium.bussinessLogic.SK_TipSubmitBL;
 import com.appium.commonutils.Base;
 
-public class SK_Tips_Blank extends Base {
+public class SK_MyHistory extends Base{
+	
 	
 	SK_LaunchBL launchbl = PageFactory.initElements(driver, SK_LaunchBL.class);
 	SK_TermsOfServicesBL termsbl = PageFactory.initElements(driver, SK_TermsOfServicesBL.class);
@@ -26,23 +30,28 @@ public class SK_Tips_Blank extends Base {
 	SK_SignInBL signinbl = PageFactory.initElements(driver, SK_SignInBL.class);
 	SK_PermissionBL permissionbl = PageFactory.initElements(driver, SK_PermissionBL.class);
 	SK_QuickTipsBL quicktipsbl = PageFactory.initElements(driver, SK_QuickTipsBL.class);
-	SK_HomePageBL homepagebl = PageFactory.initElements(driver, SK_HomePageBL.class);
-	SK_TipSubmitBL tipsubmitbl = PageFactory.initElements(driver, SK_TipSubmitBL.class);
+	SK_HomePageBL homepagebl=PageFactory.initElements(driver, SK_HomePageBL.class);
+	SK_IncidentScreenBL incidentscreenbl=PageFactory.initElements(driver, SK_IncidentScreenBL.class);
 	SK_SettingsBL settingsbl = PageFactory.initElements(driver, SK_SettingsBL.class);
+	SK_ERPBL erpbl=PageFactory.initElements(driver, SK_ERPBL.class);
+	SK_MyHistoryBL myHistorybl=PageFactory.initElements(driver, SK_MyHistoryBL.class);
+	
+	
 	@BeforeTest
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-	//	 launchAppKarbon();
+		// launchAppKarbon();
 		 launchAppMotoG4P();
+	//	launchApkKarbon();
 		System.out.println("App Launched Successfull");
 
 	}
 
-	@Test
-	public void testTips() {
+	@Test(priority=1)
+	public void testERP() throws InterruptedException, IOException {
 
-/*		launchbl.verifyTitle();
+		/*launchbl.verifyTitle();
 		launchbl.clickBtnSignIn();
 		termsbl.acceptTermsOfServices();
 		privacypolicybl.acceptPrivacyPolicy();
@@ -51,25 +60,22 @@ public class SK_Tips_Blank extends Base {
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
 		quicktipsbl.closeTips();*/
-		homepagebl.startTips();
-		tipsubmitbl.uncheckRemainAnonymous();
-		tipsubmitbl.enterTipsDescription();
-		tipsubmitbl.enterTipsName();
-		tipsubmitbl.SendTips();
-
-	}
+		homepagebl.clickSetting();
+		settingsbl.SelectMyHistory();
+		myHistorybl.verifyNotificationTab();
+		
+		
+}
 	
-	@AfterMethod
-
+@AfterMethod
+	
 	public void logOutApp() {
-
+		
 		/*homepagebl.clickSetting();
 		settingsbl.selectOptionLogOut();
-*/
+		*/
+		
 	}
+	
+	
 }
-
-
-
-
-

@@ -1,25 +1,446 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="1" failed="1" ignored="0" total="13" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="113901" started-at="2020-04-13T09:12:43Z" finished-at="2020-04-13T09:14:37Z">
+  <suite name="Suite" duration-ms="1919104" started-at="2020-04-30T05:06:46Z" finished-at="2020-04-30T05:38:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="113901" started-at="2020-04-13T09:12:43Z" finished-at="2020-04-13T09:14:37Z">
-      <class name="com.appium.DeviceScripts.SK_MAP">
-        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_MAP@5faeada1]" name="launchSafetyKuvrr" is-config="true" duration-ms="15845" started-at="2020-04-13T09:12:43Z" finished-at="2020-04-13T09:12:59Z">
+    <test name="SK_SOS_Incident" duration-ms="101346" started-at="2020-04-30T05:06:46Z" finished-at="2020-04-30T05:08:27Z">
+      <class name="com.appium.DeviceScripts.SK_SOS_Incident">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_SOS_Incident@528931cf]" name="launchSafetyKuvrr" is-config="true" duration-ms="14901" started-at="2020-04-30T05:06:46Z" finished-at="2020-04-30T05:07:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchSafetyKuvrr -->
-        <test-method status="PASS" signature="testSteerPathMap()[pri:1, instance:com.appium.DeviceScripts.SK_MAP@5faeada1]" name="testSteerPathMap" duration-ms="98000" started-at="2020-04-13T09:12:59Z" finished-at="2020-04-13T09:14:37Z">
+        <test-method status="PASS" signature="testSOSIncident()[pri:1, instance:com.appium.DeviceScripts.SK_SOS_Incident@528931cf]" name="testSOSIncident" duration-ms="86393" started-at="2020-04-30T05:07:01Z" finished-at="2020-04-30T05:08:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSOSIncident -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_SOS_Incident@528931cf]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-04-30T05:08:27Z" finished-at="2020-04-30T05:08:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApp -->
+      </class> <!-- com.appium.DeviceScripts.SK_SOS_Incident -->
+    </test> <!-- SK_SOS_Incident -->
+    <test name="SK_AudioLocation_Incident" duration-ms="235559" started-at="2020-04-30T05:08:27Z" finished-at="2020-04-30T05:12:23Z">
+      <class name="com.appium.DeviceScripts.SK_AudioLocation_Incident">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_AudioLocation_Incident@27808f31]" name="launchSafetyKuvrr" is-config="true" duration-ms="21159" started-at="2020-04-30T05:08:27Z" finished-at="2020-04-30T05:08:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSafetyKuvrr -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.appium.DeviceScripts.SK_AudioLocation_Incident@27808f31]" name="Login" is-config="true" duration-ms="0" started-at="2020-04-30T05:08:48Z" finished-at="2020-04-30T05:08:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="verifyPhotoAudioIncident()[pri:0, instance:com.appium.DeviceScripts.SK_AudioLocation_Incident@27808f31]" name="verifyPhotoAudioIncident" duration-ms="214384" started-at="2020-04-30T05:08:48Z" finished-at="2020-04-30T05:12:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPhotoAudioIncident -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_AudioLocation_Incident@27808f31]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-04-30T05:12:23Z" finished-at="2020-04-30T05:12:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApp -->
+      </class> <!-- com.appium.DeviceScripts.SK_AudioLocation_Incident -->
+    </test> <!-- SK_AudioLocation_Incident -->
+    <test name="SK_VideoLocation_Incident" duration-ms="223716" started-at="2020-04-30T05:12:23Z" finished-at="2020-04-30T05:16:07Z">
+      <class name="com.appium.DeviceScripts.SK_VideoLocation_Incident">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_VideoLocation_Incident@58c1670b]" name="launchSafetyKuvrr" is-config="true" duration-ms="18415" started-at="2020-04-30T05:12:23Z" finished-at="2020-04-30T05:12:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSafetyKuvrr -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.appium.DeviceScripts.SK_VideoLocation_Incident@58c1670b]" name="Login" is-config="true" duration-ms="38001" started-at="2020-04-30T05:12:41Z" finished-at="2020-04-30T05:13:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="verifyPhotoAudioIncident()[pri:0, instance:com.appium.DeviceScripts.SK_VideoLocation_Incident@58c1670b]" name="verifyPhotoAudioIncident" duration-ms="167291" started-at="2020-04-30T05:13:19Z" finished-at="2020-04-30T05:16:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPhotoAudioIncident -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_VideoLocation_Incident@58c1670b]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-04-30T05:16:07Z" finished-at="2020-04-30T05:16:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApp -->
+      </class> <!-- com.appium.DeviceScripts.SK_VideoLocation_Incident -->
+    </test> <!-- SK_VideoLocation_Incident -->
+    <test name="SK_SafeWalk_Incident" duration-ms="147672" started-at="2020-04-30T05:16:07Z" finished-at="2020-04-30T05:18:34Z">
+      <class name="com.appium.DeviceScripts.SK_SafeWalk_Incident">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_SafeWalk_Incident@26a7b76d]" name="launchSafetyKuvrr" is-config="true" duration-ms="16850" started-at="2020-04-30T05:16:07Z" finished-at="2020-04-30T05:16:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSafetyKuvrr -->
+        <test-method status="PASS" signature="loginApp()[pri:0, instance:com.appium.DeviceScripts.SK_SafeWalk_Incident@26a7b76d]" name="loginApp" is-config="true" duration-ms="50944" started-at="2020-04-30T05:16:23Z" finished-at="2020-04-30T05:17:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApp -->
+        <test-method status="PASS" signature="testSafewalkIncident()[pri:0, instance:com.appium.DeviceScripts.SK_SafeWalk_Incident@26a7b76d]" name="testSafewalkIncident" duration-ms="79850" started-at="2020-04-30T05:17:14Z" finished-at="2020-04-30T05:18:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSafewalkIncident -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_SafeWalk_Incident@26a7b76d]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-04-30T05:18:34Z" finished-at="2020-04-30T05:18:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApp -->
+      </class> <!-- com.appium.DeviceScripts.SK_SafeWalk_Incident -->
+    </test> <!-- SK_SafeWalk_Incident -->
+    <test name="SK_Tips_Anonymous" duration-ms="221234" started-at="2020-04-30T05:18:34Z" finished-at="2020-04-30T05:22:15Z">
+      <class name="com.appium.DeviceScripts.SK_Tips_Anonymous">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_Tips_Anonymous@6043cd28]" name="launchSafetyKuvrr" is-config="true" duration-ms="24736" started-at="2020-04-30T05:18:34Z" finished-at="2020-04-30T05:18:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSafetyKuvrr -->
+        <test-method status="PASS" signature="testTips()[pri:0, instance:com.appium.DeviceScripts.SK_Tips_Anonymous@6043cd28]" name="testTips" duration-ms="196475" started-at="2020-04-30T05:18:59Z" finished-at="2020-04-30T05:22:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTips -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_Tips_Anonymous@6043cd28]" name="logOutApp" is-config="true" duration-ms="1" started-at="2020-04-30T05:22:15Z" finished-at="2020-04-30T05:22:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApp -->
+      </class> <!-- com.appium.DeviceScripts.SK_Tips_Anonymous -->
+    </test> <!-- SK_Tips_Anonymous -->
+    <test name="SK_Tips_NonAnonymous" duration-ms="223396" started-at="2020-04-30T05:22:15Z" finished-at="2020-04-30T05:25:59Z">
+      <class name="com.appium.DeviceScripts.SK_Tips_NonAnonymous">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_Tips_NonAnonymous@27f723]" name="launchSafetyKuvrr" is-config="true" duration-ms="23741" started-at="2020-04-30T05:22:15Z" finished-at="2020-04-30T05:22:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSafetyKuvrr -->
+        <test-method status="PASS" signature="testTips()[pri:0, instance:com.appium.DeviceScripts.SK_Tips_NonAnonymous@27f723]" name="testTips" duration-ms="199635" started-at="2020-04-30T05:22:39Z" finished-at="2020-04-30T05:25:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTips -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_Tips_NonAnonymous@27f723]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-04-30T05:25:59Z" finished-at="2020-04-30T05:25:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApp -->
+      </class> <!-- com.appium.DeviceScripts.SK_Tips_NonAnonymous -->
+    </test> <!-- SK_Tips_NonAnonymous -->
+    <test name="SK_MAP" duration-ms="156336" started-at="2020-04-30T05:25:59Z" finished-at="2020-04-30T05:28:35Z">
+      <class name="com.appium.DeviceScripts.SK_MAP">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_MAP@5ed828d]" name="launchSafetyKuvrr" is-config="true" duration-ms="25138" started-at="2020-04-30T05:25:59Z" finished-at="2020-04-30T05:26:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSafetyKuvrr -->
+        <test-method status="PASS" signature="testSteerPathMap()[pri:1, instance:com.appium.DeviceScripts.SK_MAP@5ed828d]" name="testSteerPathMap" duration-ms="131193" started-at="2020-04-30T05:26:24Z" finished-at="2020-04-30T05:28:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSteerPathMap -->
-        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_MAP@5faeada1]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-04-13T09:14:37Z" finished-at="2020-04-13T09:14:37Z">
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_MAP@5ed828d]" name="logOutApp" is-config="true" duration-ms="2" started-at="2020-04-30T05:28:35Z" finished-at="2020-04-30T05:28:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutApp -->
       </class> <!-- com.appium.DeviceScripts.SK_MAP -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- SK_MAP -->
+    <test name="SK_MyHistory" duration-ms="60766" started-at="2020-04-30T05:28:35Z" finished-at="2020-04-30T05:29:36Z">
+      <class name="com.appium.DeviceScripts.SK_MyHistory">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_MyHistory@eafc191]" name="launchSafetyKuvrr" is-config="true" duration-ms="26011" started-at="2020-04-30T05:28:35Z" finished-at="2020-04-30T05:29:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSafetyKuvrr -->
+        <test-method status="PASS" signature="testERP()[pri:1, instance:com.appium.DeviceScripts.SK_MyHistory@eafc191]" name="testERP" duration-ms="34753" started-at="2020-04-30T05:29:01Z" finished-at="2020-04-30T05:29:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testERP -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_MyHistory@eafc191]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-04-30T05:29:36Z" finished-at="2020-04-30T05:29:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApp -->
+      </class> <!-- com.appium.DeviceScripts.SK_MyHistory -->
+    </test> <!-- SK_MyHistory -->
+    <test name="SK_ERP" duration-ms="131119" started-at="2020-04-30T05:29:36Z" finished-at="2020-04-30T05:31:47Z">
+      <class name="com.appium.DeviceScripts.SK_ERP">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_ERP@74ad1f1f]" name="launchSafetyKuvrr" is-config="true" duration-ms="25870" started-at="2020-04-30T05:29:36Z" finished-at="2020-04-30T05:30:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSafetyKuvrr -->
+        <test-method status="PASS" signature="testERP()[pri:1, instance:com.appium.DeviceScripts.SK_ERP@74ad1f1f]" name="testERP" duration-ms="105247" started-at="2020-04-30T05:30:02Z" finished-at="2020-04-30T05:31:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testERP -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_ERP@74ad1f1f]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-04-30T05:31:47Z" finished-at="2020-04-30T05:31:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApp -->
+      </class> <!-- com.appium.DeviceScripts.SK_ERP -->
+    </test> <!-- SK_ERP -->
+    <test name="SK_Timer_Incident" duration-ms="25342" started-at="2020-04-30T05:31:47Z" finished-at="2020-04-30T05:32:12Z">
+      <class name="com.appium.DeviceScripts.SK_Timer_Incident">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_Timer_Incident@2db7a79b]" name="launchSafetyKuvrr" is-config="true" duration-ms="23705" started-at="2020-04-30T05:31:47Z" finished-at="2020-04-30T05:32:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSafetyKuvrr -->
+        <test-method status="FAIL" signature="loginApp()[pri:0, instance:com.appium.DeviceScripts.SK_Timer_Incident@2db7a79b]" name="loginApp" is-config="true" duration-ms="1621" started-at="2020-04-30T05:32:11Z" finished-at="2020-04-30T05:32:12Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, deviceName: Moto G4Plus, newCommandTimeout: 600, noReset: true, platformName: android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, udid: ZY223QKSQB, useJSONSource: true}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223QKSQB, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY223QKSQB, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, statBarHeight: 72, takesScreenshot: true, udid: ZY223QKSQB, useJSONSource: true, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 98c0ab40-f0a7-4a4a-81fe-26f1cc1878e5
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("Event Options").instance(0))}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, deviceName: Moto G4Plus, newCommandTimeout: 600, noReset: true, platformName: android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, udid: ZY223QKSQB, useJSONSource: true}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223QKSQB, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY223QKSQB, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, statBarHeight: 72, takesScreenshot: true, udid: ZY223QKSQB, useJSONSource: true, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 98c0ab40-f0a7-4a4a-81fe-26f1cc1878e5
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("Event Options").instance(0))}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+at com.appium.commonutils.Base.scrolltoElement(Base.java:234)
+at com.appium.bussinessLogic.SK_SettingsBL.SelectEventOption(SK_SettingsBL.java:33)
+at com.appium.DeviceScripts.SK_Timer_Incident.loginApp(SK_Timer_Incident.java:64)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApp -->
+        <test-method status="SKIP" signature="testTimerIncident()[pri:0, instance:com.appium.DeviceScripts.SK_Timer_Incident@2db7a79b]" name="testTimerIncident" duration-ms="0" started-at="2020-04-30T05:32:12Z" finished-at="2020-04-30T05:32:12Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, deviceName: Moto G4Plus, newCommandTimeout: 600, noReset: true, platformName: android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, udid: ZY223QKSQB, useJSONSource: true}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223QKSQB, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY223QKSQB, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, statBarHeight: 72, takesScreenshot: true, udid: ZY223QKSQB, useJSONSource: true, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 98c0ab40-f0a7-4a4a-81fe-26f1cc1878e5
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("Event Options").instance(0))}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, deviceName: Moto G4Plus, newCommandTimeout: 600, noReset: true, platformName: android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, udid: ZY223QKSQB, useJSONSource: true}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223QKSQB, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY223QKSQB, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, statBarHeight: 72, takesScreenshot: true, udid: ZY223QKSQB, useJSONSource: true, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 98c0ab40-f0a7-4a4a-81fe-26f1cc1878e5
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("Event Options").instance(0))}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+at com.appium.commonutils.Base.scrolltoElement(Base.java:234)
+at com.appium.bussinessLogic.SK_SettingsBL.SelectEventOption(SK_SettingsBL.java:33)
+at com.appium.DeviceScripts.SK_Timer_Incident.loginApp(SK_Timer_Incident.java:64)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTimerIncident -->
+        <test-method status="SKIP" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_Timer_Incident@2db7a79b]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-04-30T05:32:12Z" finished-at="2020-04-30T05:32:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApp -->
+      </class> <!-- com.appium.DeviceScripts.SK_Timer_Incident -->
+    </test> <!-- SK_Timer_Incident -->
+    <test name="SK_Photo_Incident" duration-ms="245948" started-at="2020-04-30T05:32:13Z" finished-at="2020-04-30T05:36:18Z">
+      <class name="com.appium.DeviceScripts.SK_Photo_Incident">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_Photo_Incident@569cfc36]" name="launchSafetyKuvrr" is-config="true" duration-ms="25594" started-at="2020-04-30T05:32:13Z" finished-at="2020-04-30T05:32:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSafetyKuvrr -->
+        <test-method status="PASS" signature="verifyPhotoAudioIncident()[pri:0, instance:com.appium.DeviceScripts.SK_Photo_Incident@569cfc36]" name="verifyPhotoAudioIncident" duration-ms="220352" started-at="2020-04-30T05:32:38Z" finished-at="2020-04-30T05:36:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPhotoAudioIncident -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_Photo_Incident@569cfc36]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-04-30T05:36:18Z" finished-at="2020-04-30T05:36:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApp -->
+      </class> <!-- com.appium.DeviceScripts.SK_Photo_Incident -->
+    </test> <!-- SK_Photo_Incident -->
+    <test name="SK_GroupCall" duration-ms="86736" started-at="2020-04-30T05:36:18Z" finished-at="2020-04-30T05:37:45Z">
+      <class name="com.appium.DeviceScripts.SK_GroupCall">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.appium.DeviceScripts.SK_GroupCall@32eebfca]" name="launchApp" is-config="true" duration-ms="18307" started-at="2020-04-30T05:36:18Z" finished-at="2020-04-30T05:36:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.appium.DeviceScripts.SK_GroupCall@32eebfca]" name="Login" is-config="true" duration-ms="30626" started-at="2020-04-30T05:36:37Z" finished-at="2020-04-30T05:37:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="FAIL" signature="GroupCall()[pri:0, instance:com.appium.DeviceScripts.SK_GroupCall@32eebfca]" name="GroupCall" duration-ms="37783" started-at="2020-04-30T05:37:07Z" finished-at="2020-04-30T05:37:45Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, deviceName: Moto G4Plus, newCommandTimeout: 600, noReset: true, platformName: android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, udid: ZY223QKSQB, useJSONSource: true}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223QKSQB, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY223QKSQB, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, statBarHeight: 72, takesScreenshot: true, udid: ZY223QKSQB, useJSONSource: true, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 07a3766e-6b8b-4cad-9199-0ba12cda64b6
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("Group Call").instance(0))}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, deviceName: Moto G4Plus, newCommandTimeout: 600, noReset: true, platformName: android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, udid: ZY223QKSQB, useJSONSource: true}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223QKSQB, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY223QKSQB, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, statBarHeight: 72, takesScreenshot: true, udid: ZY223QKSQB, useJSONSource: true, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 07a3766e-6b8b-4cad-9199-0ba12cda64b6
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("Group Call").instance(0))}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+at com.appium.commonutils.Base.scrolltoElement(Base.java:234)
+at com.appium.bussinessLogic.SK_SettingsBL.SelectOptionGroupCall(SK_SettingsBL.java:21)
+at com.appium.DeviceScripts.SK_GroupCall.GroupCall(SK_GroupCall.java:73)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GroupCall -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_GroupCall@32eebfca]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-04-30T05:37:45Z" finished-at="2020-04-30T05:37:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApp -->
+      </class> <!-- com.appium.DeviceScripts.SK_GroupCall -->
+    </test> <!-- SK_GroupCall -->
+    <test name="SK_911_Incident" duration-ms="59741" started-at="2020-04-30T05:37:45Z" finished-at="2020-04-30T05:38:45Z">
+      <class name="com.appium.DeviceScripts.SK_911_Incident">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_911_Incident@c81cdd1]" name="launchSafetyKuvrr" is-config="true" duration-ms="29654" started-at="2020-04-30T05:37:45Z" finished-at="2020-04-30T05:38:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSafetyKuvrr -->
+        <test-method status="PASS" signature="test911Incident()[pri:1, instance:com.appium.DeviceScripts.SK_911_Incident@c81cdd1]" name="test911Incident" duration-ms="30087" started-at="2020-04-30T05:38:15Z" finished-at="2020-04-30T05:38:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test911Incident -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_911_Incident@c81cdd1]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-04-30T05:38:45Z" finished-at="2020-04-30T05:38:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApp -->
+      </class> <!-- com.appium.DeviceScripts.SK_911_Incident -->
+    </test> <!-- SK_911_Incident -->
+  </suite> <!-- Suite -->
 </testng-results>

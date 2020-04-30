@@ -4,6 +4,18 @@
   <listeners>
     <listener class-name="com.ExtentReportListner.ExtentReporterNG"/>
   </listeners>
+  <test thread-count="5" name="SK_Timer_Incident(failed)">
+    <classes>
+      <class name="com.appium.DeviceScripts.SK_Timer_Incident">
+        <methods>
+          <include name="launchSafetyKuvrr"/>
+          <include name="loginApp"/>
+          <include name="logOutApp"/>
+          <include name="testTimerIncident"/>
+        </methods>
+      </class> <!-- com.appium.DeviceScripts.SK_Timer_Incident -->
+    </classes>
+  </test> <!-- SK_Timer_Incident(failed) -->
   <test thread-count="5" name="SK_GroupCall(failed)">
     <classes>
       <class name="com.appium.DeviceScripts.SK_GroupCall">
@@ -16,26 +28,4 @@
       </class> <!-- com.appium.DeviceScripts.SK_GroupCall -->
     </classes>
   </test> <!-- SK_GroupCall(failed) -->
-  <test thread-count="5" name="SK_MAP(failed)">
-    <classes>
-      <class name="com.appium.DeviceScripts.SK_MAP">
-        <methods>
-          <include name="logOutApp"/>
-          <include name="testSteerPathMap"/>
-          <include name="launchSafetyKuvrr"/>
-        </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_MAP -->
-    </classes>
-  </test> <!-- SK_MAP(failed) -->
-  <test thread-count="5" name="SK_Photo_Incident(failed)">
-    <classes>
-      <class name="com.appium.DeviceScripts.SK_Photo_Incident">
-        <methods>
-          <include name="launchSafetyKuvrr"/>
-          <include name="verifyPhotoAudioIncident"/>
-          <include name="logOutApp"/>
-        </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_Photo_Incident -->
-    </classes>
-  </test> <!-- SK_Photo_Incident(failed) -->
 </suite> <!-- Failed suite [Suite] -->

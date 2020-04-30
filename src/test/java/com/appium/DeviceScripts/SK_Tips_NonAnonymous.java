@@ -6,6 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
 import com.appium.bussinessLogic.SK_HomePageBL;
 import com.appium.bussinessLogic.SK_LaunchBL;
 import com.appium.bussinessLogic.SK_PermissionBL;
@@ -17,8 +18,8 @@ import com.appium.bussinessLogic.SK_TermsOfServicesBL;
 import com.appium.bussinessLogic.SK_TipSubmitBL;
 import com.appium.commonutils.Base;
 
-public class SK_Tips_Anonymous extends Base {
-
+public class SK_Tips_NonAnonymous extends Base {
+	
 	SK_LaunchBL launchbl = PageFactory.initElements(driver, SK_LaunchBL.class);
 	SK_TermsOfServicesBL termsbl = PageFactory.initElements(driver, SK_TermsOfServicesBL.class);
 	SK_PrivacyPolicyBL privacypolicybl = PageFactory.initElements(driver, SK_PrivacyPolicyBL.class);
@@ -32,7 +33,7 @@ public class SK_Tips_Anonymous extends Base {
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-		// launchAppKarbon();
+	//	 launchAppKarbon();
 		 launchAppMotoG4P();
 		System.out.println("App Launched Successfull");
 
@@ -40,8 +41,8 @@ public class SK_Tips_Anonymous extends Base {
 
 	@Test
 	public void testTips() {
-/*
-		launchbl.verifyTitle();
+
+/*		launchbl.verifyTitle();
 		launchbl.clickBtnSignIn();
 		termsbl.acceptTermsOfServices();
 		privacypolicybl.acceptPrivacyPolicy();
@@ -51,16 +52,21 @@ public class SK_Tips_Anonymous extends Base {
 		permissionbl.acceptPermissions();
 		quicktipsbl.closeTips();*/
 		homepagebl.startTips();
-		tipsubmitbl.sendAnonymousTipByCategories();
-	
+		tipsubmitbl.sendNonAnonymousTipByCategories();
+
 	}
 	
 	@AfterMethod
 
 	public void logOutApp() {
 
-	//	homepagebl.clickSetting();
-		//settingsbl.selectOptionLogOut();
-
+		/*homepagebl.clickSetting();
+		settingsbl.selectOptionLogOut();
+*/
 	}
 }
+
+
+
+
+

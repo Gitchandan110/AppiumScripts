@@ -91,7 +91,7 @@ public class SK_HomePageBL extends SK_HomePagePO {
 				btnTips().click();
 				System.out.println("Tips clicked");
 				Thread.sleep(5000);
-		
+					
 			} else {
 
 				System.out.println("Tips Button not Clicked");
