@@ -4,28 +4,16 @@
   <listeners>
     <listener class-name="com.ExtentReportListner.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="SK_Timer_Incident(failed)">
+  <test thread-count="5" name="SK_SafeWalk_Incident(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_Timer_Incident">
+      <class name="com.appium.DeviceScripts.SK_SafeWalk_Incident">
         <methods>
-          <include name="launchSafetyKuvrr"/>
+          <include name="logOutApp"/>
           <include name="loginApp"/>
-          <include name="logOutApp"/>
-          <include name="testTimerIncident"/>
+          <include name="testSafewalkIncident"/>
+          <include name="launchSafetyKuvrr"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_Timer_Incident -->
+      </class> <!-- com.appium.DeviceScripts.SK_SafeWalk_Incident -->
     </classes>
-  </test> <!-- SK_Timer_Incident(failed) -->
-  <test thread-count="5" name="SK_GroupCall(failed)">
-    <classes>
-      <class name="com.appium.DeviceScripts.SK_GroupCall">
-        <methods>
-          <include name="Login"/>
-          <include name="GroupCall"/>
-          <include name="launchApp"/>
-          <include name="logOutApp"/>
-        </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_GroupCall -->
-    </classes>
-  </test> <!-- SK_GroupCall(failed) -->
+  </test> <!-- SK_SafeWalk_Incident(failed) -->
 </suite> <!-- Failed suite [Suite] -->

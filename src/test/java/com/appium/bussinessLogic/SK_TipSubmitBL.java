@@ -62,6 +62,7 @@ public class SK_TipSubmitBL extends SK_TipSubmitPO {
 				chkboxRemainAnonymous().click();
 				enterTipsDescription();
 				enterTipsName();
+				selectMedia();
 				SendTips();
 			
 
@@ -81,7 +82,10 @@ public class SK_TipSubmitBL extends SK_TipSubmitPO {
 
 			if (txtTipsDescription().isDisplayed()) {
 			//	Base.takeScreenShot("Tips Screen");
-				txtTipsDescription().sendKeys("Tips Description");
+				txtTipsDescription().sendKeys("Be careful as criminals always carrying anything like Bomb, Knife, Gun, and they can do \r\n" + 
+						"Gun Shot, Fire, Firing, Attack Terrorist, Attacking, Terror, Missile Attack, Threat, Trap, \r\n" + 
+						"Snatch, Robbery, Bank Loot, Assault, Goon, Acid Attack, Stone Pelting.");
+				
 				System.out.println("Tips Description is filled");
 				driver.hideKeyboard();
 				System.out.println("Keyboard Hide");
@@ -233,5 +237,30 @@ public class SK_TipSubmitBL extends SK_TipSubmitPO {
 		}
 
 	}
+	
+	
+	public void selectMedia() {
+
+		try {
+
+			if (btnAttachMedia() !=null && btnAttachMedia().isDisplayed()) {
+				btnAttachMedia().click();
+				Thread.sleep(2000);
+				optionImageMedia().click();
+
+			} else {
+
+				System.out.println("selectMedia() done");
+			}
+
+		} catch (Exception ex) {
+
+			System.out.println("Exception in selectMedia() :" + ex.getMessage());
+
+		}
+
+	}
+	
+	
 
 }

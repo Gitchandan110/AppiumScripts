@@ -102,6 +102,27 @@ public class SK_TipSubmitPO extends Base {
 		return driver.findElement(AttachMedia);
 
 	}
+	
+	public MobileElement optionImageMedia() {
+
+		By AttachMedia = By.xpath("//android.widget.TextView[@text=\"Image\"]");
+		return driver.findElement(AttachMedia);
+
+	}
+	
+	public MobileElement optionVideoMedia() {
+
+		By AttachMedia = By.xpath("//android.widget.TextView[@text=\"Video\"]");
+		return driver.findElement(AttachMedia);
+
+	}
+	
+	public MobileElement optionAudioMedia() {
+
+		By AttachMedia = By.xpath("//android.widget.TextView[@text=\"Audio\"]");
+		return driver.findElement(AttachMedia);
+
+	}
 
 	public MobileElement btnSendTip() {
 

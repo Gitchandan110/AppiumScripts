@@ -62,7 +62,7 @@ public class SK_Photo_Incident extends Base {
 
 	@Test
 
-	public void verifyPhotoAudioIncident() throws InterruptedException, IOException {
+	/*public void verifyPhotoAudioIncident() throws InterruptedException, IOException {
 
 		homepagebl.clickSetting();
 		settingsbl.SelectEventOption();
@@ -80,7 +80,7 @@ public class SK_Photo_Incident extends Base {
 		incidentscreenbl.SelectEndReason();
 
 	}
-
+*/
 	@AfterMethod
 
 	public void logOutApp() {

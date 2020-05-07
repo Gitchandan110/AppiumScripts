@@ -27,7 +27,7 @@ public class SK_IncidentOptionsBL extends SK_IncidentOptionsPO {
 
 	
 
-	public void clickPhotoIncident() {
+	/*public void clickPhotoIncident() {
 
 		try {
 
@@ -40,7 +40,7 @@ public class SK_IncidentOptionsBL extends SK_IncidentOptionsPO {
 		} catch (Exception ex) {
 			System.out.println("Exception in Photo Incident:" + ex.getMessage());
 		}
-	}
+	}*/
 
 	public void clickAudioIncident() {
 
