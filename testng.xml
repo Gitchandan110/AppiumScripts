@@ -9,7 +9,7 @@
         <listener class-name="com.ExtentReportListner.ExtentReporterNG" />
     </listeners>
 
-    <test name="SK_Tips_NonAnonymous" >
+   <!--  <test name="SK_Tips_NonAnonymous" >
 
         <classes>
 
@@ -39,7 +39,7 @@
 
             <class name="com.appium.DeviceScripts.SK_ERP" />
         </classes>
-    </test>
+    </test> -->
 
     <test name="SK_Timer_Incident" >
 

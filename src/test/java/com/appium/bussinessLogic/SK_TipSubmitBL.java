@@ -242,7 +242,7 @@ public class SK_TipSubmitBL extends SK_TipSubmitPO {
 	public void selectMedia() {
 
 		try {
-
+                Base.scrolltoElement("Attach Media (Limit 10MB)");
 			if (btnAttachMedia() !=null && btnAttachMedia().isDisplayed()) {
 				btnAttachMedia().click();
 				Thread.sleep(2000);
