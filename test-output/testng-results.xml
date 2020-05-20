@@ -1,1121 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="5" failed="1" ignored="0" total="12" passed="6">
+<testng-results skipped="1" failed="2" ignored="0" total="12" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="1263239" started-at="2020-05-07T04:35:44Z" finished-at="2020-05-07T04:56:47Z">
+  <suite name="Suite" duration-ms="2191647" started-at="2020-05-20T05:47:26Z" finished-at="2020-05-20T06:23:58Z">
     <groups>
     </groups>
-    <test name="SK_Tips_NonAnonymous" duration-ms="4460" started-at="2020-05-07T04:35:44Z" finished-at="2020-05-07T04:35:49Z">
-      <class name="com.appium.DeviceScripts.SK_Tips_NonAnonymous">
-        <test-method status="FAIL" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_Tips_NonAnonymous@7a1ebcd8]" name="launchSafetyKuvrr" is-config="true" duration-ms="4304" started-at="2020-05-07T04:35:44Z" finished-at="2020-05-07T04:35:49Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.remote.AppiumCommandExecutor.lambda$2(AppiumCommandExecutor.java:243)
-at java.util.Optional.orElseGet(Optional.java:267)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:242)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:93)
-at com.appium.commonutils.Base.launchAppMotoG4P(Base.java:83)
-at com.appium.DeviceScripts.SK_Tips_NonAnonymous.launchSafetyKuvrr(SK_Tips_NonAnonymous.java:37)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-at java.net.Socket.connect(Socket.java:589)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-... 36 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchSafetyKuvrr -->
-        <test-method status="SKIP" signature="testTips()[pri:0, instance:com.appium.DeviceScripts.SK_Tips_NonAnonymous@7a1ebcd8]" name="testTips" duration-ms="0" started-at="2020-05-07T04:35:49Z" finished-at="2020-05-07T04:35:49Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.remote.AppiumCommandExecutor.lambda$2(AppiumCommandExecutor.java:243)
-at java.util.Optional.orElseGet(Optional.java:267)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:242)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:93)
-at com.appium.commonutils.Base.launchAppMotoG4P(Base.java:83)
-at com.appium.DeviceScripts.SK_Tips_NonAnonymous.launchSafetyKuvrr(SK_Tips_NonAnonymous.java:37)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-at java.net.Socket.connect(Socket.java:589)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-... 36 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTips -->
-        <test-method status="SKIP" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_Tips_NonAnonymous@7a1ebcd8]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-07T04:35:49Z" finished-at="2020-05-07T04:35:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutApp -->
-      </class> <!-- com.appium.DeviceScripts.SK_Tips_NonAnonymous -->
-    </test> <!-- SK_Tips_NonAnonymous -->
-    <test name="SK_Tips_Anonymous" duration-ms="2078" started-at="2020-05-07T04:35:49Z" finished-at="2020-05-07T04:35:51Z">
-      <class name="com.appium.DeviceScripts.SK_Tips_Anonymous">
-        <test-method status="FAIL" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_Tips_Anonymous@fad74ee]" name="launchSafetyKuvrr" is-config="true" duration-ms="2078" started-at="2020-05-07T04:35:49Z" finished-at="2020-05-07T04:35:51Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.remote.AppiumCommandExecutor.lambda$2(AppiumCommandExecutor.java:243)
-at java.util.Optional.orElseGet(Optional.java:267)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:242)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:93)
-at com.appium.commonutils.Base.launchAppMotoG4P(Base.java:83)
-at com.appium.DeviceScripts.SK_Tips_Anonymous.launchSafetyKuvrr(SK_Tips_Anonymous.java:36)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-at java.net.Socket.connect(Socket.java:589)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-... 36 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchSafetyKuvrr -->
-        <test-method status="SKIP" signature="testTips()[pri:0, instance:com.appium.DeviceScripts.SK_Tips_Anonymous@fad74ee]" name="testTips" duration-ms="0" started-at="2020-05-07T04:35:51Z" finished-at="2020-05-07T04:35:51Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.remote.AppiumCommandExecutor.lambda$2(AppiumCommandExecutor.java:243)
-at java.util.Optional.orElseGet(Optional.java:267)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:242)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:93)
-at com.appium.commonutils.Base.launchAppMotoG4P(Base.java:83)
-at com.appium.DeviceScripts.SK_Tips_Anonymous.launchSafetyKuvrr(SK_Tips_Anonymous.java:36)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-at java.net.Socket.connect(Socket.java:589)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-... 36 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTips -->
-        <test-method status="SKIP" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_Tips_Anonymous@fad74ee]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-07T04:35:51Z" finished-at="2020-05-07T04:35:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutApp -->
-      </class> <!-- com.appium.DeviceScripts.SK_Tips_Anonymous -->
-    </test> <!-- SK_Tips_Anonymous -->
-    <test name="SK_MAP" duration-ms="2106" started-at="2020-05-07T04:35:51Z" finished-at="2020-05-07T04:35:53Z">
-      <class name="com.appium.DeviceScripts.SK_MAP">
-        <test-method status="FAIL" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_MAP@6b57696f]" name="launchSafetyKuvrr" is-config="true" duration-ms="2059" started-at="2020-05-07T04:35:51Z" finished-at="2020-05-07T04:35:53Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.remote.AppiumCommandExecutor.lambda$2(AppiumCommandExecutor.java:243)
-at java.util.Optional.orElseGet(Optional.java:267)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:242)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:93)
-at com.appium.commonutils.Base.launchAppMotoG4P(Base.java:83)
-at com.appium.DeviceScripts.SK_MAP.launchSafetyKuvrr(SK_MAP.java:43)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-at java.net.Socket.connect(Socket.java:589)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-... 36 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchSafetyKuvrr -->
-        <test-method status="SKIP" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_MAP@6b57696f]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-07T04:35:53Z" finished-at="2020-05-07T04:35:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutApp -->
-        <test-method status="SKIP" signature="testSteerPathMap()[pri:1, instance:com.appium.DeviceScripts.SK_MAP@6b57696f]" name="testSteerPathMap" duration-ms="0" started-at="2020-05-07T04:35:53Z" finished-at="2020-05-07T04:35:53Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.remote.AppiumCommandExecutor.lambda$2(AppiumCommandExecutor.java:243)
-at java.util.Optional.orElseGet(Optional.java:267)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:242)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:93)
-at com.appium.commonutils.Base.launchAppMotoG4P(Base.java:83)
-at com.appium.DeviceScripts.SK_MAP.launchSafetyKuvrr(SK_MAP.java:43)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-at java.net.Socket.connect(Socket.java:589)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-... 36 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSteerPathMap -->
-      </class> <!-- com.appium.DeviceScripts.SK_MAP -->
-    </test> <!-- SK_MAP -->
-    <test name="SK_ERP" duration-ms="2078" started-at="2020-05-07T04:35:53Z" finished-at="2020-05-07T04:35:55Z">
-      <class name="com.appium.DeviceScripts.SK_ERP">
-        <test-method status="FAIL" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_ERP@1500955a]" name="launchSafetyKuvrr" is-config="true" duration-ms="2031" started-at="2020-05-07T04:35:53Z" finished-at="2020-05-07T04:35:55Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.remote.AppiumCommandExecutor.lambda$2(AppiumCommandExecutor.java:243)
-at java.util.Optional.orElseGet(Optional.java:267)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:242)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:93)
-at com.appium.commonutils.Base.launchAppMotoG4P(Base.java:83)
-at com.appium.DeviceScripts.SK_ERP.launchSafetyKuvrr(SK_ERP.java:42)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-at java.net.Socket.connect(Socket.java:589)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-... 36 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchSafetyKuvrr -->
-        <test-method status="SKIP" signature="testERP()[pri:1, instance:com.appium.DeviceScripts.SK_ERP@1500955a]" name="testERP" duration-ms="0" started-at="2020-05-07T04:35:55Z" finished-at="2020-05-07T04:35:55Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.remote.AppiumCommandExecutor.lambda$2(AppiumCommandExecutor.java:243)
-at java.util.Optional.orElseGet(Optional.java:267)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:242)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:93)
-at com.appium.commonutils.Base.launchAppMotoG4P(Base.java:83)
-at com.appium.DeviceScripts.SK_ERP.launchSafetyKuvrr(SK_ERP.java:42)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-at java.net.Socket.connect(Socket.java:589)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-... 36 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testERP -->
-        <test-method status="SKIP" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_ERP@1500955a]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-07T04:35:55Z" finished-at="2020-05-07T04:35:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutApp -->
-      </class> <!-- com.appium.DeviceScripts.SK_ERP -->
-    </test> <!-- SK_ERP -->
-    <test name="SK_Timer_Incident" duration-ms="472995" started-at="2020-05-07T04:35:55Z" finished-at="2020-05-07T04:43:48Z">
-      <class name="com.appium.DeviceScripts.SK_Timer_Incident">
-        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_Timer_Incident@5bcea91b]" name="launchSafetyKuvrr" is-config="true" duration-ms="21824" started-at="2020-05-07T04:35:55Z" finished-at="2020-05-07T04:36:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchSafetyKuvrr -->
-        <test-method status="PASS" signature="loginApp()[pri:0, instance:com.appium.DeviceScripts.SK_Timer_Incident@5bcea91b]" name="loginApp" is-config="true" duration-ms="32728" started-at="2020-05-07T04:36:17Z" finished-at="2020-05-07T04:36:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginApp -->
-        <test-method status="PASS" signature="testTimerIncident()[pri:0, instance:com.appium.DeviceScripts.SK_Timer_Incident@5bcea91b]" name="testTimerIncident" duration-ms="418443" started-at="2020-05-07T04:36:50Z" finished-at="2020-05-07T04:43:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTimerIncident -->
-        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_Timer_Incident@5bcea91b]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-07T04:43:48Z" finished-at="2020-05-07T04:43:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutApp -->
-      </class> <!-- com.appium.DeviceScripts.SK_Timer_Incident -->
-    </test> <!-- SK_Timer_Incident -->
-    <test name="SK_SOS_Incident" duration-ms="136790" started-at="2020-05-07T04:43:48Z" finished-at="2020-05-07T04:46:05Z">
+    <test name="SK_SOS_Incident" duration-ms="172379" started-at="2020-05-20T05:47:26Z" finished-at="2020-05-20T05:50:19Z">
       <class name="com.appium.DeviceScripts.SK_SOS_Incident">
-        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_SOS_Incident@12f41634]" name="launchSafetyKuvrr" is-config="true" duration-ms="14747" started-at="2020-05-07T04:43:48Z" finished-at="2020-05-07T04:44:03Z">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_SOS_Incident@1563da5]" name="launchSafetyKuvrr" is-config="true" duration-ms="30059" started-at="2020-05-20T05:47:26Z" finished-at="2020-05-20T05:47:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchSafetyKuvrr -->
-        <test-method status="PASS" signature="testSOSIncident()[pri:1, instance:com.appium.DeviceScripts.SK_SOS_Incident@12f41634]" name="testSOSIncident" duration-ms="122033" started-at="2020-05-07T04:44:03Z" finished-at="2020-05-07T04:46:05Z">
+        <test-method status="PASS" signature="testSOSIncident()[pri:1, instance:com.appium.DeviceScripts.SK_SOS_Incident@1563da5]" name="testSOSIncident" duration-ms="142284" started-at="2020-05-20T05:47:56Z" finished-at="2020-05-20T05:50:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSOSIncident -->
-        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_SOS_Incident@12f41634]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-07T04:46:05Z" finished-at="2020-05-07T04:46:05Z">
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_SOS_Incident@1563da5]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-20T05:50:19Z" finished-at="2020-05-20T05:50:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutApp -->
       </class> <!-- com.appium.DeviceScripts.SK_SOS_Incident -->
     </test> <!-- SK_SOS_Incident -->
-    <test name="SK_AudioLocation_Incident" duration-ms="217965" started-at="2020-05-07T04:46:05Z" finished-at="2020-05-07T04:49:43Z">
+    <test name="SK_AudioLocation_Incident" duration-ms="228813" started-at="2020-05-20T05:50:19Z" finished-at="2020-05-20T05:54:08Z">
       <class name="com.appium.DeviceScripts.SK_AudioLocation_Incident">
-        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_AudioLocation_Incident@77ec78b9]" name="launchSafetyKuvrr" is-config="true" duration-ms="14436" started-at="2020-05-07T04:46:05Z" finished-at="2020-05-07T04:46:20Z">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_AudioLocation_Incident@32d2fa64]" name="launchSafetyKuvrr" is-config="true" duration-ms="17965" started-at="2020-05-20T05:50:19Z" finished-at="2020-05-20T05:50:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchSafetyKuvrr -->
-        <test-method status="PASS" signature="verifyPhotoAudioIncident()[pri:0, instance:com.appium.DeviceScripts.SK_AudioLocation_Incident@77ec78b9]" name="verifyPhotoAudioIncident" duration-ms="203514" started-at="2020-05-07T04:46:20Z" finished-at="2020-05-07T04:49:43Z">
+        <test-method status="PASS" signature="verifyPhotoAudioIncident()[pri:0, instance:com.appium.DeviceScripts.SK_AudioLocation_Incident@32d2fa64]" name="verifyPhotoAudioIncident" duration-ms="210844" started-at="2020-05-20T05:50:37Z" finished-at="2020-05-20T05:54:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPhotoAudioIncident -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.appium.DeviceScripts.SK_AudioLocation_Incident@77ec78b9]" name="Login" is-config="true" duration-ms="0" started-at="2020-05-07T04:46:20Z" finished-at="2020-05-07T04:46:20Z">
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.appium.DeviceScripts.SK_AudioLocation_Incident@32d2fa64]" name="Login" is-config="true" duration-ms="0" started-at="2020-05-20T05:50:37Z" finished-at="2020-05-20T05:50:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_AudioLocation_Incident@77ec78b9]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-07T04:49:43Z" finished-at="2020-05-07T04:49:43Z">
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_AudioLocation_Incident@32d2fa64]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-20T05:54:08Z" finished-at="2020-05-20T05:54:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutApp -->
       </class> <!-- com.appium.DeviceScripts.SK_AudioLocation_Incident -->
     </test> <!-- SK_AudioLocation_Incident -->
-    <test name="SK_VideoLocation_Incident" duration-ms="230611" started-at="2020-05-07T04:49:43Z" finished-at="2020-05-07T04:53:34Z">
+    <test name="SK_VideoLocation_Incident" duration-ms="253394" started-at="2020-05-20T05:54:08Z" finished-at="2020-05-20T05:58:21Z">
       <class name="com.appium.DeviceScripts.SK_VideoLocation_Incident">
-        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_VideoLocation_Incident@eafc191]" name="launchSafetyKuvrr" is-config="true" duration-ms="12910" started-at="2020-05-07T04:49:43Z" finished-at="2020-05-07T04:49:56Z">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_VideoLocation_Incident@5bb21b69]" name="launchSafetyKuvrr" is-config="true" duration-ms="19178" started-at="2020-05-20T05:54:08Z" finished-at="2020-05-20T05:54:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchSafetyKuvrr -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.appium.DeviceScripts.SK_VideoLocation_Incident@eafc191]" name="Login" is-config="true" duration-ms="19851" started-at="2020-05-07T04:49:56Z" finished-at="2020-05-07T04:50:16Z">
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.appium.DeviceScripts.SK_VideoLocation_Incident@5bb21b69]" name="Login" is-config="true" duration-ms="22084" started-at="2020-05-20T05:54:27Z" finished-at="2020-05-20T05:54:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="verifyPhotoAudioIncident()[pri:0, instance:com.appium.DeviceScripts.SK_VideoLocation_Incident@eafc191]" name="verifyPhotoAudioIncident" duration-ms="197834" started-at="2020-05-07T04:50:16Z" finished-at="2020-05-07T04:53:34Z">
+        <test-method status="PASS" signature="verifyPhotoAudioIncident()[pri:0, instance:com.appium.DeviceScripts.SK_VideoLocation_Incident@5bb21b69]" name="verifyPhotoAudioIncident" duration-ms="212115" started-at="2020-05-20T05:54:49Z" finished-at="2020-05-20T05:58:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPhotoAudioIncident -->
-        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_VideoLocation_Incident@eafc191]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-07T04:53:34Z" finished-at="2020-05-07T04:53:34Z">
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_VideoLocation_Incident@5bb21b69]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-20T05:58:21Z" finished-at="2020-05-20T05:58:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutApp -->
       </class> <!-- com.appium.DeviceScripts.SK_VideoLocation_Incident -->
     </test> <!-- SK_VideoLocation_Incident -->
-    <test name="SK_SafeWalk_Incident" duration-ms="19809" started-at="2020-05-07T04:53:34Z" finished-at="2020-05-07T04:53:53Z">
+    <test name="SK_SafeWalk_Incident" duration-ms="136861" started-at="2020-05-20T05:58:21Z" finished-at="2020-05-20T06:00:38Z">
       <class name="com.appium.DeviceScripts.SK_SafeWalk_Incident">
-        <test-method status="FAIL" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_SafeWalk_Incident@74ad1f1f]" name="launchSafetyKuvrr" is-config="true" duration-ms="19763" started-at="2020-05-07T04:53:34Z" finished-at="2020-05-07T04:53:53Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:195)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:93)
-at com.appium.commonutils.Base.launchAppMotoG4P(Base.java:83)
-at com.appium.DeviceScripts.SK_SafeWalk_Incident.launchSafetyKuvrr(SK_SafeWalk_Incident.java:42)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.reflect.InvocationTargetException
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
-... 38 more
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-    at JWProxy.command (C:\Users\Chandan\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:266:13)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-... 43 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_SafeWalk_Incident@7ce6a65d]" name="launchSafetyKuvrr" is-config="true" duration-ms="25329" started-at="2020-05-20T05:58:21Z" finished-at="2020-05-20T05:58:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchSafetyKuvrr -->
-        <test-method status="SKIP" signature="loginApp()[pri:0, instance:com.appium.DeviceScripts.SK_SafeWalk_Incident@74ad1f1f]" name="loginApp" is-config="true" duration-ms="0" started-at="2020-05-07T04:53:53Z" finished-at="2020-05-07T04:53:53Z">
+        <test-method status="PASS" signature="loginApp()[pri:0, instance:com.appium.DeviceScripts.SK_SafeWalk_Incident@7ce6a65d]" name="loginApp" is-config="true" duration-ms="54117" started-at="2020-05-20T05:58:46Z" finished-at="2020-05-20T05:59:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method status="SKIP" signature="testSafewalkIncident()[pri:0, instance:com.appium.DeviceScripts.SK_SafeWalk_Incident@74ad1f1f]" name="testSafewalkIncident" duration-ms="0" started-at="2020-05-07T04:53:53Z" finished-at="2020-05-07T04:53:53Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:195)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:93)
-at com.appium.commonutils.Base.launchAppMotoG4P(Base.java:83)
-at com.appium.DeviceScripts.SK_SafeWalk_Incident.launchSafetyKuvrr(SK_SafeWalk_Incident.java:42)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.reflect.InvocationTargetException
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
-... 38 more
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
-    at JWProxy.command (C:\Users\Chandan\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:266:13)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-... 43 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="testSafewalkIncident()[pri:0, instance:com.appium.DeviceScripts.SK_SafeWalk_Incident@7ce6a65d]" name="testSafewalkIncident" duration-ms="57415" started-at="2020-05-20T05:59:41Z" finished-at="2020-05-20T06:00:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSafewalkIncident -->
-        <test-method status="SKIP" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_SafeWalk_Incident@74ad1f1f]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-07T04:53:53Z" finished-at="2020-05-07T04:53:53Z">
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_SafeWalk_Incident@7ce6a65d]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-20T06:00:38Z" finished-at="2020-05-20T06:00:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutApp -->
       </class> <!-- com.appium.DeviceScripts.SK_SafeWalk_Incident -->
     </test> <!-- SK_SafeWalk_Incident -->
-    <test name="SK_MyHistory" duration-ms="71228" started-at="2020-05-07T04:53:54Z" finished-at="2020-05-07T04:55:05Z">
-      <class name="com.appium.DeviceScripts.SK_MyHistory">
-        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_MyHistory@2db7a79b]" name="launchSafetyKuvrr" is-config="true" duration-ms="15654" started-at="2020-05-07T04:53:54Z" finished-at="2020-05-07T04:54:09Z">
+    <test name="SK_Tips_NonAnonymous" duration-ms="206887" started-at="2020-05-20T06:00:38Z" finished-at="2020-05-20T06:04:05Z">
+      <class name="com.appium.DeviceScripts.SK_Tips_NonAnonymous">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_Tips_NonAnonymous@59906517]" name="launchSafetyKuvrr" is-config="true" duration-ms="16653" started-at="2020-05-20T06:00:38Z" finished-at="2020-05-20T06:00:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchSafetyKuvrr -->
-        <test-method status="PASS" signature="testERP()[pri:1, instance:com.appium.DeviceScripts.SK_MyHistory@2db7a79b]" name="testERP" duration-ms="55557" started-at="2020-05-07T04:54:09Z" finished-at="2020-05-07T04:55:05Z">
+        <test-method status="PASS" signature="testTips()[pri:0, instance:com.appium.DeviceScripts.SK_Tips_NonAnonymous@59906517]" name="testTips" duration-ms="190225" started-at="2020-05-20T06:00:55Z" finished-at="2020-05-20T06:04:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testERP -->
-        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_MyHistory@2db7a79b]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-07T04:55:05Z" finished-at="2020-05-07T04:55:05Z">
+        </test-method> <!-- testTips -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_Tips_NonAnonymous@59906517]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-20T06:04:05Z" finished-at="2020-05-20T06:04:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutApp -->
-      </class> <!-- com.appium.DeviceScripts.SK_MyHistory -->
-    </test> <!-- SK_MyHistory -->
-    <test name="SK_GroupCall" duration-ms="75605" started-at="2020-05-07T04:55:05Z" finished-at="2020-05-07T04:56:20Z">
-      <class name="com.appium.DeviceScripts.SK_GroupCall">
-        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.appium.DeviceScripts.SK_GroupCall@553a3d88]" name="launchApp" is-config="true" duration-ms="16625" started-at="2020-05-07T04:55:05Z" finished-at="2020-05-07T04:55:21Z">
+      </class> <!-- com.appium.DeviceScripts.SK_Tips_NonAnonymous -->
+    </test> <!-- SK_Tips_NonAnonymous -->
+    <test name="SK_MAP" duration-ms="164868" started-at="2020-05-20T06:04:05Z" finished-at="2020-05-20T06:06:50Z">
+      <class name="com.appium.DeviceScripts.SK_MAP">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_MAP@7b69c6ba]" name="launchSafetyKuvrr" is-config="true" duration-ms="23198" started-at="2020-05-20T06:04:05Z" finished-at="2020-05-20T06:04:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchApp -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:com.appium.DeviceScripts.SK_GroupCall@553a3d88]" name="Login" is-config="true" duration-ms="8680" started-at="2020-05-07T04:55:21Z" finished-at="2020-05-07T04:55:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="FAIL" signature="GroupCall()[pri:0, instance:com.appium.DeviceScripts.SK_GroupCall@553a3d88]" name="GroupCall" duration-ms="50274" started-at="2020-05-07T04:55:30Z" finished-at="2020-05-07T04:56:20Z">
+        </test-method> <!-- launchSafetyKuvrr -->
+        <test-method status="FAIL" signature="testSteerPathMap()[pri:1, instance:com.appium.DeviceScripts.SK_MAP@7b69c6ba]" name="testSteerPathMap" duration-ms="141630" started-at="2020-05-20T06:04:28Z" finished-at="2020-05-20T06:06:50Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Timed out after 10000 milliseconds waiting for root AccessibilityNodeInfo
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+System info: host: 'CHANDAN', ip: '192.168.42.225', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, deviceName: Moto G4Plus, newCommandTimeout: 600, noReset: true, platformName: android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, udid: ZY223QKSQB, useJSONSource: true}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223QKSQB, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY223QKSQB, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, statBarHeight: 72, takesScreenshot: true, udid: ZY223QKSQB, useJSONSource: true, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 2d8ee27f-8044-4d07-b916-2d4e47255477
-*** Element info: {Using=id, value=com.safety.armourgrid:id/button_hangup_call}]]>
+Session ID: 52d4898a-f8d0-483e-b5d7-62db0753fcf8
+*** Element info: {Using=id, value=com.safety.armourgrid:id/feature_title}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Timed out after 10000 milliseconds waiting for root AccessibilityNodeInfo
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CHANDAN', ip: '192.168.42.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+System info: host: 'CHANDAN', ip: '192.168.42.225', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, deviceName: Moto G4Plus, newCommandTimeout: 600, noReset: true, platformName: android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, udid: ZY223QKSQB, useJSONSource: true}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223QKSQB, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY223QKSQB, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, statBarHeight: 72, takesScreenshot: true, udid: ZY223QKSQB, useJSONSource: true, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 2d8ee27f-8044-4d07-b916-2d4e47255477
-*** Element info: {Using=id, value=com.safety.armourgrid:id/button_hangup_call}
+Session ID: 52d4898a-f8d0-483e-b5d7-62db0753fcf8
+*** Element info: {Using=id, value=com.safety.armourgrid:id/feature_title}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1129,22 +135,19 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
-at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at com.appium.pageobject.SK_MembersGroupCallPO.btnEndGroupCall(SK_MembersGroupCallPO.java:51)
-at com.appium.bussinessLogic.SK_MembersGroupCallBL.ClickBtnEndGrpCall(SK_MembersGroupCallBL.java:63)
-at com.appium.DeviceScripts.SK_GroupCall.GroupCall(SK_GroupCall.java:76)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:152)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:376)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementsById(DefaultGenericMobileDriver.java:66)
+at io.appium.java_client.AppiumDriver.findElementsById(AppiumDriver.java:156)
+at org.openqa.selenium.By$ById.findElements(By.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:50)
+at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:148)
+at com.appium.pageobject.SK_MAP_PO.roomList(SK_MAP_PO.java:82)
+at com.appium.bussinessLogic.SK_MapBL.getPOIList(SK_MapBL.java:72)
+at com.appium.DeviceScripts.SK_MAP.testSteerPathMap(SK_MAP.java:64)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1175,24 +178,356 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- testSteerPathMap -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_MAP@7b69c6ba]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-20T06:06:50Z" finished-at="2020-05-20T06:06:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApp -->
+      </class> <!-- com.appium.DeviceScripts.SK_MAP -->
+    </test> <!-- SK_MAP -->
+    <test name="SK_MyHistory" duration-ms="105834" started-at="2020-05-20T06:06:50Z" finished-at="2020-05-20T06:08:36Z">
+      <class name="com.appium.DeviceScripts.SK_MyHistory">
+        <test-method status="FAIL" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_MyHistory@a38d7a3]" name="launchSafetyKuvrr" is-config="true" duration-ms="105819" started-at="2020-05-20T06:06:50Z" finished-at="2020-05-20T06:08:36Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHANDAN', ip: '192.168.42.225', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: AndroidDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHANDAN', ip: '192.168.42.225', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: AndroidDriver
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:195)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:93)
+at com.appium.commonutils.Base.launchAppMotoG4P(Base.java:83)
+at com.appium.DeviceScripts.SK_MyHistory.launchSafetyKuvrr(SK_MyHistory.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+at org.testng.TestRunner.run(TestRunner.java:497)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
+... 38 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.safety.armourgrid' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\Chandan\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZY223QKSQB shell am start -W -n com.safety.armourgrid/com.safety.armourgrid.activity.SplashActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHANDAN', ip: '192.168.42.225', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.safety.armourgrid' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\Chandan\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZY223QKSQB shell am start -W -n com.safety.armourgrid/com.safety.armourgrid.activity.SplashActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (C:\Users\Chandan\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\Chandan\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+... 43 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSafetyKuvrr -->
+        <test-method status="SKIP" signature="testERP()[pri:1, instance:com.appium.DeviceScripts.SK_MyHistory@a38d7a3]" name="testERP" duration-ms="0" started-at="2020-05-20T06:08:36Z" finished-at="2020-05-20T06:08:36Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHANDAN', ip: '192.168.42.225', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: AndroidDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHANDAN', ip: '192.168.42.225', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: AndroidDriver
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:195)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:93)
+at com.appium.commonutils.Base.launchAppMotoG4P(Base.java:83)
+at com.appium.DeviceScripts.SK_MyHistory.launchSafetyKuvrr(SK_MyHistory.java:45)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+at org.testng.TestRunner.run(TestRunner.java:497)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
+... 38 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.safety.armourgrid' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\Chandan\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZY223QKSQB shell am start -W -n com.safety.armourgrid/com.safety.armourgrid.activity.SplashActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHANDAN', ip: '192.168.42.225', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.safety.armourgrid' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\Chandan\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZY223QKSQB shell am start -W -n com.safety.armourgrid/com.safety.armourgrid.activity.SplashActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (C:\Users\Chandan\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\Chandan\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+... 43 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testERP -->
+        <test-method status="SKIP" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_MyHistory@a38d7a3]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-20T06:08:36Z" finished-at="2020-05-20T06:08:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApp -->
+      </class> <!-- com.appium.DeviceScripts.SK_MyHistory -->
+    </test> <!-- SK_MyHistory -->
+    <test name="SK_GroupCall" duration-ms="126698" started-at="2020-05-20T06:08:36Z" finished-at="2020-05-20T06:10:42Z">
+      <class name="com.appium.DeviceScripts.SK_GroupCall">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.appium.DeviceScripts.SK_GroupCall@1b26f7b2]" name="launchApp" is-config="true" duration-ms="18931" started-at="2020-05-20T06:08:36Z" finished-at="2020-05-20T06:08:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.appium.DeviceScripts.SK_GroupCall@1b26f7b2]" name="Login" is-config="true" duration-ms="12036" started-at="2020-05-20T06:08:55Z" finished-at="2020-05-20T06:09:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="GroupCall()[pri:0, instance:com.appium.DeviceScripts.SK_GroupCall@1b26f7b2]" name="GroupCall" duration-ms="95699" started-at="2020-05-20T06:09:07Z" finished-at="2020-05-20T06:10:42Z">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- GroupCall -->
-        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_GroupCall@553a3d88]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-07T04:56:20Z" finished-at="2020-05-07T04:56:20Z">
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_GroupCall@1b26f7b2]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-20T06:10:42Z" finished-at="2020-05-20T06:10:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutApp -->
       </class> <!-- com.appium.DeviceScripts.SK_GroupCall -->
     </test> <!-- SK_GroupCall -->
-    <test name="SK_911_Incident" duration-ms="27093" started-at="2020-05-07T04:56:20Z" finished-at="2020-05-07T04:56:47Z">
-      <class name="com.appium.DeviceScripts.SK_911_Incident">
-        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_911_Incident@32eebfca]" name="launchSafetyKuvrr" is-config="true" duration-ms="14626" started-at="2020-05-07T04:56:20Z" finished-at="2020-05-07T04:56:35Z">
+    <test name="SK_Tips_Anonymous" duration-ms="199770" started-at="2020-05-20T06:10:42Z" finished-at="2020-05-20T06:14:02Z">
+      <class name="com.appium.DeviceScripts.SK_Tips_Anonymous">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_Tips_Anonymous@66d1af89]" name="launchSafetyKuvrr" is-config="true" duration-ms="21223" started-at="2020-05-20T06:10:42Z" finished-at="2020-05-20T06:11:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchSafetyKuvrr -->
-        <test-method status="PASS" signature="test911Incident()[pri:1, instance:com.appium.DeviceScripts.SK_911_Incident@32eebfca]" name="test911Incident" duration-ms="12461" started-at="2020-05-07T04:56:35Z" finished-at="2020-05-07T04:56:47Z">
+        <test-method status="FAIL" signature="testTips()[pri:0, instance:com.appium.DeviceScripts.SK_Tips_Anonymous@66d1af89]" name="testTips" duration-ms="178532" started-at="2020-05-20T06:11:04Z" finished-at="2020-05-20T06:14:02Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHANDAN', ip: '192.168.42.225', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, deviceName: Moto G4Plus, newCommandTimeout: 600, noReset: true, platformName: android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, udid: ZY223QKSQB, useJSONSource: true}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223QKSQB, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY223QKSQB, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, statBarHeight: 72, takesScreenshot: true, udid: ZY223QKSQB, useJSONSource: true, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 97d0a7fd-1b29-4bc7-a404-5fccf8bd95bb
+*** Element info: {Using=id, value=com.safety.armourgrid:id/list_item_erplans_img}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CHANDAN', ip: '192.168.42.225', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, deviceName: Moto G4Plus, newCommandTimeout: 600, noReset: true, platformName: android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, udid: ZY223QKSQB, useJSONSource: true}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223QKSQB, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY223QKSQB, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, statBarHeight: 72, takesScreenshot: true, udid: ZY223QKSQB, useJSONSource: true, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 97d0a7fd-1b29-4bc7-a404-5fccf8bd95bb
+*** Element info: {Using=id, value=com.safety.armourgrid:id/list_item_erplans_img}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:152)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:376)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementsById(DefaultGenericMobileDriver.java:66)
+at io.appium.java_client.AppiumDriver.findElementsById(AppiumDriver.java:156)
+at org.openqa.selenium.By$ById.findElements(By.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:50)
+at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:148)
+at com.appium.pageobject.SK_TipSubmitPO.tipCategories(SK_TipSubmitPO.java:27)
+at com.appium.bussinessLogic.SK_TipSubmitBL.sendAnonymousTipByCategories(SK_TipSubmitBL.java:33)
+at com.appium.DeviceScripts.SK_Tips_Anonymous.testTips(SK_Tips_Anonymous.java:54)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTips -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_Tips_Anonymous@66d1af89]" name="logOutApp" is-config="true" duration-ms="15" started-at="2020-05-20T06:14:02Z" finished-at="2020-05-20T06:14:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApp -->
+      </class> <!-- com.appium.DeviceScripts.SK_Tips_Anonymous -->
+    </test> <!-- SK_Tips_Anonymous -->
+    <test name="SK_ERP" duration-ms="121621" started-at="2020-05-20T06:14:02Z" finished-at="2020-05-20T06:16:04Z">
+      <class name="com.appium.DeviceScripts.SK_ERP">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_ERP@52f759d7]" name="launchSafetyKuvrr" is-config="true" duration-ms="20190" started-at="2020-05-20T06:14:02Z" finished-at="2020-05-20T06:14:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSafetyKuvrr -->
+        <test-method status="PASS" signature="testERP()[pri:1, instance:com.appium.DeviceScripts.SK_ERP@52f759d7]" name="testERP" duration-ms="101419" started-at="2020-05-20T06:14:22Z" finished-at="2020-05-20T06:16:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testERP -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_ERP@52f759d7]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-20T06:16:04Z" finished-at="2020-05-20T06:16:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApp -->
+      </class> <!-- com.appium.DeviceScripts.SK_ERP -->
+    </test> <!-- SK_ERP -->
+    <test name="SK_Timer_Incident" duration-ms="448069" started-at="2020-05-20T06:16:04Z" finished-at="2020-05-20T06:23:32Z">
+      <class name="com.appium.DeviceScripts.SK_Timer_Incident">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_Timer_Incident@5891e32e]" name="launchSafetyKuvrr" is-config="true" duration-ms="24784" started-at="2020-05-20T06:16:04Z" finished-at="2020-05-20T06:16:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSafetyKuvrr -->
+        <test-method status="PASS" signature="loginApp()[pri:0, instance:com.appium.DeviceScripts.SK_Timer_Incident@5891e32e]" name="loginApp" is-config="true" duration-ms="42391" started-at="2020-05-20T06:16:28Z" finished-at="2020-05-20T06:17:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApp -->
+        <test-method status="PASS" signature="testTimerIncident()[pri:0, instance:com.appium.DeviceScripts.SK_Timer_Incident@5891e32e]" name="testTimerIncident" duration-ms="380888" started-at="2020-05-20T06:17:11Z" finished-at="2020-05-20T06:23:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTimerIncident -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_Timer_Incident@5891e32e]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-20T06:23:32Z" finished-at="2020-05-20T06:23:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApp -->
+      </class> <!-- com.appium.DeviceScripts.SK_Timer_Incident -->
+    </test> <!-- SK_Timer_Incident -->
+    <test name="SK_911_Incident" duration-ms="26273" started-at="2020-05-20T06:23:32Z" finished-at="2020-05-20T06:23:58Z">
+      <class name="com.appium.DeviceScripts.SK_911_Incident">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_911_Incident@1d371b2d]" name="launchSafetyKuvrr" is-config="true" duration-ms="13609" started-at="2020-05-20T06:23:32Z" finished-at="2020-05-20T06:23:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSafetyKuvrr -->
+        <test-method status="PASS" signature="test911Incident()[pri:1, instance:com.appium.DeviceScripts.SK_911_Incident@1d371b2d]" name="test911Incident" duration-ms="12656" started-at="2020-05-20T06:23:45Z" finished-at="2020-05-20T06:23:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test911Incident -->
-        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_911_Incident@32eebfca]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-07T04:56:47Z" finished-at="2020-05-07T04:56:47Z">
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_911_Incident@1d371b2d]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-05-20T06:23:58Z" finished-at="2020-05-20T06:23:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutApp -->

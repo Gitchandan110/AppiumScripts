@@ -26,13 +26,12 @@ public class SK_TipSubmitBL extends SK_TipSubmitPO {
 			}
 
 			int CountTipCategory = tipCategories().size();
-			System.out.println("Count TipCategory is" + CountTipCategory);
+			System.out.println("Count TipCategory is: " + CountTipCategory);
 
 			for (int i = 0; i < CountTipCategory; i++) {
 
 				tipCategories().get(i).click();
 				enterTipsDescription();
-				enterTipsName();
 				SendTips();
 			
 
@@ -54,15 +53,13 @@ public class SK_TipSubmitBL extends SK_TipSubmitPO {
 			}
 
 			int CountTipCategory = tipCategories().size();
-			System.out.println("Count TipCategory is" + CountTipCategory);
+			System.out.println("Count TipCategory is: " + CountTipCategory);
 
 			for (int i = 0; i < CountTipCategory; i++) {
 
 				tipCategories().get(i).click();
 				chkboxRemainAnonymous().click();
 				enterTipsDescription();
-				enterTipsName();
-				selectMedia();
 				SendTips();
 			
 
@@ -82,13 +79,12 @@ public class SK_TipSubmitBL extends SK_TipSubmitPO {
 
 			if (txtTipsDescription().isDisplayed()) {
 			//	Base.takeScreenShot("Tips Screen");
-				txtTipsDescription().sendKeys("Be careful as criminals always carrying anything like Bomb, Knife, Gun, and they can do \r\n" + 
-						"Gun Shot, Fire, Firing, Attack Terrorist, Attacking, Terror, Missile Attack, Threat, Trap, \r\n" + 
-						"Snatch, Robbery, Bank Loot, Assault, Goon, Acid Attack, Stone Pelting.");
+				txtTipsDescription().sendKeys("Test Threat Keyword like: depressed, whore, weapon, trafficking, theft, suicide, sad, rude, pussy \r\n" + 
+" punch, prostitute, pistol, pimp, pervert, passed out, molesting, molestation, hitting, gun, fuck,fighting, fight, fallen, escort, drunk, drugs, \r\n" + 
+"drinking, creep, booze, boobs,bomb, bitch, asshole, assault, alcohol, tits, cunt, mofo, faint,pot, heroine, graffiti, spray, nigger, rifle, shotgun, goon, snatch, terror, attack, fire, threat, trap, knife ");
 				
 				System.out.println("Tips Description is filled");
-				driver.hideKeyboard();
-				System.out.println("Keyboard Hide");
+		
 				
 			} else {
 
