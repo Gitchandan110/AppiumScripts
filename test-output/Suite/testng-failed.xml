@@ -15,26 +15,16 @@
       </class> <!-- com.appium.DeviceScripts.SK_MAP -->
     </classes>
   </test> <!-- SK_MAP(failed) -->
-  <test thread-count="5" name="SK_MyHistory(failed)">
+  <test thread-count="5" name="SK_GroupCall(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_MyHistory">
+      <class name="com.appium.DeviceScripts.SK_GroupCall">
         <methods>
-          <include name="launchSafetyKuvrr"/>
-          <include name="testERP"/>
+          <include name="Login"/>
+          <include name="GroupCall"/>
+          <include name="launchApp"/>
           <include name="logOutApp"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_MyHistory -->
+      </class> <!-- com.appium.DeviceScripts.SK_GroupCall -->
     </classes>
-  </test> <!-- SK_MyHistory(failed) -->
-  <test thread-count="5" name="SK_Tips_Anonymous(failed)">
-    <classes>
-      <class name="com.appium.DeviceScripts.SK_Tips_Anonymous">
-        <methods>
-          <include name="logOutApp"/>
-          <include name="launchSafetyKuvrr"/>
-          <include name="testTips"/>
-        </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_Tips_Anonymous -->
-    </classes>
-  </test> <!-- SK_Tips_Anonymous(failed) -->
+  </test> <!-- SK_GroupCall(failed) -->
 </suite> <!-- Failed suite [Suite] -->

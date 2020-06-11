@@ -42,7 +42,7 @@ public class SK_CreateAccount extends Base{
 	    public void launchSafetyKuvrr() throws MalformedURLException {
 		  
 		  
-		 launchAppKarbon();
+		   launchAppMotoG4P();
 		  System.out.println("App Launched Successfull");
 	        
 	  }

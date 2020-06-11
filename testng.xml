@@ -9,7 +9,15 @@
         <listener class-name="com.ExtentReportListner.ExtentReporterNG" />
     </listeners>
 
-       <test name="SK_SOS_Incident" >
+    <test name="SK_Tips_NonAnonymous" >
+
+        <classes>
+
+            <class name="com.appium.DeviceScripts.SK_Tips_NonAnonymous" />
+        </classes>
+    </test>
+
+    <test name="SK_SOS_Incident" >
 
         <classes>
 
@@ -40,15 +48,14 @@
             <class name="com.appium.DeviceScripts.SK_SafeWalk_Incident" />
         </classes>
     </test>
-    
-      <test name="SK_Tips_NonAnonymous" >
+
+    <test name="SK_Tips_Anonymous" >
 
         <classes>
 
-            <class name="com.appium.DeviceScripts.SK_Tips_NonAnonymous" />
+            <class name="com.appium.DeviceScripts.SK_Tips_Anonymous" />
         </classes>
     </test>
-    
 
     <test name="SK_MAP" >
 
@@ -57,8 +64,8 @@
             <class name="com.appium.DeviceScripts.SK_MAP" />
         </classes>
     </test>
-    
-     <test name="SK_MyHistory" >
+
+    <test name="SK_MyHistory" >
 
         <classes>
 
@@ -71,14 +78,6 @@
         <classes>
 
             <class name="com.appium.DeviceScripts.SK_GroupCall" />
-        </classes>
-    </test>
-    
-      <test name="SK_Tips_Anonymous" >
-
-        <classes>
-
-            <class name="com.appium.DeviceScripts.SK_Tips_Anonymous" />
         </classes>
     </test>
 
@@ -97,8 +96,6 @@
             <class name="com.appium.DeviceScripts.SK_Timer_Incident" />
         </classes>
     </test>
-
-   
 
     <test name="SK_911_Incident" >
 
@@ -172,7 +169,7 @@
 		<classes>
 			<class name="com.appium.EmulatorScripts.SK_Emulator_Tips_Blank" />
 		</classes>
-	</test>
+	</test>
     -->
 
 </suite>
