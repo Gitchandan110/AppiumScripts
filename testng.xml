@@ -8,6 +8,16 @@
 
         <listener class-name="com.ExtentReportListner.ExtentReporterNG" />
     </listeners>
+    
+      <test name="SK_GroupCall" >
+
+        <classes>
+
+            <class name="com.appium.DeviceScripts.SK_GroupCall" />
+            
+        </classes>
+        
+    </test>
 
     <test name="SK_Tips_NonAnonymous" >
 
@@ -70,14 +80,6 @@
         <classes>
 
             <class name="com.appium.DeviceScripts.SK_MyHistory" />
-        </classes>
-    </test>
-
-    <test name="SK_GroupCall" >
-
-        <classes>
-
-            <class name="com.appium.DeviceScripts.SK_GroupCall" />
         </classes>
     </test>
 

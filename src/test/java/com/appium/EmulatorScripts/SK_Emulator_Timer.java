@@ -61,7 +61,7 @@ public class SK_Emulator_Timer extends Base {
 
 		homepagebl.startTimer();
 		setTimerbl.SetTimer();
-		setTimerbl.Set();
+		setTimerbl.Set5Minute();
 		incidentscreenbl.EndIncident();
 		incidentscreenbl.SelectEndReason();
 

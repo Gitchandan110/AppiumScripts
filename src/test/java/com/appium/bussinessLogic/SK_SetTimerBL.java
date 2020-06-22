@@ -17,6 +17,7 @@ public class SK_SetTimerBL extends SK_SetTimerPO{
 				Base.takeScreenShot("Timer Screen");
 				btnSetTimer().click();
 				Thread.sleep(3000);
+				Base.takeScreenShot("Timer Screen");
 				System.out.println("Set Timer clicked");
 
 			} else {
@@ -33,7 +34,7 @@ public class SK_SetTimerBL extends SK_SetTimerPO{
 
 	
 	
-public void Set() {
+public void Set5Minute() {
 	
 	try {
 
@@ -42,10 +43,9 @@ public void Set() {
 			System.out.println("Set button clicked");
 			ExcelUtils.WriteExcel(TestCaseSheet, 31, 1, "Pass");
 			System.out.println("Current Time is :"+ Base.GetDateTime());
-			Thread.sleep(5000);
+			System.out.println("Please wait for 9 Minutes");
+			Thread.sleep(420000);
 			Base.takeScreenShot("Timer Screen");
-			Thread.sleep(360000);
-			System.out.println("Thread sleep for 5 Minute");
 			System.out.println("Current Time is :"+ Base.GetDateTime());
 			ExcelUtils.WriteExcel(TestCaseSheet, 32, 1, "Pass");
 

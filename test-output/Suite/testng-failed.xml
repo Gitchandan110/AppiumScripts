@@ -4,27 +4,15 @@
   <listeners>
     <listener class-name="com.ExtentReportListner.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="SK_MAP(failed)">
+  <test thread-count="5" name="SK_Tips_Anonymous(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_MAP">
+      <class name="com.appium.DeviceScripts.SK_Tips_Anonymous">
         <methods>
           <include name="logOutApp"/>
-          <include name="testSteerPathMap"/>
           <include name="launchSafetyKuvrr"/>
+          <include name="testTips"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_MAP -->
+      </class> <!-- com.appium.DeviceScripts.SK_Tips_Anonymous -->
     </classes>
-  </test> <!-- SK_MAP(failed) -->
-  <test thread-count="5" name="SK_GroupCall(failed)">
-    <classes>
-      <class name="com.appium.DeviceScripts.SK_GroupCall">
-        <methods>
-          <include name="Login"/>
-          <include name="GroupCall"/>
-          <include name="launchApp"/>
-          <include name="logOutApp"/>
-        </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_GroupCall -->
-    </classes>
-  </test> <!-- SK_GroupCall(failed) -->
+  </test> <!-- SK_Tips_Anonymous(failed) -->
 </suite> <!-- Failed suite [Suite] -->
