@@ -11,25 +11,93 @@ import io.appium.java_client.TouchAction;
 public class SK_EditProfileBL extends SK_EditProfilePO {
 	
 	String TestCaseSheet = "TestCase";
+	
+	public void EditProfile() {
 
+		try {
+			if (txtFirstName().isDisplayed()) {
+				txtFirstName().click();
+				txtFirstName().sendKeys("Moto");
+				System.out.println(" Edit txtFirstName()");
+				
+			}
+			
+			if (driver.isKeyboardShown() == true) {
+				driver.hideKeyboard();
+			}
+			
+			if (txtLastName().isDisplayed()) {
+			    txtLastName().click();
+				txtLastName().sendKeys("Chandan");
+				System.out.println(" Edit txtLastName()");
+
+				}
+			
+			
+			if (driver.isKeyboardShown() == true) {
+				driver.hideKeyboard();
+			}
+
+
+			if (txtMobileNumber().isDisplayed()) {
+				txtMobileNumber().click();
+				txtMobileNumber().sendKeys("0815161349");
+				System.out.println(" Edit txtMobileNumber()");
+
+				}	
+			
+			if (driver.isKeyboardShown() == true) {
+				driver.hideKeyboard();
+			}
+
+			if (txtSafeWord().isDisplayed()) {
+				txtSafeWord().click();
+				txtSafeWord().sendKeys("CKG");
+				System.out.println(" Edit txtSafeWord()");
+
+				}
+	
+			if (driver.isKeyboardShown() == true) {
+				driver.hideKeyboard();
+				Base.takeScreenShot("Edit Profile");
+			}
+			
+			
+
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
 	public void selectAdditionalInfo() {
 
 		if (driver.isKeyboardShown() == true) {
 			driver.hideKeyboard();
 		}
 
-		Base.scrolltoElement("Additional Info");
+		
 		if (btnAdditionalInfo().isDisplayed()) {
+			Base.scrolltoElement("Additional Info");
 			btnAdditionalInfo().click();
 			System.out.println("Additional Info selected");
+			
+		
 		}
 	}
 
 	public void fillAdditionalInfo() {
 
 		try {
+			
+		
+			/*MobileElement DOB = (MobileElement) driver.findElement(MobileBy.AndroidUIAutomator(
+					"new UiScrollable(new UiSelector()).scrollIntoView(" + "new UiSelector().text(\"mm/dd/YYYY\"));"));*/
+			
 			MobileElement DOB = (MobileElement) driver.findElement(MobileBy.AndroidUIAutomator(
-					"new UiScrollable(new UiSelector()).scrollIntoView(" + "new UiSelector().text(\"mm/dd/YYYY\"));"));
+					"new UiScrollable(new UiSelector()).scrollIntoView(" + "new UiSelector().text(\"01/11/2001\"));"));
+		
+		
 			if (txtDateOfBirth().isDisplayed()) {
 				txtDateOfBirth().click();
 				txtDateOfBirth().sendKeys("01/11/2001");
@@ -39,7 +107,7 @@ public class SK_EditProfileBL extends SK_EditProfilePO {
 			if (driver.isKeyboardShown() == true) {
 				driver.hideKeyboard();
 
-				Base.scrolltoElement("M or F");
+			//	Base.scrolltoElement("M or F");
 				if (txtGender().isDisplayed()) {
 					txtGender().click();
 					txtGender().sendKeys("M");
@@ -51,7 +119,7 @@ public class SK_EditProfileBL extends SK_EditProfilePO {
 			if (driver.isKeyboardShown() == true) {
 				driver.hideKeyboard();
 
-				Base.scrolltoElement("Weight");
+			//	Base.scrolltoElement("Weight");
 				if (txtWeight().isDisplayed()) {
 					txtWeight().click();
 					txtWeight().sendKeys("55");
@@ -91,6 +159,7 @@ public class SK_EditProfileBL extends SK_EditProfilePO {
 
 			if (driver.isKeyboardShown() == true) {
 				driver.hideKeyboard();
+				Base.takeScreenShot("Edit Profile");
 				if (txtAddress().isDisplayed()) {
 					txtAddress().click();
 					txtAddress().sendKeys("Vaishali Ghaziabad");
@@ -130,16 +199,6 @@ public class SK_EditProfileBL extends SK_EditProfilePO {
 
 			if (driver.isKeyboardShown() == true) {
 				driver.hideKeyboard();
-				if (txtCountry().isDisplayed()) {
-					txtCountry().click();
-					txtCountry().sendKeys("CK");
-					System.out.println("Country filled");
-
-				}
-			}
-
-			if (driver.isKeyboardShown() == true) {
-				driver.hideKeyboard();
 				if (txtAutoMake().isDisplayed()) {
 					txtAutoMake().click();
 					txtAutoMake().sendKeys("BMW");
@@ -160,6 +219,7 @@ public class SK_EditProfileBL extends SK_EditProfilePO {
 
 			if (driver.isKeyboardShown() == true) {
 				driver.hideKeyboard();
+				Base.takeScreenShot("Edit Profile");
 				if (txtAutoColor().isDisplayed()) {
 					txtAutoColor().click();
 					txtAutoColor().sendKeys("Black");
@@ -182,7 +242,7 @@ public class SK_EditProfileBL extends SK_EditProfilePO {
 				driver.hideKeyboard();
 				if (txtAutoLicence().isDisplayed()) {
 					txtAutoLicence().click();
-					txtAutoLicence().sendKeys("20195443236676");
+					txtAutoLicence().sendKeys("20202206");
 					System.out.println("Auto Licence filled");
 
 				}
@@ -214,7 +274,7 @@ public class SK_EditProfileBL extends SK_EditProfilePO {
 					txtAdaConsiderations().click();
 					txtAdaConsiderations().sendKeys("The Americans with Disabilities Act gives civil rights protections to individuals with disabilities similar to those provided to individuals on the basis of race, color, sex, national origin, age, and religion. It guarantees equal opportunity for individuals with disabilities in public accommodations, employment, transportation, State and local government services, and telecommunications.");
 					System.out.println("Ada Consideration filled");
-
+					Base.takeScreenShot("Edit Profile");
 				}
 			}
 
@@ -236,17 +296,6 @@ public class SK_EditProfileBL extends SK_EditProfilePO {
 
 	}
 
-	public void changePassword() {
-
-		if (driver.isKeyboardShown() == true) {
-			driver.hideKeyboard();
-			if (btnChangePassword().isDisplayed()) {
-				btnChangePassword().click();
-				System.out.println("Change Password button Clicked");
-
-			}
-		}
-
-	}
+	
 
 }

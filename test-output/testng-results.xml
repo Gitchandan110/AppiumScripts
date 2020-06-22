@@ -2,28 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="648670" started-at="2020-06-22T09:38:08Z" finished-at="2020-06-22T09:48:56Z">
+  <suite name="Default suite" duration-ms="140661" started-at="2020-06-22T11:42:50Z" finished-at="2020-06-22T11:45:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="648670" started-at="2020-06-22T09:38:08Z" finished-at="2020-06-22T09:48:56Z">
-      <class name="com.appium.DeviceScripts.SK_Timer_Incident">
-        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_Timer_Incident@30a3107a]" name="launchSafetyKuvrr" is-config="true" duration-ms="17453" started-at="2020-06-22T09:38:08Z" finished-at="2020-06-22T09:38:25Z">
+    <test name="Default test" duration-ms="140661" started-at="2020-06-22T11:42:50Z" finished-at="2020-06-22T11:45:11Z">
+      <class name="com.appium.DeviceScripts.SK_EditProfile">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.appium.DeviceScripts.SK_EditProfile@2bbf4b8b]" name="launchApp" is-config="true" duration-ms="15038" started-at="2020-06-22T11:42:50Z" finished-at="2020-06-22T11:43:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchSafetyKuvrr -->
-        <test-method status="PASS" signature="loginApp()[pri:0, instance:com.appium.DeviceScripts.SK_Timer_Incident@30a3107a]" name="loginApp" is-config="true" duration-ms="31226" started-at="2020-06-22T09:38:25Z" finished-at="2020-06-22T09:38:56Z">
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="Profile()[pri:0, instance:com.appium.DeviceScripts.SK_EditProfile@2bbf4b8b]" name="Profile" duration-ms="125575" started-at="2020-06-22T11:43:06Z" finished-at="2020-06-22T11:45:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginApp -->
-        <test-method status="PASS" signature="testTimerIncident()[pri:0, instance:com.appium.DeviceScripts.SK_Timer_Incident@30a3107a]" name="testTimerIncident" duration-ms="599947" started-at="2020-06-22T09:38:56Z" finished-at="2020-06-22T09:48:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTimerIncident -->
-        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_Timer_Incident@30a3107a]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-06-22T09:48:56Z" finished-at="2020-06-22T09:48:56Z">
+        </test-method> <!-- Profile -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_EditProfile@2bbf4b8b]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-06-22T11:45:11Z" finished-at="2020-06-22T11:45:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutApp -->
-      </class> <!-- com.appium.DeviceScripts.SK_Timer_Incident -->
+      </class> <!-- com.appium.DeviceScripts.SK_EditProfile -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

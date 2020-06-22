@@ -73,6 +73,7 @@ public class SK_EditProfile extends Base{
 		
 		homepagebl.clickSetting();
 		settingsbl.SelectOptionProfile();
+		profilebl.EditProfile();
 		profilebl.selectAdditionalInfo();
 		profilebl.fillAdditionalInfo();
 		
@@ -83,7 +84,7 @@ public class SK_EditProfile extends Base{
 	
 	public void logOutApp() {
 		
-		settingsbl.selectOptionLogOut();
+	//	settingsbl.selectOptionLogOut();
 		
 		
 	}

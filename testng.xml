@@ -98,6 +98,16 @@
             <class name="com.appium.DeviceScripts.SK_Timer_Incident" />
         </classes>
     </test>
+    
+     <test name="SK_EditProfile" >
+
+        <classes>
+
+            <class name="com.appium.DeviceScripts.SK_EditProfile" />
+            
+        </classes>
+        
+    </test>
 
     <test name="SK_911_Incident" >
 
