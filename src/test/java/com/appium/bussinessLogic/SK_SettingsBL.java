@@ -57,6 +57,20 @@ public class SK_SettingsBL extends SK_SettingsPO {
 		System.out.println("Organization option clicked");
 
 	}
+	
+	public void SendNotification() throws InterruptedException, IOException {
+
+		Base.scrolltoElement("Send Notification");
+		optionSendNotification().click();
+		Thread.sleep(5000);
+		Base.takeScreenShot("Send Notification");
+		System.out.println("Organization option clicked");
+
+	}
+	
+	
+	
+	
 
 	public void clickButtonBackSettings() {
 

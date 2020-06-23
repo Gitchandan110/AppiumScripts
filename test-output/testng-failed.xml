@@ -4,61 +4,27 @@
   <listeners>
     <listener class-name="com.ExtentReportListner.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="SK_AudioLocation_Incident(failed)">
+  <test thread-count="5" name="SK_GroupCall(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_AudioLocation_Incident">
+      <class name="com.appium.DeviceScripts.SK_GroupCall">
         <methods>
-          <include name="logOutApp"/>
-          <include name="verifyPhotoAudioIncident"/>
           <include name="Login"/>
-          <include name="launchSafetyKuvrr"/>
-        </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_AudioLocation_Incident -->
-    </classes>
-  </test> <!-- SK_AudioLocation_Incident(failed) -->
-  <test thread-count="5" name="SK_VideoLocation_Incident(failed)">
-    <classes>
-      <class name="com.appium.DeviceScripts.SK_VideoLocation_Incident">
-        <methods>
-          <include name="logOutApp"/>
-          <include name="verifyPhotoAudioIncident"/>
-          <include name="Login"/>
-          <include name="launchSafetyKuvrr"/>
-        </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_VideoLocation_Incident -->
-    </classes>
-  </test> <!-- SK_VideoLocation_Incident(failed) -->
-  <test thread-count="5" name="SK_MAP(failed)">
-    <classes>
-      <class name="com.appium.DeviceScripts.SK_MAP">
-        <methods>
-          <include name="logOutApp"/>
-          <include name="testSteerPathMap"/>
-          <include name="launchSafetyKuvrr"/>
-        </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_MAP -->
-    </classes>
-  </test> <!-- SK_MAP(failed) -->
-  <test thread-count="5" name="SK_ERP(failed)">
-    <classes>
-      <class name="com.appium.DeviceScripts.SK_ERP">
-        <methods>
-          <include name="testERP"/>
-          <include name="launchSafetyKuvrr"/>
+          <include name="GroupCall"/>
+          <include name="launchApp"/>
           <include name="logOutApp"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_ERP -->
+      </class> <!-- com.appium.DeviceScripts.SK_GroupCall -->
     </classes>
-  </test> <!-- SK_ERP(failed) -->
-  <test thread-count="5" name="SK_Tips_Anonymous(failed)">
+  </test> <!-- SK_GroupCall(failed) -->
+  <test thread-count="5" name="SK_Tips_NonAnonymous(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_Tips_Anonymous">
+      <class name="com.appium.DeviceScripts.SK_Tips_NonAnonymous">
         <methods>
           <include name="logOutApp"/>
           <include name="launchSafetyKuvrr"/>
           <include name="testTips"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_Tips_Anonymous -->
+      </class> <!-- com.appium.DeviceScripts.SK_Tips_NonAnonymous -->
     </classes>
-  </test> <!-- SK_Tips_Anonymous(failed) -->
+  </test> <!-- SK_Tips_NonAnonymous(failed) -->
 </suite> <!-- Failed suite [Suite] -->

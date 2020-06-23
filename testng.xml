@@ -87,6 +87,16 @@
 <class name="com.appium.DeviceScripts.SK_VisitorManagement" />
 </classes>
 </test>
+
+
+<test name="SK_SendNotification"> 
+<classes>
+<class name="com.appium.DeviceScripts.SK_SendNotification" />
+</classes>
+</test>
+
+
+
         
         
 <test name="SK_EditProfile" >

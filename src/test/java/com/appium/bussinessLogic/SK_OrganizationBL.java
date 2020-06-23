@@ -15,12 +15,12 @@ public class SK_OrganizationBL extends SK_OrganizationPO {
 			if (tbAddOrganization().isDisplayed()) {
 				tbAddOrganization().sendKeys("CKORG");
 				Base.takeScreenShot("Organization");
-				System.out.println("Org Code filed");
+				System.out.println("Organization selected");
 			} else {
-				System.out.println("Org Code not filed");
+				System.out.println("Organization not selected");
 			}
 		} catch (Exception ex) {
-			System.out.println("Exception in OrgCode:" + ex.getMessage());
+			System.out.println("Exception in Organization:" + ex.getMessage());
 		}
 	}
 	
