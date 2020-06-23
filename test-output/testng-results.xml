@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="100583" started-at="2020-06-22T18:26:32Z" finished-at="2020-06-22T18:28:12Z">
+  <suite name="Default suite" duration-ms="52824" started-at="2020-06-23T10:06:03Z" finished-at="2020-06-23T10:06:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="100583" started-at="2020-06-22T18:26:32Z" finished-at="2020-06-22T18:28:12Z">
-      <class name="com.appium.DeviceScripts.SK_VisitorManagement">
-        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_VisitorManagement@34cd072c]" name="launchSafetyKuvrr" is-config="true" duration-ms="14195" started-at="2020-06-22T18:26:32Z" finished-at="2020-06-22T18:26:46Z">
+    <test name="Default test" duration-ms="52824" started-at="2020-06-23T10:06:03Z" finished-at="2020-06-23T10:06:55Z">
+      <class name="com.appium.DeviceScripts.SK_Organization">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.appium.DeviceScripts.SK_Organization@4493d195]" name="launchApp" is-config="true" duration-ms="14450" started-at="2020-06-23T10:06:03Z" finished-at="2020-06-23T10:06:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchSafetyKuvrr -->
-        <test-method status="PASS" signature="testERP()[pri:1, instance:com.appium.DeviceScripts.SK_VisitorManagement@34cd072c]" name="testERP" duration-ms="86368" started-at="2020-06-22T18:26:46Z" finished-at="2020-06-22T18:28:12Z">
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="Profile()[pri:0, instance:com.appium.DeviceScripts.SK_Organization@4493d195]" name="Profile" duration-ms="38363" started-at="2020-06-23T10:06:17Z" finished-at="2020-06-23T10:06:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testERP -->
-        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_VisitorManagement@34cd072c]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-06-22T18:28:12Z" finished-at="2020-06-22T18:28:12Z">
+        </test-method> <!-- Profile -->
+        <test-method status="PASS" signature="logOutApp()[pri:0, instance:com.appium.DeviceScripts.SK_Organization@4493d195]" name="logOutApp" is-config="true" duration-ms="0" started-at="2020-06-23T10:06:55Z" finished-at="2020-06-23T10:06:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutApp -->
-      </class> <!-- com.appium.DeviceScripts.SK_VisitorManagement -->
+      </class> <!-- com.appium.DeviceScripts.SK_Organization -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

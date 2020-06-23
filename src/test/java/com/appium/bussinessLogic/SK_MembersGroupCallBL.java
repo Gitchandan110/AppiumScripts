@@ -19,7 +19,7 @@ public class SK_MembersGroupCallBL extends SK_MembersGroupCallPO {
 				System.out.println("Video Call button found");
 				btnVideoCall().click();
 				Thread.sleep(30000);
-				Base.takeScreenShot("Group call Screen");
+				Base.takeScreenShot("Group Call");
 				System.out.println("Video Call Started");
 
 			} else {
@@ -42,7 +42,7 @@ public class SK_MembersGroupCallBL extends SK_MembersGroupCallPO {
 			if (btnAudioCall() != null && btnAudioCall().isDisplayed()) {
 				btnAudioCall().click();
 				Thread.sleep(30000);
-				Base.takeScreenShot("Group call Screen");
+				Base.takeScreenShot("Group Call");
 				System.out.println("Audio Call Started");
 
 			} else {

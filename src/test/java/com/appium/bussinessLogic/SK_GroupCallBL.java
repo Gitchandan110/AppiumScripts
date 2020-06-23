@@ -29,7 +29,7 @@ public class SK_GroupCallBL extends SK_GroupCallPO {
 				btnGroupCallActiveList().click();
 				Thread.sleep(3000);
 			    System.out.println("Group call button clicked");
-				Base.takeScreenShot("Group Call Screen");
+			    Base.takeScreenShot("Group Call");
 			}
 
 		} catch (Exception ex) {

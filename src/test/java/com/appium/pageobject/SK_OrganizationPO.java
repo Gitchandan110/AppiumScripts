@@ -22,10 +22,9 @@ public class SK_OrganizationPO extends Base {
 		return driver.findElement(confirmOrganization);
 	}
 
-	public MobileElement updateOrganization() {
+	public MobileElement optionUpdateOrganization() {
 
-		// By
-		// updateOrg=By.id("com.safety.armourgrid:id/settings_organizations_add_pro");
+		// By updateOrg=By.id("com.safety.armourgrid:id/settings_organizations_add_pro");
 
 		By updateOrg = By.xpath("//android.widget.TextView[@text=\"Update Organization\"]");
 

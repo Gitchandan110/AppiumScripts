@@ -1,16 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.ExtentReportListner.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="SK_AudioLocation_Incident(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_Timer_Incident">
+      <class name="com.appium.DeviceScripts.SK_AudioLocation_Incident">
         <methods>
-          <include name="launchSafetyKuvrr"/>
-          <include name="loginApp"/>
           <include name="logOutApp"/>
-          <include name="testTimerIncident"/>
+          <include name="verifyPhotoAudioIncident"/>
+          <include name="Login"/>
+          <include name="launchSafetyKuvrr"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_Timer_Incident -->
+      </class> <!-- com.appium.DeviceScripts.SK_AudioLocation_Incident -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- SK_AudioLocation_Incident(failed) -->
+  <test thread-count="5" name="SK_VideoLocation_Incident(failed)">
+    <classes>
+      <class name="com.appium.DeviceScripts.SK_VideoLocation_Incident">
+        <methods>
+          <include name="logOutApp"/>
+          <include name="verifyPhotoAudioIncident"/>
+          <include name="Login"/>
+          <include name="launchSafetyKuvrr"/>
+        </methods>
+      </class> <!-- com.appium.DeviceScripts.SK_VideoLocation_Incident -->
+    </classes>
+  </test> <!-- SK_VideoLocation_Incident(failed) -->
+  <test thread-count="5" name="SK_MAP(failed)">
+    <classes>
+      <class name="com.appium.DeviceScripts.SK_MAP">
+        <methods>
+          <include name="logOutApp"/>
+          <include name="testSteerPathMap"/>
+          <include name="launchSafetyKuvrr"/>
+        </methods>
+      </class> <!-- com.appium.DeviceScripts.SK_MAP -->
+    </classes>
+  </test> <!-- SK_MAP(failed) -->
+  <test thread-count="5" name="SK_ERP(failed)">
+    <classes>
+      <class name="com.appium.DeviceScripts.SK_ERP">
+        <methods>
+          <include name="testERP"/>
+          <include name="launchSafetyKuvrr"/>
+          <include name="logOutApp"/>
+        </methods>
+      </class> <!-- com.appium.DeviceScripts.SK_ERP -->
+    </classes>
+  </test> <!-- SK_ERP(failed) -->
+  <test thread-count="5" name="SK_Tips_Anonymous(failed)">
+    <classes>
+      <class name="com.appium.DeviceScripts.SK_Tips_Anonymous">
+        <methods>
+          <include name="logOutApp"/>
+          <include name="launchSafetyKuvrr"/>
+          <include name="testTips"/>
+        </methods>
+      </class> <!-- com.appium.DeviceScripts.SK_Tips_Anonymous -->
+    </classes>
+  </test> <!-- SK_Tips_Anonymous(failed) -->
+</suite> <!-- Failed suite [Suite] -->

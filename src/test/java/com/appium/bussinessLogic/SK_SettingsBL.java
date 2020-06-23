@@ -22,7 +22,7 @@ public class SK_SettingsBL extends SK_SettingsPO {
 		optionGroupCall().click();
 		Base.GetDateTime();
 		Thread.sleep(10000);
-		Base.takeScreenShot("Group Call Screen");
+		Base.takeScreenShot("Group Call");
 		System.out.println("Group Call option clicked");
 		Base.GetDateTime();
 
@@ -48,6 +48,16 @@ public class SK_SettingsBL extends SK_SettingsPO {
 
 	}
 
+	public void SelectOrganization() throws InterruptedException, IOException {
+
+		Base.scrolltoElement("Organization");
+		optionOrganization().click();
+		Thread.sleep(5000);
+		Base.takeScreenShot("Organization");
+		System.out.println("Organization option clicked");
+
+	}
+
 	public void clickButtonBackSettings() {
 
 		try {
@@ -63,7 +73,6 @@ public class SK_SettingsBL extends SK_SettingsPO {
 		}
 	}
 
-	
 	public void SelectMyHistory() throws InterruptedException, IOException {
 
 		try {
@@ -78,7 +87,7 @@ public class SK_SettingsBL extends SK_SettingsPO {
 		}
 
 	}
-	
+
 	public void SelectVisitorManagement() throws InterruptedException, IOException {
 
 		Base.scrolltoElement("Visitor Management");
@@ -88,5 +97,5 @@ public class SK_SettingsBL extends SK_SettingsPO {
 		System.out.println("Visitor Management Selected");
 
 	}
-	
+
 }

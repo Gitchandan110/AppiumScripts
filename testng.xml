@@ -3,7 +3,9 @@
 
 <suite name="Suite" parallel="false" verbose="1">
     
-    
+  <listeners>
+  <listener class-name="com.ExtentReportListner.ExtentReporterNG" />
+  </listeners>    
 
 <test name="SK_GroupCall" >
 <classes>
@@ -93,15 +95,24 @@
 </classes>
 </test>
 
- <test name="SK_911_Incident" >
- <classes>
-<class name="com.appium.DeviceScripts.SK_911_Incident" />
+
+<test name="SK_Organization" >
+<classes>
+<class name="com.appium.DeviceScripts.SK_Organization" />
 </classes>
 </test>
-        
+
+
 <test name="SK_Tips_Anonymous" >
 <classes>
 <class name="com.appium.DeviceScripts.SK_Tips_Anonymous" />
+</classes>
+</test>
+
+
+ <test name="SK_911_Incident" >
+ <classes>
+<class name="com.appium.DeviceScripts.SK_911_Incident" />
 </classes>
 </test>
         
