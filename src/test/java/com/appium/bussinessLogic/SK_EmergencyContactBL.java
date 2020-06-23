@@ -2,9 +2,9 @@ package com.appium.bussinessLogic;
 
 import com.appium.commonutils.Base;
 import com.appium.commonutils.ExcelUtils;
-import com.appium.pageobject.SK_AddEmergencyContactPO;
+import com.appium.pageobject.SK_EmergencyContactsPO;
 
-public class SK_AddEmergencyContactBL extends SK_AddEmergencyContactPO {
+public class SK_EmergencyContactBL extends SK_EmergencyContactsPO {
 	
 	String TestCaseSheet = "TestCase";
 

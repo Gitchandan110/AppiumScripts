@@ -36,10 +36,6 @@ public class SK_MyHistoryPO extends Base {
 	}
 	
 	
-	
-	
-	
-
 	public List<MobileElement> itemNotifications() {
 
 		// By MyHistory = By.id("com.safety.armourgrid:id/settings_history");

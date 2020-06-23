@@ -2,9 +2,9 @@ package com.appium.bussinessLogic;
 
 import com.appium.commonutils.Base;
 import com.appium.commonutils.ExcelUtils;
-import com.appium.pageobject.SK_AddOrganizationPO;
+import com.appium.pageobject.SK_OrganizationPO;
 
-public class SK_AddOrganizationBL extends SK_AddOrganizationPO {
+public class SK_OrganizationBL extends SK_OrganizationPO {
 
 	String TestCaseSheet = "TestCase";
 	

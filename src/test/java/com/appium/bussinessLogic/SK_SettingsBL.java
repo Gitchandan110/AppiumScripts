@@ -79,6 +79,14 @@ public class SK_SettingsBL extends SK_SettingsPO {
 
 	}
 	
-	
+	public void SelectVisitorManagement() throws InterruptedException, IOException {
+
+		Base.scrolltoElement("Visitor Management");
+		Base.takeScreenShot("Visitor Management");
+		optionVisitorManagement().click();
+		Thread.sleep(5000);
+		System.out.println("Visitor Management Selected");
+
+	}
 	
 }

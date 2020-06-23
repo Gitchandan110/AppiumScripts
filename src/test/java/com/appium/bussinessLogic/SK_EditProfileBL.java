@@ -274,12 +274,13 @@ public class SK_EditProfileBL extends SK_EditProfilePO {
 					txtAdaConsiderations().click();
 					txtAdaConsiderations().sendKeys("The Americans with Disabilities Act gives civil rights protections to individuals with disabilities similar to those provided to individuals on the basis of race, color, sex, national origin, age, and religion. It guarantees equal opportunity for individuals with disabilities in public accommodations, employment, transportation, State and local government services, and telecommunications.");
 					System.out.println("Ada Consideration filled");
-					Base.takeScreenShot("Edit Profile");
+				
 				}
 			}
 
 			if (btnSaveProfile().isDisplayed()) {
 				btnSaveProfile().click();
+				Base.takeScreenShot("Edit Profile");
 				System.out.println("Profile Saved");
 				ExcelUtils.WriteExcel(TestCaseSheet, 18, 1, "Pass");
 			}

@@ -1,187 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite
-    name="Suite"
-    verbose="1" >
 
-    <listeners>
-
-        <listener class-name="com.ExtentReportListner.ExtentReporterNG" />
-    </listeners>
+<suite name="Suite" parallel="false" verbose="1">
     
-      <test name="SK_GroupCall" >
+    
 
-        <classes>
+<test name="SK_GroupCall" >
+<classes>
+<class name="com.appium.DeviceScripts.SK_GroupCall" />
+</classes>
+</test>
 
-            <class name="com.appium.DeviceScripts.SK_GroupCall" />
-            
-        </classes>
+
+
+
+<test name="SK_Tips_NonAnonymous" >
+<classes>
+<class name="com.appium.DeviceScripts.SK_Tips_NonAnonymous" />
+</classes>
+</test>
+
+
+
+<test name="SK_SOS_Incident" >
+<classes>
+<class name="com.appium.DeviceScripts.SK_SOS_Incident" />
+</classes>
+</test>
+
+
+
+<test name="SK_AudioLocation_Incident" >
+<classes>
+<class name="com.appium.DeviceScripts.SK_AudioLocation_Incident" />
+</classes>
+</test>
+
+
+
+<test name="SK_VideoLocation_Incident" >
+<classes>
+<class name="com.appium.DeviceScripts.SK_VideoLocation_Incident" />
+</classes>
+</test>
+
+
+<test name="SK_SafeWalk_Incident" >
+<classes>
+<class name="com.appium.DeviceScripts.SK_SafeWalk_Incident" />
+</classes>
+</test>
+
+<test name="SK_MAP" >
+<classes>
+<class name="com.appium.DeviceScripts.SK_MAP" />
+</classes>
+</test>
+
+
+
+<test name="SK_MyHistory" >
+<classes>
+<class name="com.appium.DeviceScripts.SK_MyHistory" />
+</classes>
+</test>
+    
+    
+
+<test name="SK_ERP" >
+<classes>
+<class name="com.appium.DeviceScripts.SK_ERP" />
+</classes>
+</test>
+    
+<test name="SK_Timer_Incident" >
+<classes>
+<class name="com.appium.DeviceScripts.SK_Timer_Incident" />
+</classes>
+</test>
+
+    
+<test name="SK_VisitorManagement"> 
+<classes>
+<class name="com.appium.DeviceScripts.SK_VisitorManagement" />
+</classes>
+</test>
         
-    </test>
-
-    <test name="SK_Tips_NonAnonymous" >
-
-        <classes>
-
-            <class name="com.appium.DeviceScripts.SK_Tips_NonAnonymous" />
-        </classes>
-    </test>
-
-    <test name="SK_SOS_Incident" >
-
-        <classes>
-
-            <class name="com.appium.DeviceScripts.SK_SOS_Incident" />
-        </classes>
-    </test>
-
-    <test name="SK_AudioLocation_Incident" >
-
-        <classes>
-
-            <class name="com.appium.DeviceScripts.SK_AudioLocation_Incident" />
-        </classes>
-    </test>
-
-    <test name="SK_VideoLocation_Incident" >
-
-        <classes>
-
-            <class name="com.appium.DeviceScripts.SK_VideoLocation_Incident" />
-        </classes>
-    </test>
-
-    <test name="SK_SafeWalk_Incident" >
-
-        <classes>
-
-            <class name="com.appium.DeviceScripts.SK_SafeWalk_Incident" />
-        </classes>
-    </test>
-
-    <test name="SK_Tips_Anonymous" >
-
-        <classes>
-
-            <class name="com.appium.DeviceScripts.SK_Tips_Anonymous" />
-        </classes>
-    </test>
-
-    <test name="SK_MAP" >
-
-        <classes>
-
-            <class name="com.appium.DeviceScripts.SK_MAP" />
-        </classes>
-    </test>
-
-    <test name="SK_MyHistory" >
-
-        <classes>
-
-            <class name="com.appium.DeviceScripts.SK_MyHistory" />
-        </classes>
-    </test>
-
-    <test name="SK_ERP" >
-
-        <classes>
-
-            <class name="com.appium.DeviceScripts.SK_ERP" />
-        </classes>
-    </test>
-
-    <test name="SK_Timer_Incident" >
-
-        <classes>
-
-            <class name="com.appium.DeviceScripts.SK_Timer_Incident" />
-        </classes>
-    </test>
-    
-     <test name="SK_EditProfile" >
-
-        <classes>
-
-            <class name="com.appium.DeviceScripts.SK_EditProfile" />
-            
-        </classes>
         
-    </test>
+<test name="SK_EditProfile" >
+<classes>
+<class name="com.appium.DeviceScripts.SK_EditProfile" />
+</classes>
+</test>
 
-    <test name="SK_911_Incident" >
-
-        <classes>
-
-            <class name="com.appium.DeviceScripts.SK_911_Incident" />
-        </classes>
-    </test>
-
-    <!--
-    <test name="SK_Photo_Incident" >
-        <classes>
-            <class name="com.appium.DeviceScripts.SK_Photo_Incident" />
-        </classes>
-    </test>
-     	<test name="SK_CreateAccount">
-		<classes>
-			<class name="com.appium.DeviceScripts.SK_CreateAccount" />
-		</classes>
-	</test>
-    
-    
-     <test name="SK_New_Login_Screen" >
-        <classes>
-            <class name="com.appium.DeviceScripts.SK_New_Login_Screen" />
-        </classes>
-    </test> 
-    
-    <test name="SK_EditProfile" >
-    <classes>
-            <class name="com.appium.DeviceScripts.SK_EditProfile" />
-            
-        </classes>
+ <test name="SK_911_Incident" >
+ <classes>
+<class name="com.appium.DeviceScripts.SK_911_Incident" />
+</classes>
+</test>
         
-    </test>
-   <test name="SK_CreateProfile" >
-        <classes>
-            <class name="com.appium.DeviceScripts.SK_CreateProfile" />
-        </classes>
-    </test> 
-	<test name="SK_Emulator_SOS">
-		<classes>
-			<class name="com.appium.EmulatorScripts.SK_Emulator_SOS" />
-		</classes>
-	</test>
-	<test name="SK_Emulator_SafeWalk">
-		<classes>
-			<class name="com.appium.EmulatorScripts.SK_Emulator_SafeWalk" />
-		</classes>
-	</test>
-	
-	<test name="SK_Emulator_GroupCall">
-		<classes>
-			<class name="com.appium.EmulatorScripts.SK_Emulator_GroupCall" />
-		</classes>
-	</test>
-	
-	<test name="SK_Emulator_Tips_Anonymous">
-		<classes>
-			<class name="com.appium.EmulatorScripts.SK_Emulator_Tips_Anonymous" />
-		</classes>
-	</test>
-	
-	<test name="SK_Emulator_Tips_GeoLocation">
-		<classes>
-			<class name="com.appium.EmulatorScripts.SK_Emulator_Tips_GeoLocation" />
-		</classes>
-	</test>
-	
-	<test name="SK_Emulator_Tips_Blank">
-		<classes>
-			<class name="com.appium.EmulatorScripts.SK_Emulator_Tips_Blank" />
-		</classes>
-	</test>
-    -->
+<test name="SK_Tips_Anonymous" >
+<classes>
+<class name="com.appium.DeviceScripts.SK_Tips_Anonymous" />
+</classes>
+</test>
+        
 
 </suite>

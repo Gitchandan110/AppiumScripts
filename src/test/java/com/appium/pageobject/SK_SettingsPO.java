@@ -84,9 +84,7 @@ public class SK_SettingsPO extends Base {
 
 	}
 	
-	
-	
-	
+		
 	public MobileElement tabEvents() {
 
 		//By MyHistory = By.id("com.safety.armourgrid:id/settings_history");
@@ -118,7 +116,22 @@ public class SK_SettingsPO extends Base {
 		return driver.findElement(MAP);
 
 	}
+	
+	
+	public MobileElement optionVisitorManagement() {
 
+		By optionVisitorManagement = By.id("com.safety.armourgrid:id/settings_visitors");
+		return driver.findElement(optionVisitorManagement);
+
+	}
+	
+	public MobileElement optionSendNotification() {
+
+		By optionSendNotification = By.id("com.safety.armourgrid:id/settings_notification");
+		return driver.findElement(optionSendNotification);
+
+	}
+	
 	public MobileElement optionTutorial() {
 
 		By Tutorial = By.id("com.safety.armourgrid:id/settings_tutorial");
