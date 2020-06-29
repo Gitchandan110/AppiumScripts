@@ -60,6 +60,7 @@ public class SK_Timer_Incident extends Base {
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
 		quicktipsbl.closeTips();*/
+		homepagebl.PleaseWait();
 		homepagebl.clickSetting();
 		settingsbl.SelectEventOption();
 		incidentoptionbl.clickVideoAudioLocationIncident();
@@ -82,11 +83,11 @@ public class SK_Timer_Incident extends Base {
 
 	@AfterMethod
 
-	public void logOutApp() {
-
-		/*homepagebl.clickSetting();
-		settingsbl.selectOptionLogOut();
-*/
+	public void CloseApp() {
+		
+		
+		  driver.closeApp();
+		  System.out.println("driver.closeApp() App done");
 	}
 
 }

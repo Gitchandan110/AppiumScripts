@@ -30,17 +30,21 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.remote.MobileCapabilityType;
 
 public class Base {
+	
+	//SK_HomePagePO homePagepo=PageFactory.initElements(driver, SK_HomePagePO.class);
 
 	public static AndroidDriver<MobileElement> driver;
 
@@ -297,6 +301,21 @@ public class Base {
 	        mex.printStackTrace();
 	    }
 		return OTP;
+	}
+	
+	
+	public static void pressBackButton() {
+		
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		System.out.println("Device Back button clicked");
+		
+	}
+	
+public static void switchOffDevice() {
+		
+	driver.longPressKey(new KeyEvent(AndroidKey.POWER));
+    System.out.println("Device is switched off by long press long Press power button");
+		
 	}
 	
 

@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_Timer_Incident">
+      <class name="com.appium.DeviceScripts.SK_SOS_Incident">
         <methods>
           <include name="launchSafetyKuvrr"/>
-          <include name="loginApp"/>
-          <include name="logOutApp"/>
-          <include name="testTimerIncident"/>
+          <include name="testSOSIncident"/>
+          <include name="CloseApp"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_Timer_Incident -->
+      </class> <!-- com.appium.DeviceScripts.SK_SOS_Incident -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

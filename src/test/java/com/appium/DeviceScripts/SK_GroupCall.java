@@ -63,6 +63,7 @@ public class SK_GroupCall extends Base{
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
 		quicktipsbl.closeTips();*/
+		homepagebl.PleaseWait();
 		homepagebl.clickSetting();
 	}
 
@@ -80,8 +81,12 @@ public class SK_GroupCall extends Base{
 	
 @AfterMethod
 	
-	public void logOutApp() {
-		
+public void CloseApp() {
+	
+	
+	  driver.closeApp();
+	  System.out.println("driver.closeApp() App done");
+	
 	/*	homepagebl.clickSetting();
 		settingsbl.selectOptionLogOut();
 		*/

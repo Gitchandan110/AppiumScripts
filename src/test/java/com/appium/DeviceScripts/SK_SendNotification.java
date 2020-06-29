@@ -65,6 +65,7 @@ public class SK_SendNotification extends Base{
 
 	public void Profile() throws InterruptedException, IOException {
 		
+		homepagebl.PleaseWait();
 		homepagebl.clickSetting();
 		settingsbl.SendNotification();
 		notificationbl.SendNotification();
@@ -75,10 +76,11 @@ public class SK_SendNotification extends Base{
 	
 @AfterMethod
 	
-	public void logOutApp() {
-		
-	//	settingsbl.selectOptionLogOut();
-		
+public void CloseApp() {
+	
+	
+	  driver.closeApp();
+	  System.out.println("driver.closeApp() App done");
 		
 	}
 	

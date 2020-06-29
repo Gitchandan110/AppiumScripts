@@ -78,12 +78,11 @@ public class SK_CreateProfile extends Base{
 	   
 	@AfterMethod
     
-  public void tearDown() {
-    	
-	//	((AppiumDriver) driver).removeApp("com.safety.armourgrid");
+	public void CloseApp() {
 		
-		homepagebl.clickSetting();
-		settingsbl.selectOptionLogOut();
+		
+		  driver.closeApp();
+		  System.out.println("driver.closeApp() App done");
         
 
         

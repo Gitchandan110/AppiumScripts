@@ -82,11 +82,11 @@ public class SK_New_Login_Screen extends Base {
 
 	@AfterMethod
 
-	public void logOutApp() {
-
-		homepagebl.clickSetting();
-		settingsbl.selectOptionLogOut();
-
+	public void CloseApp() {
+		
+		
+		  driver.closeApp();
+		  System.out.println("driver.closeApp() App done");
 	}
 
 }

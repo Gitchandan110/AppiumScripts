@@ -80,6 +80,22 @@ public class SK_HomePagePO extends Base {
 
 	}
 	
-	
-	
+		public MobileElement loaderPleaseWait() {
+
+			By loaderPleaseWait = By.id("android:id/body");
+
+			return driver.findElement(loaderPleaseWait);
+
+		}
+		
+		
+		public MobileElement txtPleaseWait() {
+
+			By txtPleaseWait = By.xpath("//android.widget.TextView[@text=\"Please wait …\"]");
+
+			return driver.findElement(txtPleaseWait);
+
+		}	
+		
+		
 }

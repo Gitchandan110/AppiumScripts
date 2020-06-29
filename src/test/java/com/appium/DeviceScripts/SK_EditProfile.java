@@ -82,8 +82,12 @@ public class SK_EditProfile extends Base{
 	
 @AfterMethod
 	
-	public void logOutApp() {
-		
+public void CloseApp() {
+	
+	
+	  driver.closeApp();
+	  System.out.println("driver.closeApp() App done");
+	
 	//	settingsbl.selectOptionLogOut();
 		
 		

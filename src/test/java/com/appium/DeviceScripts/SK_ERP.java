@@ -57,6 +57,7 @@ public class SK_ERP extends Base{
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
 		quicktipsbl.closeTips();*/
+		homepagebl.PleaseWait();
 		homepagebl.OpenERP();
 		erpbl.SelectEarthquakeERP();
 		erpbl.clickEarthQuakeOption();
@@ -67,10 +68,13 @@ public class SK_ERP extends Base{
 }
 	
 @AfterMethod
+
+public void CloseApp() {
 	
-	public void logOutApp() {
-		
-		/*homepagebl.clickSetting();
+	
+	  driver.closeApp();
+	  System.out.println("driver.closeApp() done");
+	/*homepagebl.clickSetting();
 		settingsbl.selectOptionLogOut();
 		*/
 		

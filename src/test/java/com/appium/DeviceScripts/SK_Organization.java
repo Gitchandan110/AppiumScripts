@@ -64,6 +64,7 @@ public class SK_Organization extends Base{
 
 	public void Profile() throws InterruptedException, IOException {
 		
+		homepagebl.PleaseWait();
 		homepagebl.clickSetting();
 		settingsbl.SelectOrganization();
 		organizationbl.UpdateOrganization();
@@ -72,10 +73,11 @@ public class SK_Organization extends Base{
 	}
 	
 @AfterMethod
+public void CloseApp() {
 	
-	public void logOutApp() {
-		
-	//	settingsbl.selectOptionLogOut();
+	
+	  driver.closeApp();
+	  System.out.println("driver.closeApp() App done");
 		
 		
 	}

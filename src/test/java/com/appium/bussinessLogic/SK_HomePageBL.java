@@ -4,15 +4,40 @@ import com.appium.commonutils.Base;
 import com.appium.commonutils.ExcelUtils;
 import com.appium.pageobject.SK_HomePagePO;
 
+import io.appium.java_client.android.AndroidKeyCode;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
+
 public class SK_HomePageBL extends SK_HomePagePO {
 	
 	String TestCaseSheet = "TestCase";
+	
+	
+	public void PleaseWait() {
+
+		try {
+
+			if (txtPleaseWait().isDisplayed()) {
+				Base.takeScreenShot("PleaseWait");
+				System.out.println("Please Wait loader is moving");
+				Base.waitFor30Seconds(btnSOS());
+		
+			} 
+
+		} catch (Exception ex) {
+
+			System.out.println(ex.getMessage());
+
+		}
+	}
+	
+	
 
 	public void startSOS() {
 
 		try {
 
-			if (btnSOS().isDisplayed()) {
+			if (btnSOS() !=null && btnSOS().isDisplayed()) {
 				System.out.println("SOS button found");
 				Base.takeScreenShot("Home Screen");
 				btnSOS().click();
@@ -111,9 +136,15 @@ public class SK_HomePageBL extends SK_HomePagePO {
 			if (btn911().isDisplayed()) {
 				btn911().click();
 				System.out.println("911 Started");
-				Thread.sleep(5000);
+				Thread.sleep(3000);
 				Base.takeScreenShot("911 Screen");
-
+				System.out.println("Battery Info is :" + driver.getBatteryInfo());
+				//driver.pressKey(new KeyEvent(AndroidKey.BACK));
+				Base.pressBackButton();
+			//	Base.switchOffDevice();
+				
+				
+				
 			} else {
 
 				System.out.println("911 Not Started");
@@ -198,7 +229,7 @@ public class SK_HomePageBL extends SK_HomePagePO {
 	public void clickSetting() {
 
 		try {
-			if (btnSettings().isDisplayed()) {
+			if (btnSettings() != null &&btnSettings().isDisplayed()) {
 				btnSettings().click();
 				System.out.println("Setting Button Clicked");
 				Thread.sleep(3000);

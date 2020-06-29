@@ -33,6 +33,7 @@ public class SK_TipSubmitBL extends SK_TipSubmitPO {
 				tipCategories().get(i).click();
 				enterTipsDescription();
 				SendTips();
+				System.out.println("Value of int i is : "+ i);
 			
 
 			}
@@ -61,6 +62,7 @@ public class SK_TipSubmitBL extends SK_TipSubmitPO {
 				chkboxRemainAnonymous().click();
 				enterTipsDescription();
 				SendTips();
+				System.out.println("Value of int i is : "+ i);
 			
 
 			}

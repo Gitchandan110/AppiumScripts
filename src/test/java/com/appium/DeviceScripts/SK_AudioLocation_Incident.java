@@ -65,6 +65,7 @@ public class SK_AudioLocation_Incident extends Base {
 
 	public void verifyPhotoAudioIncident() throws InterruptedException, IOException {
 
+		homepagebl.PleaseWait();
 		homepagebl.clickSetting();
 		settingsbl.SelectEventOption();
 		incidentoptionbl.clickAudioIncident();
@@ -83,7 +84,11 @@ public class SK_AudioLocation_Incident extends Base {
 
 	@AfterMethod
 
-	public void logOutApp() {
+	public void CloseApp() {
+		
+		
+		  driver.closeApp();
+		  System.out.println("driver.closeApp() App done");
 
 		/*homepagebl.clickSetting();
 		settingsbl.selectOptionLogOut();*/

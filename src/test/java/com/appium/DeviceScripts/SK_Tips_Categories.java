@@ -50,6 +50,7 @@ public class SK_Tips_Categories extends Base{
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
 		quicktipsbl.closeTips();*/
+		homepagebl.PleaseWait();
 		homepagebl.startTips();
 		tipsubmitbl.selectTipCategoriesDropDown();
 	
@@ -57,10 +58,11 @@ public class SK_Tips_Categories extends Base{
 	
 	@AfterMethod
 
-	public void logOutApp() {
-
-	/*	homepagebl.clickSetting();
-		settingsbl.selectOptionLogOut();*/
+	public void CloseApp() {
+		
+		
+		  driver.closeApp();
+		  System.out.println("driver.closeApp() App done");
 
 	}
 }

@@ -77,10 +77,11 @@ public class SK_SafeWalk_Incident extends Base {
 
 	@AfterMethod
 
-	public void logOutApp() {
-
-	/*	homepagebl.clickSetting();
-		settingsbl.selectOptionLogOut();*/
+	public void CloseApp() {
+		
+		
+		  driver.closeApp();
+		  System.out.println("driver.closeApp() App done");
 
 	}
 

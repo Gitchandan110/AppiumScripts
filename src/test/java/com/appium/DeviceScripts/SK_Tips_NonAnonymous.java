@@ -51,6 +51,7 @@ public class SK_Tips_NonAnonymous extends Base {
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
 		quicktipsbl.closeTips();*/
+		homepagebl.PleaseWait();
 		homepagebl.startTips();
 		tipsubmitbl.sendNonAnonymousTipByCategories();
 
@@ -58,11 +59,12 @@ public class SK_Tips_NonAnonymous extends Base {
 	
 	@AfterMethod
 
-	public void logOutApp() {
-
-		/*homepagebl.clickSetting();
-		settingsbl.selectOptionLogOut();
-*/
+	public void CloseApp() {
+			
+			
+			  driver.closeApp();
+			  System.out.println("driver.closeApp() App done");
+			  
 	}
 }
 

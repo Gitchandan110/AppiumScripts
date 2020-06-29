@@ -8,27 +8,33 @@
   </listeners>    
 
 <test name="SK_GroupCall" >
+    
 <classes>
 <class name="com.appium.DeviceScripts.SK_GroupCall" />
 </classes>
 </test>
 
 
+ <test name="SK_911_Incident" >
+ <classes>
+<class name="com.appium.DeviceScripts.SK_911_Incident" />
+</classes>
+</test>
 
 
+ 
+<test name="SK_SOS_Incident" >
+<classes>
+<class name="com.appium.DeviceScripts.SK_SOS_Incident" />
+</classes>
+</test>
+ 
 <test name="SK_Tips_NonAnonymous" >
 <classes>
 <class name="com.appium.DeviceScripts.SK_Tips_NonAnonymous" />
 </classes>
 </test>
 
-
-
-<test name="SK_SOS_Incident" >
-<classes>
-<class name="com.appium.DeviceScripts.SK_SOS_Incident" />
-</classes>
-</test>
 
 
 
@@ -53,12 +59,18 @@
 </classes>
 </test>
 
-<test name="SK_MAP" >
+<test name="SK_Maps" >
 <classes>
-<class name="com.appium.DeviceScripts.SK_MAP" />
+<class name="com.appium.DeviceScripts.SK_Maps" />
 </classes>
 </test>
 
+
+<test name="SK_SteerpathMAP" >
+<classes>
+<class name="com.appium.DeviceScripts.SK_SteerpathMAP" />
+</classes>
+</test>
 
 
 <test name="SK_MyHistory" >
@@ -75,12 +87,6 @@
 </classes>
 </test>
     
-<test name="SK_Timer_Incident" >
-<classes>
-<class name="com.appium.DeviceScripts.SK_Timer_Incident" />
-</classes>
-</test>
-
     
 <test name="SK_VisitorManagement"> 
 <classes>
@@ -95,9 +101,7 @@
 </classes>
 </test>
 
-
-
-        
+    
         
 <test name="SK_EditProfile" >
 <classes>
@@ -119,12 +123,10 @@
 </classes>
 </test>
 
-
- <test name="SK_911_Incident" >
- <classes>
-<class name="com.appium.DeviceScripts.SK_911_Incident" />
+ <test name="SK_Timer_Incident" >
+<classes>
+<class name="com.appium.DeviceScripts.SK_Timer_Incident" />
 </classes>
-</test>
-        
+</test> 
 
 </suite>

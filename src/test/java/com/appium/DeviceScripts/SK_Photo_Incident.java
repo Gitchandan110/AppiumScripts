@@ -64,6 +64,7 @@ public class SK_Photo_Incident extends Base {
 
 	/*public void verifyPhotoAudioIncident() throws InterruptedException, IOException {
 
+		homepagebl.PleaseWait();
 		homepagebl.clickSetting();
 		settingsbl.SelectEventOption();
 		incidentoptionbl.clickPhotoIncident();
@@ -83,10 +84,11 @@ public class SK_Photo_Incident extends Base {
 */
 	@AfterMethod
 
-	public void logOutApp() {
-
-		/*homepagebl.clickSetting();
-		settingsbl.selectOptionLogOut();*/
+	public void CloseApp() {
+		
+		
+		  driver.closeApp();
+		  System.out.println("driver.closeApp() App done");
 
 	}
 

@@ -57,7 +57,9 @@ public class SK_911_Incident extends Base{
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
 		quicktipsbl.closeTips();*/
+		homepagebl.PleaseWait();
 		homepagebl.start911();
+		
 		
 		
 		
@@ -65,11 +67,13 @@ public class SK_911_Incident extends Base{
 	
 @AfterMethod
 	
-	public void logOutApp() {
+	public void CloseApp() {
 		
-		/*homepagebl.clickSetting();
-		settingsbl.selectOptionLogOut();
-		*/
+	
+	  driver.closeApp();
+	  System.out.println("driver.closeApp() App done");
+	
+
 		
 	}
 	

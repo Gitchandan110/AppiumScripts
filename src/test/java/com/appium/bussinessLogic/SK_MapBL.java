@@ -12,7 +12,7 @@ import io.appium.java_client.MobileElement;
 
 public class SK_MapBL extends SK_MAP_PO {
 
-	public void selectMAP() throws InterruptedException, IOException {
+	public void selectSteerPathMAP() throws InterruptedException, IOException {
 
 		try {
 			int totalMap = listMap().size();
@@ -37,6 +37,34 @@ public class SK_MapBL extends SK_MAP_PO {
 		}
 
 	}
+	
+	public void selectAllMAP() throws InterruptedException, IOException {
+
+		try {
+			
+			int totalMap = listMap().size();
+			System.out.println("Number of Map(s) is : " + totalMap);
+
+			for (int i = 0; i < totalMap; i++) {
+
+				String MapName = listMap().get(i).getText();
+				System.out.println("Map " + i + " is : " + MapName);
+					listMap().get(i).click();
+					Thread.sleep(10000);
+					Base.takeScreenShot("Map Screen");
+					btnMapNavigateUP().click();
+						
+               }
+			
+			
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+	
 
 	public void clickPOIList() {
 
@@ -45,7 +73,7 @@ public class SK_MapBL extends SK_MAP_PO {
 			if (menuPOIList() != null && menuPOIList().isDisplayed()) {
 
 				menuPOIList().click();
-				Thread.sleep(5000);
+				Thread.sleep(3000);
 				Base.takeScreenShot("Map Screen");
 				System.out.println("menuPOIList() clicked");
 

@@ -60,6 +60,7 @@ public class SK_MyHistory extends Base{
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
 		quicktipsbl.closeTips();*/
+		homepagebl.PleaseWait();
 		homepagebl.clickSetting();
 		settingsbl.SelectMyHistory();
 		myHistorybl.verifyNotificationTab();
@@ -69,7 +70,11 @@ public class SK_MyHistory extends Base{
 	
 @AfterMethod
 	
-	public void logOutApp() {
+public void CloseApp() {
+	
+	
+	  driver.closeApp();
+	  System.out.println("driver.closeApp() App done");
 		
 		/*homepagebl.clickSetting();
 		settingsbl.selectOptionLogOut();
