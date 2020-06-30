@@ -49,9 +49,14 @@ public class SK_VisitorManagementBL extends SK_VisitorsPO {
 				Base.takeScreenShot("Visitor Management");
 				VisitorPassType().click();
 				Thread.sleep(3000);
-				Base.Scrolldown();
+				Base.scrolltoElement("SEND VISITOR INVITE");
+				Thread.sleep(3000);
 				Base.takeScreenShot("Visitor Management");
+				Thread.sleep(3000);
 				btnSendInvite().click();
+				Thread.sleep(3000);
+				Base.takeScreenShot("Visitor Management");
+				System.out.println("btnSendInvite() Clicked");
 				Thread.sleep(5000);
 				Base.takeScreenShot("Visitor Management");
 				btnNavigateUP().click();

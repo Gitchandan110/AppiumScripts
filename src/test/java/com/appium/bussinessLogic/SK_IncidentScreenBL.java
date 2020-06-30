@@ -11,14 +11,14 @@ public class SK_IncidentScreenBL extends SK_IncidentScreenPO{
 
 		try {
 
-			if(btnCloseChat() !=null && btnCloseChat().isDisplayed()) {
+		/*	if(btnCloseChat() !=null && btnCloseChat().isDisplayed()) {
 				Base.takeScreenShot("Incident Screen");
 				btnCloseChat().click();
 				System.out.println("Close Chat button clicked");
 				
 			}else { System.out.println("Close Chat button not found");
 			
-		}
+		}*/
 			
 			if (btnEndIncident().isDisplayed()) {
 				Base.takeScreenShot("Incident Screen");

@@ -18,7 +18,6 @@ public class SK_HomePageBL extends SK_HomePagePO {
 		try {
 
 			if (txtPleaseWait().isDisplayed()) {
-				Base.takeScreenShot("PleaseWait");
 				System.out.println("Please Wait loader is moving");
 				Base.waitFor30Seconds(btnSOS());
 		

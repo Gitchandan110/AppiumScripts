@@ -75,7 +75,7 @@ public class SK_Timer_Incident extends Base {
 		homepagebl.startTimer();
 		setTimerbl.SetTimer();
 		setTimerbl.Set5Minute();
-	//	incidentscreenbl.clickCloseChat();
+		incidentscreenbl.clickCloseChat();
 		incidentscreenbl.EndIncident();
 		incidentscreenbl.SelectEndReason();
 

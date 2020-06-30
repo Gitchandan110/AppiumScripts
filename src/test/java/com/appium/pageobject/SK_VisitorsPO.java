@@ -166,7 +166,7 @@ public class SK_VisitorsPO extends Base {
 
 	public MobileElement btnSendInvite() {
 
-		By btnSendInvite = By.id("com.safety.armourgrid:id/new_visitor_button_send");
+		By btnSendInvite = By.xpath("//android.widget.Button[@text=\"SEND VISITOR INVITE\"]");
 		return driver.findElement(btnSendInvite);
 
 	}

@@ -6,6 +6,12 @@
   <listeners>
   <listener class-name="com.ExtentReportListner.ExtentReporterNG" />
   </listeners>    
+  
+<test name="SK_Timer_Incident" >
+<classes>
+<class name="com.appium.DeviceScripts.SK_Timer_Incident" />
+</classes>
+</test> 
 
 <test name="SK_GroupCall" >
     
@@ -15,14 +21,6 @@
 </test>
 
 
- <test name="SK_911_Incident" >
- <classes>
-<class name="com.appium.DeviceScripts.SK_911_Incident" />
-</classes>
-</test>
-
-
- 
 <test name="SK_SOS_Incident" >
 <classes>
 <class name="com.appium.DeviceScripts.SK_SOS_Incident" />
@@ -116,6 +114,12 @@
 </classes>
 </test>
 
+ <test name="SK_911_Incident" >
+ <classes>
+<class name="com.appium.DeviceScripts.SK_911_Incident" />
+</classes>
+</test>
+
 
 <test name="SK_Tips_Anonymous" >
 <classes>
@@ -123,10 +127,6 @@
 </classes>
 </test>
 
- <test name="SK_Timer_Incident" >
-<classes>
-<class name="com.appium.DeviceScripts.SK_Timer_Incident" />
-</classes>
-</test> 
+
 
 </suite>

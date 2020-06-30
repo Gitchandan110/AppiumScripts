@@ -43,7 +43,7 @@ public void Set5Minute() {
 			System.out.println("Set button clicked");
 			ExcelUtils.WriteExcel(TestCaseSheet, 31, 1, "Pass");
 			System.out.println("Current Time is :"+ Base.GetDateTime());
-			System.out.println("Please wait for 9 Minutes");
+			System.out.println("Please wait for 7 Minutes");
 			Thread.sleep(420000);
 			Base.takeScreenShot("Timer Screen");
 			System.out.println("Current Time is :"+ Base.GetDateTime());
