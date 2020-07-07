@@ -25,11 +25,11 @@ public class SK_SendNotificationPO extends Base {
 
 	}
 
-	public MobileElement TemplateGeoAwareON() {
+	public MobileElement TemplateSelectedUser() {
 
-		By TemplateGeoAwareON = By.xpath("//android.widget.TextView[@text=\"NTGeoAwareON\"]");
+		By TemplateSelectedUser = By.xpath("//android.widget.TextView[@text=\"SelectedUserTemplate\"]");
 
-		return driver.findElement(TemplateGeoAwareON);
+		return driver.findElement(TemplateSelectedUser);
 
 	}
 

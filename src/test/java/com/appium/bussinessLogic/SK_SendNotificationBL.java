@@ -20,7 +20,8 @@ public class SK_SendNotificationBL extends SK_SendNotificationPO {
 				System.out.println("Send Notification not Clicked");
 			}
 			
-			    TemplateGeoAwareON().click();
+			    TemplateSelectedUser().click();
+			    System.out.println("TemplateSelectedUser() Clicked");
 		    	btnNext().click();
 		    	Base.takeScreenShot("Send Notification");
 		    	Base.scrolltoElement("NEXT");

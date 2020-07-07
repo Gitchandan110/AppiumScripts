@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 30 10:41:59 IST 2020</td>
+<td>Started on:</td><td>Sat Jul 04 18:31:08 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>100 seconds (100863 ms)</td>
+<tr><td>Total time:</td><td>156 seconds (156725 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,12 +76,13 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.appium.DeviceScripts.SK_SteerpathMAP.testSteerPathMap()'><b>testSteerPathMap</b><br>Test class: com.appium.DeviceScripts.SK_SteerpathMAP</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: Error: socket hang up
+<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;CHANDAN&apos;, ip: &apos;192.168.42.82&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, deviceName: Moto G4Plus, newCommandTimeout: 600, noReset: true, platformName: android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, udid: ZY223QKSQB, useJSONSource: true}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223QKSQB, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY223QKSQB, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, statBarHeight: 72, takesScreenshot: true, udid: ZY223QKSQB, useJSONSource: true, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: d4936269-c224-4c77-8697-edf00202cf42
+Session ID: 77b707d1-bea6-4265-a88a-bc90cc5c8d0c
+*** Element info: {Using=id, value=com.safety.armourgrid:id/feature_title}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -91,20 +92,27 @@ Session ID: d4936269-c224-4c77-8697-edf00202cf42
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:152)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:376)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementsById(DefaultGenericMobileDriver.java:66)
+	at io.appium.java_client.AppiumDriver.findElementsById(AppiumDriver.java:156)
+	at org.openqa.selenium.By$ById.findElements(By.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:50)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:148)
+	at com.appium.pageobject.SK_MAP_PO.roomList(SK_MAP_PO.java:82)
 	at com.appium.bussinessLogic.SK_MapBL.getPOIList(SK_MapBL.java:100)
 	at com.appium.DeviceScripts.SK_SteerpathMAP.testSteerPathMap(SK_SteerpathMAP.java:65)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1774531247", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1774531247'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: Error: socket hang up
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1636256669", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1636256669'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;CHANDAN&apos;, ip: &apos;192.168.42.82&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.safety.armourgrid.activ..., appPackage: com.safety.armourgrid, automationName: UiAutomator2, deviceName: Moto G4Plus, newCommandTimeout: 600, noReset: true, platformName: android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, udid: ZY223QKSQB, useJSONSource: true}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223QKSQB, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY223QKSQB, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, simpleIsVisibleCheck: true, statBarHeight: 72, takesScreenshot: true, udid: ZY223QKSQB, useJSONSource: true, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: d4936269-c224-4c77-8697-edf00202cf42
+Session ID: 77b707d1-bea6-4265-a88a-bc90cc5c8d0c
+*** Element info: {Using=id, value=com.safety.armourgrid:id/feature_title}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -118,11 +126,17 @@ Session ID: d4936269-c224-4c77-8697-edf00202cf42
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:152)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:376)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementsById(DefaultGenericMobileDriver.java:66)
+	at io.appium.java_client.AppiumDriver.findElementsById(AppiumDriver.java:156)
+	at org.openqa.selenium.By$ById.findElements(By.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:50)
+	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:148)
+	at com.appium.pageobject.SK_MAP_PO.roomList(SK_MAP_PO.java:82)
 	at com.appium.bussinessLogic.SK_MapBL.getPOIList(SK_MapBL.java:100)
 	at com.appium.DeviceScripts.SK_SteerpathMAP.testSteerPathMap(SK_SteerpathMAP.java:65)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -151,7 +165,7 @@ Session ID: d4936269-c224-4c77-8697-edf00202cf42
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>78</td>
+<td>131</td>
 <td>com.appium.DeviceScripts.SK_SteerpathMAP@757942a1</td></tr>
 </table><p>
 </body>
