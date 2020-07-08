@@ -57,7 +57,7 @@ public class SK_SignInBL extends SK_SignInPO {
 			if (SelectCountryScreen().isDisplayed()) {
 				System.out.println("Select Country screen gets open");
 				ExcelUtils.WriteExcel(TestCaseSheet, 7, 1, "Pass");
-				Base.scrolltoElement("India(+91)");
+			//	Base.scrolltoText("India(+91)");
 			
 
 			}

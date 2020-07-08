@@ -19,7 +19,7 @@ public class SK_QuickTipsBL extends SK_QuickTipsPO {
 
 			if (btnCloseTips().isDisplayed()) {
 				
-				
+				Base.takeScreenShot("Create Profile");	
 				btnCloseTips().click();
 				System.out.println("Quick Tips Closed");
 				ExcelUtils.WriteExcel(TestCaseSheet, 19, 1, "Pass");

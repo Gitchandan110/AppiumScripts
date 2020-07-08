@@ -19,13 +19,12 @@ public class SK_PrivacyPolicyBL extends SK_PrivacyPolicyPO {
 
 			if (btnAcceptPrivacyPolicy().isDisplayed()) {
 				Base.takeScreenShot("Privacy Policy Screen");
-
 				btnAcceptPrivacyPolicy().click();
 				ExcelUtils.WriteExcel(TestCaseSheet, 9, 1, "Pass");
 				System.out.println("Privacy Policy Accepted");
 			    ExcelUtils.WriteExcel(TestCaseSheet, 11, 1, "Pass");
-			    System.out.println("Please wait for 20 seconds");
-			    Thread.sleep(20000);
+			    System.out.println("Please wait for 10 seconds");
+			    Thread.sleep(10000);
 			 
 			   
 				

@@ -43,6 +43,7 @@ public class SK_CreateProfile extends Base{
 		// launchAppKarbon();
 		 launchAppMotoG4P();
 		  System.out.println("App Launched Successfull");
+	
 	        
 	  }
 	  
@@ -51,6 +52,8 @@ public class SK_CreateProfile extends Base{
 	public void CreateAccount() throws IOException {
 		
 		
+		homepagebl.clickSetting();
+		settingsbl.selectOptionLogOut();
 		launchbl.clickBtnNewAccount();
 		termsbl.acceptTermsOfServices();
 		privacypolicybl.acceptPrivacyPolicy();
@@ -59,11 +62,6 @@ public class SK_CreateProfile extends Base{
 		createprofilebl.saveProfile();
 		addOrgbl.fillOrgCode();
 	    addOrgbl.saveOrgCode();
-	    addEmergencyContactbl.fillFirstName();
-	    addEmergencyContactbl.fillLastName();
-	    addEmergencyContactbl.fillEmail();
-	    addEmergencyContactbl.fillPhoneNumber();
-	    addEmergencyContactbl.SaveEmergencyContact();
 	    addEmergencyContactbl.fillFirstName();
 	    addEmergencyContactbl.fillLastName();
 	    addEmergencyContactbl.fillEmail();

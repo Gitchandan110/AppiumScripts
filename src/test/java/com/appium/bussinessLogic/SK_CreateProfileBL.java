@@ -1,6 +1,9 @@
 package com.appium.bussinessLogic;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import com.appium.commonutils.Base;
 import com.appium.commonutils.ExcelUtils;
@@ -32,9 +35,27 @@ public class SK_CreateProfileBL extends SK_CreateProfilePO {
 			if (driver.isKeyboardShown() == true) {
 				driver.hideKeyboard();
 
-			}
+			} /*
+			
+		
+				if (txtCountry().isDisplayed()) {
+					txtCountry().click();
+					txtCountry().sendKeys("IN");
+					System.out.println("Country filled");
+
+				}
+			
+				if (driver.isKeyboardShown() == true) {
+					driver.hideKeyboard();
+
+				}*/
+			
+			
+			
 			if (txtMobileNumber().isDisplayed()) {
-				txtMobileNumber().sendKeys("54789652326");
+				DateFormat dateFormat = new SimpleDateFormat("ss");
+				String timeString = dateFormat.format(new Date()).toString();
+				txtMobileNumber().sendKeys("0000" + timeString + "1349");
 				System.out.println("MobileNumber entered");
 
 			}
@@ -54,62 +75,21 @@ public class SK_CreateProfileBL extends SK_CreateProfilePO {
 				driver.hideKeyboard();
 
 			}
-
+			
+			DateFormat dateFormat = new SimpleDateFormat("ss");
+			String timeString = dateFormat.format(new Date()).toString();
 			if (txtEmail().isDisplayed()) {
-				txtEmail().sendKeys("cp@yopmail.com");
+				txtEmail().sendKeys("Appuser" + timeString + "@yopmail.com");
 				System.out.println("Email entered");
 
 			}
 
 			if (driver.isKeyboardShown() == true) {
 				driver.hideKeyboard();
+				Base.takeScreenShot("Create Profile");
 
 			}
-			if (txtConfirmEmail().isDisplayed()) {
-				txtConfirmEmail().click();
-				txtConfirmEmail().sendKeys("cp@yopmail.com");
-				System.out.println("Confirm Email entered");
-
-			} else {
-
-				txtConfirmEmail().click();
-				txtConfirmEmail().sendKeys("cp@yopmail.com");
-				System.out.println("Confirm Email entered");
-
-			}
-
-			if (driver.isKeyboardShown() == true) {
-				driver.hideKeyboard();
-				System.out.println("Hide Keyboard done");
-
-			}
-			if (txtPassword().isDisplayed()) {
-				txtPassword().sendKeys("12345678");
-				System.out.println("Password entered");
-			} else {
-
-				txtPassword().sendKeys("12345678");
-				System.out.println("Password entered");
-
-			}
-
-			if (driver.isKeyboardShown() == true) {
-				driver.hideKeyboard();
-				System.out.println("Hide Keyboard done");
-				if (txtConfirmPassword().isDisplayed()) {
-					txtConfirmPassword().click();
-					txtConfirmPassword().sendKeys("12345678");
-					System.out.println("Confirm Password entered");
-					ExcelUtils.WriteExcel(TestCaseSheet, 14, 1, "Pass");
-
-				}
-			} else {
-				txtConfirmPassword().click();
-				txtConfirmPassword().sendKeys("12345678");
-				System.out.println("Confirm Password entered");
-				
-			}
-
+	
 		} catch (Exception ex) {
 
 			System.out.println("Exception is:" + ex.getMessage());
@@ -119,17 +99,17 @@ public class SK_CreateProfileBL extends SK_CreateProfilePO {
 
 	public void fillAdditionalInfo() {
 
+
 		try {
-			if (driver.isKeyboardShown() == true) {
-				driver.hideKeyboard();
-			}
-		//	Base.scrolltoElement("Additional Info");
+
 			if (btnAdditionalInfo().isDisplayed()) {
+				Base.scrolltoElement("Additional Info");
 				btnAdditionalInfo().click();
 				System.out.println("Additional Info selected");
-			}
 
-			MobileElement DOB = (MobileElement) driver.findElement(MobileBy.AndroidUIAutomator(
+			}
+			
+			/*MobileElement DOB = (MobileElement) driver.findElement(MobileBy.AndroidUIAutomator(
 					"new UiScrollable(new UiSelector()).scrollIntoView(" + "new UiSelector().text(\"mm/dd/YYYY\"));"));
 
 			if (txtDateOfBirth().isDisplayed()) {
@@ -140,6 +120,22 @@ public class SK_CreateProfileBL extends SK_CreateProfilePO {
 
 			if (driver.isKeyboardShown() == true) {
 				driver.hideKeyboard();
+			
+			*/
+			
+			Base.scrolltoElement("Date of Birth:");
+
+			if (txtDateOfBirth().isDisplayed()) {
+				txtDateOfBirth().click();
+				txtDateOfBirth().sendKeys("01/11/2001");
+				System.out.println("DOB entered");
+
+			}
+			if (driver.isKeyboardShown() == true) {
+				driver.hideKeyboard();
+
+			}
+
 
 				Base.scrolltoElement("M or F");
 				if (txtGender().isDisplayed()) {
@@ -148,7 +144,7 @@ public class SK_CreateProfileBL extends SK_CreateProfilePO {
 					System.out.println("Gender entered");
 				}
 
-			}
+			
 
 			if (driver.isKeyboardShown() == true) {
 				driver.hideKeyboard();
@@ -178,6 +174,7 @@ public class SK_CreateProfileBL extends SK_CreateProfilePO {
 					txtHairColor().click();
 					txtHairColor().sendKeys("Black");
 					System.out.println("Hair color filled");
+					Base.takeScreenShot("Create Profile");
 				}
 
 			}
@@ -230,15 +227,7 @@ public class SK_CreateProfileBL extends SK_CreateProfilePO {
 				}
 			}
 
-			if (driver.isKeyboardShown() == true) {
-				driver.hideKeyboard();
-				if (txtCountry().isDisplayed()) {
-					txtCountry().click();
-					txtCountry().sendKeys("CK");
-					System.out.println("Country filled");
-
-				}
-			}
+		
 			if (driver.isKeyboardShown() == true) {
 				driver.hideKeyboard();
 				if (txtAutoMake().isDisplayed()) {
@@ -255,6 +244,7 @@ public class SK_CreateProfileBL extends SK_CreateProfilePO {
 					txtAutoModel().click();
 					txtAutoModel().sendKeys("BMW 2019");
 					System.out.println("Auto Model filled");
+					Base.takeScreenShot("Create Profile");
 
 				}
 			}
@@ -293,7 +283,7 @@ public class SK_CreateProfileBL extends SK_CreateProfilePO {
 				driver.hideKeyboard();
 				if (txtAutoLicenceState().isDisplayed()) {
 					txtAutoLicenceState().click();
-					txtAutoLicenceState().sendKeys("Texsas");
+					txtAutoLicenceState().sendKeys("Texas");
 					System.out.println("Auto Licence State filled");
 
 				}
@@ -316,6 +306,7 @@ public class SK_CreateProfileBL extends SK_CreateProfilePO {
 					txtAdaConsiderations().sendKeys(
 							"The Americans with Disabilities Act gives civil rights protections to individuals with disabilities similar to those provided to individuals on the basis of race, color, sex, national origin, age, and religion. It guarantees equal opportunity for individuals with disabilities in public accommodations, employment, transportation, State and local government services, and telecommunications. ");
 					System.out.println("Ada Consideration filled");
+					Base.takeScreenShot("Create Profile");
 					ExcelUtils.WriteExcel(TestCaseSheet, 13, 1, "Pass");
 
 				}
@@ -333,6 +324,7 @@ public class SK_CreateProfileBL extends SK_CreateProfilePO {
 		if (btnSaveProfile().isDisplayed()) {
 			btnSaveProfile().click();
 			System.out.println("Profile Saved");
+			Base.takeScreenShot("Create Profile");
 			ExcelUtils.WriteExcel(TestCaseSheet, 7, 1, "Pass");
 
 		} else {

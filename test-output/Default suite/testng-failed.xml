@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_VisitorManagement">
+      <class name="com.appium.DeviceScripts.SK_CreateProfile">
         <methods>
           <include name="launchSafetyKuvrr"/>
           <include name="CloseApp"/>
-          <include name="testERP"/>
+          <include name="CreateAccount"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_VisitorManagement -->
+      </class> <!-- com.appium.DeviceScripts.SK_CreateProfile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

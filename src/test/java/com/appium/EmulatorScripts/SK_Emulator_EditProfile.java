@@ -72,7 +72,6 @@ public class SK_Emulator_EditProfile extends Base{
 		
 		homepagebl.clickSetting();
 		settingsbl.SelectOptionProfile();
-		profilebl.selectAdditionalInfo();
 		profilebl.fillAdditionalInfo();
 		
 	

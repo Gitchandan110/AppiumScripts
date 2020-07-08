@@ -44,9 +44,13 @@ public class SK_EmergencyContactBL extends SK_EmergencyContactsPO {
 
 			if (tbEmail().isDisplayed()) {
 				tbEmail().sendKeys("chandan.kumar@netsutra.com");
-				System.out.println("Email filed");
+				System.out.println("Email filled");
+				if (driver.isKeyboardShown() == true) {
+					driver.hideKeyboard();
+					System.out.println("Hide Keyboard done");
+				}
 			} else {
-				System.out.println("Email not filed");
+				System.out.println("Email not filled");
 			}
 		} catch (Exception ex) {
 			System.out.println("Exception in Email:" + ex.getMessage());
@@ -58,7 +62,7 @@ public class SK_EmergencyContactBL extends SK_EmergencyContactsPO {
 		try {
 
 			if (tbPhoneNo().isDisplayed()) {
-				tbPhoneNo().sendKeys("58963245789");
+				tbPhoneNo().sendKeys("0815161349");
 				System.out.println("Phone Number filed");
 				Base.takeScreenShot("Emergency contact Screen");
 			} else {

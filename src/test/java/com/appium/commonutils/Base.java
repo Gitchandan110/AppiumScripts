@@ -233,11 +233,46 @@ public class Base {
 	}
 	
 	
+	public static String GetCurrentTime() {
+
+		// Create object of SimpleDateFormat class and decide the format
+		DateFormat dateFormat = new SimpleDateFormat("mm:ss");
+
+		// get current date time with Date()
+		String timeString = dateFormat.format(new Date()).toString();
+
+	/*	// Now format the date
+		String date1 = dateFormat.format(date);*/
+
+		// Print the Date
+		System.out.println("Current date and time is " + timeString);
+		return timeString;
+
+	}
+	
+	
 	public static void scrolltoElement(String text){
 		
 	 driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\""+text+"\").instance(0))");
 		        
    }
+	
+	
+	public static void scrolltoMobileElement(WebDriver driver, WebElement webElement) {
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView();", webElement);
+
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+
+			System.out.println(e.getMessage());
+		}
+
+	}
+	
+	
 	
 	
 	public static void takeScreenShot(String screenName) throws IOException {

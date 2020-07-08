@@ -25,7 +25,7 @@ public class SK_MapBL extends SK_MAP_PO {
 				String requiredMap = "Netsutra";
 				if (MapName.equalsIgnoreCase(requiredMap)) {
 					listMap().get(i).click();
-					Thread.sleep(5000);
+					Thread.sleep(9000);
 					Base.takeScreenShot("Map Screen");
                     break;
 				}

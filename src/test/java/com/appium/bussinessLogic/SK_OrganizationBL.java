@@ -53,7 +53,7 @@ public class SK_OrganizationBL extends SK_OrganizationPO {
 				Base.takeScreenShot("Organization");
 				btnSaveOrganization().click();
 				popupSaveOrganization().click();
-				Thread.sleep(5000);
+				Thread.sleep(8000);
 				Base.takeScreenShot("Organization");
 				btnNavigateUp().click();
 				Thread.sleep(3000);

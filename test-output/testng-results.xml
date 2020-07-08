@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="84686" started-at="2020-07-06T08:48:26Z" finished-at="2020-07-06T08:49:51Z">
+  <suite name="Default suite" duration-ms="173842" started-at="2020-07-08T16:25:50Z" finished-at="2020-07-08T16:28:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="84686" started-at="2020-07-06T08:48:26Z" finished-at="2020-07-06T08:49:51Z">
-      <class name="com.appium.DeviceScripts.SK_VisitorManagement">
-        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_VisitorManagement@34cd072c]" name="launchSafetyKuvrr" is-config="true" duration-ms="15117" started-at="2020-07-06T08:48:26Z" finished-at="2020-07-06T08:48:41Z">
+    <test name="Default test" duration-ms="173842" started-at="2020-07-08T16:25:50Z" finished-at="2020-07-08T16:28:44Z">
+      <class name="com.appium.DeviceScripts.SK_CreateProfile">
+        <test-method status="PASS" signature="launchSafetyKuvrr()[pri:0, instance:com.appium.DeviceScripts.SK_CreateProfile@1563da5]" name="launchSafetyKuvrr" is-config="true" duration-ms="13485" started-at="2020-07-08T16:25:50Z" finished-at="2020-07-08T16:26:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchSafetyKuvrr -->
-        <test-method status="PASS" signature="testERP()[pri:1, instance:com.appium.DeviceScripts.SK_VisitorManagement@34cd072c]" name="testERP" duration-ms="69237" started-at="2020-07-06T08:48:42Z" finished-at="2020-07-06T08:49:51Z">
+        <test-method status="PASS" signature="CreateAccount()[pri:1, instance:com.appium.DeviceScripts.SK_CreateProfile@1563da5]" name="CreateAccount" duration-ms="160063" started-at="2020-07-08T16:26:03Z" finished-at="2020-07-08T16:28:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testERP -->
-        <test-method status="PASS" signature="CloseApp()[pri:0, instance:com.appium.DeviceScripts.SK_VisitorManagement@34cd072c]" name="CloseApp" is-config="true" duration-ms="285" started-at="2020-07-06T08:49:51Z" finished-at="2020-07-06T08:49:51Z">
+        </test-method> <!-- CreateAccount -->
+        <test-method status="PASS" signature="CloseApp()[pri:0, instance:com.appium.DeviceScripts.SK_CreateProfile@1563da5]" name="CloseApp" is-config="true" duration-ms="266" started-at="2020-07-08T16:28:43Z" finished-at="2020-07-08T16:28:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseApp -->
-      </class> <!-- com.appium.DeviceScripts.SK_VisitorManagement -->
+      </class> <!-- com.appium.DeviceScripts.SK_CreateProfile -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

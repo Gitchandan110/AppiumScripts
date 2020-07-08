@@ -77,7 +77,7 @@ public void CloseApp() {
 	
 	
 	  driver.closeApp();
-	  System.out.println("driver.closeApp() App done");
+	  System.out.println("driver.closeApp done");
 		
 		
 	}

@@ -51,11 +51,11 @@ public class SK_EditProfile extends Base{
 
 	}
 
-	/*@BeforeMethod
+	@BeforeMethod
 
-	public void Login() {
+	public void setting() throws InterruptedException, IOException {
 
-		launchbl.verifyTitle();
+		/*launchbl.verifyTitle();
 		launchbl.clickBtnSignIn();
 		termsbl.acceptTermsOfServices();
 		privacypolicybl.acceptPrivacyPolicy();
@@ -63,18 +63,18 @@ public class SK_EditProfile extends Base{
 		signinbl.fillPassword();
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
-		quicktipsbl.closeTips();
+		quicktipsbl.closeTips();*/
+		homepagebl.clickSetting();
+		settingsbl.SelectOptionProfile();
 		
-	}*/
+	}
 
 	@Test
 
 	public void Profile() throws InterruptedException, IOException {
 		
-		homepagebl.clickSetting();
-		settingsbl.SelectOptionProfile();
+		
 		profilebl.EditProfile();
-		profilebl.selectAdditionalInfo();
 		profilebl.fillAdditionalInfo();
 		
 	
@@ -86,7 +86,7 @@ public void CloseApp() {
 	
 	
 	  driver.closeApp();
-	  System.out.println("driver.closeApp() App done");
+	  System.out.println("driver.closeApp() done");
 	
 	//	settingsbl.selectOptionLogOut();
 		

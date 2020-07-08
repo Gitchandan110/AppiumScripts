@@ -4,30 +4,28 @@
   <listeners>
     <listener class-name="com.ExtentReportListner.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="SK_GroupCall(failed)">
+  <test thread-count="5" name="SK_SOS_Incident(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_GroupCall">
+      <class name="com.appium.DeviceScripts.SK_SOS_Incident">
         <methods>
-          <include name="Login"/>
-          <include name="GroupCall"/>
-          <include name="launchApp"/>
-          <include name="CloseApp"/>
-        </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_GroupCall -->
-    </classes>
-  </test> <!-- SK_GroupCall(failed) -->
-  <test thread-count="5" name="SK_AudioLocation_Incident(failed)">
-    <classes>
-      <class name="com.appium.DeviceScripts.SK_AudioLocation_Incident">
-        <methods>
-          <include name="verifyPhotoAudioIncident"/>
-          <include name="CloseApp"/>
-          <include name="Login"/>
           <include name="launchSafetyKuvrr"/>
+          <include name="testSOSIncident"/>
+          <include name="CloseApp"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_AudioLocation_Incident -->
+      </class> <!-- com.appium.DeviceScripts.SK_SOS_Incident -->
     </classes>
-  </test> <!-- SK_AudioLocation_Incident(failed) -->
+  </test> <!-- SK_SOS_Incident(failed) -->
+  <test thread-count="5" name="SK_Tips_NonAnonymous(failed)">
+    <classes>
+      <class name="com.appium.DeviceScripts.SK_Tips_NonAnonymous">
+        <methods>
+          <include name="launchSafetyKuvrr"/>
+          <include name="CloseApp"/>
+          <include name="testTips"/>
+        </methods>
+      </class> <!-- com.appium.DeviceScripts.SK_Tips_NonAnonymous -->
+    </classes>
+  </test> <!-- SK_Tips_NonAnonymous(failed) -->
   <test thread-count="5" name="SK_SteerpathMAP(failed)">
     <classes>
       <class name="com.appium.DeviceScripts.SK_SteerpathMAP">
@@ -39,39 +37,6 @@
       </class> <!-- com.appium.DeviceScripts.SK_SteerpathMAP -->
     </classes>
   </test> <!-- SK_SteerpathMAP(failed) -->
-  <test thread-count="5" name="SK_VisitorManagement(failed)">
-    <classes>
-      <class name="com.appium.DeviceScripts.SK_VisitorManagement">
-        <methods>
-          <include name="launchSafetyKuvrr"/>
-          <include name="CloseApp"/>
-          <include name="testERP"/>
-        </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_VisitorManagement -->
-    </classes>
-  </test> <!-- SK_VisitorManagement(failed) -->
-  <test thread-count="5" name="SK_EditProfile(failed)">
-    <classes>
-      <class name="com.appium.DeviceScripts.SK_EditProfile">
-        <methods>
-          <include name="CloseApp"/>
-          <include name="launchApp"/>
-          <include name="Profile"/>
-        </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_EditProfile -->
-    </classes>
-  </test> <!-- SK_EditProfile(failed) -->
-  <test thread-count="5" name="SK_911_Incident(failed)">
-    <classes>
-      <class name="com.appium.DeviceScripts.SK_911_Incident">
-        <methods>
-          <include name="test911Incident"/>
-          <include name="launchSafetyKuvrr"/>
-          <include name="CloseApp"/>
-        </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_911_Incident -->
-    </classes>
-  </test> <!-- SK_911_Incident(failed) -->
   <test thread-count="5" name="SK_Tips_Anonymous(failed)">
     <classes>
       <class name="com.appium.DeviceScripts.SK_Tips_Anonymous">

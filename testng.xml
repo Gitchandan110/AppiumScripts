@@ -132,5 +132,12 @@
 </test>
 
 
+<test name="SK_CreateProfile" >
+<classes>
+<class name="com.appium.DeviceScripts.SK_CreateProfile" />
+</classes>
+</test>
+
+
 
 </suite>
