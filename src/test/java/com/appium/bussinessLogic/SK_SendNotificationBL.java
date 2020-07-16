@@ -7,7 +7,7 @@ public class SK_SendNotificationBL extends SK_SendNotificationPO {
 
 	String TestCaseSheet = "TestCase";
 	
-	public void SendNotification() {
+	public void verifySendNotification() {
 
 		try {
 
@@ -20,8 +20,8 @@ public class SK_SendNotificationBL extends SK_SendNotificationPO {
 				System.out.println("Send Notification not Clicked");
 			}
 			
-			    TemplateSelectedUser().click();
-			    System.out.println("TemplateSelectedUser() Clicked");
+			    TemplateAppiumUser().click();
+			    System.out.println("TemplateAppiumUser() Clicked");
 		    	btnNext().click();
 		    	Base.takeScreenShot("Send Notification");
 		    	Base.scrolltoElement("NEXT");

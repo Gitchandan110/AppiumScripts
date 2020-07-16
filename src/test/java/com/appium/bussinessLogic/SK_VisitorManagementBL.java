@@ -1,5 +1,9 @@
 package com.appium.bussinessLogic;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -25,7 +29,13 @@ public class SK_VisitorManagementBL extends SK_VisitorsPO {
 				tbFirstName().sendKeys("VsAppium");
 				tbLastName().click();
 				tbLastName().sendKeys("SK");
-				tbEmail().sendKeys("Vapp@yopmail.com");
+				
+				
+				DateFormat dateFormat = new SimpleDateFormat("ss");
+				String timeString = dateFormat.format(new Date()).toString();
+				tbEmail().sendKeys("Vapp" + timeString + "@yopmail.com");
+				
+				
 				driver.hideKeyboard();
 				tbCompanyName().sendKeys("VisCompany");
 				driver.hideKeyboard();

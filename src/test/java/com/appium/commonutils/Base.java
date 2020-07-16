@@ -79,7 +79,8 @@ public class Base {
 		capability.setCapability("platformName", "Android");
 		capability.setCapability("noReset", "true");
 		capability.setCapability("appPackage", "com.safety.armourgrid");
-		capability.setCapability("appActivity", "com.safety.armourgrid.activity.SplashActivity");
+		capability.setCapability("appActivity", "com.safety.armourgrid.DeepLinkActivity");
+	//	capability.setCapability("appWaitActivity", "com.safety.armourgrid.activity.SplashActivity");
 		capability.setCapability("automationName", "UiAutomator2");
 		capability.setCapability ("simpleIsVisibleCheck", "true");
 		capability.setCapability ("useJSONSource", "true");

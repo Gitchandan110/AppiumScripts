@@ -81,7 +81,7 @@ public class SK_SafeWalk_Incident extends Base {
 		
 		
 		  driver.closeApp();
-		  System.out.println("driver.closeApp() App done");
+		  System.out.println("driver.closeApp() done");
 
 	}
 

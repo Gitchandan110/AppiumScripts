@@ -37,12 +37,13 @@ public class SK_CreateProfile extends Base{
 	
 	 @BeforeTest
 	    
-	    public void launchSafetyKuvrr() throws MalformedURLException {
+	    public void launchSafetyKuvrr() throws MalformedURLException, InterruptedException {
 		  
 		  
 		// launchAppKarbon();
 		 launchAppMotoG4P();
 		  System.out.println("App Launched Successfull");
+		  Thread.sleep(5000);
 	
 	        
 	  }
@@ -52,8 +53,8 @@ public class SK_CreateProfile extends Base{
 	public void CreateAccount() throws IOException {
 		
 		
-		homepagebl.clickSetting();
-		settingsbl.selectOptionLogOut();
+		/*homepagebl.clickSetting();
+		settingsbl.selectOptionLogOut();*/
 		launchbl.clickBtnNewAccount();
 		termsbl.acceptTermsOfServices();
 		privacypolicybl.acceptPrivacyPolicy();

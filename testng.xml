@@ -8,17 +8,12 @@
   </listeners>    
   
 
-<test name="SK_SafeWalk_Incident" >
+<!-- <test name="SK_SafeWalk_Incident" >
 <classes>
 <class name="com.appium.DeviceScripts.SK_SafeWalk_Incident" />
 </classes>
 </test>
   
-<test name="SK_Timer_Incident" >
-<classes>
-<class name="com.appium.DeviceScripts.SK_Timer_Incident" />
-</classes>
-</test> 
 
 <test name="SK_GroupCall" >
     
@@ -56,7 +51,7 @@
 <classes>
 <class name="com.appium.DeviceScripts.SK_VideoLocation_Incident" />
 </classes>
-</test>
+</test> -->
 
 
 
@@ -131,6 +126,12 @@
 </classes>
 </test>
 
+
+<test name="SK_Timer_Incident" >
+<classes>
+<class name="com.appium.DeviceScripts.SK_Timer_Incident" />
+</classes>
+</test> 
 
 <test name="SK_CreateProfile" >
 <classes>

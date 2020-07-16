@@ -97,6 +97,7 @@ public class SK_IncidentScreenBL extends SK_IncidentScreenPO{
 			if (reasonEndIncident().isDisplayed()) {
 				Base.takeScreenShot("Incident Screen");
 				reasonEndIncident().click();
+				Thread.sleep(8000);
 				 ExcelUtils.WriteExcel(TestCaseSheet, 25, 1, "Pass");
 				System.out.println("End Reson option clicked");
 		

@@ -68,7 +68,7 @@ public class SK_SendNotification extends Base{
 		homepagebl.PleaseWait();
 		homepagebl.clickSetting();
 		settingsbl.SendNotification();
-		notificationbl.SendNotification();
+		notificationbl.verifySendNotification();
 		
 		
 	

@@ -25,11 +25,11 @@ public class SK_SendNotificationPO extends Base {
 
 	}
 
-	public MobileElement TemplateSelectedUser() {
+	public MobileElement TemplateAppiumUser() {
 
-		By TemplateSelectedUser = By.xpath("//android.widget.TextView[@text=\"SelectedUserTemplate\"]");
+		By TemplateAppiumUser = By.xpath("//android.widget.TextView[@text=\"AppiumUserTemplate\"]");
 
-		return driver.findElement(TemplateSelectedUser);
+		return driver.findElement(TemplateAppiumUser);
 
 	}
 

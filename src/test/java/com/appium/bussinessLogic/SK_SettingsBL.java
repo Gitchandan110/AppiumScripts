@@ -64,7 +64,7 @@ public class SK_SettingsBL extends SK_SettingsPO {
 		optionSendNotification().click();
 		Thread.sleep(5000);
 		Base.takeScreenShot("Send Notification");
-		System.out.println("Organization option clicked");
+		System.out.println("Send Notification clicked");
 
 	}
 	
