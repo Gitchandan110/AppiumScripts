@@ -39,7 +39,7 @@ public class SK_LogInApk extends Base {
 	@Test(priority=1)
 	public void signInApp() {
 
-		launchbl.verifyTitle();
+		launchbl.verifyTitleSafetyKuvrr();
 		launchbl.clickBtnSignIn();
 		termsbl.acceptTermsOfServices();
 		privacypolicybl.acceptPrivacyPolicy();

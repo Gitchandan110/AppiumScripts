@@ -54,7 +54,7 @@ public class SK_New_Login_Screen extends Base {
 	public void Login() throws ClassNotFoundException, SQLException, IOException {
 
 	
-		launchbl.verifyTitle();
+		launchbl.verifyTitleSafetyKuvrr();
 		launchbl.clickBtnSignIn();
 		termsbl.acceptTermsOfServices();
 		privacypolicybl.acceptPrivacyPolicy();

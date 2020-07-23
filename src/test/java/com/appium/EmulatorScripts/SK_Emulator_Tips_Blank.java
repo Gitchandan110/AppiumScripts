@@ -44,7 +44,7 @@ public class SK_Emulator_Tips_Blank extends Base {
 	@Test
 	public void testTimerIncident() {
 
-		launchbl.verifyTitle();
+		launchbl.verifyTitleSafetyKuvrr();
 		launchbl.clickBtnSignIn();
 		termsbl.acceptTermsOfServices();
 		privacypolicybl.acceptPrivacyPolicy();

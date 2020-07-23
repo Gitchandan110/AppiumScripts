@@ -4,28 +4,40 @@
   <listeners>
     <listener class-name="com.ExtentReportListner.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="SK_SteerpathMAP(failed)">
+  <test thread-count="5" name="SK_VideoLocation_Incident(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_SteerpathMAP">
+      <class name="com.appium.DeviceScripts.SK_VideoLocation_Incident">
         <methods>
+          <include name="verifyPhotoAudioIncident"/>
+          <include name="Login"/>
           <include name="launchSafetyKuvrr"/>
-          <include name="testSteerPathMap"/>
           <include name="CloseApp"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_SteerpathMAP -->
+      </class> <!-- com.appium.DeviceScripts.SK_VideoLocation_Incident -->
     </classes>
-  </test> <!-- SK_SteerpathMAP(failed) -->
-  <test thread-count="5" name="SK_VisitorManagement(failed)">
+  </test> <!-- SK_VideoLocation_Incident(failed) -->
+  <test thread-count="5" name="SK_MyHistory(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_VisitorManagement">
+      <class name="com.appium.DeviceScripts.SK_MyHistory">
         <methods>
           <include name="launchSafetyKuvrr"/>
-          <include name="CloseApp"/>
           <include name="testERP"/>
+          <include name="CloseApp"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_VisitorManagement -->
+      </class> <!-- com.appium.DeviceScripts.SK_MyHistory -->
     </classes>
-  </test> <!-- SK_VisitorManagement(failed) -->
+  </test> <!-- SK_MyHistory(failed) -->
+  <test thread-count="5" name="SK_SendNotification(failed)">
+    <classes>
+      <class name="com.appium.DeviceScripts.SK_SendNotification">
+        <methods>
+          <include name="Profile"/>
+          <include name="launchApp"/>
+          <include name="CloseApp"/>
+        </methods>
+      </class> <!-- com.appium.DeviceScripts.SK_SendNotification -->
+    </classes>
+  </test> <!-- SK_SendNotification(failed) -->
   <test thread-count="5" name="SK_Tips_Anonymous(failed)">
     <classes>
       <class name="com.appium.DeviceScripts.SK_Tips_Anonymous">
@@ -37,16 +49,4 @@
       </class> <!-- com.appium.DeviceScripts.SK_Tips_Anonymous -->
     </classes>
   </test> <!-- SK_Tips_Anonymous(failed) -->
-  <test thread-count="5" name="SK_Timer_Incident(failed)">
-    <classes>
-      <class name="com.appium.DeviceScripts.SK_Timer_Incident">
-        <methods>
-          <include name="launchSafetyKuvrr"/>
-          <include name="loginApp"/>
-          <include name="CloseApp"/>
-          <include name="testTimerIncident"/>
-        </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_Timer_Incident -->
-    </classes>
-  </test> <!-- SK_Timer_Incident(failed) -->
 </suite> <!-- Failed suite [Suite] -->

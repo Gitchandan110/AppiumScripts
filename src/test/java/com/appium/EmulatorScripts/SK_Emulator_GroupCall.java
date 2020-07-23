@@ -53,7 +53,7 @@ public class SK_Emulator_GroupCall extends Base{
 
 	public void Login() {
 
-		launchbl.verifyTitle();
+		launchbl.verifyTitleSafetyKuvrr();
 		launchbl.clickBtnSignIn();
 		termsbl.acceptTermsOfServices();
 		privacypolicybl.acceptPrivacyPolicy();

@@ -54,7 +54,7 @@ public class SK_Emulator_EditProfile extends Base{
 
 	public void Login() {
 
-		launchbl.verifyTitle();
+		launchbl.verifyTitleSafetyKuvrr();
 		launchbl.clickBtnSignIn();
 		termsbl.acceptTermsOfServices();
 		privacypolicybl.acceptPrivacyPolicy();

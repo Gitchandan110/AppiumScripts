@@ -55,7 +55,10 @@ public class SK_CreateProfile extends Base{
 		
 		/*homepagebl.clickSetting();
 		settingsbl.selectOptionLogOut();*/
+		launchbl.verifyTitleSafetyKuvrr();
+		launchbl.verifyKuvrrImage();
 		launchbl.clickBtnNewAccount();
+		termsbl.verifyTitleTermsOfServices();
 		termsbl.acceptTermsOfServices();
 		privacypolicybl.acceptPrivacyPolicy();
 		createprofilebl.fillProfileDetails();

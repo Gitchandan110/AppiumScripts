@@ -43,7 +43,7 @@ public class SK_Emulator_Tips_Anonymous extends Base {
 	@Test
 	public void testTimerIncident() {
 
-		launchbl.verifyTitle();
+		launchbl.verifyTitleSafetyKuvrr();
 		launchbl.clickBtnSignIn();
 		termsbl.acceptTermsOfServices();
 		privacypolicybl.acceptPrivacyPolicy();

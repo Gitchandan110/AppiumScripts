@@ -42,7 +42,7 @@ public class SK_Emulator_SafeWalk extends Base {
 
 	public void signInApp() {
 
-		launchbl.verifyTitle();
+		launchbl.verifyTitleSafetyKuvrr();
 		launchbl.clickBtnSignIn();
 		termsbl.acceptTermsOfServices();
 		privacypolicybl.acceptPrivacyPolicy();

@@ -43,7 +43,7 @@ public class SK_Emulator_Timer extends Base {
 
 	public void signInApp() {
 
-		launchbl.verifyTitle();
+		launchbl.verifyTitleSafetyKuvrr();
 		launchbl.clickBtnSignIn();
 		termsbl.acceptTermsOfServices();
 		privacypolicybl.acceptPrivacyPolicy();

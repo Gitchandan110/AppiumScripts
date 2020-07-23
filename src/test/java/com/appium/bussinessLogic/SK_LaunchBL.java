@@ -10,15 +10,15 @@ public class SK_LaunchBL extends SK_LaunchPO {
 
 	String TestCaseSheet = "TestCase";
 
-	public void verifyTitle() {
+	public void verifyTitleSafetyKuvrr() {
 
 		try {
 
-			if (titleLaunchScreen().isDisplayed()) {
+			if (titleSafetyKuvrr().isDisplayed()) {
 
-				System.out.println("Title of Launch Screen is :" + titleLaunchScreen().getText());
+				System.out.println("Title of Launch Screen is :" + titleSafetyKuvrr().getText());
 				Base.takeScreenShot("Launch Screen");
-				Assert.assertEquals(titleLaunchScreen().getText(), "Safety Kuvrr", "Title Does not match");
+				Assert.assertEquals(titleSafetyKuvrr().getText(), "Safety Kuvrr", "Title Does not match");
 				System.out.println("Assertion pass: Title Matched");
 				ExcelUtils.WriteExcel(TestCaseSheet, 1, 1, "Pass");
 
@@ -28,6 +28,21 @@ public class SK_LaunchBL extends SK_LaunchPO {
 
 			}
 
+		} catch (Exception ex) {
+
+			System.out.println("Exception in Title is:" + ex.getMessage());
+
+		}
+
+	}
+
+	public void verifyKuvrrImage() {
+
+		try {
+
+			if (KuvrrImage() != null && KuvrrImage().isDisplayed()) {
+				System.out.println("KuvrrImage Found");
+			}
 		} catch (Exception ex) {
 
 			System.out.println("Exception in Title is:" + ex.getMessage());
@@ -70,11 +85,10 @@ public class SK_LaunchBL extends SK_LaunchPO {
 				System.out.println("New Account Button Found");
 				Base.takeScreenShot("Launch Screen");
 				ExcelUtils.WriteExcel(TestCaseSheet, 3, 1, "Pass");
-			//	BtnSignIn().click();
+				// BtnSignIn().click();
 				BtnNewAccount().click();
 				System.out.println("New Account Button Clicked");
 				ExcelUtils.WriteExcel(TestCaseSheet, 5, 1, "Pass");
-				
 
 			}
 

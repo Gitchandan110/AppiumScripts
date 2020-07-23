@@ -17,19 +17,26 @@ public class SK_LaunchPO extends Base {
 
 	public MobileElement BtnNewAccount() {
 
-		By btnNewAccount = By.id("com.safety.armourgrid:id/splash_register");
+	//	By btnNewAccount = By.id("com.safety.armourgrid:id/splash_register");
+		
+		By btnNewAccount = By.xpath("//android.widget.Button[@text=\"NEW ACCOUNT]\"]");
 		return driver.findElement(btnNewAccount);
 
 	}
 	
 	
-	public MobileElement titleLaunchScreen() {
+	public MobileElement titleSafetyKuvrr() {
 		
-		By Title= By.className("android.widget.TextView");
+		By Title= By.xpath("//android.widget.TextView[@text=\"Safety Kuvrr\"]");
 		return driver.findElement(Title);
 		
-		
-		
+}
+	public MobileElement KuvrrImage() {
+
+		By KuvrrImage = By.id("com.safety.armourgrid:id/intro_image");
+		return driver.findElement(KuvrrImage);
+
 	}
+	
 
 }

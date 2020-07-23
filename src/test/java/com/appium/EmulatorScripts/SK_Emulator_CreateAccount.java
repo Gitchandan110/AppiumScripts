@@ -54,7 +54,7 @@ public class SK_Emulator_CreateAccount extends Base{
 
 	public void pageTitle() {
 
-		launchbl.verifyTitle();
+		launchbl.verifyTitleSafetyKuvrr();
 		
 		
 	}
