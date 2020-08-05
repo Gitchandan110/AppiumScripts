@@ -15,13 +15,13 @@ public class SK_SendNotificationBL extends SK_SendNotificationPO {
 				ddSelectTemplate().click();
 				Thread.sleep(3000);
 				Base.takeScreenShot("Send Notification");
-				System.out.println("Send Notification Clicked");
+				System.out.println("ddSelectTemplate() Clicked");
 				} else {
-				System.out.println("Send Notification not Clicked");
+				System.out.println("ddSelectTemplate() not Clicked");
 			}
 			
-			    TemplateAppiumUser().click();
-			    System.out.println("TemplateAppiumUser() Clicked");
+			    TemplateAutomation().click();
+			    System.out.println("TemplateAutomation() Clicked");
 		    	btnNext().click();
 		    	Base.takeScreenShot("Send Notification");
 		    	Base.scrolltoElement("NEXT");

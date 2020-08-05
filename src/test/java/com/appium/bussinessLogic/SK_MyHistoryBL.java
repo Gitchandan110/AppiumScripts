@@ -14,7 +14,7 @@ public class SK_MyHistoryBL extends SK_MyHistoryPO {
 
 			if (tabNotifications() != null && tabNotifications().isDisplayed()) {
 				tabNotifications().click();
-				Thread.sleep(5000);
+				Thread.sleep(8000);
 				System.out.println("Notification Tab Clicked");
 				Base.takeScreenShot("My History");
 				Notification().click();

@@ -86,13 +86,34 @@ public class SK_SettingsBL extends SK_SettingsPO {
 			System.out.println("Exception in Naivigation Back:" + ex.getMessage());
 		}
 	}
+	
+	public void SelectMySurveys() throws InterruptedException, IOException {
+
+		try {
+			Base.scrolltoElement("My Surveys");
+			optionMySurveys().click();
+			Thread.sleep(8000);
+			Base.takeScreenShot("My Surveys");
+			System.out.println("My Surveys clicked");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+	
+	
+	
+	
+	
+	
 
 	public void SelectMyHistory() throws InterruptedException, IOException {
 
 		try {
 			Base.scrolltoElement("My History");
 			optionMyHistory().click();
-			Thread.sleep(5000);
+			Thread.sleep(8000);
 			Base.takeScreenShot("My History");
 			System.out.println("My History clicked");
 		} catch (Exception e) {

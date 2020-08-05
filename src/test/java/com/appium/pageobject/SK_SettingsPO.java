@@ -45,6 +45,17 @@ public class SK_SettingsPO extends Base {
 		return driver.findElement(EmergencyContact);
 
 	}
+	
+	public MobileElement optionMySurveys() {
+
+		By MySurveys = By.xpath("//android.widget.TextView[@text=\"My Surveys\"]");
+		//com.safety.armourgrid:id/settings_survey
+		return driver.findElement(MySurveys);
+
+	}
+	
+	
+	
 
 	public MobileElement optionMyHistory() {
 

@@ -16,37 +16,27 @@
       </class> <!-- com.appium.DeviceScripts.SK_VideoLocation_Incident -->
     </classes>
   </test> <!-- SK_VideoLocation_Incident(failed) -->
-  <test thread-count="5" name="SK_MyHistory(failed)">
+  <test thread-count="5" name="SK_SteerpathMAP(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_MyHistory">
+      <class name="com.appium.DeviceScripts.SK_SteerpathMAP">
         <methods>
           <include name="launchSafetyKuvrr"/>
-          <include name="testERP"/>
+          <include name="testSteerPathMap"/>
           <include name="CloseApp"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_MyHistory -->
+      </class> <!-- com.appium.DeviceScripts.SK_SteerpathMAP -->
     </classes>
-  </test> <!-- SK_MyHistory(failed) -->
-  <test thread-count="5" name="SK_SendNotification(failed)">
+  </test> <!-- SK_SteerpathMAP(failed) -->
+  <test thread-count="5" name="SK_Timer_Incident(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_SendNotification">
+      <class name="com.appium.DeviceScripts.SK_Timer_Incident">
         <methods>
-          <include name="Profile"/>
-          <include name="launchApp"/>
-          <include name="CloseApp"/>
-        </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_SendNotification -->
-    </classes>
-  </test> <!-- SK_SendNotification(failed) -->
-  <test thread-count="5" name="SK_Tips_Anonymous(failed)">
-    <classes>
-      <class name="com.appium.DeviceScripts.SK_Tips_Anonymous">
-        <methods>
-          <include name="CloseApp"/>
           <include name="launchSafetyKuvrr"/>
-          <include name="testTips"/>
+          <include name="loginApp"/>
+          <include name="CloseApp"/>
+          <include name="testTimerIncident"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_Tips_Anonymous -->
+      </class> <!-- com.appium.DeviceScripts.SK_Timer_Incident -->
     </classes>
-  </test> <!-- SK_Tips_Anonymous(failed) -->
+  </test> <!-- SK_Timer_Incident(failed) -->
 </suite> <!-- Failed suite [Suite] -->
