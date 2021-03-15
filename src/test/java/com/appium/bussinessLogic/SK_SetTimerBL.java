@@ -40,7 +40,7 @@ public void Set5Minute() {
 
 		if (btnSet().isDisplayed()) {
 			btnSet().click();
-			System.out.println("Set button clicked");
+			System.out.println("Set 5 Minute button clicked");
 			Thread.sleep(20000);
 			Base.takeScreenShot("Timer Screen");
 			ExcelUtils.WriteExcel(TestCaseSheet, 31, 1, "Pass");

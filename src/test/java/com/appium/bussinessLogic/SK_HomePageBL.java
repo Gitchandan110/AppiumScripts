@@ -13,7 +13,7 @@ public class SK_HomePageBL extends SK_HomePagePO {
 	String TestCaseSheet = "TestCase";
 	
 	
-	public void PleaseWait() {
+	public void PleaseWait30Seconds() {
 
 		try {
 
@@ -29,6 +29,25 @@ public class SK_HomePageBL extends SK_HomePagePO {
 
 		}
 	}
+	
+	public void PleaseWait300Seconds() {
+
+		try {
+
+			if (txtPleaseWait().isDisplayed()) {
+				System.out.println("Please Wait loader is moving");
+				Base.waitFor300Seconds(btnSOS());
+		
+			} 
+
+		} catch (Exception ex) {
+
+			System.out.println(ex.getMessage());
+
+		}
+	}
+	
+	
 	
 	
 

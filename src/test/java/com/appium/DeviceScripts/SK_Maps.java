@@ -37,10 +37,9 @@ public class SK_Maps extends Base {
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-		// launchAppKarbon();
-		launchAppMotoG4P();
-		// launchApkKarbon();
-		System.out.println("App Launched Successfull");
+		 launchAppSamsung();
+		 
+		System.out.println("SK_Maps");
 
 	}
 
@@ -53,7 +52,7 @@ public class SK_Maps extends Base {
 		 * signinbl.fillEmail(); signinbl.fillPassword(); signinbl.clickSubmit();
 		 * permissionbl.acceptPermissions(); quicktipsbl.closeTips();
 		 */
-		homepagebl.PleaseWait();
+		homepagebl.PleaseWait300Seconds();
 		homepagebl.OpenMAP();
 		mapBl.selectAllMAP();
 

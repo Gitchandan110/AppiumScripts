@@ -41,9 +41,8 @@ public class SK_Timer_Incident extends Base {
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-		// launchAppKarbon();
-		 launchAppMotoG4P();
-		System.out.println("App Launched Successfull");
+		 launchAppSamsung();
+		System.out.println("SK_Timer_Incident");
 
 	}
 
@@ -60,7 +59,7 @@ public class SK_Timer_Incident extends Base {
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
 		quicktipsbl.closeTips();*/
-		homepagebl.PleaseWait();
+		homepagebl.PleaseWait300Seconds();
 		homepagebl.clickSetting();
 		settingsbl.SelectEventOption();
 		incidentoptionbl.clickVideoAudioLocationIncident();

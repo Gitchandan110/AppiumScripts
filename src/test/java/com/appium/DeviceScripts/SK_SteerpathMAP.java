@@ -39,10 +39,8 @@ public class SK_SteerpathMAP extends Base{
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-		// launchAppKarbon();
-		 launchAppMotoG4P();
-	//	launchApkKarbon();
-		System.out.println("App Launched Successfull");
+		 launchAppSamsung();
+		System.out.println("SK_SteerpathMAP");
 
 	}
 
@@ -58,7 +56,7 @@ public class SK_SteerpathMAP extends Base{
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
 		quicktipsbl.closeTips();*/
-		homepagebl.PleaseWait();
+		homepagebl.PleaseWait300Seconds();
 		homepagebl.OpenMAP();
 		mapBl.selectSteerPathMAP();
 		mapBl.clickPOIList();

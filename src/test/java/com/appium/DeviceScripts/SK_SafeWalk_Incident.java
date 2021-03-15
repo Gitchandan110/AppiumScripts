@@ -38,9 +38,8 @@ public class SK_SafeWalk_Incident extends Base {
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-	//	 launchAppKarbon();
-		 launchAppMotoG4P();
-		System.out.println("App Launched Successfull");
+		 launchAppSamsung();
+		System.out.println("SK_SafeWalk_Incident");
 
 	}
 

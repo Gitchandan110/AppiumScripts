@@ -37,10 +37,9 @@ public class SK_SOS_Incident extends Base {
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-		// launchAppKarbon();
-		launchAppMotoG4P();
-		// launchApkKarbon();
-		System.out.println("App Launched Successfull");
+		 launchAppSamsung();
+	
+		System.out.println("SK_SOS_Incident");
 
 	}
 
@@ -53,7 +52,7 @@ public class SK_SOS_Incident extends Base {
 		 * signinbl.fillEmail(); signinbl.fillPassword(); signinbl.clickSubmit();
 		 * permissionbl.acceptPermissions(); quicktipsbl.closeTips();
 		 */
-		homepagebl.PleaseWait();
+		homepagebl.PleaseWait300Seconds();
 		homepagebl.clickSetting();
 		settingsbl.SelectEventOption();
 		incidentoptionbl.clickVideoAudioLocationIncident();

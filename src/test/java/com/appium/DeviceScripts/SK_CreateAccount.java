@@ -41,9 +41,8 @@ public class SK_CreateAccount extends Base{
 	    
 	    public void launchSafetyKuvrr() throws MalformedURLException {
 		  
-		  
-		   launchAppMotoG4P();
-		  System.out.println("App Launched Successfull");
+		 launchAppSamsung();
+		  System.out.println("SK_CreateAccount");
 	        
 	  }
 	  

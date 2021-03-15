@@ -32,9 +32,8 @@ public class SK_Tips_Anonymous extends Base {
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-		// launchAppKarbon();
-		 launchAppMotoG4P();
-		System.out.println("App Launched Successfull");
+		 launchAppSamsung();
+		System.out.println("SK_Tips_Anonymous");
 
 	}
 
@@ -50,7 +49,7 @@ public class SK_Tips_Anonymous extends Base {
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
 		quicktipsbl.closeTips();*/
-		homepagebl.PleaseWait();
+		homepagebl.PleaseWait300Seconds();
 		homepagebl.startTips();
 		tipsubmitbl.sendAnonymousTipByCategories();
 	

@@ -38,10 +38,8 @@ public class SK_AudioLocation_Incident extends Base {
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-		// launchAppKarbon();
-		 launchAppMotoG4P();
-	//	launchApkKarbon();
-		System.out.println("App Launched Successfull");
+		 launchAppSamsung();
+		System.out.println("SK_AudioLocation_Incident");
 
 	}
 
@@ -65,7 +63,7 @@ public class SK_AudioLocation_Incident extends Base {
 
 	public void verifyPhotoAudioIncident() throws InterruptedException, IOException {
 
-		homepagebl.PleaseWait();
+		homepagebl.PleaseWait300Seconds();
 		homepagebl.clickSetting();
 		settingsbl.SelectEventOption();
 		incidentoptionbl.clickAudioIncident();

@@ -37,10 +37,8 @@ public class SK_Photo_Incident extends Base {
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-	//	 launchAppKarbon();
-		 launchAppMotoG4P();
-	//	launchApkKarbon();
-		System.out.println("App Launched Successfull");
+		 launchAppSamsung();
+		System.out.println("SK_Photo_Incident");
 
 	}
 

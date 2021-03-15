@@ -4,39 +4,26 @@
   <listeners>
     <listener class-name="com.ExtentReportListner.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="SK_VideoLocation_Incident(failed)">
+  <test thread-count="5" name="SK_911_Incident(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_VideoLocation_Incident">
+      <class name="com.appium.DeviceScripts.SK_911_Incident">
         <methods>
-          <include name="verifyPhotoAudioIncident"/>
-          <include name="Login"/>
+          <include name="test911Incident"/>
           <include name="launchSafetyKuvrr"/>
           <include name="CloseApp"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_VideoLocation_Incident -->
+      </class> <!-- com.appium.DeviceScripts.SK_911_Incident -->
     </classes>
-  </test> <!-- SK_VideoLocation_Incident(failed) -->
-  <test thread-count="5" name="SK_SteerpathMAP(failed)">
+  </test> <!-- SK_911_Incident(failed) -->
+  <test thread-count="5" name="SK_Tips_Anonymous(failed)">
     <classes>
-      <class name="com.appium.DeviceScripts.SK_SteerpathMAP">
+      <class name="com.appium.DeviceScripts.SK_Tips_Anonymous">
         <methods>
-          <include name="launchSafetyKuvrr"/>
-          <include name="testSteerPathMap"/>
           <include name="CloseApp"/>
-        </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_SteerpathMAP -->
-    </classes>
-  </test> <!-- SK_SteerpathMAP(failed) -->
-  <test thread-count="5" name="SK_Timer_Incident(failed)">
-    <classes>
-      <class name="com.appium.DeviceScripts.SK_Timer_Incident">
-        <methods>
           <include name="launchSafetyKuvrr"/>
-          <include name="loginApp"/>
-          <include name="CloseApp"/>
-          <include name="testTimerIncident"/>
+          <include name="testTips"/>
         </methods>
-      </class> <!-- com.appium.DeviceScripts.SK_Timer_Incident -->
+      </class> <!-- com.appium.DeviceScripts.SK_Tips_Anonymous -->
     </classes>
-  </test> <!-- SK_Timer_Incident(failed) -->
+  </test> <!-- SK_Tips_Anonymous(failed) -->
 </suite> <!-- Failed suite [Suite] -->

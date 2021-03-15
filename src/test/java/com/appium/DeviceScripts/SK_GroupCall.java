@@ -41,8 +41,9 @@ public class SK_GroupCall extends Base{
 	public void launchApp() {
 
 		try {
-		//	launchAppKarbon();
-			 launchAppMotoG4P();
+			 launchAppSamsung();
+			 
+			 System.out.println("SK_GroupCall");
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -63,7 +64,7 @@ public class SK_GroupCall extends Base{
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
 		quicktipsbl.closeTips();*/
-		homepagebl.PleaseWait();
+		homepagebl.PleaseWait300Seconds();
 		homepagebl.clickSetting();
 	}
 

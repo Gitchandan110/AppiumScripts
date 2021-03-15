@@ -70,12 +70,12 @@ public class Base {
 
 	}
 	
-	public static AppiumDriver launchAppMotoG4P() throws MalformedURLException {
+	public static AppiumDriver launchAppSamsung() throws MalformedURLException {
 
 		DesiredCapabilities capability = new DesiredCapabilities();
-		capability.setCapability("deviceName", "Moto G4Plus");
-		capability.setCapability("udid", "ZY223QKSQB");
-		capability.setCapability("platformVersion", "8.1.0");
+		capability.setCapability("deviceName", "Galaxy M01 Core");
+		capability.setCapability("udid", "RZ8N82W5Z3B");
+		capability.setCapability("platformVersion", "10.0.0");
 		capability.setCapability("platformName", "Android");
 		capability.setCapability("noReset", "true");
 		capability.setCapability("appPackage", "com.safety.armourgrid");
@@ -99,8 +99,12 @@ public class Base {
 		capability.setCapability("udid", "DQTKDYTGKRWOONPR");
 		capability.setCapability("platformVersion", "6.0");
 		capability.setCapability("platformName", "Android");
+		capability.setCapability("noReset", "true");
 		capability.setCapability("appPackage", "com.safety.armourgrid");
-		capability.setCapability("appActivity", "com.safety.armourgrid.activity.SplashActivity");
+		capability.setCapability("appActivity", "com.safety.armourgrid.DeepLinkActivity");
+		capability.setCapability("automationName", "UiAutomator2");
+		capability.setCapability ("simpleIsVisibleCheck", "true");
+		capability.setCapability ("useJSONSource", "true");
 		capability.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 600);
 		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capability);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

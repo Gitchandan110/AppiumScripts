@@ -38,10 +38,9 @@ public class SK_ERP extends Base{
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-		// launchAppKarbon();
-		 launchAppMotoG4P();
-	//	launchApkKarbon();
-		System.out.println("App Launched Successfull");
+		 launchAppSamsung();
+
+		System.out.println("SK_ERP");
 
 	}
 
@@ -57,7 +56,7 @@ public class SK_ERP extends Base{
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
 		quicktipsbl.closeTips();*/
-		homepagebl.PleaseWait();
+		homepagebl.PleaseWait300Seconds();
 		homepagebl.OpenERP();
 		erpbl.SelectEarthquakeERP();
 		erpbl.clickEarthQuakeOption();

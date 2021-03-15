@@ -37,17 +37,16 @@ public class SK_VisitorManagement extends Base {
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-		// launchAppKarbon();
-		launchAppMotoG4P();
-		// launchApkKarbon();
-		System.out.println("App Launched Successfull");
+		 launchAppSamsung();
+		
+		System.out.println("SK_VisitorManagement");
 
 	}
 
 	@Test(priority = 1)
 	public void testERP() throws InterruptedException, IOException {
 
-		homepagebl.PleaseWait();
+		homepagebl.PleaseWait300Seconds();
 		homepagebl.clickSetting();
 		settingsbl.SelectVisitorManagement();
 		visitorManagementbl.createNewVisitor();

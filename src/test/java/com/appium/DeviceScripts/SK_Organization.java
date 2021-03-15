@@ -35,8 +35,9 @@ public class SK_Organization extends Base{
 	public void launchApp() {
 
 		try {
-			//launchAppKarbon();
-			launchAppMotoG4P();
+			 launchAppSamsung();
+			 
+			System.out.println("SK_Organization");
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -64,7 +65,7 @@ public class SK_Organization extends Base{
 
 	public void Profile() throws InterruptedException, IOException {
 		
-		homepagebl.PleaseWait();
+		homepagebl.PleaseWait300Seconds();
 		homepagebl.clickSetting();
 		settingsbl.SelectOrganization();
 		organizationbl.UpdateOrganization();

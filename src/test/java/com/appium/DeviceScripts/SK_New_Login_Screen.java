@@ -40,8 +40,7 @@ public class SK_New_Login_Screen extends Base {
 	public void launchApp() {
 
 		try {
-		//	launchAppKarbon();
-			 launchAppMotoG4P();
+			 launchAppSamsung();
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

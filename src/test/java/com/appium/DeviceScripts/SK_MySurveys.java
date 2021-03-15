@@ -42,10 +42,8 @@ public class SK_MySurveys extends Base{
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-		// launchAppKarbon();
-		 launchAppMotoG4P();
-	//	launchApkKarbon();
-		System.out.println("App Launched Successfull");
+		 launchAppSamsung();
+		System.out.println("SK_MySurveys");
 
 	}
 
@@ -61,7 +59,7 @@ public class SK_MySurveys extends Base{
 		signinbl.clickSubmit();
 		permissionbl.acceptPermissions();
 		quicktipsbl.closeTips();*/
-		homepagebl.PleaseWait();
+		homepagebl.PleaseWait300Seconds();
 		homepagebl.clickSetting();
 		settingsbl.SelectMySurveys();
 		surveysbl.SubmitMySurveys();

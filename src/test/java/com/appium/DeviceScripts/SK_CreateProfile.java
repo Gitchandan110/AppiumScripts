@@ -40,9 +40,9 @@ public class SK_CreateProfile extends Base{
 	    public void launchSafetyKuvrr() throws MalformedURLException, InterruptedException {
 		  
 		  
-		// launchAppKarbon();
-		 launchAppMotoG4P();
-		  System.out.println("App Launched Successfull");
+		 launchAppSamsung();
+		 
+		 System.out.println("SK_CreateProfile");
 		  Thread.sleep(5000);
 	
 	        

@@ -42,8 +42,9 @@ public class SK_EditProfile extends Base{
 	public void launchApp() {
 
 		try {
-			//launchAppKarbon();
-			launchAppMotoG4P();
+			 launchAppSamsung();
+			 
+			System.out.println("SK_EditProfile");
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
