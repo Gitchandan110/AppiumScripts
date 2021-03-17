@@ -7,7 +7,7 @@
   <listener class-name="com.ExtentReportListner.ExtentReporterNG" />
   </listeners>    
   
-
+<!-- 
  <test name="SK_SafeWalk_Incident" >
 <classes>
 <class name="com.appium.DeviceScripts.SK_SafeWalk_Incident" />
@@ -27,7 +27,7 @@
 <classes>
 <class name="com.appium.DeviceScripts.SK_SOS_Incident" />
 </classes>
-</test>
+</test> -->
 
  
 <test name="SK_Tips_NonAnonymous" >
@@ -53,9 +53,6 @@
 </classes>
 </test>  
 
-
-
-
 <test name="SK_Maps" >
 <classes>
 <class name="com.appium.DeviceScripts.SK_Maps" />
@@ -76,9 +73,6 @@
 </classes>
 </test>
     
-
-
-
 
 <test name="SK_MyHistory" >
 <classes>

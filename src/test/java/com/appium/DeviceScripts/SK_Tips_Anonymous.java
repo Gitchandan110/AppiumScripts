@@ -33,6 +33,7 @@ public class SK_Tips_Anonymous extends Base {
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
 		 launchAppSamsung();
+		 
 		System.out.println("SK_Tips_Anonymous");
 
 	}
