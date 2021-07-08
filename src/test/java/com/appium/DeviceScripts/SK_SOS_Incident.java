@@ -37,7 +37,7 @@ public class SK_SOS_Incident extends Base {
 
 	public void launchSafetyKuvrr() throws MalformedURLException {
 
-		 launchAppSamsung();
+		launchAppVivo();
 	
 		System.out.println("SK_SOS_Incident");
 

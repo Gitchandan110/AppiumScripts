@@ -70,6 +70,28 @@ public class Base {
 
 	}
 	
+	public static AppiumDriver launchAppVivo() throws MalformedURLException {
+
+		DesiredCapabilities capability = new DesiredCapabilities();
+		capability.setCapability("deviceName", "vivo 1820");
+		capability.setCapability("udid", "DYTWMNIBAMY9IVAU");
+		capability.setCapability("platformVersion", "8.1.0");
+		capability.setCapability("platformName", "Android");
+		capability.setCapability("noReset", "true");
+		capability.setCapability("appPackage", "com.safety.armourgrid");
+		capability.setCapability("appActivity", "com.safety.armourgrid.DeepLinkActivity");
+	//	capability.setCapability("appWaitActivity", "com.safety.armourgrid.activity.SplashActivity");
+		capability.setCapability("automationName", "UiAutomator2");
+		capability.setCapability ("simpleIsVisibleCheck", "true");
+		capability.setCapability ("useJSONSource", "true");
+		capability.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 600);
+		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capability);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		System.out.println("Device Capability is working");
+		return driver;
+
+	}
+	
 	public static AppiumDriver launchAppSamsung() throws MalformedURLException {
 
 		DesiredCapabilities capability = new DesiredCapabilities();
